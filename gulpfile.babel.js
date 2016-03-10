@@ -4,6 +4,7 @@
 import _ from 'lodash';
 import del from 'del';
 import gulp from 'gulp';
+import debug from 'gulp-debug';
 import path from 'path';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import http from 'http';
@@ -461,7 +462,7 @@ gulp.task('build', cb => {
 
 gulp.task('clean:dist', () => del([`${paths.dist}/!(.git*|.openshift|Procfile)**`], {dot: true}));
 
-gulp.task('build:client', ['transpile:client', 'styles', 'html', 'constant'], () => {
+gulp.task('build-client-helper', () => {
     var manifest = gulp.src(`${paths.dist}/${clientPath}/assets/rev-manifest.json`);
 
     var appFilter = plugins.filter('**/app.js');
@@ -492,8 +493,18 @@ gulp.task('build:client', ['transpile:client', 'styles', 'html', 'constant'], ()
         .pipe(gulp.dest(`${paths.dist}/${clientPath}`));
 });
 
+gulp.task('build:client', cb => {
+    runSequence(
+        [ 'transpile:client', 'styles', 'constant' ],
+        'html',
+        'build-client-helper',
+        cb
+    );
+});
+
 gulp.task('html', function() {
     return gulp.src(`.tmp/{app,components}/**/*.html`)
+        .pipe(debug({title: 'html:'}))
         .pipe(plugins.angularTemplatecache({
             module: 'galaxyApp'
         }))
@@ -501,6 +512,7 @@ gulp.task('html', function() {
 });
 gulp.task('jade', function() {
   gulp.src(paths.client.views)
+    .pipe(debug({title: 'jade:'}))
     .pipe(plugins.jade())
     .pipe(gulp.dest('.tmp'));
 });
