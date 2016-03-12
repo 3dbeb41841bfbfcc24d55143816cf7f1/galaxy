@@ -8,7 +8,6 @@ exports.setup = function(User, config) {
     callbackURL: config.github.callbackURL
   },
   function(accessToken, refreshToken, profile, done) {
-    console.log('searching for user with github id:', profile.id);
     User.findOne({
       'github.id': Number(profile.id)
     })

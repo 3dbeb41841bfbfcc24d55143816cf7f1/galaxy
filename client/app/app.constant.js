@@ -5,7 +5,10 @@
 	"userRoles": [
 		"guest",
 		"user",
-		"admin"
+		"admin",
+		"student",
+		"teacher",
+		"producer"
 	]
 })
 
