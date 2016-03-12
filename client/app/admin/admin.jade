@@ -5,6 +5,12 @@
     li.list-group-item(ng-repeat='user in admin.users')
       strong {{user.name}}
       br
-      span.text-muted {{user.email}}
+      //- span.text-muted(ng-show='user.email') EMail: {{user.email}}
+      //- span.text-muted(ng-show='user.github') GitHub:{{user.github.login}}
+      dl.dl-horizontal
+        dt(ng-show='user.email') Local:
+        dd(ng-show='user.email') {{user.email}}
+        dt(ng-show='user.github') GitHub:
+        dd(ng-show='user.github') {{user.github.login}}
       a.trash(ng-click='admin.delete(user)')
         span.glyphicon.glyphicon-trash.pull-right

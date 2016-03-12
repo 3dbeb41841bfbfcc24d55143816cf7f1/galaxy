@@ -356,6 +356,7 @@ gulp.task('serve', cb => {
         ['lint:scripts', 'inject', 'jade'],
         ['wiredep:client'],
         ['transpile:client', 'styles'],
+        'env:all',
         ['start:server', 'start:client'],
         'watch',
         cb);
