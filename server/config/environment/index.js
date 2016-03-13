@@ -15,6 +15,8 @@ function requiredProcessEnv(name) {
 var all = {
   env: process.env.NODE_ENV,
 
+  BLUEBIRD_W_FORGOTTEN_RETURN: 0,
+
   // Root path of server
   root: path.normalize(__dirname + '/../../..'),
 

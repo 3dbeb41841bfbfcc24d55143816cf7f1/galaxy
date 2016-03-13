@@ -29,9 +29,11 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <navbar></navbar>
-    <div ui-view=""></div>
-    <footer></footer>
+    <div class="ui-view-container">
+      <navbar></navbar>
+      <div class="well main-view" ui-view=""></div>
+      <footer></footer>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>

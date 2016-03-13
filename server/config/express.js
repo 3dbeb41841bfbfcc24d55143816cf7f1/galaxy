@@ -18,6 +18,7 @@ import config from './environment';
 import passport from 'passport';
 import session from 'express-session';
 import connectMongo from 'connect-mongo';
+import promise from 'bluebird';
 import mongoose from 'mongoose';
 var mongoStore = connectMongo(session);
 
@@ -84,4 +85,11 @@ export default function(app) {
     app.use(morgan('dev'));
     app.use(errorHandler()); // Error handler - has to be last
   }
+
+  promise.config({
+    // Enables all warnings except forgotten return statements.
+    warnings: {
+        wForgottenReturn: false
+    }
+  });
 }

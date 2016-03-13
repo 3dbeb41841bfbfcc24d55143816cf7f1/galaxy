@@ -5,9 +5,9 @@
 	"userRoles": [
 		"guest",
 		"user",
-		"admin",
 		"student",
-		"teacher",
+		"admin",
+		"instructor",
 		"producer"
 	]
 })
