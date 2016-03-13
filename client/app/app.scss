@@ -3,9 +3,14 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 
 $jumbotron-padding: 10px;
 
-
 .panel-title {
   font-size: 18px;
+}
+
+// Inline code
+code {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 @import '../bower_components/font-awesome/scss/font-awesome';

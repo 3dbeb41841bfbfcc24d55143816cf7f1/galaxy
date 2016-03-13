@@ -17,7 +17,7 @@ export function setup(User, config) {
         user = new User({
           name: profile.displayName,
           email: profile.emails[0].value,
-          role: 'user',
+          role: 'student',
           username: profile.emails[0].value.split('@')[0],
           provider: 'google',
           google: profile._json

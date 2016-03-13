@@ -51,8 +51,7 @@
               | Passwords must match.
 
         .form-group(ng-class='{ "has-success": form.role.$valid && vm.submitted,\
-        "has-error": form.role.$invalid && vm.submitted }',
-        ng-init="vm.user.role='student'")
+        "has-error": form.role.$invalid && vm.submitted }')
           label Role
           br
           .radio-inline

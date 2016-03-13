@@ -15,7 +15,7 @@ var UserSchema = new Schema({
   },
   role: {
     type: String,
-    default: 'user'
+    default: 'student'
   },
   password: String,
   provider: String,

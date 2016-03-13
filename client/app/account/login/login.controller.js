@@ -8,6 +8,9 @@ class LoginController {
 
     this.Auth = Auth;
     this.$state = $state;
+
+    // TODO: get mode from server
+    this.developerMode = true;
   }
 
   login(form) {

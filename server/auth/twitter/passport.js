@@ -17,7 +17,7 @@ export function setup(User, config) {
         user = new User({
           name: profile.displayName,
           username: profile.username,
-          role: 'user',
+          role: 'student',
           provider: 'twitter',
           twitter: profile._json
         });
