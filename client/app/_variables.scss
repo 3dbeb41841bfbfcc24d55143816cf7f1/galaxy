@@ -1,0 +1,31 @@
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$brand-primary:         #2A9FD6;
+$brand-success:         #77B300;
+// $brand-info:            #9933CC;
+$brand-info:            #2A7FA6;
+$brand-warning:         #FF8800;
+$brand-danger:          #CC0000;
+
+//== Badges
+//
+//##
+
+$badge-color:                 #fff;
+
+// Linked badge text color on hover
+
+$badge-link-hover-color:      #fff;
+$badge-bg:                    $brand-primary;
+
+// Badge text color in active nav link
+$badge-active-color:          $brand-primary;
+
+// Badge background color in active nav link
+$badge-active-bg:             #fff;
+
+$badge-font-weight:           bold;
+$badge-line-height:           1;
+$badge-border-radius:         10px;

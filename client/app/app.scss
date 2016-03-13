@@ -1,7 +1,13 @@
-$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-@import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
-@import '../bower_components/bootstrap-social/bootstrap-social.scss';
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 $fa-font-path: "../bower_components/font-awesome/fonts";
+
+$jumbotron-padding: 10px;
+
+
+.panel-title {
+  font-size: 18px;
+}
+
 @import '../bower_components/font-awesome/scss/font-awesome';
 
 /**
@@ -15,11 +21,22 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
   padding: 0.2em 0;
 }
 
+@import "../bower_components/bootswatch-scss/darkly/variables";
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+
 // Component styles are injected through grunt
 // injector
+@import 'variables';
 @import 'admin/admin';
+@import 'animate';
 @import 'main/main';
 @import '../components/footer/footer';
 @import '../components/modal/modal';
 @import '../components/oauth-buttons/oauth-buttons';
 // endinjector
+
+$panel-primary-border: $brand-primary;
+
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import '../bower_components/bootstrap-social/bootstrap-social.scss';
+@import "../bower_components/bootswatch-scss/darkly/bootswatch";
