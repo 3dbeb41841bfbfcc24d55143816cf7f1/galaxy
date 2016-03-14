@@ -101,6 +101,25 @@ export function changePassword(req, res, next) {
 }
 
 /**
+ * Change a users role
+ */
+export function changeRole(req, res, next) {
+  var userId = req.params.id;
+  var newRole = String(req.body.role);
+
+  return User.findById(userId)
+  .then(user => {
+    console.log('setting role for user', user.name, 'to', newRole);
+    user.role = newRole;
+    return user.save()
+      .then(() => {
+        res.status(204).end();
+      })
+      .catch(validationError(res));
+  });
+}
+
+/**
  * Get my info
  */
 export function me(req, res, next) {
