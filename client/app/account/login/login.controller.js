@@ -1,16 +1,23 @@
 'use strict';
 
 class LoginController {
-  constructor(Auth, $state) {
+  constructor(Auth, Settings, $state) {
     this.user = {};
     this.errors = {};
     this.submitted = false;
 
     this.Auth = Auth;
+    this.Settings = Settings;
     this.$state = $state;
 
-    // TODO: get mode from server
-    this.developerMode = true;
+    this.Settings = Settings;
+
+    Settings.get()
+    .then(response => {
+      console.log('response:', response);
+      this.settings = response.data;
+      console.log('settings:', this.settings);
+    });
   }
 
   login(form) {

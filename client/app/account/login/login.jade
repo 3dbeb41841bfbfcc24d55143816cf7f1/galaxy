@@ -2,7 +2,7 @@
   .row
     .col-sm-12
       h1 Login
-      div(ng-show='vm.developerMode')
+      div(ng-show='vm.settings.mode === "development"')
         p
           | Accounts are reset on server restart from
           code server/config/seed.js
