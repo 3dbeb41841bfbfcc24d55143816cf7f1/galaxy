@@ -109,21 +109,21 @@ UserSchema
     }
 
     if (!validatePresenceOf(this.password) && authTypes.indexOf(this.provider) === -1) {
-      next(new Error('Invalid password'));
+      return next(new Error('Invalid password'));
     }
 
     // Make salt with a callback
     this.makeSalt((saltErr, salt) => {
       if (saltErr) {
-        next(saltErr);
+        return next(saltErr);
       }
       this.salt = salt;
       this.encryptPassword(this.password, (encryptErr, hashedPassword) => {
         if (encryptErr) {
-          next(encryptErr);
+          return next(encryptErr);
         }
         this.password = hashedPassword;
-        next();
+        return next();
       });
     });
   });
