@@ -1,5 +1,5 @@
 .container-fluid
-  .row
+  .row(ng-show='vm.isLocalUser()')
     .col-sm-12
       h1 Change Password
     .col-sm-12
@@ -33,3 +33,6 @@
         p.help-block  {{ vm.message }}
 
         button.btn.btn-lg.btn-primary(type='submit') Save changes
+  .row(ng-hide='vm.isLocalUser()')
+    .col-sm-12
+      h1 There are no settings to change at this time.

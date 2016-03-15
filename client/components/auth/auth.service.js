@@ -132,6 +132,10 @@ function AuthService($location, $http, $cookies, $q, appConfig, Util, User) {
         });
     },
 
+    isLocalUser() {
+      return currentUser.provider === 'local';
+    },
+
      /**
       * Check if a user has a specified role or higher
       *   (synchronous|asynchronous)

@@ -6,6 +6,8 @@ class SettingsController {
     this.submitted = false;
 
     this.Auth = Auth;
+    this.isLocalUser = Auth.isLocalUser;
+    this.getCurrentUser = Auth.getCurrentUser;
   }
 
   changePassword(form) {
