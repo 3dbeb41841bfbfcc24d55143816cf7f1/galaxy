@@ -3,6 +3,7 @@
 import {Router} from 'express';
 import * as controller from './user.controller';
 import * as auth from '../../auth/auth.service';
+import config from '../../config/environment';
 
 var router = new Router();
 
@@ -12,6 +13,11 @@ router.get('/me',           auth.isAuthenticated(), controller.me);
 router.put('/:id/password', auth.isAuthenticated(), controller.changePassword);
 router.put('/:id/role',     auth.hasRole('admin'),  controller.changeRole);
 router.get('/:id',          auth.isAuthenticated(), controller.show);
-router.post('/',                                    controller.create);
+
+// Only allow POST new user route in development mode.
+// Otherwise the OAuth passport handler will create the new user.
+if (config.env === 'development') {
+  router.post('/',                                  controller.create);
+}
 
 export default router;

@@ -38,12 +38,6 @@ export function index(req, res) {
 export function create(req, res, next) {
   var newUser = new User(req.body);
   newUser.provider = 'local';
-
-  // In PRODUCTION we always set a new user's role to 'student'
-  if (config.env.mode !== 'development') {
-    newUser.role = 'student';
-  }
-
   newUser.save()
     .then(function(user) {
       var token = jwt.sign({ _id: user._id }, config.secrets.session, {
