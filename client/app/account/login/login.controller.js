@@ -7,7 +7,6 @@ class LoginController {
     this.submitted = false;
 
     this.Auth = Auth;
-    this.Settings = Settings;
     this.$state = $state;
 
     this.Settings = Settings;

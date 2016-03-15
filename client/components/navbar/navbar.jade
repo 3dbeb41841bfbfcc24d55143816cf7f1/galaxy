@@ -17,10 +17,14 @@ div.navbar.navbar-default.navbar-static-top
           a(ui-sref='admin') Admin
 
       ul.nav.navbar-nav.navbar-right
-        li(ng-hide='nav.isLoggedIn()', ui-sref-active='active')
+        li(ng-hide='nav.isLoggedIn() && nav.',
+        ui-sref-active='active'
+        ng-show='nav.settings.mode === "development"')
           a(ui-sref='signup') Sign up
 
-        li(ng-hide='nav.isLoggedIn()', ui-sref-active='active')
+        li(ng-hide='nav.isLoggedIn()',
+        ui-sref-active='active'
+        ng-show='nav.settings.mode === "development"')
           a(ui-sref='login') Login
 
         li(ng-show='nav.isLoggedIn()')
