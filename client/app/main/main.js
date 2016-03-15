@@ -1,10 +1,29 @@
 'use strict';
 
 angular.module('galaxyApp')
-  .config(function($stateProvider) {
-    $stateProvider
-      .state('main', {
-        url: '/',
-        template: '<main></main>'
+.config(function($stateProvider) {
+  $stateProvider
+    .state('main', {
+      url: '/',
+      template: '<main></main>',
+      onEnter: function($state, Auth) {
+        console.log('onEnter');
+        Auth.getCurrentUser(null)
+        .then(user => {
+          console.log('user:', user);
+          if (!user.hasOwnProperty('role')) {
+            console.log('no user');
+            // do nothing
+          }
+          else if (user.role === 'student') {
+            console.log('redirecting to student.dashboard');
+            $state.go('student.dashboard');
+          }
+          else {
+            console.log('redirecting to instructor.dashboard');
+            $state.go('instructor.dashboard');
+          }
       });
+    }
   });
+});

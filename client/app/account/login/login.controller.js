@@ -11,12 +11,9 @@ class LoginController {
     this.$state = $state;
 
     this.Settings = Settings;
-
     Settings.get()
     .then(response => {
-      console.log('response:', response);
       this.settings = response.data;
-      console.log('settings:', this.settings);
     });
   }
 

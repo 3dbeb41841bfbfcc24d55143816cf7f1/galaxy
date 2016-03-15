@@ -7,18 +7,18 @@ angular.module('galaxyApp')
         url: '/login',
         templateUrl: 'app/account/login/login.html',
         controller: 'LoginController',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        onEnter: function() {
+          console.log('login onEnter called.');
+        }
       })
       .state('logout', {
-        url: '/logout?referrer',
+        url: '/logout',
         referrer: 'main',
         template: '',
         controller: function($state, Auth) {
-          var referrer = $state.params.referrer ||
-                          $state.current.referrer ||
-                          'main';
           Auth.logout();
-          $state.go(referrer);
+          $state.go('main');
         }
       })
       .state('signup', {

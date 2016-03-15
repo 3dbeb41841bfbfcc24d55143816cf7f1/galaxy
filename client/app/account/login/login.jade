@@ -1,7 +1,8 @@
 .container-fluid
   .row
     .col-sm-12
-      h1 Login
+      h1.foo Login
+
       div(ng-show='vm.settings.mode === "development"')
         p
           | Accounts are reset on server restart from
@@ -17,7 +18,14 @@
           | /
           code admin
 
+  .row
     .col-sm-12
+      .oauth-buttons
+        oauth-buttons(classes='btn-block')
+
+  .row
+    .col-sm-12
+      h3 Or Login with Local Credentials Below
       form.form(name='form', ng-submit='vm.login(form)', novalidate='')
         .form-group
           label Email
@@ -37,11 +45,4 @@
           = ' '
           a.btn.btn-default.btn-lg.btn-register(ui-sref='signup')
             | Register
-
-        hr
-
-        .row
-          .col-sm-4.col-md-3
-            oauth-buttons(classes='btn-block')
-
   hr

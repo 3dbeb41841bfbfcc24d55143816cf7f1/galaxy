@@ -1,0 +1,14 @@
+header#banner.hero2
+  .container-fluid
+    .row
+      .col-sm-12.text-center
+        .row
+          .col-sm-3.text-center
+            .btn-group-vertical.panel-buttons(role='group')
+              a.btn.btn-lg.btn-info(ui-sref="student.dashboard") Dashboard
+              a.btn.btn-lg.btn-info(ui-sref="student.attendance") Attendance
+              a.btn.btn-lg.btn-info(ui-sref="student.homework") Homework
+              a.btn.btn-lg.btn-info(ui-sref="student.quizzes") Quizzes
+              a.btn.btn-lg.btn-info(ui-sref="student.projects") Projects
+          .col-sm-9
+            .student-inner(ui-view='')

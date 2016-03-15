@@ -54,30 +54,11 @@
         "has-error": form.role.$invalid && vm.submitted }')
           label Role
           br
-          .radio-inline
-            label
-              input(type='radio',
-                name='user[role]',
-                value='student',
-                ng-model='vm.user.role',
-                required='')
-              | Student
-          .radio-inline
-            label
-              input(type='radio',
-                name='user[role]',
-                value='instructor',
-                ng-model='vm.user.role',
-                required='')
-              | Instructor
-          .radio-inline
-            label
-              input(type='radio',
-                name='user[role]',
-                value='Producer',
-                ng-model='vm.user.role',
-                required='')
-              | Producer
+          div(ng-show='vm.settings.mode === "development"')
+            .radio-inline(ng-repeat='role in vm.userRoles')
+              label
+                input(type='radio', name='user[role]', value='{{ role }}', ng-model='vm.user.role', required='')
+                | {{ role }}
         div
           button.btn.btn-primary.btn-lg.btn-register(type='submit')
             | Sign up
