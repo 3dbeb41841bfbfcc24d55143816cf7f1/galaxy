@@ -6,7 +6,12 @@
 'use strict';
 import User from '../api/user/user.model';
 import Cohort from '../api/cohort/cohort.model';
+import Squad from '../api/squad/squad.model';
 import config from './environment';
+import Promise from 'bluebird';
+import mongoose from 'mongoose';
+
+mongoose.Promise = Promise;
 
 console.log('config.env:', config.env);
 
@@ -24,7 +29,68 @@ function createTestCohorts() {
   .then(() => {
     return Cohort.find({})
     .then((cohorts) => {
-      console.log('finished populating %d cohorts:', cohorts.length);
+      console.log('finished populating %d cohorts', cohorts.length);
+      return null;
+    });
+  });
+}
+
+function createTestSquads() {
+  return Cohort.findOne({name: 'Test Cohort #1'})
+  .then((testCohort1) => {
+    return Squad.find({}).remove()
+    .then(() => {
+      return Squad.create({
+        name: 'Test Squad #1',
+        info: 'Just a test squad from the seed file.',
+        cohort: testCohort1._id
+      }, {
+        name: 'Test Squad #2',
+        info: 'Just a test squad from the seed file.',
+        cohort: testCohort1._id
+      });
+    });
+  })
+  .then(() => {
+    return Squad.find({})
+    .then((squads) => {
+      console.log('finished populating %d squads', squads.length);
+      return null;
+    });
+  });
+}
+
+function createTestUsers() {
+  Promise.delay(200).then(() => {
+    return [
+      Cohort.findOne({name: 'Test Cohort #1'}),
+      Squad.findOne({name: 'Test Squad #1'})
+    ];
+  })
+  .spread((testCohort1, testSquad1) => {
+    console.log('testSquad1:', testSquad1);
+    return User.find({}).remove()
+    .then(() => {
+      return User.create({
+        provider: 'local',
+        name: 'Joe Hacker',
+        email: 'joe@hacker.com',
+        password: 'test',
+        cohort: testCohort1._id,
+        squad: testSquad1._id
+      }, {
+        provider: 'local',
+        name: 'Admin',
+        role: 'admin',
+        email: 'admin@example.com',
+        password: 'admin'
+      });
+    });
+  })
+  .then(() => {
+    return User.find({})
+    .then((users) => {
+      console.log('finished populating %d users', users.length);
       return null;
     });
   });
@@ -52,40 +118,13 @@ function createAdminUser() {
   });
 }
 
-function createTestUsers() {
-  return Cohort.findOne({name: 'Test Cohort #1'})
-  .then((testCohort1) => {
-    console.log('testCohort1:', testCohort1);
-    return User.find({}).remove()
-    .then(() => {
-      return User.create({
-        provider: 'local',
-        name: 'Joe Hacker',
-        email: 'joe@hacker.com',
-        password: 'test',
-        cohort: testCohort1._id
-      }, {
-        provider: 'local',
-        name: 'Admin',
-        role: 'admin',
-        email: 'admin@example.com',
-        password: 'admin'
-      })
-    })
-  })
-  .then(() => {
-    return User.find({})
-    .then((users) => {
-      console.log('finished populating users:', users);
-      return null;
-    });
-  });
-}
-
 if (config.env === 'development') {
   createTestCohorts()
   .then(() => {
-    createTestUsers();
+    return createTestSquads();
+  })
+  .then(() => {
+    return createTestUsers();
   });
 }
 else {

@@ -4,7 +4,6 @@ import crypto from 'crypto';
 import mongoose from 'mongoose';
 mongoose.Promise = require('bluebird');
 import {Schema} from 'mongoose';
-import {Cohort} from '../cohort/cohort.model';
 
 const authTypes = ['github', 'twitter', 'facebook', 'google'];
 
@@ -13,6 +12,7 @@ var UserSchema = new Schema({
   email:  { type: String, lowercase: true },
   role:   { type: String, default: 'student' },
   cohort: { type: mongoose.Schema.Types.ObjectId, ref: 'Cohort' },
+  squad:  { type: mongoose.Schema.Types.ObjectId, ref: 'Squad' },
   password: String,
   provider: String,
   salt: String,
@@ -98,43 +98,49 @@ var validatePresenceOf = function(value) {
  * Pre-save hook
  */
 UserSchema
-  .pre('save', function(next) {
-    // Handle new/update passwords
-    if (!this.isModified('password')) {
-      return next();
-    }
+.pre('save', function(next) {
+  // Handle new/update passwords
+  if (!this.isModified('password')) {
+    return next();
+  }
 
-    if (!validatePresenceOf(this.password) && authTypes.indexOf(this.provider) === -1) {
-      return next(new Error('Invalid password'));
-    }
+  if (!validatePresenceOf(this.password) && authTypes.indexOf(this.provider) === -1) {
+    return next(new Error('Invalid password'));
+  }
 
-    // Make salt with a callback
-    this.makeSalt((saltErr, salt) => {
-      if (saltErr) {
-        return next(saltErr);
+  // Make salt with a callback
+  this.makeSalt((saltErr, salt) => {
+    if (saltErr) {
+      return next(saltErr);
+    }
+    this.salt = salt;
+    this.encryptPassword(this.password, (encryptErr, hashedPassword) => {
+      if (encryptErr) {
+        return next(encryptErr);
       }
-      this.salt = salt;
-      this.encryptPassword(this.password, (encryptErr, hashedPassword) => {
-        if (encryptErr) {
-          return next(encryptErr);
-        }
-        this.password = hashedPassword;
-        return next();
-      });
+      this.password = hashedPassword;
+      return next();
     });
   });
+});
+
+UserSchema
+.post('save', function(next) {
+  console.log('Saved user:', this);
+});
 
 /**
  * Autopopulate hook
  */
-var autoPopulateCohort = function(next) {
+var autoPopulate = function(next) {
   this.populate('cohort');
+  this.populate('squad');
   next();
 };
 
 UserSchema.
-pre('findOne', autoPopulateCohort).
-pre('find', autoPopulateCohort);
+pre('findOne', autoPopulate).
+pre('find'   , autoPopulate);
 
 /**
  * Methods

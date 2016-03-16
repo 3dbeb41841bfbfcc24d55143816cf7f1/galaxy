@@ -8,6 +8,7 @@ class AdminController {
     this.users = User.query();
     this.roles = appConfig.userRoles;
     this.cohorts = [];
+    this.squads = [];
     this.$http = $http;
     this.$filter = $filter;
   }
@@ -27,11 +28,35 @@ class AdminController {
     }
   }
 
+  // TODO: handle newly created squads
+  loadSquads(user) {
+    if (this.squads.length) {
+      this.setSquadInVM(user, user.squad);
+      return null;
+    }
+    else {
+      return this.$http.get('/api/squads')
+      .then((response) => {
+        this.squads = response.data;
+        this.setSquadInVM(user, user.squad);
+      });
+    }
+  }
+
   setCohortInVM(user, cohort) {
-    var selected = this.$filter('filter')(this.cohorts,
-                                          {_id: cohort._id}
-                                         );
+    if (!cohort) {
+      return;
+    }
+    var selected = this.$filter('filter')(this.cohorts, {_id: cohort._id} );
     user.cohort = selected.length ? selected[0] : null;
+  }
+
+  setSquadInVM(user, squad) {
+    if (!squad) {
+      return;
+    }
+    var selected = this.$filter('filter')(this.squads, {_id: squad._id} );
+    user.squad = selected.length ? selected[0] : null;
   }
 
   updateRole(user, role) {
@@ -39,11 +64,26 @@ class AdminController {
   }
 
   updateCohort(user, cohort) {
+    if (!cohort) {
+      return;
+    }
     return this.$http.put('/api/users/' + user._id + '/cohort',
                           { cohort: cohort._id }
                          )
     .then((response) => {
       this.setCohortInVM(user, cohort);
+    });
+  }
+
+  updateSquad(user, squad) {
+    if (!squad) {
+      return;
+    }
+    return this.$http.put('/api/users/' + user._id + '/squad',
+                          { squad: squad._id }
+                         )
+    .then((response) => {
+      this.setSquadInVM(user, squad);
     });
   }
 

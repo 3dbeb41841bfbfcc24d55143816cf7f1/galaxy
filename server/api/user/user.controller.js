@@ -26,10 +26,11 @@ function handleError(res, statusCode) {
 export function index(req, res) {
   return User.find({}, '-salt -password')
     .then(users => {
+      console.log('users:', users);
       res.status(200).json(users);
       return users;
-    })
-    .catch(handleError(res));
+    });
+    // .catch(handleError(res));
 }
 
 /**
@@ -132,8 +133,27 @@ export function changeCohort(req, res, next) {
     return user.save()
       .then(() => {
         res.status(204).end();
-      });
-      // .catch(validationError(res));
+      })
+      .catch(validationError(res));
+  });
+}
+
+/**
+ * Change a users squad
+ */
+export function changeSquad(req, res, next) {
+  var userId = req.params.id;
+  var newSquadId = String(req.body.squad);
+
+  return User.findById(userId)
+  .then(user => {
+    console.log('setting squad for user', user.name, 'to', newSquadId);
+    user.squad = newSquadId;
+    return user.save()
+      .then(() => {
+        res.status(204).end();
+      })
+      .catch(validationError(res));
   });
 }
 

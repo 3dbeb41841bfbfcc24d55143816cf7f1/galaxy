@@ -9,9 +9,10 @@ import path from 'path';
 
 export default function(app) {
   // Insert routes below
-  app.use('/api/cohorts', require('./api/cohort'));
-  app.use('/api/things', require('./api/thing'));
-  app.use('/api/users', require('./api/user'));
+  app.use('/api/squads',   require('./api/squad'));
+  app.use('/api/cohorts',  require('./api/cohort'));
+  app.use('/api/things',   require('./api/thing'));
+  app.use('/api/users',    require('./api/user'));
   app.use('/api/settings', require('./api/settings'));
 
   app.use('/auth', require('./auth'));

@@ -38,7 +38,8 @@
           dd
             a(href='#',
             editable-select='user.squad',
-            e-ng-options='s.name as s._id for s in admin.squads',
+            onshow='admin.loadSquads(user)',
+            e-ng-options='s as s.name for s in admin.squads',
             onbeforesave="admin.updateSquad(user, $data)")
               | {{ user.squad.name || 'Not Set' }}
 
