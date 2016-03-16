@@ -27,11 +27,9 @@
           dd
             a(href='#',
             editable-select='user.cohort',
-            onshow='admin.loadCohorts()',
+            onshow='admin.loadCohorts(user)',
             e-ng-options='c as c.name for c in admin.cohorts',
             ng-model='user.cohort',
-            ng-change='admin.setCohort(user, c)',
-            ng-init='admin.setCohort(user, c)',
             onbeforesave="admin.updateCohort(user, $data)")
               | {{ user.cohort.name || 'Not Set' }}
 
