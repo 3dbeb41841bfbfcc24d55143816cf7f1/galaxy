@@ -11,12 +11,38 @@
         dd(ng-show='user.email') {{user.email}}
         dt(ng-show='user.github') GitHub:
         dd(ng-show='user.github') {{user.github.login}}
+
         dt Role:
-        dd
+        dd(ng-hide='user.name === "Admin"')
           a(href='#',
           editable-radiolist='user.role',
           e-ng-options='r as r for r in admin.roles',
           onbeforesave="admin.updateRole(user, $data)")
             | {{ user.role }}
+        dd(ng-show='user.name === "Admin"')
+          | {{ user.role }}
+
+        div(ng-show='user.role === "student"')
+          dt Cohort:
+          dd
+            a(href='#',
+            editable-select='user.cohort',
+            onshow='admin.loadCohorts()',
+            e-ng-options='c as c.name for c in admin.cohorts',
+            ng-model='user.cohort',
+            ng-change='admin.setCohort(user, c)',
+            ng-init='admin.setCohort(user, c)',
+            onbeforesave="admin.updateCohort(user, $data)")
+              | {{ user.cohort.name || 'Not Set' }}
+
+        div(ng-show='user.role === "student"')
+          dt Squad:
+          dd
+            a(href='#',
+            editable-select='user.squad',
+            e-ng-options='s.name as s._id for s in admin.squads',
+            onbeforesave="admin.updateSquad(user, $data)")
+              | {{ user.squad.name || 'Not Set' }}
+
       a.trash(ng-click='admin.delete(user)')
         span.glyphicon.glyphicon-trash.pull-right(style='margin-top:-15px;')

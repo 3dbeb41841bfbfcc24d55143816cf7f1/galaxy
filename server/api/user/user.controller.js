@@ -119,6 +119,25 @@ export function changeRole(req, res, next) {
 }
 
 /**
+ * Change a users cohort
+ */
+export function changeCohort(req, res, next) {
+  var userId = req.params.id;
+  var newCohortId = String(req.body.cohort);
+
+  return User.findById(userId)
+  .then(user => {
+    console.log('setting cohort for user', user.name, 'to', newCohortId);
+    user.cohort = newCohortId;
+    return user.save()
+      .then(() => {
+        res.status(204).end();
+      });
+      // .catch(validationError(res));
+  });
+}
+
+/**
  * Get my info
  */
 export function me(req, res, next) {

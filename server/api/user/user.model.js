@@ -4,19 +4,15 @@ import crypto from 'crypto';
 import mongoose from 'mongoose';
 mongoose.Promise = require('bluebird');
 import {Schema} from 'mongoose';
+import {Cohort} from '../cohort/cohort.model';
 
 const authTypes = ['github', 'twitter', 'facebook', 'google'];
 
 var UserSchema = new Schema({
   name: String,
-  email: {
-    type: String,
-    lowercase: true
-  },
-  role: {
-    type: String,
-    default: 'student'
-  },
+  email:  { type: String, lowercase: true },
+  role:   { type: String, default: 'student' },
+  cohort: { type: mongoose.Schema.Types.ObjectId, ref: 'Cohort' },
   password: String,
   provider: String,
   salt: String,
@@ -127,6 +123,18 @@ UserSchema
       });
     });
   });
+
+/**
+ * Autopopulate hook
+ */
+var autoPopulateCohort = function(next) {
+  this.populate('cohort');
+  next();
+};
+
+UserSchema.
+pre('findOne', autoPopulateCohort).
+pre('find', autoPopulateCohort);
 
 /**
  * Methods
