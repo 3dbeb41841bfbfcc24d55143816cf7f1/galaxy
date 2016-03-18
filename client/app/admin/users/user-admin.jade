@@ -1,0 +1,51 @@
+.container-fluid
+  h3 Users
+  ul.list-group
+    li.list-group-item(ng-repeat='user in $ctrl.users')
+      strong {{user.name}}
+      br
+      //- span.text-muted(ng-show='user.email') EMail: {{user.email}}
+      //- span.text-muted(ng-show='user.github') GitHub:{{user.github.login}}
+      dl.dl-horizontal
+        dt(ng-show='user.email') Local:
+        dd(ng-show='user.email') {{user.email}}
+        dt(ng-show='user.github') GitHub:
+        dd(ng-show='user.github') {{user.github.login}}
+
+        dt Role:
+        dd(ng-hide='user.name === "Admin"')
+          a(href='#',
+          editable-radiolist='user.role',
+          e-ng-options='r as r for r in $ctrl.roles',
+          onbeforesave="$ctrl.updateRole(user, $data)")
+            | {{ user.role }}
+        dd(ng-show='user.name === "Admin"')
+          | {{ user.role }}
+
+        div(ng-show='user.role === "student"')
+          dt Cohort:
+          dd
+            a(href='#',
+            editable-select='user.cohort',
+            onshow='$ctrl.loadCohorts(user)',
+            e-ng-options='c as c.name for c in $ctrl.cohorts',
+            ng-model='user.cohort',
+            onbeforesave="$ctrl.updateCohort(user, $data)")
+              | {{ user.cohort.name || 'Not Set' }}
+
+        div(ng-show='user.role === "student"')
+          dt Squad:
+          dd
+            a(href='#',
+            editable-select='user.squad',
+            onshow='$ctrl.loadSquads(user)',
+            e-ng-options='s as s.name for s in $ctrl.squads',
+            onbeforesave="$ctrl.updateSquad(user, $data)")
+              | {{ user.squad.name || 'Not Set' }}
+
+        div(ng-show='user.role === "student"')
+          dt Attendance:
+          dd {{ $ctrl.getAttendancePercentage(user) | number }}%
+
+      a.trash(ng-click='$ctrl.delete(user)')
+        span.glyphicon.glyphicon-trash.pull-right(style='margin-top:-15px;')

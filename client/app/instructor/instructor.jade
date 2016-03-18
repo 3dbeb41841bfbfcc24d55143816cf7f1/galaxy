@@ -5,12 +5,12 @@ header#banner.hero2
         .row
           .col-sm-3.text-center
             .btn-group-vertical.panel-buttons(role='group')
-              a.btn.btn-lg.btn-info(ui-sref="instructor.dashboard") Dashboard
-              a.btn.btn-lg.btn-info(ui-sref="instructor.profiles") Student Profiles
+              a.btn.btn-lg.btn-info(ui-sref="instructor.dashboard" disabled) Dashboard
+              a.btn.btn-lg.btn-info(ui-sref="instructor.profiles" disabled) Student Profiles
               a.btn.btn-lg.btn-info(ui-sref="instructor.attendance") Attendance
-              a.btn.btn-lg.btn-info(ui-sref="instructor.homework") Homework
-              a.btn.btn-lg.btn-info(ui-sref="instructor.quizzes") Quizzes
-              a.btn.btn-lg.btn-info(ui-sref="instructor.projects") Projects
-              a.btn.btn-lg.btn-info(ui-sref="instructor.one-on-ones") One-on-Ones
+              a.btn.btn-lg.btn-info(ui-sref="instructor.homework" disabled) Homework
+              a.btn.btn-lg.btn-info(ui-sref="instructor.quizzes" disabled) Quizzes
+              a.btn.btn-lg.btn-info(ui-sref="instructor.projects" disabled) Projects
+              a.btn.btn-lg.btn-info(ui-sref="instructor.one-on-ones" disabled) One-on-Ones
           .col-sm-9
             .instructor-inner(ui-view='')

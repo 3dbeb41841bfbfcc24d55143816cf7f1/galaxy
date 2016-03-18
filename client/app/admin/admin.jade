@@ -1,51 +1,13 @@
-.container-fluid
-  h3 Users
-  ul.list-group
-    li.list-group-item(ng-repeat='user in admin.users')
-      strong {{user.name}}
-      br
-      //- span.text-muted(ng-show='user.email') EMail: {{user.email}}
-      //- span.text-muted(ng-show='user.github') GitHub:{{user.github.login}}
-      dl.dl-horizontal
-        dt(ng-show='user.email') Local:
-        dd(ng-show='user.email') {{user.email}}
-        dt(ng-show='user.github') GitHub:
-        dd(ng-show='user.github') {{user.github.login}}
-
-        dt Role:
-        dd(ng-hide='user.name === "Admin"')
-          a(href='#',
-          editable-radiolist='user.role',
-          e-ng-options='r as r for r in admin.roles',
-          onbeforesave="admin.updateRole(user, $data)")
-            | {{ user.role }}
-        dd(ng-show='user.name === "Admin"')
-          | {{ user.role }}
-
-        div(ng-show='user.role === "student"')
-          dt Cohort:
-          dd
-            a(href='#',
-            editable-select='user.cohort',
-            onshow='admin.loadCohorts(user)',
-            e-ng-options='c as c.name for c in admin.cohorts',
-            ng-model='user.cohort',
-            onbeforesave="admin.updateCohort(user, $data)")
-              | {{ user.cohort.name || 'Not Set' }}
-
-        div(ng-show='user.role === "student"')
-          dt Squad:
-          dd
-            a(href='#',
-            editable-select='user.squad',
-            onshow='admin.loadSquads(user)',
-            e-ng-options='s as s.name for s in admin.squads',
-            onbeforesave="admin.updateSquad(user, $data)")
-              | {{ user.squad.name || 'Not Set' }}
-
-        div(ng-show='user.role === "student"')
-          dt Attendance:
-          dd {{ user.attendance }}
-
-      a.trash(ng-click='admin.delete(user)')
-        span.glyphicon.glyphicon-trash.pull-right(style='margin-top:-15px;')
+header#banner.hero2
+  .container-fluid
+    .row
+      .col-sm-12.text-center
+        .row
+          .col-sm-3.text-center
+            .btn-group-vertical.panel-buttons(role='group')
+              a.btn.btn-lg.btn-info(ui-sref="admin.dashboard" disabled) Dashboard
+              a.btn.btn-lg.btn-info(ui-sref="admin.users") Users
+              a.btn.btn-lg.btn-info(ui-sref="admin.cohorts" disabled) Cohorts
+              a.btn.btn-lg.btn-info(ui-sref="admin.squads" disabled) Squads
+          .col-sm-9
+            .instructor-inner(ui-view='')
