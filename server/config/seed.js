@@ -7,6 +7,7 @@
 import User from '../api/user/user.model';
 import Cohort from '../api/cohort/cohort.model';
 import Squad from '../api/squad/squad.model';
+import Attendance from '../api/attendance/attendance.model';
 import config from './environment';
 import Promise from 'bluebird';
 import mongoose from 'mongoose';
@@ -48,6 +49,10 @@ function createTestSquads() {
         name: 'Test Squad #2',
         info: 'Just a test squad from the seed file.',
         cohort: testCohort1._id
+      }, {
+        name: 'Test Squad #3',
+        info: 'Just a test squad from the seed file.',
+        cohort: testCohort1._id
       });
     });
   })
@@ -61,23 +66,41 @@ function createTestSquads() {
 }
 
 function createTestUsers() {
-  Promise.delay(200).then(() => {
+  Promise.delay(100).then(() => {
     return [
       Cohort.findOne({name: 'Test Cohort #1'}),
-      Squad.findOne({name: 'Test Squad #1'})
+      Squad.findOne({name: 'Test Squad #1'}),
+      Squad.findOne({name: 'Test Squad #2'}),
+      Squad.findOne({name: 'Test Squad #3'})
     ];
   })
-  .spread((testCohort1, testSquad1) => {
-    console.log('testSquad1:', testSquad1);
+  .spread((testCohort1, testSquad1, testSquad2, testSquad3) => {
     return User.find({}).remove()
     .then(() => {
       return User.create({
         provider: 'local',
-        name: 'Joe Hacker',
-        email: 'joe@hacker.com',
+        name: 'Student1',
+        email: 'student1@ga.com',
         password: 'test',
         cohort: testCohort1._id,
-        squad: testSquad1._id
+        squad: testSquad1._id,
+        attendance: []
+      }, {
+        provider: 'local',
+        name: 'Student2',
+        email: 'student2@ga.com',
+        password: 'test',
+        cohort: testCohort1._id,
+        squad: testSquad2._id,
+        attendance: []
+      }, {
+        provider: 'local',
+        name: 'Student3',
+        email: 'student3@ga.com',
+        password: 'test',
+        cohort: testCohort1._id,
+        squad: testSquad3._id,
+        attendance: []
       }, {
         provider: 'local',
         name: 'Admin',
@@ -90,8 +113,23 @@ function createTestUsers() {
   .then(() => {
     return User.find({})
     .then((users) => {
-      console.log('finished populating %d users', users.length);
-      return null;
+      let promises = [];
+      users.forEach((user) => {
+        // console.log('user:', user);
+        if (user.role === 'student') {
+          user.attendance.push({ date: new Date(2016, 2, 21), value: 'present'   });
+          user.attendance.push({ date: new Date(2016, 2, 22), value: 'late'      });
+          user.attendance.push({ date: new Date(2016, 2, 23), value: 'excused'   });
+          user.attendance.push({ date: new Date(2016, 2, 24), value: 'unexcused' });
+          user.attendance.push({ date: new Date(2016, 2, 25), value: undefined   });
+          promises.push(user.save());
+        }
+      });
+      Promise.all(promises)
+      .then((users) => {
+        console.log('finished populating %d users', users.length);
+        return null;
+      });
     });
   });
 }

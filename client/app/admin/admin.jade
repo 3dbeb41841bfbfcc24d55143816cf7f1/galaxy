@@ -43,5 +43,9 @@
             onbeforesave="admin.updateSquad(user, $data)")
               | {{ user.squad.name || 'Not Set' }}
 
+        div(ng-show='user.role === "student"')
+          dt Attendance:
+          dd {{ user.attendance }}
+
       a.trash(ng-click='admin.delete(user)')
         span.glyphicon.glyphicon-trash.pull-right(style='margin-top:-15px;')

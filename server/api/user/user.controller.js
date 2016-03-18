@@ -4,6 +4,7 @@ import User from './user.model';
 import passport from 'passport';
 import config from '../../config/environment';
 import jwt from 'jsonwebtoken';
+import _ from 'lodash';
 
 function validationError(res, statusCode) {
   statusCode = statusCode || 422;
@@ -24,13 +25,14 @@ function handleError(res, statusCode) {
  * restriction: 'admin'
  */
 export function index(req, res) {
-  return User.find({}, '-salt -password')
+  console.log('req.query:', req.query);
+  let filter = req.query.role ? {role: req.query.role} : {};
+  return User.find(filter, '-salt -password').sort('name')
     .then(users => {
-      console.log('users:', users);
       res.status(200).json(users);
       return users;
-    });
-    // .catch(handleError(res));
+    })
+    .catch(handleError(res));
 }
 
 /**
@@ -149,6 +151,41 @@ export function changeSquad(req, res, next) {
   .then(user => {
     console.log('setting squad for user', user.name, 'to', newSquadId);
     user.squad = newSquadId;
+    return user.save()
+      .then(() => {
+        res.status(204).end();
+      })
+      .catch(validationError(res));
+  });
+}
+
+/**
+ * Change a users attendance
+ */
+export function changeAttendance(req, res, next) {
+  var userId = req.params.id;
+  var newAttendance = {
+    date: new Date(req.body.attendance.date),
+    value: req.body.attendance.value
+  };
+
+  return User.findById(userId)
+  .then(user => {
+    console.log('setting attendance for user', user.name, 'to', JSON.stringify(newAttendance));
+
+    // TODO: add or change attendance value
+    let oldAttendance = _.find(user.attendance, (a) => {
+      console.log('comparing %s === %s', a.date, newAttendance.date);
+      return a.date.getTime() === newAttendance.date.getTime();
+    });
+    if (oldAttendance) {
+      console.log('updating oldAttendance:', JSON.stringify(oldAttendance));
+      oldAttendance.value = newAttendance.value;
+    }
+    else {
+      console.log('adding attendance:', JSON.stringify(newAttendance));
+      user.attendance.push(newAttendance);
+    }
     return user.save()
       .then(() => {
         res.status(204).end();

@@ -70,7 +70,7 @@ class AdminController {
     return this.$http.put('/api/users/' + user._id + '/cohort',
                           { cohort: cohort._id }
                          )
-    .then((response) => {
+    .then(() => {
       this.setCohortInVM(user, cohort);
     });
   }
@@ -82,7 +82,7 @@ class AdminController {
     return this.$http.put('/api/users/' + user._id + '/squad',
                           { squad: squad._id }
                          )
-    .then((response) => {
+    .then(() => {
       this.setSquadInVM(user, squad);
     });
   }

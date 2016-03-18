@@ -26,6 +26,19 @@ code {
   padding: 0.2em 0;
 }
 
+.attendance {
+  table {
+    margin:40px auto 0px auto;
+  }
+  .attendance-table-wrapper {
+    overflow-x: scroll;
+  }
+  .editable-radiolist label {
+    display: block;
+    text-align: left;
+  }
+}
+
 @import "../bower_components/bootswatch-scss/darkly/variables";
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
 

@@ -1,2 +1,18 @@
-h2 Instructor Attendance for
-  span(class='text-success') {{ ' ' + $ctrl.getCurrentUser().name }}
+.attendance
+  h2 Instructor Attendance for
+    span(class='text-success') {{ ' ' + $ctrl.getCurrentUser().name }}
+
+  .attendance-table-wrapper
+    table.table.table-bordered.table-hover.table-condensed
+      tr(style='font-weight: bold')
+        td Date
+        td(ng-repeat='student in $ctrl.students') {{ student.name }}
+      tr(ng-repeat='date in $ctrl.dates' ng-init='dateIndex = $index')
+        td {{ date | date : 'fullDate' }}
+        td(ng-repeat='student in $ctrl.students' ng-init='studentIndex = $index')
+          a(href='#'
+          editable-radiolist='$ctrl.bigArray[dateIndex][studentIndex]'
+          onbeforesave='$ctrl.onBeforeSaveAttendance(date, student, dateIndex, studentIndex, $data)'
+          onaftersave ='$ctrl.onAfterSaveAttendance (date, student, dateIndex, studentIndex, $data)'
+          e-ng-options='av as av for av in $ctrl.attendanceValues')
+            | {{ $ctrl.showAttendance(dateIndex, studentIndex) }}

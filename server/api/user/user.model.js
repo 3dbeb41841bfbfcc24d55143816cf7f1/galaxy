@@ -4,6 +4,7 @@ import crypto from 'crypto';
 import mongoose from 'mongoose';
 mongoose.Promise = require('bluebird');
 import {Schema} from 'mongoose';
+import Attendance from '../attendance/attendance.model';
 
 const authTypes = ['github', 'twitter', 'facebook', 'google'];
 
@@ -13,6 +14,7 @@ var UserSchema = new Schema({
   role:   { type: String, default: 'student' },
   cohort: { type: mongoose.Schema.Types.ObjectId, ref: 'Cohort' },
   squad:  { type: mongoose.Schema.Types.ObjectId, ref: 'Squad' },
+  attendance: [ Attendance.schema ],
   password: String,
   provider: String,
   salt: String,
@@ -126,7 +128,7 @@ UserSchema
 
 UserSchema
 .post('save', function(next) {
-  console.log('Saved user:', this);
+  // console.log('Saved user:', this);
 });
 
 /**
