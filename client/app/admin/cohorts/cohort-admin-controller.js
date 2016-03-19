@@ -53,7 +53,7 @@
 
     removeCohort(index, cohort) {
       console.log('removeCohort: index=%s, cohort=%s', index, JSON.stringify(cohort));
-      if (confirm("Are you sure?")) {
+      if (confirm('Are you sure?')) {
         this.$http.delete('/api/cohorts/' + cohort._id)
         .then((response) => {
           this.cohorts.splice(this.cohorts.indexOf(cohort), 1);

@@ -20,8 +20,6 @@ function onConnect(socket) {
   require('../api/attendance/attendance.socket').register(socket);
   require('../api/squad/squad.socket').register(socket);
   require('../api/cohort/cohort.socket').register(socket);
-  require('../api/thing/thing.socket').register(socket);
-
 }
 
 export default function(socketio) {

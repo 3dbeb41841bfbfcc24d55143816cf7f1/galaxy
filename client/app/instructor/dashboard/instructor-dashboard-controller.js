@@ -8,7 +8,6 @@
 
       this.$http = $http;
       this.socket = socket;
-      this.awesomeThings = [];
 
       this.isLoggedIn = Auth.isLoggedIn;
       this.isAdmin = Auth.isAdmin;
@@ -44,10 +43,6 @@
         var selected = $filter('filter')(this.cohorts, {_id: this.selectedCohort._id});
         return (this.selectedCohort && selected.length) ? selected[0].name : 'Not set';
       };
-
-      $scope.$on('$destroy', function() {
-        socket.unsyncUpdates('thing');
-      });
     }
   }
 

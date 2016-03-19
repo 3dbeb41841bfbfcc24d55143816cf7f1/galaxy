@@ -16,6 +16,17 @@ div.navbar.navbar-default.navbar-static-top
         li(ng-show='nav.isAdmin()', ui-sref-active='active')
           a(ui-sref='admin') Admin
 
+        li(uib-dropdown='', ng-show='nav.isAdmin()')
+          a(href='#', uib-dropdown-toggle='')
+            span.text-muted
+              | Selected Cohort:
+            span(style='margin-left: 10px')
+              | {{ nav.currentCohort.name }}
+            b.caret
+          ul(uib-dropdown-menu='', role='menu', aria-labelledby='split-button')
+            li(role='menuitem' ng-repeat='cohort in nav.cohorts')
+              a(href='#' ng-click='nav.setCurrentCohort(cohort)') {{ cohort.name }}
+
       ul.nav.navbar-nav.navbar-right
         li(ng-hide='nav.isLoggedIn() || nav.settings.mode !== "development"'
         ui-sref-active='active')

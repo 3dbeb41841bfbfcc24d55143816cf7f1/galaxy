@@ -15,10 +15,23 @@ class NavbarController {
     this.isAdmin = Auth.isAdmin;
     this.getCurrentUser = Auth.getCurrentUser;
     this.Settings = Settings;
+
+    // TODO:
+    this.cohorts = [
+      { name: 'red' },
+      { name: 'green' },
+      { name: 'blue' }
+    ];
+    this.currentCohort = this.cohorts[0];
+
     Settings.get()
     .then(response => {
       this.settings = response.data;
     });
+  }
+
+  setCurrentCohort(cohort) {
+    this.currentCohort = cohort;
   }
 }
 

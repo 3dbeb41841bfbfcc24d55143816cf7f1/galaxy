@@ -12,7 +12,6 @@ export default function(app) {
   app.use('/api/attendances', require('./api/attendance'));
   app.use('/api/squads',   require('./api/squad'));
   app.use('/api/cohorts',  require('./api/cohort'));
-  app.use('/api/things',   require('./api/thing'));
   app.use('/api/users',    require('./api/user'));
   app.use('/api/settings', require('./api/settings'));
 
