@@ -83,6 +83,7 @@ export function create(req, res) {
 
 // Updates an existing Cohort in the DB
 export function update(req, res) {
+  console.log('cohort update: req.body=%s', req.body);
   if (req.body._id) {
     delete req.body._id;
   }

@@ -6,9 +6,9 @@ header#banner.hero2
           .col-sm-3.text-center
             .btn-group-vertical.panel-buttons(role='group')
               a.btn.btn-lg.btn-info(ui-sref="student.dashboard") Dashboard
-              a.btn.btn-lg.btn-info(ui-sref="student.attendance") Attendance
-              a.btn.btn-lg.btn-info(ui-sref="student.homework") Homework
-              a.btn.btn-lg.btn-info(ui-sref="student.quizzes") Quizzes
-              a.btn.btn-lg.btn-info(ui-sref="student.projects") Projects
+              a.btn.btn-lg.btn-info(ui-sref="student.attendance" disabled) Attendance
+              a.btn.btn-lg.btn-info(ui-sref="student.homework" disabled) Homework
+              a.btn.btn-lg.btn-info(ui-sref="student.quizzes" disabled) Quizzes
+              a.btn.btn-lg.btn-info(ui-sref="student.projects" disabled) Projects
           .col-sm-9
             .student-inner(ui-view='')

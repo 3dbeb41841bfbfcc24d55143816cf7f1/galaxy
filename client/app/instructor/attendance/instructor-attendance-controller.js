@@ -3,9 +3,9 @@
 (function() {
 
   function compareDates(date1, date2) {
-    if (date1.getFullYear() != date2.getFullYear()) return false;
-    if (date1.getMonth()    != date2.getMonth())    return false;
-    if (date1.getDate()     != date2.getDate())     return false;
+    if (date1.getFullYear() !== date2.getFullYear()) return false;
+    if (date1.getMonth()    !== date2.getMonth())    return false;
+    if (date1.getDate()     !== date2.getDate())     return false;
     return true;
   }
 
@@ -37,26 +37,8 @@
       this.$filter = $filter;
       this.$http = $http;
 
+      // TODO: use the current Cohort startDate
       this.dates = makeDates(new Date(2016, 2, 21));
-
-/*
-      this.students = [];
-      const NUM_STUDENTS = 24;
-      for (var i = 1; i <= NUM_STUDENTS; i++) {
-        this.students.push({
-          _id: i,
-          name: 'student' + i,
-          attendance: [
-            { date: new Date(2016, 2, 21), value: 'present'   },
-            { date: new Date(2016, 2, 22), value: 'late'      },
-            { date: new Date(2016, 2, 23), value: 'excused'   },
-            { date: new Date(2016, 2, 24), value: 'unexcused' },
-            { date: new Date(2016, 2, 25), value: undefined   }
-          ],
-          attendanceValue: 'late'
-        });
-      }
-*/
 
       this.attendanceValues = [
         'present',
@@ -69,6 +51,7 @@
       .then((response) => {
         this.students = response.data;
         console.log('this.students:', this.students);
+
         // bigArray is a 2-D array of dates and student attendance objects
         // I had to build this bigArray to make angular xeditable controls work
         // within nested ng-repeats.

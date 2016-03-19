@@ -16,8 +16,7 @@ angular.module('galaxyApp')
             // do nothing
           }
           else if (user.role === 'student') {
-            // TODO: change to dashboard when it is ready.
-            $state.go('student.attendance');
+            $state.go('student.dashboard');
           }
           else {
             // TODO: change to dashboard when it is ready.
