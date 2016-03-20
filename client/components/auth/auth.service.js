@@ -92,7 +92,7 @@ function AuthService($location, $http, $cookies, $q, appConfig, Util, User) {
      * Gets all available info on a user
      *   (synchronous|asynchronous)
      *
-     * @param  {Function|*} callback - optional, funciton(user)
+     * @param  {Function|*} callback - optional, function(user)
      * @return {Object|Promise}
      */
     getCurrentUser(callback) {
@@ -100,8 +100,7 @@ function AuthService($location, $http, $cookies, $q, appConfig, Util, User) {
         return currentUser;
       }
 
-      var value = (currentUser.hasOwnProperty('$promise')) ?
-        currentUser.$promise : currentUser;
+      var value = currentUser.hasOwnProperty('$promise') ? currentUser.$promise : currentUser;
       return $q.when(value)
         .then(user => {
           safeCb(callback)(user);

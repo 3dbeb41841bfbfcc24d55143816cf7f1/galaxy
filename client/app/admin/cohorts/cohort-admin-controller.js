@@ -3,21 +3,19 @@
 (function() {
 
   class CohortAdminController {
-    constructor($http) {
+    constructor($http, Cohort) {
       this.$http = $http;
+      this.Cohort = Cohort;
       this.cohorts = [];
       this.loadCohorts();
     }
 
     // TODO: handle newly created cohorts
     loadCohorts() {
-      return this.$http.get('/api/cohorts')
-      .then((response) => {
-        this.cohorts = response.data;
-        // convert string dates to Date objects.
-        this.cohorts.forEach((cohort) => {
-          cohort.startDate = new Date(cohort.startDate);
-        });
+      this.Cohort.get()
+      .then(() => {
+        this.cohorts = this.Cohort.cohorts;
+        console.log('this.cohorts:', this.cohorts);
       });
     }
 

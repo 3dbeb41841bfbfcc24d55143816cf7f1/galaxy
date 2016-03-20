@@ -108,7 +108,8 @@ function createTestUsers() {
         name: 'Admin',
         role: 'admin',
         email: 'admin@example.com',
-        password: 'admin'
+        password: 'admin',
+        cohort: testCohort1._id,
       });
     });
   })

@@ -21,7 +21,7 @@ div.navbar.navbar-default.navbar-static-top
             span.text-muted
               | Selected Cohort:
             span(style='margin-left: 10px')
-              | {{ nav.currentCohort.name }}
+              | {{ nav.getCurrentCohort().name }}
             b.caret
           ul(uib-dropdown-menu='', role='menu', aria-labelledby='split-button')
             li(role='menuitem' ng-repeat='cohort in nav.cohorts')

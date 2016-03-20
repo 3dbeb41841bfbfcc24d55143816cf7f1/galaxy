@@ -27,8 +27,9 @@
             dd(ng-show='user.name === "Admin"')
               | {{ user.role }}
 
-            div(ng-show='user.role === "student"')
-              dt Cohort:
+            div
+              dt(ng-show='user.role !== "student"') Default Cohort:
+              dt(ng-show='user.role === "student"') Cohort:
               dd
                 a(href='#',
                 editable-select='user.cohort',
