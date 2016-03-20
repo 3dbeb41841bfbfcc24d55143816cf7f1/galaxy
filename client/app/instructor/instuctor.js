@@ -17,6 +17,14 @@ angular.module('galaxyApp')
       }
     })
     .state({
+      name: 'instructor.student-profiles',
+      url: '/student-profiles',
+      template: '<student-profiles></student-profiles>',
+      onEnter: () => {
+        console.log('onEnter: instructor.student-profiles');
+      }
+    })
+    .state({
       name: 'instructor.attendance',
       url: '/attendance',
       template: '<instructor-attendance></instructor-attendance>',

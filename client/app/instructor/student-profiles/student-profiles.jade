@@ -1,0 +1,30 @@
+.container-fluid
+  h2 Student Profiles
+  ul.list-group
+    li.list-group-item(ng-repeat='user in $ctrl.users')
+      .row
+        .col-sm-3
+          img(ng-show='user.github' src='{{ user.github.avatar_url }}' alt='Avatar' height='160' width='160')
+        .col-sm-9
+          strong {{user.name}}
+          br
+          dl.dl-horizontal
+            dt(ng-show='user.email') Local:
+            dd(ng-show='user.email') {{user.email}}
+            dt(ng-show='user.github') GitHub:
+            dd(ng-show='user.github') {{user.github.login}}
+
+            dt Role:
+            dd {{ user.role }}
+
+            div
+              dt(ng-show='user.role === "student"') Cohort:
+              dd {{ user.cohort.name || 'Not Set' }}
+
+            div(ng-show='user.role === "student"')
+              dt Squad:
+              dd {{ user.squad.name || 'Not Set' }}
+
+            div(ng-show='user.role === "student"')
+              dt Attendance:
+              dd {{ $ctrl.getAttendancePercentage(user) | number }}%
