@@ -137,7 +137,7 @@ function createAdminUser() {
         provider: 'local',
         name: 'Admin',
         role: 'admin',
-        email: 'admin@example.com',
+        email: 'admin@ga.co',
         password: 'admin'
       })
     }
@@ -151,7 +151,7 @@ function createAdminUser() {
   });
 }
 
-if (config.env === 'development') {
+function createTestData() {
   createTestCohorts()
   .then(() => {
     return createTestSquads();
@@ -160,6 +160,11 @@ if (config.env === 'development') {
     return createTestUsers();
   });
 }
+
+if (config.env === 'development') {
+  createTestData();
+}
 else {
-  createAdminUser();
+  // createAdminUser();
+  createTestData();
 }
