@@ -12,7 +12,7 @@
 
     // TODO: handle newly created cohorts
     loadCohorts() {
-      this.Cohort.get()
+      this.Cohort.getCohorts()
       .then(() => {
         this.cohorts = this.Cohort.cohorts;
         console.log('this.cohorts:', this.cohorts);

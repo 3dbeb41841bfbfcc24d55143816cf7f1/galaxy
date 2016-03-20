@@ -27,6 +27,10 @@ function handleError(res, statusCode) {
 export function index(req, res) {
   console.log('req.query:', req.query);
   let filter = req.query.role ? {role: req.query.role} : {};
+  if (req.query.cohort) {
+    filter.cohort = req.query.cohort;
+  }
+  console.log('user index has filter:', filter);
   return User.find(filter, '-salt -password').sort('name')
     .then(users => {
       res.status(200).json(users);

@@ -31,14 +31,12 @@
   }
 
   class InstructorAttendanceController {
-    constructor(Auth, $filter, $http) {
+    constructor(Auth, Cohort, $filter, $http, $rootScope) {
       console.log('InstructorAttendanceController is alive!');
       this.getCurrentUser = Auth.getCurrentUser;
+      this.Cohort = Cohort;
       this.$filter = $filter;
       this.$http = $http;
-
-      // TODO: use the current Cohort startDate
-      this.dates = makeDates(new Date(2016, 2, 21));
 
       this.attendanceValues = [
         'present',
@@ -47,10 +45,19 @@
         'unexcused',
       ];
 
-      this.users = $http.get('/api/users', { params: {role: 'student'} })
+      this.load();
+      $rootScope.$on('cohortChangeEvent', (event, currentCohort) => {
+        this.load();
+      });
+    }
+
+    load() {
+      // this.dates = makeDates(new Date(2016, 2, 21));
+      this.dates = makeDates(this.Cohort.getCurrentCohort().startDate);
+
+      this.users = this.$http.get('/api/users', { params: {role: 'student'} })
       .then((response) => {
         this.students = response.data;
-        console.log('this.students:', this.students);
 
         // bigArray is a 2-D array of dates and student attendance objects
         // I had to build this bigArray to make angular xeditable controls work

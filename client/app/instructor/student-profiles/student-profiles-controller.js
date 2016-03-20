@@ -3,15 +3,28 @@
 (function() {
 
   class StudentProfilesController {
-    constructor(User, appConfig, $http, $filter) {
+    constructor(Cohort, appConfig, $http, $filter, $rootScope) {
       console.log('StudentProfilesController is alive!');
-      // Use the User $resource to fetch all users
-      this.users = User.query();
+
+      this.Cohort = Cohort;
       this.roles = appConfig.userRoles;
-      this.cohorts = [];
-      this.squads = [];
       this.$http = $http;
       this.$filter = $filter;
+
+      this.loadStudents();
+      this.cohorts = [];
+      this.squads = [];
+
+      $rootScope.$on('cohortChangeEvent', (event, currentCohort) => {
+        this.loadStudents();
+      });
+    }
+
+    loadStudents() {
+      this.$http.get('/api/users', { params: {role: 'student', cohort: this.Cohort.getCurrentCohort()._id } })
+      .then(response => {
+        this.students = response.data;
+      });
     }
 
     // TODO: handle newly created cohorts
@@ -60,34 +73,6 @@
       user.squad = selected.length ? selected[0] : null;
     }
 
-    updateRole(user, role) {
-      return this.$http.put('/api/users/' + user._id + '/role', { role: role } );
-    }
-
-    updateCohort(user, cohort) {
-      if (!cohort) {
-        return;
-      }
-      return this.$http.put('/api/users/' + user._id + '/cohort',
-                            { cohort: cohort._id }
-                           )
-      .then(() => {
-        this.setCohortInVM(user, cohort);
-      });
-    }
-
-    updateSquad(user, squad) {
-      if (!squad) {
-        return;
-      }
-      return this.$http.put('/api/users/' + user._id + '/squad',
-                            { squad: squad._id }
-                           )
-      .then(() => {
-        this.setSquadInVM(user, squad);
-      });
-    }
-
     getAttendancePercentage(user) {
       var present = 0;
       var total = 0;
@@ -103,13 +88,6 @@
         return 0;
       }
       return present * 100.0 / total;
-    }
-
-    delete(user) {
-      if (confirm('Are you sure?')) {
-        user.$remove();
-        this.users.splice(this.users.indexOf(user), 1);
-      }
     }
   }
 

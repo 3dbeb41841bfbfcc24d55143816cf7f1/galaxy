@@ -77,40 +77,32 @@ function createTestUsers() {
     ];
   })
   .spread((testCohort1, testSquad1, testSquad2, testSquad3) => {
+    let testSquads = [testSquad1, testSquad2, testSquad3];
     return User.find({}).remove()
     .then(() => {
-      return User.create({
-        provider: 'local',
-        name: 'Student1',
-        email: 'student1@ga.com',
-        password: 'test',
-        cohort: testCohort1._id,
-        squad: testSquad1._id,
-        attendance: []
-      }, {
-        provider: 'local',
-        name: 'Student2',
-        email: 'student2@ga.com',
-        password: 'test',
-        cohort: testCohort1._id,
-        squad: testSquad2._id,
-        attendance: []
-      }, {
-        provider: 'local',
-        name: 'Student3',
-        email: 'student3@ga.com',
-        password: 'test',
-        cohort: testCohort1._id,
-        squad: testSquad3._id,
-        attendance: []
-      }, {
-        provider: 'local',
-        name: 'Admin',
-        role: 'admin',
-        email: 'admin@example.com',
-        password: 'admin',
-        cohort: testCohort1._id,
-      });
+      let users = [
+        {
+          provider: 'local',
+          name: 'Admin',
+          role: 'admin',
+          email: 'admin@example.com',
+          password: 'admin',
+          cohort: testCohort1._id,
+        }
+      ];
+
+      for (let i=1; i<=12; i++) {
+        users.push({
+          provider: 'local',
+          name: 'Student' + i,
+          email: 'student' + i + '@ga.co',
+          password: 'test',
+          cohort: testCohort1._id,
+          squad: testSquads[(i-1)%3]._id,
+          attendance: []
+        });
+      }
+      return User.create(users);
     });
   })
   .then(() => {
