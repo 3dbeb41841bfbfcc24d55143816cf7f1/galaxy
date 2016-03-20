@@ -85,7 +85,7 @@ function createTestUsers() {
           provider: 'local',
           name: 'Admin',
           role: 'admin',
-          email: 'admin@example.com',
+          email: 'admin@ga.co',
           password: 'admin',
           cohort: testCohort1._id,
         }
