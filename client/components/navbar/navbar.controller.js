@@ -12,7 +12,9 @@ class NavbarController {
 
   constructor(Auth, Settings, Cohort) {
     console.log('navbar ctor');
-    this.Auth = Auth;
+    this.isLoggedIn = Auth.isLoggedIn;
+    this.isAdmin = Auth.isAdmin;
+    this.getCurrentUser = Auth.getCurrentUser;
     this.Settings = Settings;
     this.Cohort = Cohort;
 
@@ -25,18 +27,6 @@ class NavbarController {
     .then(response => {
       this.settings = response.data;
     });
-  }
-
-  isLoggedIn() {
-    return this.Auth.isLoggedIn();
-  }
-
-  isAdmin() {
-    return this.Auth.isAdmin;
-  }
-
-  getCurrentUser(){
-    return this.Auth.getCurrentUser();
   }
 
   getCurrentCohort() {
