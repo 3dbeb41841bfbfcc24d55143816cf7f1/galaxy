@@ -55,7 +55,7 @@
       // this.dates = makeDates(new Date(2016, 2, 21));
       this.dates = makeDates(this.Cohort.getCurrentCohort().startDate);
 
-      this.users = this.$http.get('/api/users', { params: {role: 'student'} })
+      this.$http.get('/api/users', { params: {role: 'student', cohort: this.Cohort.getCurrentCohort()._id } })
       .then((response) => {
         this.students = response.data;
 

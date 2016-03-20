@@ -22,7 +22,7 @@ function createTestCohorts() {
     return Cohort.create({
       name: 'Test Cohort #1',
       info: 'Just a test cohort from the seed file.',
-      startDate: new Date(2015, 11, 30)
+      startDate: new Date(2016, 2, 21)
     }, {
       name: 'Test Cohort #2',
       info: 'Just a test cohort from the seed file.',
