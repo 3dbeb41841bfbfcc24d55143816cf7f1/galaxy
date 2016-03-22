@@ -91,7 +91,7 @@ function createTestUsers() {
           name: 'Admin',
           role: 'admin',
           email: 'admin@ga.co',
-          password: 'admin',
+          password: process.env.ADMIN_PASSWORD || 'admin',
           cohort: atlWDI6Squad._id
         }
       ];
@@ -143,7 +143,7 @@ function createAdminUser() {
         name: 'Admin',
         role: 'admin',
         email: 'admin@ga.co',
-        password: 'admin',
+        password: process.env.ADMIN_PASSWORD || 'admin',
         cohort: atlWDI6Squad._id
       })
     }
