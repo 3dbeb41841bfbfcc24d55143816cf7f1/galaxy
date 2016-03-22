@@ -1,6 +1,7 @@
 'use strict';
 
 import User from './user.model';
+import Cohort from '../cohort/cohort.model';
 import passport from 'passport';
 import config from '../../config/environment';
 import jwt from 'jsonwebtoken';
@@ -45,14 +46,19 @@ export function index(req, res) {
 export function create(req, res, next) {
   var newUser = new User(req.body);
   newUser.provider = 'local';
-  newUser.save()
+
+  return Cohort.findOne({ name: 'ATL WDI #6' })
+  .then((currentCohort) => {
+    newUser.cohort = currentCohort._id;
+    return newUser.save()
     .then(function(user) {
       var token = jwt.sign({ _id: user._id }, config.secrets.session, {
         expiresIn: 60 * 60 * 5
       });
       res.json({ token });
-    })
-    .catch(validationError(res));
+    });
+  })
+  .catch(validationError(res));
 }
 
 /**

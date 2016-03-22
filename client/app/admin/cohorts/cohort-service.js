@@ -29,6 +29,9 @@
     }
 
     getCurrentCohort() {
+      if (this.currentCohort === null) {
+        return null;
+      }
       if (this.currentCohort) {
         return this.currentCohort;
       }
@@ -43,6 +46,12 @@
     setCurrentCohort(cohort) {
       this.currentCohort = cohort;
       this.$rootScope.$emit('cohortChangeEvent', this.currentCohort);
+    }
+
+    getUsers(role) {
+      var theCohort = this.getCurrentCohort();
+      let cohortId = theCohort ? theCohort._id : undefined;
+      return this.$http.get('/api/users', { params: {role: role, cohort: cohortId } });
     }
   }
 

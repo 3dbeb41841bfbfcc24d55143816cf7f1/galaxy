@@ -1,5 +1,6 @@
 import passport from 'passport';
 import {Strategy as GitHubStrategy} from 'passport-github';
+import Cohort from '../../api/cohort/cohort.model';
 
 exports.setup = function(User, config) {
   passport.use(new GitHubStrategy({
@@ -13,21 +14,26 @@ exports.setup = function(User, config) {
     })
     .then(function(user) {
       if (!user) {
-        user = new User({
-          name: profile.displayName,
-          username: profile.username,
-          role: 'student',
-          provider: 'github',
-          github: profile._json
-        });
-        user.save()
+        return Cohort.findOne({ name: 'ATL WDI #6' })
+        .then(currentCohort => {
+          user = new User({
+            name: profile.displayName,
+            username: profile.username,
+            role: 'student',
+            cohort: currentCohort._id,
+            provider: 'github',
+            github: profile._json
+          });
+          user.save()
           .then(function(user) {
             return done(null, user);
           })
           .catch(function(err) {
             return done(err);
           });
-      } else {
+        });
+      }
+      else {
         return done(null, user);
       }
     })

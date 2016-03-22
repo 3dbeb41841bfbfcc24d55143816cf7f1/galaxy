@@ -1,17 +1,19 @@
 .attendance
   h2 Instructor Attendance
-
-  .attendance-table-wrapper
-    table.table.table-bordered.table-hover.table-condensed
-      tr(style='font-weight: bold')
-        td Date
-        td(ng-repeat='student in $ctrl.students') {{ student.name }}
-      tr(ng-repeat='date in $ctrl.dates' ng-init='dateIndex = $index')
-        td {{ date | date : 'fullDate' }}
-        td(ng-repeat='student in $ctrl.students' ng-init='studentIndex = $index')
-          a(href='#'
-          editable-radiolist='$ctrl.bigArray[dateIndex][studentIndex]'
-          onbeforesave='$ctrl.onBeforeSaveAttendance(date, student, dateIndex, studentIndex, $data)'
-          onaftersave ='$ctrl.onAfterSaveAttendance (date, student, dateIndex, studentIndex, $data)'
-          e-ng-options='av as av for av in $ctrl.attendanceValues')
-            | {{ $ctrl.showAttendance(dateIndex, studentIndex) }}
+  div(ng-hide='$ctrl.Cohort.getCurrentCohort()')
+    p Please select a Cohort in the NavBar above to see attendance for that Cohort.
+  div(ng-show='$ctrl.Cohort.getCurrentCohort()')
+    .attendance-table-wrapper
+      table.table.table-bordered.table-hover.table-condensed
+        tr(style='font-weight: bold')
+          td Date
+          td(ng-repeat='student in $ctrl.students') {{ student.name }}
+        tr(ng-repeat='date in $ctrl.dates' ng-init='dateIndex = $index')
+          td {{ date | date : 'fullDate' }}
+          td(ng-repeat='student in $ctrl.students' ng-init='studentIndex = $index')
+            a(href='#'
+            editable-radiolist='$ctrl.bigArray[dateIndex][studentIndex]'
+            onbeforesave='$ctrl.onBeforeSaveAttendance(date, student, dateIndex, studentIndex, $data)'
+            onaftersave ='$ctrl.onAfterSaveAttendance (date, student, dateIndex, studentIndex, $data)'
+            e-ng-options='av as av for av in $ctrl.attendanceValues')
+              | {{ $ctrl.showAttendance(dateIndex, studentIndex) }}

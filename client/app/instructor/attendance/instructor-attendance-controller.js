@@ -53,9 +53,12 @@
 
     load() {
       // this.dates = makeDates(new Date(2016, 2, 21));
-      this.dates = makeDates(this.Cohort.getCurrentCohort().startDate);
+      let theCohort = this.Cohort.getCurrentCohort();
 
-      this.$http.get('/api/users', { params: {role: 'student', cohort: this.Cohort.getCurrentCohort()._id } })
+      this.dates = theCohort ? makeDates(this.Cohort.getCurrentCohort().startDate)
+                             : [];
+
+      this.Cohort.getUsers('student')
       .then((response) => {
         this.students = response.data;
 
@@ -84,7 +87,7 @@
     }
 
     showAttendance(index1, index2) {
-      let studentValue = this.bigArray[index1][index2];
+      let studentValue = this.bigArray[index1] ? this.bigArray[index1][index2] : null;
       let selected = this.findOptionValue(studentValue);
       return selected ? selected : 'Not set';
     }

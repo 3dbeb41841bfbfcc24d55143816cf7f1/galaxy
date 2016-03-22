@@ -27,6 +27,10 @@ function createTestCohorts() {
       name: 'Test Cohort #2',
       info: 'Just a test cohort from the seed file.',
       startDate: new Date(2016, 2, 21)
+    }, {
+      name: 'ATL WDI #6',
+      info: 'Atlanta WDI #6 - Spring 2016',
+      startDate: new Date(2016, 2, 21)
     });
   })
   .then(() => {
@@ -71,12 +75,13 @@ function createTestUsers() {
   Promise.delay(100).then(() => {
     return [
       Cohort.findOne({name: 'Test Cohort #1'}),
+      Cohort.findOne({name: 'ATL WDI #6'}),
       Squad.findOne({name: 'Test Squad #1'}),
       Squad.findOne({name: 'Test Squad #2'}),
       Squad.findOne({name: 'Test Squad #3'})
     ];
   })
-  .spread((testCohort1, testSquad1, testSquad2, testSquad3) => {
+  .spread((testCohort1, atlWDI6Squad, testSquad1, testSquad2, testSquad3) => {
     let testSquads = [testSquad1, testSquad2, testSquad3];
     return User.find({}).remove()
     .then(() => {
@@ -87,7 +92,7 @@ function createTestUsers() {
           role: 'admin',
           email: 'admin@ga.co',
           password: 'admin',
-          cohort: testCohort1._id,
+          cohort: atlWDI6Squad._id
         }
       ];
 
@@ -138,7 +143,8 @@ function createAdminUser() {
         name: 'Admin',
         role: 'admin',
         email: 'admin@ga.co',
-        password: 'admin'
+        password: 'admin',
+        cohort: atlWDI6Squad._id
       })
     }
     else {

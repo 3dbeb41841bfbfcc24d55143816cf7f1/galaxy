@@ -3,14 +3,28 @@
 (function() {
 
   class UserAdminController {
-    constructor(User, appConfig, $http, $filter) {
+    constructor(Cohort, appConfig, $http, $filter, $rootScope) {
+      this.Cohort = Cohort;
+      this.$http = $http;
+      this.$filter = $filter;
       // Use the User $resource to fetch all users
-      this.users = User.query();
+      // this.users = User.query();
+      this.loadUsers();
       this.roles = appConfig.userRoles;
       this.cohorts = [];
       this.squads = [];
-      this.$http = $http;
-      this.$filter = $filter;
+
+      $rootScope.$on('cohortChangeEvent', (event, currentCohort) => {
+        this.loadUsers();
+      });
+    }
+
+    loadUsers() {
+      this.users = [];
+      this.Cohort.getUsers()
+      .then((response) => {
+        this.users = response.data;
+      });
     }
 
     // TODO: handle newly created cohorts

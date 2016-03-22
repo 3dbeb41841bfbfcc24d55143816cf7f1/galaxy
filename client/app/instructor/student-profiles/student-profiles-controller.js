@@ -21,7 +21,7 @@
     }
 
     loadStudents() {
-      this.$http.get('/api/users', { params: {role: 'student', cohort: this.Cohort.getCurrentCohort()._id } })
+      this.Cohort.getUsers('student')
       .then(response => {
         this.students = response.data;
       });
