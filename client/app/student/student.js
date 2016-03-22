@@ -14,7 +14,7 @@ angular.module('galaxyApp')
       template: '<student-dashboard></student-dashboard>',
     })
     .state({
-      name: 'student.student-profiles',
+      name: 'student.profiles',
       url: '/student-profiles',
       template: '<student-profiles></student-profiles>',
     })
