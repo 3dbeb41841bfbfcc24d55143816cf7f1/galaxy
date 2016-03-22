@@ -12,24 +12,20 @@ angular.module('galaxyApp')
       name: 'student.dashboard',
       url: '/dashboard',
       template: '<student-dashboard></student-dashboard>',
-      onEnter: () => {
-        console.log('onEnter: student.dashboard');
-      }
+    })
+    .state({
+      name: 'student.student-profiles',
+      url: '/student-profiles',
+      template: '<student-profiles></student-profiles>',
     })
     .state({
       name: 'student.attendance',
       url: '/attendance',
       template: '<student-attendance></student-attendance>',
-      onEnter: () => {
-        console.log('onEnter: student.attendance');
-      }
     })
     .state({
       name: 'student.homework',
       url: '/homework',
       template: '<student-homework></student-homework>',
-      onEnter: () => {
-        console.log('onEnter: student.homework');
-      }
     });
   });

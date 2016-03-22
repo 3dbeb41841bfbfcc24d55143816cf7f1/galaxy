@@ -21,35 +21,40 @@
         this.cohorts.forEach((cohort) => {
           cohort.startDate = new Date(cohort.startDate);
         });
-        if (!this.currentCohort) {
-          this.currentCohort = this.cohorts[0] || null;
-        }
+        // if (!this.currentCohort) {
+        //   this.currentCohort = this.cohorts[0] || null;
+        // }
       });
       return promise;
     }
 
     getCurrentCohort() {
+      let currentUser = this.Auth.getCurrentUser();
       if (this.currentCohort === null) {
         return null;
       }
-      if (this.currentCohort) {
+      else if (this.currentCohort) {
         return this.currentCohort;
       }
-      else if (this.Auth.getCurrentUser().cohort) {
-        return _.find(this.cohorts, (cohort) => { return cohort._id === this.Auth.getCurrentUser().cohort._id; });
+      else if (currentUser.cohort) {
+        let result = _.find(this.cohorts, (cohort) => { return cohort._id === currentUser.cohort._id; });
+        return result;
       }
       else {
+        // return this.cohorts[0] || null;
         return null;
       }
     }
 
     setCurrentCohort(cohort) {
+      console.log('setCurrentCohort:', cohort ? cohort.name : null);
       this.currentCohort = cohort;
       this.$rootScope.$emit('cohortChangeEvent', this.currentCohort);
     }
 
     getUsers(role) {
       var theCohort = this.getCurrentCohort();
+      console.log('getting users for cohort:', theCohort ? theCohort.name : null);
       let cohortId = theCohort ? theCohort._id : undefined;
       return this.$http.get('/api/users', { params: {role: role, cohort: cohortId } });
     }
