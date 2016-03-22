@@ -21,13 +21,13 @@ div.navbar.navbar-default.navbar-static-top
             span.text-muted
               | Selected Cohort:
             span(style='margin-left: 10px')
-              | {{ nav.getCurrentCohort().name }}
+              | {{ nav.getCurrentCohort().name || 'ALL'}}
             b.caret
           ul(uib-dropdown-menu='', role='menu', aria-labelledby='split-button')
             li(role='menuitem')
               a(href='#' ng-click='nav.setCurrentCohort(null)') ALL
             li(role='menuitem' ng-repeat='cohort in nav.cohorts')
-              a(href='#' ng-click='nav.setCurrentCohort(cohort)') {{ cohort.name || 'ALL'}}
+              a(href='#' ng-click='nav.setCurrentCohort(cohort)') {{ cohort.name }}
 
       ul.nav.navbar-nav.navbar-right
         li(ng-hide='nav.isLoggedIn() || nav.settings.mode !== "development"'
