@@ -21,8 +21,10 @@
     }
 
     loadStudents() {
+      let theCohort;
       this.Auth.getCurrentUser(currentUser => {
-        this.Cohort.getUsers('student', currentUser.cohort)
+        theCohort = currentUser.role === 'student' ? currentUser.cohort : this.Cohort.getCurrentCohort();
+        this.Cohort.getUsers('student', theCohort)
         .then(response => {
           this.students = response.data;
         });
