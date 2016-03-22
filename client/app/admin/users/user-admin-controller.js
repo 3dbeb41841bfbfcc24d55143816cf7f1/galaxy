@@ -14,7 +14,7 @@
       this.cohorts = [];
       this.squads = [];
 
-      $rootScope.$on('cohortChangeEvent', (event, currentCohort) => {
+      $rootScope.$on('cohortChangeEvent', () => {
         this.loadUsers();
       });
     }

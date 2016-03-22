@@ -36,7 +36,7 @@
       if (id) {
         data._id = id;
         this.$http.put('/api/squads/' + data._id, data)
-        .then((response) => {
+        .then(() => {
           console.log('squad saved');
         });
       }
@@ -53,7 +53,7 @@
       console.log('removeSquad: index=%s, squad=%s', index, JSON.stringify(squad));
       if (confirm('Are you sure?')) {
         this.$http.delete('/api/squads/' + squad._id)
-        .then((response) => {
+        .then(() => {
           this.squads.splice(this.squads.indexOf(squad), 1);
         });
       }

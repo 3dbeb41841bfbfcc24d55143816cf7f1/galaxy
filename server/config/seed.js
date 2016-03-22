@@ -134,29 +134,6 @@ function createTestUsers() {
   });
 }
 
-function createAdminUser() {
-  return User.find({name: 'Admin'})
-  .then((admin) => {
-    if (!admin) {
-      return User.create({
-        provider: 'local',
-        name: 'Admin',
-        role: 'admin',
-        email: 'admin@ga.co',
-        password: process.env.ADMIN_PASSWORD || 'admin',
-        cohort: atlWDI6Squad._id
-      })
-    }
-    else {
-      console.log('admin user already exists.');
-      return null;
-    }
-  })
-  .then(() => {
-    console.log('finished adding the admin user');
-  });
-}
-
 function createTestData() {
   createTestCohorts()
   .then(() => {
@@ -171,6 +148,5 @@ if (config.env === 'development') {
   createTestData();
 }
 else {
-  // createAdminUser();
   createTestData();
 }

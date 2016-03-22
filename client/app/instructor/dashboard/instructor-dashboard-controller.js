@@ -3,7 +3,7 @@
 (function() {
 
   class InstructorDashboardController {
-    constructor($http, socket, Auth, $filter) {
+    constructor($http, socket, Auth) {
       console.log('InstructorDashboardController is alive!');
 
       this.$http = $http;

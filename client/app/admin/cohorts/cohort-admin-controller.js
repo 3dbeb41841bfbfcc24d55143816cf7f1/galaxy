@@ -36,7 +36,7 @@
       if (id) {
         data._id = id;
         this.$http.put('/api/cohorts/' + data._id, data)
-        .then((response) => {
+        .then(() => {
           console.log('cohort saved');
         });
       }
@@ -53,7 +53,7 @@
       console.log('removeCohort: index=%s, cohort=%s', index, JSON.stringify(cohort));
       if (confirm('Are you sure?')) {
         this.$http.delete('/api/cohorts/' + cohort._id)
-        .then((response) => {
+        .then(() => {
           this.cohorts.splice(this.cohorts.indexOf(cohort), 1);
         });
       }

@@ -3,10 +3,9 @@
 (function() {
 
   function compareDates(date1, date2) {
-    if (date1.getFullYear() !== date2.getFullYear()) return false;
-    if (date1.getMonth()    !== date2.getMonth())    return false;
-    if (date1.getDate()     !== date2.getDate())     return false;
-    return true;
+    return date1.getFullYear() === date2.getFullYear() &&
+           date1.getMonth()    === date2.getMonth()    &&
+           date1.getDate()     === date2.getDate();
   }
 
   /**
@@ -15,13 +14,12 @@
   **/
   function makeWeeks(startDate) {
     let weeks = [];
-    let currentWeek;
+    let currentWeek = {
+      num: 1,
+      days: []
+    };
     const NUM_DATES = 60;
     for (let d=0, cnt=0; cnt<NUM_DATES; d++) {
-      if (cnt % 5 === 0) {
-        currentWeek = { days: [] };
-        weeks.push(currentWeek);
-      }
       let day = new Date(startDate);
       day.setDate(startDate.getDate() + d);
       let dayOfWeek = day.getDay();
@@ -29,8 +27,15 @@
       if (dayOfWeek === 0 || dayOfWeek === 6) {
         continue;
       }
-      ++cnt;
+      if (cnt % 5 === 0) {
+        currentWeek = {
+          num: (cnt / 5) + 1,
+          days: []
+        };
+        weeks.push(currentWeek);
+      }
       currentWeek.days.push(new Date(day));
+      ++cnt;
     }
     return weeks;
   }
@@ -51,7 +56,7 @@
       ];
 
       this.load();
-      $rootScope.$on('cohortChangeEvent', (event, currentCohort) => {
+      $rootScope.$on('cohortChangeEvent', () => {
         this.load();
       });
     }
@@ -71,14 +76,16 @@
         // I had to build this bigArray to make angular xeditable controls work
         // within nested ng-repeats.
         this.bigArray = [];
-        this.dates.forEach((date) => {
-          let innerArray = [];
-          this.students.forEach((student) => {
-            let studentValue = this.findStudentValue(student, date);
-            let sv = studentValue ? studentValue.value : undefined;
-            innerArray.push(this.findOptionValue(sv));
+        this.weeks.forEach(week => {
+          week.days.forEach(day => {
+            let innerArray = [];
+            this.students.forEach((student) => {
+              let studentValue = this.findStudentValue(student, day);
+              let sv = studentValue ? studentValue.value : undefined;
+              innerArray.push(this.findOptionValue(sv));
+            });
+            this.bigArray.push(innerArray);
           });
-          this.bigArray.push(innerArray);
         });
       });
     }
