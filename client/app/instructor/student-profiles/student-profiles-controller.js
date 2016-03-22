@@ -3,9 +3,9 @@
 (function() {
 
   class StudentProfilesController {
-    constructor(Cohort, appConfig, $http, $filter, $rootScope) {
+    constructor(Auth, Cohort, appConfig, $http, $filter, $rootScope) {
       console.log('StudentProfilesController is alive!');
-
+      this.Auth = Auth;
       this.Cohort = Cohort;
       this.roles = appConfig.userRoles;
       this.$http = $http;
@@ -21,7 +21,7 @@
     }
 
     loadStudents() {
-      this.Cohort.getUsers('student')
+      this.Cohort.getUsers('student', this.Auth.getCurrentUser().cohort)
       .then(response => {
         this.students = response.data;
       });
