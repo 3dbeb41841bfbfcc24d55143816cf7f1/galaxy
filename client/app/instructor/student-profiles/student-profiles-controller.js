@@ -21,9 +21,11 @@
     }
 
     loadStudents() {
-      this.Cohort.getUsers('student', this.Auth.getCurrentUser().cohort)
-      .then(response => {
-        this.students = response.data;
+      this.Auth.getCurrentUser(currentUser => {
+        this.Cohort.getUsers('student', currentUser.cohort)
+        .then(response => {
+          this.students = response.data;
+        });
       });
     }
 
