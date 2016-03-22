@@ -13,10 +13,15 @@
    * Generate 60 days of dates starting with startDate
    * but not including Saturdays and Sundays.
   **/
-  function makeDates(startDate) {
-    let days = [];
+  function makeWeeks(startDate) {
+    let weeks = [];
+    let currentWeek;
     const NUM_DATES = 60;
     for (let d=0, cnt=0; cnt<NUM_DATES; d++) {
+      if (cnt % 5 === 0) {
+        currentWeek = { days: [] };
+        weeks.push(currentWeek);
+      }
       let day = new Date(startDate);
       day.setDate(startDate.getDate() + d);
       let dayOfWeek = day.getDay();
@@ -24,10 +29,10 @@
       if (dayOfWeek === 0 || dayOfWeek === 6) {
         continue;
       }
-      cnt = cnt + 1;
-      days.push(new Date(day));
+      ++cnt;
+      currentWeek.days.push(new Date(day));
     }
-    return days;
+    return weeks;
   }
 
   class InstructorAttendanceController {
@@ -52,10 +57,10 @@
     }
 
     load() {
-      // this.dates = makeDates(new Date(2016, 2, 21));
+      // this.weeks = makeWeeks(new Date(2016, 2, 21));
       let theCohort = this.Cohort.getCurrentCohort();
 
-      this.dates = theCohort ? makeDates(this.Cohort.getCurrentCohort().startDate)
+      this.weeks = theCohort ? makeWeeks(this.Cohort.getCurrentCohort().startDate)
                              : [];
 
       this.Cohort.getUsers('student')

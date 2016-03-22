@@ -1,14 +1,15 @@
 .attendance
   h2 Instructor Attendance
+  pre {{ $ctrl.weeks.length }}
   div(ng-hide='$ctrl.Cohort.getCurrentCohort()')
     p Please select a Cohort in the NavBar above to see attendance for that Cohort.
   div(ng-show='$ctrl.Cohort.getCurrentCohort()')
     .attendance-table-wrapper
-      table.table.table-bordered.table-hover.table-condensed
+      table.table.table-bordered.table-hover.table-condensed(ng-repeat='week in $ctrl.weeks')
         tr(style='font-weight: bold')
           td Date
           td(ng-repeat='student in $ctrl.students') {{ student.name }}
-        tr(ng-repeat='date in $ctrl.dates' ng-init='dateIndex = $index')
+        tr(ng-repeat='date in $ctrl.getDates(week)' ng-init='dateIndex = $index')
           td {{ date | date : 'fullDate' }}
           td(ng-repeat='student in $ctrl.students' ng-init='studentIndex = $index')
             a(href='#'
