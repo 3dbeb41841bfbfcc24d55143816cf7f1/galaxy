@@ -61,9 +61,9 @@ function handleError(res, statusCode) {
 
 // Gets a list of Squads
 export function index(req, res) {
-  return Squad.find().exec()
-    .then(respondWithResult(res))
-    .catch(handleError(res));
+  return Squad.find().sort('name')
+  .then(respondWithResult(res))
+  .catch(handleError(res));
 }
 
 // Gets a single Squad from the DB

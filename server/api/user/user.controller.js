@@ -33,11 +33,11 @@ export function index(req, res) {
   }
   console.log('user index has filter:', filter);
   return User.find(filter, '-salt -password').sort('name')
-    .then(users => {
-      res.status(200).json(users);
-      return users;
-    })
-    .catch(handleError(res));
+  .then(users => {
+    res.status(200).json(users);
+    return users;
+  })
+  .catch(handleError(res));
 }
 
 /**

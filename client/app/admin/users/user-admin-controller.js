@@ -120,8 +120,10 @@
 
     delete(user) {
       if (confirm('Are you sure?')) {
-        user.$remove();
-        this.users.splice(this.users.indexOf(user), 1);
+        this.$http.delete('/api/users/' + user._id)
+        .then(response => {
+          this.users.splice(this.users.indexOf(user), 1);
+        });
       }
     }
   }

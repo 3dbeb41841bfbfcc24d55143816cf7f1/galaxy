@@ -134,6 +134,25 @@ function createTestUsers() {
   });
 }
 
+function counts() {
+  return User.aggregate([
+    {
+      $group: {
+        _id: '$cohort',
+        count: {$sum: 1}
+      }
+    }
+  ],
+  function (err, result) {
+    if (err) {
+      console.log(err);
+    }
+    else {
+      console.log('aggregate result:', result);
+    }
+  });
+}
+
 function createTestData() {
   createTestCohorts()
   .then(() => {
@@ -141,6 +160,9 @@ function createTestData() {
   })
   .then(() => {
     return createTestUsers();
+  })
+  .then(() => {
+    return counts();
   });
 }
 

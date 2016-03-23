@@ -61,9 +61,9 @@ function handleError(res, statusCode) {
 
 // Gets a list of Cohorts
 export function index(req, res) {
-  return Cohort.find().exec()
-    .then(respondWithResult(res))
-    .catch(handleError(res));
+  return Cohort.find().sort('name')
+  .then(respondWithResult(res))
+  .catch(handleError(res));
 }
 
 // Gets a single Cohort from the DB
