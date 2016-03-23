@@ -98,6 +98,14 @@
       return _.find(this.attendanceValues, function(av) { return angular.equals(av, value); });
     }
 
+    getStudentNameAndLogin(student) {
+      let result = student.name ? student.name : '???';
+      if (student.github) {
+        result += ' (' + student.github.login + ')';
+      }
+      return result;
+    }
+
     showAttendance(index1, index2) {
       let studentValue = this.bigArray[index1] ? this.bigArray[index1][index2] : null;
       let selected = this.findOptionValue(studentValue);

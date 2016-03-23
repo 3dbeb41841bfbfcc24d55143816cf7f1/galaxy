@@ -14,7 +14,8 @@
         table.table.table-bordered.table-hover.table-condensed
           tr(style='font-weight: bold')
             td Date
-            td(ng-repeat='student in $ctrl.students') {{ student.name }}
+            td(ng-repeat='student in $ctrl.students')
+              | {{ $ctrl.getStudentNameAndLogin(student) }}
           tr(ng-repeat='date in week.days' ng-init='dateIndex = weekIndex * 5 + $index')
             td {{ date | date : 'fullDate' }}
             td(ng-repeat='student in $ctrl.students' ng-init='studentIndex = $index')
