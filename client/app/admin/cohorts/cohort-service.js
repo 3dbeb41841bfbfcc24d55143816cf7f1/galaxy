@@ -53,7 +53,7 @@
     }
 
     getUsers(role, cohort) {
-      var theCohort = cohort || this.getCurrentCohort();
+      let theCohort = cohort || this.getCurrentCohort();
       console.log('getting users for cohort:', theCohort ? theCohort.name : null);
       let cohortId = theCohort ? theCohort._id : undefined;
       return this.$http.get('/api/users', { params: {role: role, cohort: cohortId } });

@@ -41,10 +41,11 @@
   }
 
   class InstructorAttendanceController {
-    constructor(Auth, Cohort, $filter, $http, $rootScope) {
+    constructor(Auth, Cohort, Squad, $filter, $http, $rootScope) {
       console.log('InstructorAttendanceController is alive!');
       this.getCurrentUser = Auth.getCurrentUser;
       this.Cohort = Cohort;
+      this.Squad  = Squad;
       this.$filter = $filter;
       this.$http = $http;
 
@@ -59,16 +60,29 @@
       $rootScope.$on('cohortChangeEvent', () => {
         this.load();
       });
+      $rootScope.$on('squadChangeEvent', () => {
+        this.load();
+      });
     }
 
     load() {
-      // this.weeks = makeWeeks(new Date(2016, 2, 21));
+      // TODO: DRY this up
       let theCohort = this.Cohort.getCurrentCohort();
+      let cohortId = theCohort ? theCohort._id : undefined;
+
+      let theSquad  = this.Squad.getCurrentSquad();
+      let squadId = theSquad ? theSquad._id : undefined;
 
       this.weeks = theCohort ? makeWeeks(this.Cohort.getCurrentCohort().startDate)
                              : [];
 
-      this.Cohort.getUsers('student')
+      // this.Cohort.getUsers('student')
+      this.$http.get('/api/users',
+                     { params: {
+                                 role: 'student',
+                                 cohort: cohortId,
+                                 squad: squadId }
+      })
       .then((response) => {
         this.students = response.data;
 

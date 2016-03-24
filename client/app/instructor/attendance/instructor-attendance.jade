@@ -1,5 +1,6 @@
 .attendance
-  h2 Instructor Attendance
+  h2 Attendance for Cohort
+    span.text-info(style='margin-left: 10px;') {{ $ctrl.Cohort.getCurrentCohort().name }}
   //- div(ng-repeat='week in $ctrl.weeks')
   //-   h3 Week {{ week.num }}
   //-   ul

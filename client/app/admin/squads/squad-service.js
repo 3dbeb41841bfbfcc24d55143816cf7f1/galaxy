@@ -4,10 +4,11 @@
 
   class Squad {
 
-    constructor(Auth, $http) {
+    constructor(Auth, $http, $rootScope) {
       console.log('Squad is alive!');
       this.Auth = Auth;
       this.$http = $http;
+      this.$rootScope = $rootScope;
       this.getSquads();
     }
 
@@ -18,6 +19,30 @@
         this.squads = response.data;
       });
       return promise;
+    }
+
+    getCurrentSquad() {
+      let currentUser = this.Auth.getCurrentUser();
+      if (this.currentSquad === null) {
+        return null;
+      }
+      else if (this.currentSquad) {
+        return this.currentSquad;
+      }
+      else if (currentUser.squad) {
+        let result = _.find(this.squads, (squad) => { return squad._id === currentUser.squad._id; });
+        return result;
+      }
+      else {
+        // return this.squads[0] || null;
+        return null;
+      }
+    }
+
+    setCurrentSquad(squad) {
+      console.log('setCurrentSquad:', squad ? squad.name : null);
+      this.currentSquad = squad;
+      this.$rootScope.$emit('squadChangeEvent', this.currentSquad);
     }
 
     getUsers(squad) {

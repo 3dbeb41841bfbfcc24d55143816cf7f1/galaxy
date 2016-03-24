@@ -3,10 +3,11 @@
 (function() {
 
   class StudentProfilesController {
-    constructor(Auth, Cohort, appConfig, $http, $filter, $rootScope) {
+    constructor(Auth, Cohort, Squad, appConfig, $http, $filter, $rootScope) {
       console.log('StudentProfilesController is alive!');
       this.Auth = Auth;
       this.Cohort = Cohort;
+      this.Squad = Squad;
       this.roles = appConfig.userRoles;
       this.$http = $http;
       this.$filter = $filter;
@@ -18,13 +19,24 @@
       $rootScope.$on('cohortChangeEvent', () => {
         this.loadStudents();
       });
+      $rootScope.$on('squadChangeEvent', () => {
+        this.loadStudents();
+      });
     }
 
     loadStudents() {
-      let theCohort;
       this.Auth.getCurrentUser(currentUser => {
-        theCohort = currentUser.role === 'student' ? currentUser.cohort : this.Cohort.getCurrentCohort();
-        this.Cohort.getUsers('student', theCohort)
+        // TODO: DRY this up
+        let theCohort = currentUser.role === 'student' ? currentUser.cohort : this.Cohort.getCurrentCohort();
+        let theSquad  = this.Squad.getCurrentSquad();
+        let cohortId = theCohort ? theCohort._id : undefined;
+        let squadId = theSquad ? theSquad._id : undefined;
+        return this.$http.get('/api/users',
+                              { params: {
+                                         role: 'student',
+                                         cohort: cohortId,
+                                         squad: squadId }
+        })
         .then(response => {
           this.students = response.data;
         });

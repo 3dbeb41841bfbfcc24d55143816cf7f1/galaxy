@@ -31,6 +31,9 @@ export function index(req, res) {
   if (req.query.cohort) {
     filter.cohort = req.query.cohort;
   }
+  if (req.query.squad) {
+    filter.squad = req.query.squad;
+  }
   console.log('user index has filter:', filter);
   return User.find(filter, '-salt -password').sort('name')
   .then(users => {

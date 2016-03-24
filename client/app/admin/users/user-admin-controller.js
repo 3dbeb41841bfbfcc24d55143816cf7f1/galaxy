@@ -3,25 +3,41 @@
 (function() {
 
   class UserAdminController {
-    constructor(Cohort, appConfig, $http, $filter, $rootScope) {
+    constructor(Cohort, Squad, appConfig, $http, $filter, $rootScope) {
       this.Cohort = Cohort;
+      this.Squad  = Squad;
       this.$http = $http;
       this.$filter = $filter;
       // Use the User $resource to fetch all users
       // this.users = User.query();
+      this.users = [];
       this.loadUsers();
+
       this.roles = appConfig.userRoles;
+
       this.cohorts = [];
       this.squads = [];
 
       $rootScope.$on('cohortChangeEvent', () => {
         this.loadUsers();
       });
+      $rootScope.$on('squadChangeEvent', () => {
+        this.loadUsers();
+      });
     }
 
     loadUsers() {
-      this.users = [];
-      this.Cohort.getUsers()
+      // TODO: DRY this up
+      let theCohort = this.Cohort.getCurrentCohort();
+      let theSquad  = this.Squad.getCurrentSquad();
+      let cohortId = theCohort ? theCohort._id : undefined;
+      let squadId = theSquad ? theSquad._id : undefined;
+      return this.$http.get('/api/users',
+                            { params: {
+                                       role: 'student',
+                                       cohort: cohortId,
+                                       squad: squadId }
+      })
       .then((response) => {
         this.users = response.data;
       });

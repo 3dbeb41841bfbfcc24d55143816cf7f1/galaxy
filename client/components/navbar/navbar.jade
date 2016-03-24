@@ -29,6 +29,19 @@ div.navbar.navbar-default.navbar-static-top
             li(role='menuitem' ng-repeat='cohort in nav.cohorts')
               a(href='#' ng-click='nav.setCurrentCohort(cohort)') {{ cohort.name }}
 
+        li(uib-dropdown='', ng-show='nav.isLoggedIn() && nav.isAdmin()')
+          a(href='#', uib-dropdown-toggle='')
+            span.text-muted
+              | Selected Squad:
+            span(style='margin-left: 10px')
+              | {{ nav.getCurrentSquad().name || 'ALL'}}
+            b.caret
+          ul(uib-dropdown-menu='', role='menu', aria-labelledby='split-button')
+            li(role='menuitem')
+              a(href='#' ng-click='nav.setCurrentSquad(null)') ALL
+            li(role='menuitem' ng-repeat='squad in nav.squads')
+              a(href='#' ng-click='nav.setCurrentSquad(squad)') {{ squad.name }}
+
       ul.nav.navbar-nav.navbar-right
         li(ng-hide='nav.isLoggedIn() || nav.settings.mode !== "development"'
         ui-sref-active='active')
