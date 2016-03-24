@@ -22,21 +22,7 @@
     }
 
     getCurrentSquad() {
-      let currentUser = this.Auth.getCurrentUser();
-      if (this.currentSquad === null) {
-        return null;
-      }
-      else if (this.currentSquad) {
-        return this.currentSquad;
-      }
-      else if (currentUser.squad) {
-        let result = _.find(this.squads, (squad) => { return squad._id === currentUser.squad._id; });
-        return result;
-      }
-      else {
-        // return this.squads[0] || null;
-        return null;
-      }
+      return this.currentSquad;
     }
 
     setCurrentSquad(squad) {

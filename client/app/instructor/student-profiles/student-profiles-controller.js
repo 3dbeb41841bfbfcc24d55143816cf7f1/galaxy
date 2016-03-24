@@ -1,7 +1,6 @@
 'use strict';
 
 (function() {
-
   class StudentProfilesController {
     constructor(Auth, Cohort, Squad, appConfig, $http, $filter, $rootScope) {
       console.log('StudentProfilesController is alive!');
@@ -24,11 +23,15 @@
       });
     }
 
+    get squad() {
+      return this.Squad.getCurrentSquad();
+    }
+
     loadStudents() {
       this.Auth.getCurrentUser(currentUser => {
         // TODO: DRY this up
         let theCohort = currentUser.role === 'student' ? currentUser.cohort : this.Cohort.getCurrentCohort();
-        let theSquad  = this.Squad.getCurrentSquad();
+        let theSquad  = this.squad;
         let cohortId = theCohort ? theCohort._id : undefined;
         let squadId = theSquad ? theSquad._id : undefined;
         return this.$http.get('/api/users',
@@ -107,10 +110,27 @@
     }
   }
 
+  class MySquadController extends StudentProfilesController {
+    constructor(Auth, Cohort, Squad, appConfig, $http, $filter, $rootScope) {
+      super(Auth, Cohort, Squad, appConfig, $http, $filter, $rootScope);
+    }
+
+    get squad() {
+      let currentUser = this.Auth.getCurrentUser();
+      return currentUser.squad;
+    }
+  }
+
   angular.module('galaxyApp')
   .component('studentProfiles', {
     templateUrl: 'app/instructor/student-profiles/student-profiles.html',
     controller: StudentProfilesController
+  });
+
+  angular.module('galaxyApp')
+  .component('studentMySquad', {
+    templateUrl: 'app/instructor/student-profiles/student-profiles.html',
+    controller: MySquadController
   });
 
 })();
