@@ -1,13 +1,6 @@
 'use strict';
 
 (function() {
-
-  function compareDates(date1, date2) {
-    return date1.getFullYear() === date2.getFullYear() &&
-           date1.getMonth()    === date2.getMonth()    &&
-           date1.getDate()     === date2.getDate();
-  }
-
   /**
    * Generate 60 days of dates starting with startDate
    * but not including Saturdays and Sundays.
@@ -136,7 +129,7 @@
       });
     }
 
-    onAfterSaveAttendance(date, student, index1, index2, data) {
+    onAfterSaveAttendance(date, student, index1, index2 /*, data */) {
       console.log('onAfterSaveAttendance:', this.bigArray[index1][index2]);
     }
   }

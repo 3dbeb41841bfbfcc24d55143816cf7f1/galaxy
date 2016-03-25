@@ -3,11 +3,12 @@ header#banner.hero2
     .row
       .col-sm-12.text-center
         .row
-          .col-sm-3.text-center
+          .col-sm-2.text-center
             .btn-group-vertical.panel-buttons(role='group')
               a.btn.btn-lg.btn-info(ui-sref="admin.dashboard" disabled) Dashboard
               a.btn.btn-lg.btn-info(ui-sref="admin.users") Users
               a.btn.btn-lg.btn-info(ui-sref="admin.cohorts") Cohorts
               a.btn.btn-lg.btn-info(ui-sref="admin.squads") Squads
-          .col-sm-9
+              a.btn.btn-lg.btn-info(ui-sref="admin.homework") Homework
+          .col-sm-10
             .instructor-inner(ui-view='')

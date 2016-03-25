@@ -12,17 +12,19 @@
     .attendance-table-wrapper
       div(ng-repeat='week in $ctrl.weeks' ng-init='weekIndex = $index')
         h3 Week {{ week.num }}
-        table.table.table-bordered.table-hover.table-condensed
-          tr(style='font-weight: bold')
-            td Date
-            td(ng-repeat='student in $ctrl.students')
-              | {{ $ctrl.getStudentNameAndLogin(student) }}
-          tr(ng-repeat='date in week.days' ng-init='dateIndex = weekIndex * 5 + $index')
-            td {{ date | date : 'fullDate' }}
-            td(ng-repeat='student in $ctrl.students' ng-init='studentIndex = $index')
-              a(href='#'
-              editable-radiolist='$ctrl.bigArray[dateIndex][studentIndex]'
-              onbeforesave='$ctrl.onBeforeSaveAttendance(date, student, dateIndex, studentIndex, $data)'
-              onaftersave ='$ctrl.onAfterSaveAttendance (date, student, dateIndex, studentIndex, $data)'
-              e-ng-options='av as av for av in $ctrl.attendanceValues')
-                | {{ $ctrl.showAttendance(dateIndex, studentIndex) }}
+        table.table.table-bordered.table-hover.table-condensed.vertical-align
+          thead
+            tr(style='font-weight: bold')
+              td Date
+              td(ng-repeat='student in $ctrl.students')
+                | {{ $ctrl.getStudentNameAndLogin(student) }}
+          tbody
+            tr(ng-repeat='date in week.days' ng-init='dateIndex = weekIndex * 5 + $index')
+              td {{ date | date : 'fullDate' }}
+              td(ng-repeat='student in $ctrl.students' ng-init='studentIndex = $index')
+                a(href='#'
+                editable-radiolist='$ctrl.bigArray[dateIndex][studentIndex]'
+                onbeforesave='$ctrl.onBeforeSaveAttendance(date, student, dateIndex, studentIndex, $data)'
+                onaftersave ='$ctrl.onAfterSaveAttendance (date, student, dateIndex, studentIndex, $data)'
+                e-ng-options='av as av for av in $ctrl.attendanceValues')
+                  | {{ $ctrl.showAttendance(dateIndex, studentIndex) }}

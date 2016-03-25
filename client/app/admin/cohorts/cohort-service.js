@@ -15,10 +15,10 @@
     // TODO: handle newly created cohorts
     getCohorts() {
       let promise = this.$http.get('/api/cohorts');
-      promise.then((response) => {
+      promise.then(response => {
         this.cohorts = response.data;
         // convert string dates to Date objects.
-        this.cohorts.forEach((cohort) => {
+        this.cohorts.forEach(cohort => {
           cohort.startDate = new Date(cohort.startDate);
         });
         // if (!this.currentCohort) {

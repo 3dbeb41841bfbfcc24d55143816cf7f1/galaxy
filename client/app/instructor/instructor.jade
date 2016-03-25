@@ -3,14 +3,14 @@ header#banner.hero2
     .row
       .col-sm-12.text-center
         .row
-          .col-sm-3.text-center
+          .col-sm-2.text-center
             .btn-group-vertical.panel-buttons(role='group')
               a.btn.btn-lg.btn-info(ui-sref="instructor.dashboard" disabled) Dashboard
               a.btn.btn-lg.btn-info(ui-sref="instructor.student-profiles") Student Profiles
               a.btn.btn-lg.btn-info(ui-sref="instructor.attendance") Attendance
-              a.btn.btn-lg.btn-info(ui-sref="instructor.homework" disabled) Homework
+              a.btn.btn-lg.btn-info(ui-sref="instructor.homework") Homework
               a.btn.btn-lg.btn-info(ui-sref="instructor.quizzes" disabled) Quizzes
               a.btn.btn-lg.btn-info(ui-sref="instructor.projects" disabled) Projects
               a.btn.btn-lg.btn-info(ui-sref="instructor.one-on-ones" disabled) One-on-Ones
-          .col-sm-9
+          .col-sm-10
             .instructor-inner(ui-view='')

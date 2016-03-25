@@ -137,7 +137,7 @@
     delete(user) {
       if (confirm('Are you sure?')) {
         this.$http.delete('/api/users/' + user._id)
-        .then(response => {
+        .then(() => {
           this.users.splice(this.users.indexOf(user), 1);
         });
       }

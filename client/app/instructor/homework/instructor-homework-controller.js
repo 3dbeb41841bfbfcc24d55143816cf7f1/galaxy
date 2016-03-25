@@ -3,9 +3,8 @@
 (function() {
 
   class InstructorHomeworkController {
-    constructor(Auth) {
+    constructor() {
       console.log('InstructorHomeworkController is alive!');
-      this.getCurrentUser = Auth.getCurrentUser;
     }
   }
 

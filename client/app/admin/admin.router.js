@@ -27,5 +27,10 @@ angular.module('galaxyApp.admin')
     name: 'admin.squads',
     url: '/squads',
     template: '<admin-squads></admin-squads>'
+  })
+  .state({
+    name: 'admin.homework',
+    url: '/homework',
+    template: '<admin-homework></admin-homework>'
   });
 });

@@ -38,6 +38,7 @@
         this.$http.put('/api/squads/' + data._id, data)
         .then(() => {
           console.log('squad saved');
+          this.squads[index] = response.data;
         });
       }
       else {

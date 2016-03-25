@@ -31,20 +31,24 @@
       this.cohorts.push(this.inserted);
     }
 
+    enrichCohort(cohort, index) {
+      cohort.startDate = new Date(cohort.startDate);
+      this.cohorts[index] = cohort;
+    }
+
     saveCohort(index, data, id) {
       console.log('saveCohort: index=%s, data=%s, id=%s', index, JSON.stringify(data), id);
       if (id) {
         data._id = id;
         this.$http.put('/api/cohorts/' + data._id, data)
-        .then(() => {
-          console.log('cohort saved');
+        .then(response => {
+          this.enrichCohort(response.data, index);
         });
       }
       else {
         this.$http.post('/api/cohorts', data)
-        .then((response) => {
-          console.log('new cohort:', response.data);
-          this.cohorts[index] = response.data;
+        .then(response => {
+          this.enrichCohort(response.data, index);
         });
       }
     }
