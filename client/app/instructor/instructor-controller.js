@@ -3,9 +3,10 @@
 (function() {
 
   class InstructorController {
-    constructor(Auth) {
+    constructor(Auth, $state) {
       console.log('InstructorController is alive!');
       this.getCurrentUser = Auth.getCurrentUser;
+      this.$state = $state;
     }
   }
 

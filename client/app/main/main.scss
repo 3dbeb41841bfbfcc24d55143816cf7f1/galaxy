@@ -23,3 +23,7 @@
 .navbar-text {
   margin-left: 15px;
 }
+
+.btn.selected {
+  background-color: $brand-warning !important;
+}

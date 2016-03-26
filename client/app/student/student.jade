@@ -5,11 +5,11 @@ header#banner.hero2
         .row
           .col-sm-3.text-center
             .btn-group-vertical.panel-buttons(role='group')
-              a.btn.btn-lg.btn-info(ui-sref="student.profiles") All Students
-              a.btn.btn-lg.btn-info(ui-sref="student.mysquad") My Squad
-              a.btn.btn-lg.btn-info(ui-sref="student.attendance" disabled) Attendance
-              a.btn.btn-lg.btn-info(ui-sref="student.homework" disabled) Homework
-              a.btn.btn-lg.btn-info(ui-sref="student.quizzes" disabled) Quizzes
-              a.btn.btn-lg.btn-info(ui-sref="student.projects" disabled) Projects
+              a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.profiles') }",   ui-sref="student.profiles")            All Students
+              a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.mysquad') }",    ui-sref="student.mysquad")             My Squad
+              a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.attendance') }", ui-sref="student.attendance" disabled) Attendance
+              a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.homework') }",   ui-sref="student.homework"   disabled) Homework
+              a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.quizzes') }",    ui-sref="student.quizzes"    disabled) Quizzes
+              a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.projects') }",   ui-sref="student.projects"   disabled) Projects
           .col-sm-9
             .student-inner(ui-view='')

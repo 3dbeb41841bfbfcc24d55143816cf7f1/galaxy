@@ -3,9 +3,10 @@
 (function() {
 
   class AdminController {
-    constructor(Auth) {
+    constructor(Auth, $state) {
       console.log('AdminController is alive!');
       this.getCurrentUser = Auth.getCurrentUser;
+      this.$state = $state;
     }
   }
 

@@ -36,7 +36,7 @@
       if (id) {
         data._id = id;
         this.$http.put('/api/squads/' + data._id, data)
-        .then(() => {
+        .then((response) => {
           console.log('squad saved');
           this.squads[index] = response.data;
         });

@@ -59,8 +59,6 @@
     }
 
     enrichHomework(homework, index) {
-      homework.assignedOnDate = new Date(homework.assignedOnDate);
-      homework.dueDate = new Date(homework.dueDate);
       this.homeworks[index] = homework;
       this.setCohortInVM(homework);
     }

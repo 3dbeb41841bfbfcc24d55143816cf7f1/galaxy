@@ -5,10 +5,9 @@ header#banner.hero2
         .row
           .col-sm-2.text-center
             .btn-group-vertical.panel-buttons(role='group')
-              a.btn.btn-lg.btn-info(ui-sref="admin.dashboard" disabled) Dashboard
-              a.btn.btn-lg.btn-info(ui-sref="admin.users") Users
-              a.btn.btn-lg.btn-info(ui-sref="admin.cohorts") Cohorts
-              a.btn.btn-lg.btn-info(ui-sref="admin.squads") Squads
-              a.btn.btn-lg.btn-info(ui-sref="admin.homework") Homework
+              a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('admin.users') }",     ui-sref="admin.users")    Users
+              a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('admin.cohorts') }",   ui-sref="admin.cohorts")  Cohorts
+              a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('admin.squads') }",    ui-sref="admin.squads")   Squads
+              a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('admin.homework') }",  ui-sref="admin.homework") Homework
           .col-sm-10
             .instructor-inner(ui-view='')
