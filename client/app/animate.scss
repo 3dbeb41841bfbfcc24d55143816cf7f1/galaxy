@@ -25,6 +25,8 @@
   width: 100%;
   &.ng-enter, &.ng-leave {
     position: absolute;
+    left: 0;
+    right: 0;
   }
   &.ng-enter {
     animation: $inStrategy $inDuration;
@@ -39,6 +41,6 @@
 }
 
 [ui-view] {
-  @include animation(fadeIn, 0.35s,
-                     fadeOut, 0.35s);
+  @include animation(fadeIn, 0.30s,
+                     fadeOut, 0.20s);
 }
