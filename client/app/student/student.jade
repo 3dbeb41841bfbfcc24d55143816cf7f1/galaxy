@@ -3,7 +3,7 @@ header#banner.hero2
     .row
       .col-sm-12.text-center
         .row
-          .col-sm-3.text-center
+          .col-sm-2.text-center
             .btn-group-vertical.panel-buttons(role='group')
               a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.profiles') }",   ui-sref="student.profiles")            All Students
               a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.mysquad') }",    ui-sref="student.mysquad")             My Squad
@@ -11,5 +11,5 @@ header#banner.hero2
               a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.homework') }",   ui-sref="student.homework"   disabled) Homework
               a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.quizzes') }",    ui-sref="student.quizzes"    disabled) Quizzes
               a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.projects') }",   ui-sref="student.projects"   disabled) Projects
-          .col-sm-9
-            .student-inner(ui-view='')
+          .col-sm-10
+            .inner-view(ui-view='')
