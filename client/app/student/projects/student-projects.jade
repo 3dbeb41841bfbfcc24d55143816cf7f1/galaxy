@@ -1,0 +1,47 @@
+h2 Student Projects for
+  span(class='text-success') {{ ' ' + $ctrl.getCurrentUser().name }}
+
+table.table.table-bordered.table-hover.table-condensed.vertical-align
+    thead
+      tr(style='font-weight: bold')
+        td(style='width:15%') Title
+        td(style='width:25%') Info
+        td(style='width:10%') Project #
+        td(style='width:20%') GitHub URL
+        td(style='width:20%') Deployment URL
+        td(style='width:10%') Edit
+    tbody
+      tr(ng-repeat='project in $ctrl.projects | orderBy : "num"')
+        td
+          span(editable-text='project.title', e-name='title', e-form='rowform', onbeforesave='$ctrl.checkName($data)', e-required='')
+            | {{ project.title || 'empty' }}
+        td
+          span(editable-textarea='project.info', e-name='info', e-form='rowform', e-rows="3" e-cols="40" onbeforesave='$ctrl.checkInfo($data)')
+            | {{ project.info || 'empty' }}
+        td
+          span(editable-number='project.num',
+               e-name='num',
+               e-min="1",
+               e-max="4",
+               ng-model='project.num',
+               e-form='rowform')
+            | {{ project.num || 'Not Set' }}
+        td
+          span(editable-url='project.githubUrl', e-name='githubUrl', e-form='rowform', e-rows="3" e-cols="40" onbeforesave='$ctrl.checkGithubUrl($data)')
+            | {{ project.githubUrl || 'empty' }}
+        td
+          span(editable-url='project.deploymentUrl', e-name='deploymentUrl', e-form='rowform', e-rows="3" e-cols="40" onbeforesave='$ctrl.checkDeploymentUrl($data)')
+            | {{ project.deploymentUrl || 'empty' }}
+
+        td(style='white-space: nowrap')
+          // form
+          form.form-buttons.form-inline(editable-form='', name='rowform', onbeforesave='$ctrl.saveProject($index, $data, project._id)', ng-show='rowform.$visible', shown='$ctrl.inserted == project')
+            button.btn.btn-primary(type='submit', ng-disabled='rowform.$waiting')
+              | save
+            button.btn.btn-default(type='button', ng-disabled='rowform.$waiting', ng-click='rowform.$cancel()')
+              | cancel
+          .buttons(ng-show='!rowform.$visible')
+            button.btn.btn-sm.btn-primary(ng-click='rowform.$show()') Edit
+            button.btn.btn-sm.btn-danger(ng-click='$ctrl.removeProject($index, project)') Del
+
+button.btn.btn-default(ng-click='$ctrl.addProject()') Add Project

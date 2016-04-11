@@ -32,5 +32,10 @@ angular.module('galaxyApp')
       name: 'student.homework',
       url: '/homework',
       template: '<student-homework></student-homework>',
+    })
+    .state({
+      name: 'student.projects',
+      url: '/projects',
+      template: '<student-projects></student-projects>',
     });
   });
