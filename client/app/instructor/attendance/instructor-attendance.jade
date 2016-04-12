@@ -16,15 +16,22 @@
           thead
             tr(style='font-weight: bold')
               td Date
+              td QuickSet
               td(ng-repeat='student in $ctrl.students')
                 | {{ $ctrl.getStudentNameAndLogin(student) }}
           tbody
             tr(ng-repeat='date in week.days' ng-init='dateIndex = weekIndex * 5 + $index')
               td {{ date | date : 'fullDate' }}
+              td
+                a(href='#' class='btn btn-info'
+                editable-radiolist='$ctrl.quickSet'
+                onbeforesave='$ctrl.onBeforeQuickSet(date, dateIndex, $data)'
+                onaftersave='$ctrl.onAfterQuickSet()'
+                e-ng-options='av as av for av in $ctrl.attendanceValues')
+                  | QuickSet
               td(ng-repeat='student in $ctrl.students' ng-init='studentIndex = $index')
                 a(href='#'
                 editable-radiolist='$ctrl.bigArray[dateIndex][studentIndex]'
                 onbeforesave='$ctrl.onBeforeSaveAttendance(date, student, dateIndex, studentIndex, $data)'
-                onaftersave ='$ctrl.onAfterSaveAttendance (date, student, dateIndex, studentIndex, $data)'
                 e-ng-options='av as av for av in $ctrl.attendanceValues')
                   | {{ $ctrl.showAttendance(dateIndex, studentIndex) }}

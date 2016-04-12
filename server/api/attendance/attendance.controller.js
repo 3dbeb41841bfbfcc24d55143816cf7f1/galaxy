@@ -11,6 +11,14 @@
 
 import _ from 'lodash';
 import Attendance from './attendance.model';
+import * as UserController from '../user/user.controller';
+
+function validationError(res, statusCode) {
+  statusCode = statusCode || 422;
+  return function(err) {
+    res.status(statusCode).json(err);
+  }
+}
 
 function respondWithResult(res, statusCode) {
   statusCode = statusCode || 200;
@@ -99,4 +107,31 @@ export function destroy(req, res) {
     .then(handleEntityNotFound(res))
     .then(removeEntity(res))
     .catch(handleError(res));
+}
+
+// Sets the attendance for a set of students
+export function quickSet(req, res) {
+  console.log('quickSet:', JSON.stringify(req.body));
+  let students = req.body.students;
+  students.forEach((student) => {
+    var newAttendance = {
+      date: new Date(req.body.date),
+      value: req.body.value
+    };
+
+    // do a parallel update of all student attendances
+    let promises = [];
+    students.forEach((student) => {
+      promises.push(UserController.changeAttendanceHelper(student, newAttendance));
+    });
+    console.log('promises:', promises.length);
+    Promise.all(promises)
+    .then((updatedStudents) => {
+      console.log('finished updating %d students', updatedStudents.length);
+      console.log('updatedStudents:', JSON.stringify(updatedStudents));
+      res.status(201).json({ students: updatedStudents });
+      console.log('Done!');
+      return null;
+    });
+  });
 }

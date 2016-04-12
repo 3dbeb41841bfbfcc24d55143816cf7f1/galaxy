@@ -101,6 +101,16 @@
       return _.find(student.attendance, function(a) { return angular.equals(new Date(a.date), date); });
     }
 
+    findStudentIndex(student) {
+      this.bigArray.forEach((item, index) => {
+        console.log('comparing item %s to student %s', item, student._id);
+        if (item._id === student._id) {
+          return index;
+        }
+      });
+      return -1;
+    }
+
     findOptionValue(value) {
       return _.find(this.attendanceValues, function(av) { return angular.equals(av, value); });
     }
@@ -113,24 +123,43 @@
       return result;
     }
 
-    showAttendance(index1, index2) {
-      let studentValue = this.bigArray[index1] ? this.bigArray[index1][index2] : null;
+    showAttendance(dateIndex, studentIndex) {
+      let studentValue = this.bigArray[dateIndex] ? this.bigArray[dateIndex][studentIndex] : null;
       let selected = this.findOptionValue(studentValue);
       return selected ? selected : 'Not set';
     }
 
-    onBeforeSaveAttendance(date, student, index1, index2, data) {
+    onBeforeQuickSet(date, dateIndex, data) {
+
+      // because the server call takes a few seconds, let's go ahead and update the view.
+      // this.bigArray[dateIndex].forEach((studentValue) => {
+      //   console.log('setting studentValue = %s', data);
+      //   studentValue = data;
+      // });
+
+      let that = this;
+      return this.$http.post('/api/attendances/quickset',
+                            { students: _.map(that.students, (student) => { return student._id; }),
+                              date: date,
+                              value: data
+                            })
+      .then((response) => {
+        console.log('onBeforeQuickSet: response =', response);
+      });
+    }
+
+    onAfterQuickSet() {
+      console.log('onAfterQuickSet');
+      this.load();
+    }
+
+    onBeforeSaveAttendance(date, student, dateIndex, studentIndex, data) {
       return this.$http.put('/api/users/' + student._id + '/attendance',
                             { attendance: { date: date, value: data } }
                            )
       .then((response) => {
         console.log('onBeforeSaveAttendance: response =', response);
-        // this.bigArray[index1][index2] = data;
       });
-    }
-
-    onAfterSaveAttendance(date, student, index1, index2 /*, data */) {
-      console.log('onAfterSaveAttendance:', this.bigArray[index1][index2]);
     }
   }
 

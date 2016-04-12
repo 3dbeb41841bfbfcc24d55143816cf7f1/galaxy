@@ -172,23 +172,12 @@ export function changeSquad(req, res, next) {
   });
 }
 
-/**
- * Change a users attendance
- */
-export function changeAttendance(req, res, next) {
-  var userId = req.params.id;
-  var newAttendance = {
-    date: new Date(req.body.attendance.date),
-    value: req.body.attendance.value
-  };
-
+// Update a user with a new/modified attendance record
+export function changeAttendanceHelper(userId, newAttendance) {
   return User.findById(userId)
   .then(user => {
     console.log('setting attendance for user', user.name, 'to', JSON.stringify(newAttendance));
-
-    // TODO: add or change attendance value
     let oldAttendance = _.find(user.attendance, (a) => {
-      console.log('comparing %s === %s', a.date, newAttendance.date);
       return a.date.getTime() === newAttendance.date.getTime();
     });
     if (oldAttendance) {
@@ -199,12 +188,24 @@ export function changeAttendance(req, res, next) {
       console.log('adding attendance:', JSON.stringify(newAttendance));
       user.attendance.push(newAttendance);
     }
-    return user.save()
-      .then(() => {
-        res.status(204).end();
-      })
-      .catch(validationError(res));
+    return user.save();
   });
+}
+
+/**
+ * Change a users attendance
+ */
+export function changeAttendance(req, res, next) {
+  var userId = req.params.id;
+  var newAttendance = {
+    date: new Date(req.body.attendance.date),
+    value: req.body.attendance.value
+  };
+  return changeAttendanceHelper(userId, newAttendance)
+  .then(() => {
+    res.status(204).end();
+  })
+  .catch(validationError(res));
 }
 
 /**
