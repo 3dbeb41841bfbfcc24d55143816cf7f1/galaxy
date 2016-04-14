@@ -1,0 +1,15 @@
+table a.present {
+  color: green !important;
+}
+table a.late {
+  color: yellow !important;
+}
+table a.excused {
+  color: orange !important;
+}
+table a.unexcused {
+  color: red !important;
+}
+table a.unset {
+  color: grey !important;
+}

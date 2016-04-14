@@ -58,6 +58,13 @@
       });
     }
 
+    getAttendanceCssClass(value) {
+      if (value) {
+        return value;
+      }
+      return 'unset';
+    }
+
     load() {
       // TODO: DRY this up
       let theCohort = this.Cohort.getCurrentCohort();

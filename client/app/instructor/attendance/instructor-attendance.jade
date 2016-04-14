@@ -1,11 +1,6 @@
 .attendance
   h2 Attendance for Cohort
     span.text-info(style='margin-left: 10px;') {{ $ctrl.Cohort.getCurrentCohort().name }}
-  //- div(ng-repeat='week in $ctrl.weeks')
-  //-   h3 Week {{ week.num }}
-  //-   ul
-  //-     li(ng-repeat='day in week.days') {{ day | date : 'fullDate' }}
-
   div(ng-hide='$ctrl.Cohort.getCurrentCohort()')
     p Please select a Cohort in the NavBar above to see attendance for that Cohort.
   div(ng-show='$ctrl.Cohort.getCurrentCohort()')
@@ -31,6 +26,7 @@
                   | QuickSet
               td(ng-repeat='student in $ctrl.students' ng-init='studentIndex = $index')
                 a(href='#'
+                ng-class='$ctrl.getAttendanceCssClass($ctrl.bigArray[dateIndex][studentIndex])'
                 editable-radiolist='$ctrl.bigArray[dateIndex][studentIndex]'
                 onbeforesave='$ctrl.onBeforeSaveAttendance(date, student, dateIndex, studentIndex, $data)'
                 e-ng-options='av as av for av in $ctrl.attendanceValues')
