@@ -1,15 +1,36 @@
-table a.present {
-  color: green !important;
+table a {
+  &.present {
+    color: green !important;
+  }
+  &.late {
+    color: yellow !important;
+  }
+  &.excused {
+    color: orange !important;
+  }
+  &.unexcused {
+    color: red !important;
+  }
+  &.unset {
+    color: grey !important;
+  }
 }
-table a.late {
-  color: yellow !important;
-}
-table a.excused {
-  color: orange !important;
-}
-table a.unexcused {
-  color: red !important;
-}
-table a.unset {
-  color: grey !important;
+
+form[name="projectForm"] {
+  > div {
+    height: auto;
+    padding: 5px 0;
+  }
+  .title {
+    display: inline-block;
+    font-weight: bold;
+    padding-top: 5px;
+    vertical-align: top;
+    min-width: 90px;
+  }
+  .editable {
+    display: inline-block;
+    padding-top: 5px;
+    vertical-align: top;
+  }
 }

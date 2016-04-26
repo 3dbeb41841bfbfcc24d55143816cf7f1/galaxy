@@ -5,6 +5,7 @@ import mongoose from 'mongoose';
 mongoose.Promise = require('bluebird');
 import {Schema} from 'mongoose';
 import Attendance from '../attendance/attendance.model';
+import Project from '../project/project.model';
 
 var UserSchema = new Schema({
   name: String,
@@ -13,6 +14,7 @@ var UserSchema = new Schema({
   cohort: { type: mongoose.Schema.Types.ObjectId, ref: 'Cohort' },
   squad:  { type: mongoose.Schema.Types.ObjectId, ref: 'Squad' },
   attendance: [ Attendance.schema ],
+  projects: [ Project.schema ],
   password: String,
   provider: String,
   salt: String,

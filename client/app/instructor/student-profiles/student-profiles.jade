@@ -13,18 +13,11 @@
             dd(ng-show='student.email') {{student.email}}
             dt(ng-show='student.github') GitHub:
             dd(ng-show='student.github') {{student.github.login}}
-
             dt Role:
             dd {{ student.role }}
-
-            div
-              dt Cohort:
-              dd {{ student.cohort.name || 'Not Set' }}
-
-            div
-              dt Squad:
-              dd {{ student.squad.name || 'Not Set' }}
-
-            div
-              dt Attendance:
-              dd {{ $ctrl.getAttendancePercentage(student) | number }}%
+            dt Cohort:
+            dd {{ student.cohort.name || 'Not Set' }}
+            dt Squad:
+            dd {{ student.squad.name || 'Not Set' }}
+            dt Attendance:
+            dd {{ $ctrl.getAttendancePercentage(student) | number }}%

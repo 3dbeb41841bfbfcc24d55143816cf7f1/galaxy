@@ -18,7 +18,7 @@
             tr(ng-repeat='date in week.days' ng-init='dateIndex = weekIndex * 5 + $index')
               td {{ date | date : 'fullDate' }}
               td
-                a(href='#' class='btn btn-info'
+                a(href='#' class='btn btn-info late'
                 editable-radiolist='$ctrl.quickSet'
                 onbeforesave='$ctrl.onBeforeQuickSet(date, dateIndex, $data)'
                 onaftersave='$ctrl.onAfterQuickSet()'

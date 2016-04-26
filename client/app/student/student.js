@@ -6,7 +6,10 @@ angular.module('galaxyApp')
     .state({
       name: 'student',
       url: '/student',
-      template: '<student></student>'
+      template: '<student></student>',
+      // Set default nested view
+      // TODO: change to dashboard when it is ready.
+      abstract: '.profiles'
     })
     .state({
       name: 'student.dashboard',

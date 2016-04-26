@@ -11,8 +11,22 @@
       // TODO:
       // this.projects = this.getCurrentUser().projects
       this.projects = [
-        { title: 'first project',  info: 'my first project',  num: 1, githubUrl: 'https://www.github.com/drmikeh/project1', deploymentUrl: 'bitballoon.com/project1' },
-        { title: 'second project', info: 'my second project', num: 2, githubUrl: 'https://www.github.com/drmikeh/project2', deploymentUrl: 'bitballoon.com/project2' }
+        {
+          _id: 1,
+          title: 'first project',
+          info: 'my first project',
+          num: 1,
+          githubUrl: 'https://www.github.com/drmikeh/project1',
+          deploymentUrl: 'http://bitballoon.com/project1'
+        },
+        {
+          _id: 2,
+          title: 'second project',
+          info: 'my second project',
+          num: 2,
+          githubUrl: 'https://www.github.com/drmikeh/project2',
+          deploymentUrl: 'http://bitballoon.com/project2'
+        }
       ];
     }
 
@@ -40,11 +54,12 @@
         });
       }
       else {
+        alert('TODO: save project');
         // TODO:
-        this.Project.save(data)
-        .then(response => {
-          this.enrichProject(response.data, index);
-        });
+        // this.Project.save(data)
+        // .then(response => {
+        //   this.enrichProject(response.data, index);
+        // });
       }
     }
 

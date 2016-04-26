@@ -27,7 +27,10 @@ function handleError(res, statusCode) {
  */
 export function index(req, res) {
   console.log('req.query:', req.query);
-  let filter = req.query.role ? {role: req.query.role} : {};
+  let filter = {};
+  if (req.query.role) {
+    filter.role = req.query.role;
+  }
   if (req.query.cohort) {
     filter.cohort = req.query.cohort;
   }

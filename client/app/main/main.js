@@ -16,11 +16,10 @@ angular.module('galaxyApp')
             // do nothing
           }
           else if (user.role === 'student') {
-            $state.go('student.profiles');
+            $state.go('student');
           }
           else {
-            // TODO: change to dashboard when it is ready.
-            $state.go('instructor.attendance');
+            $state.go('instructor');
           }
       });
     }

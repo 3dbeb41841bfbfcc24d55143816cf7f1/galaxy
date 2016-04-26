@@ -34,7 +34,8 @@
       let squadId = theSquad ? theSquad._id : undefined;
       return this.$http.get('/api/users',
                             { params: {
-                                       role: 'student',
+                                       // TODO: use angular filter for role
+                                       // role: 'student',
                                        cohort: cohortId,
                                        squad: squadId }
       })

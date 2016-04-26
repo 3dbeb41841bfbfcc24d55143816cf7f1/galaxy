@@ -6,6 +6,9 @@ angular.module('galaxyApp.admin')
   .state({
     name: 'admin',
     url: '/admin',
+    // Set default nested view
+    // TODO: change to dashboard when it is ready.
+    abstract: '.users',
     template: '<admin></admin>'
   })
   .state({
