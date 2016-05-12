@@ -113,6 +113,7 @@ export function destroy(req, res) {
 export function quickSet(req, res) {
   console.log('quickSet:', JSON.stringify(req.body));
   let students = req.body.students;
+  let promises = [];
   students.forEach((student) => {
     var newAttendance = {
       date: new Date(req.body.date),
@@ -120,18 +121,17 @@ export function quickSet(req, res) {
     };
 
     // do a parallel update of all student attendances
-    let promises = [];
-    students.forEach((student) => {
-      promises.push(UserController.changeAttendanceHelper(student, newAttendance));
-    });
-    console.log('promises:', promises.length);
-    Promise.all(promises)
-    .then((updatedStudents) => {
-      console.log('finished updating %d students', updatedStudents.length);
-      console.log('updatedStudents:', JSON.stringify(updatedStudents));
-      res.status(201).json({ students: updatedStudents });
-      console.log('Done!');
-      return null;
-    });
+    promises.push(UserController.changeAttendanceHelper(student, newAttendance));
+  });
+
+  console.log('promises:', promises.length);
+
+  Promise.all(promises)
+  .then((updatedStudents) => {
+    console.log('finished updating %d students', updatedStudents.length);
+    console.log('updatedStudents:', JSON.stringify(updatedStudents));
+    res.status(201).json({ students: updatedStudents });
+    console.log('Done!');
+    return null;
   });
 }
