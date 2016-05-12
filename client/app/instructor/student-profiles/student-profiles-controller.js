@@ -92,21 +92,21 @@
       user.squad = selected.length ? selected[0] : null;
     }
 
-    getAttendancePercentage(user) {
-      var present = 0;
-      var total = 0;
+    getAttendancePresentOrLate(user) {
+      var presentOrLate = 0;
       user.attendance.forEach((a) => {
         if (a.value === 'present' || a.value === 'late') {
-          ++present;
-        }
-        if (a.value) {
-          ++total;
+          console.log('whoop');
+          ++presentOrLate;
         }
       });
-      if (total === 0) {
-        return 0;
-      }
-      return present * 100.0 / total;
+      console.log('getAttendancePresentOrLate returning', presentOrLate);
+      return presentOrLate;
+    }
+
+    getAttendancePercentage(user) {
+      var total = user.attendance.length;
+      return total === 0 ? 0.0 : this.getAttendancePresentOrLate(user) * 100.0 / total;
     }
   }
 

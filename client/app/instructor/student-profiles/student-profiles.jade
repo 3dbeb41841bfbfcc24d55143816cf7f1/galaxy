@@ -21,3 +21,6 @@
             dd {{ student.squad.name || 'Not Set' }}
             dt Attendance:
             dd {{ $ctrl.getAttendancePercentage(student) | number }}%
+              span(style='margin-left: 10px')
+                | ({{ $ctrl.getAttendancePresentOrLate(student) }} /
+                |  {{ student.attendance.length }})
