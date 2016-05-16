@@ -1,6 +1,6 @@
 'use strict';
 
-import mongoose from 'mongoose';
+let mongoose = require('mongoose');
 
 var SquadSchema = new mongoose.Schema({
   name   : String,
@@ -9,4 +9,4 @@ var SquadSchema = new mongoose.Schema({
   cohort : { type: mongoose.Schema.Types.ObjectId, ref: 'Cohort' }
 });
 
-export default mongoose.model('Squad', SquadSchema);
+module.exports = mongoose.model('Squad', SquadSchema);

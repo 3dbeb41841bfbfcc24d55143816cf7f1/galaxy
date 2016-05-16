@@ -1,6 +1,6 @@
 'use strict';
 
-import mongoose from 'mongoose';
+let mongoose = require('mongoose');
 
 var HomeworkSchema = new mongoose.Schema({
   title: String,
@@ -25,4 +25,4 @@ var HomeworkSchema = new mongoose.Schema({
   pre('find'   , autoPopulate);
 })();
 
-export default mongoose.model('Homework', HomeworkSchema);
+module.exports = mongoose.model('Homework', HomeworkSchema);

@@ -112,26 +112,26 @@ function createTestUsers() {
     });
   })
   .then(() => {
-    return User.find({})
-    .then((users) => {
-      let promises = [];
-      users.forEach((user) => {
-        // console.log('user:', user);
-        if (user.role === 'student') {
-          user.attendance.push({ date: new Date(2016, 2, 21), value: 'present'   });
-          user.attendance.push({ date: new Date(2016, 2, 22), value: 'late'      });
-          user.attendance.push({ date: new Date(2016, 2, 23), value: 'excused'   });
-          user.attendance.push({ date: new Date(2016, 2, 24), value: 'unexcused' });
-          user.attendance.push({ date: new Date(2016, 2, 25), value: undefined   });
-          promises.push(user.save());
-        }
-      });
-      Promise.all(promises)
-      .then((users) => {
-        console.log('finished populating %d users', users.length);
-        return null;
-      });
+    return User.find({});
+  })
+  .then((users) => {
+    let promises = [];
+    users.forEach((user) => {
+      // console.log('user:', user);
+      if (user.role === 'student') {
+        user.attendance.push({ date: new Date(2016, 2, 21), value: 'present'   });
+        user.attendance.push({ date: new Date(2016, 2, 22), value: 'late'      });
+        user.attendance.push({ date: new Date(2016, 2, 23), value: 'excused'   });
+        user.attendance.push({ date: new Date(2016, 2, 24), value: 'unexcused' });
+        user.attendance.push({ date: new Date(2016, 2, 25), value: undefined   });
+        promises.push(user.save());
+      }
     });
+    return Promise.all(promises);
+  })
+  .then((users) => {
+    console.log('finished populating %d users', users.length);
+    return null;
   });
 }
 

@@ -1,6 +1,6 @@
 'use strict';
 
-import mongoose from 'mongoose';
+let mongoose = require('mongoose');
 
 var ProjectSchema = new mongoose.Schema({
   title: String,
@@ -11,4 +11,4 @@ var ProjectSchema = new mongoose.Schema({
   instructorComments: String
 });
 
-export default mongoose.model('Project', ProjectSchema);
+module.exports = mongoose.model('Project', ProjectSchema);

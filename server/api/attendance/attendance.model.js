@@ -1,10 +1,10 @@
 'use strict';
 
-import mongoose from 'mongoose';
+let mongoose = require('mongoose');
 
-var AttendanceSchema = new mongoose.Schema({
+let AttendanceSchema = new mongoose.Schema({
   date: Date,
   value: String
 });
 
-export default mongoose.model('Attendance', AttendanceSchema);
+module.exports = mongoose.model('Attendance', AttendanceSchema);

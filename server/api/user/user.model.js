@@ -1,13 +1,12 @@
 'use strict';
 
-import crypto from 'crypto';
-import mongoose from 'mongoose';
+let crypto = require('crypto');
+let mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-import {Schema} from 'mongoose';
-import Attendance from '../attendance/attendance.model';
-import Project from '../project/project.model';
+let Attendance = require('../attendance/attendance.model');
+let Project = require('../project/project.model');
 
-var UserSchema = new Schema({
+var UserSchema = new mongoose.Schema({
   name: String,
   email:  { type: String, lowercase: true },
   role:   { type: String, default: 'student' },
@@ -246,4 +245,4 @@ var UserSchema = new Schema({
   };
 })();
 
-export default mongoose.model('User', UserSchema);
+module.exports = mongoose.model('User', UserSchema);

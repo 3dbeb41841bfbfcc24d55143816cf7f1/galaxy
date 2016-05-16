@@ -1,6 +1,6 @@
 'use strict';
 
-import mongoose from 'mongoose';
+let mongoose = require('mongoose');
 
 var CohortSchema = new mongoose.Schema({
   name      : { type : String, unique : true, required : true },
@@ -9,4 +9,4 @@ var CohortSchema = new mongoose.Schema({
   active    : { type : Boolean, default: true }
 });
 
-export default mongoose.model('Cohort', CohortSchema);
+module.exports = mongoose.model('Cohort', CohortSchema);
