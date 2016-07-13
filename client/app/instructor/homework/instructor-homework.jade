@@ -1,2 +1,21 @@
 .container-fluid
   h3 Homework
+
+  //- h3 Example 1 - ng-init
+  //- .text-left(hljs='', hljs-language='javascript', ng-init="codez = 'var x = 3; var y = 4;'", hljs-source='codez')
+  //- h3 Example 2 - include from inline ng-template script
+  //- .text-left(hljs='', hljs-language='javascript', hljs-include="'code1.js'")
+  //- h3 Example 3 - embedded text
+  //- .text-left(hljs='', hljs-language='javascript')
+  //-   | function sum(a, b) {
+  //-   |   return a + b;
+  //-   | }
+  //-   | var x = 3;
+  //-   | var y = 4;
+  //-   | var z = sum(x + y);
+  //- script(type='text/ng-template', id='code1.js').
+  //-   function sum(a, b) { return a + b; } var x = 3; var y = 4; var z = sum(x + y);
+
+  div(ng-init="filename='/assets/code-samples/fizz-buzz.js'")
+    h4 Example 4 - include via AJAX call
+    .text-left(hljs='', hljs-language='javascript', hljs-include='filename')

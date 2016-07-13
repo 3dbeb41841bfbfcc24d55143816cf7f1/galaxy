@@ -1,0 +1,61 @@
+h2 You are taking the {{ $ctrl.quizName() }}
+hr
+.text-center(ng-hide='$ctrl.inProgress')
+  button.btn.btn-primary(ng-click='$ctrl.startQuiz()') Start the Quiz
+div(ng-show='$ctrl.inProgress')
+  .row
+    .col-sm-4.col-md-offset-2
+      dl.dl-horizontal
+        dt Progress:
+        dd
+          uib-progressbar(max='$ctrl.numQuestions()', value='$ctrl.questionsCompleted()')
+            span {{ $ctrl.questionsCompleted() }} / {{ $ctrl.numQuestions() }}
+    .col-sm-4
+      dl.dl-horizontal
+        dt Score:
+        dd {{ $ctrl.numCorrect }} / {{ $ctrl.numGraded }}
+    br
+    hr
+  section.question.well(ng-hide='$ctrl.quizOver')
+    h3 Question \#{{ $ctrl.question.number }}
+    h4 {{ $ctrl.question.prompt }}
+    br
+    //- pre(ng-show='$ctrl.question.code', ng-bind-html='$ctrl.question.code | html').
+    div(ng-show='$ctrl.question.codefile')
+      .text-left(hljs='', hljs-language='javascript', hljs-include='$ctrl.question.codefile')
+    article(ng-switch='$ctrl.question.type')
+      // TEXT
+      div(ng-switch-when='text')
+        input(type='text', size='40', ng-model='$ctrl.answer')
+      // CHECKBOXES
+      div(ng-switch-when='checkboxes')
+        .row
+          .col-sm-4.col-sm-offset-4.text-left.checkbox
+            ul.question-options
+              li(ng-repeat='option in $ctrl.question.options')
+                label
+                  input(type='checkbox', name='answer', value='{{option}}')
+                  | {{option}}
+      // MULTIPLE CHOICE
+      div(ng-switch-when='multiple-choice')
+        .row
+          .col-sm-4.col-sm-offset-4.text-left.radio
+            ul.question-options
+              li(ng-repeat='option in $ctrl.question.options')
+                label
+                  input(type='radio', name='answer', value='{{option}}')
+                  {{option}}
+      // NUMERIC
+      div(ng-switch-when='number')
+        input.numeric-input(type='number', ng-model='$ctrl.answer')
+      div(ng-switch-default='')
+        h4.text-danger Question Type '{{ $ctrl.question.type }}' not recognized!
+      br
+      .text-center
+        button.btn.btn-primary.quiz-submit-button(ng-click='$ctrl.submit()') Submit
+  section.question.well(style='position: relative; height: 400px;', ng-show='$ctrl.quizOver')
+    h2 The Quiz is over
+    h1 You got {{ $ctrl.numCorrect }} out of {{ $ctrl.numGraded }}
+    br
+    .text-center
+      button.btn.btn-success.quiz-submit-button(ng-click='$ctrl.reset()') Play again
