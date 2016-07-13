@@ -24,6 +24,9 @@
       <!-- injector:css -->
       <!-- endinjector -->
     <!-- endbuild -->
+
+    <!-- TODO: I could not get highlight.js to work with bower :-( -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/sunburst.min.css">
   </head>
   <body ng-app="galaxyApp">
     <!--[if lt IE 7]>
@@ -52,6 +55,10 @@
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
+
+    <!-- TODO: I could not get highlight.js to work with bower :-( -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+
     <!-- build:js({client,node_modules}) app/vendor.js -->
       <!-- bower:js -->
       <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -69,6 +76,7 @@
       <script src="bower_components/ng-busy/build/angular-busy.js"></script>
       <script src="bower_components/angular-ui-router-default/angular-ui-router-default.js"></script>
       <script src="bower_components/angular-drag-and-drop-lists/angular-drag-and-drop-lists.js"></script>
+      <script src="bower_components/angular-highlightjs/build/angular-highlightjs.js"></script>
       <!-- endbower -->
       <script src="socket.io-client/socket.io.js"></script>
     <!-- endbuild -->
@@ -98,6 +106,11 @@
       <script src="app/instructor/homework/instructor-homework.js"></script>
       <script src="app/instructor/instructor.js"></script>
       <script src="app/instructor/instuctor.js"></script>
+      <script src="app/instructor/quiz/config.js"></script>
+      <script src="app/instructor/quiz/html-filter.js"></script>
+      <script src="app/instructor/quiz/quiz-controller.js"></script>
+      <script src="app/instructor/quiz/quiz-service.js"></script>
+      <script src="app/instructor/quizzes/instructor-quizzes-controller.js"></script>
       <script src="app/instructor/student-profiles/student-profiles.js"></script>
       <script src="app/main/main.controller.js"></script>
       <script src="app/main/main.js"></script>
@@ -108,6 +121,8 @@
       <script src="app/student/projects/student-projects-controller.js"></script>
       <script src="app/student/student-controller.js"></script>
       <script src="app/student/student.js"></script>
+      <script src="assets/code-samples/fizz-buzz.js"></script>
+      <script src="assets/code-samples/problem1.js"></script>
       <script src="components/auth/auth.service.js"></script>
       <script src="components/auth/interceptor.service.js"></script>
       <script src="components/auth/router.decorator.js"></script>

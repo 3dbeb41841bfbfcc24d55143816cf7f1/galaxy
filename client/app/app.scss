@@ -54,13 +54,14 @@ table {
 @import "../bower_components/bootswatch-scss/darkly/variables";
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
 
-// Component styles are injected through grunt
+// Component styles are injected through gulp
 // injector
 @import 'variables';
 @import 'admin/admin';
 @import 'animate';
 @import 'instructor/group-projects/group-projects';
 @import 'instructor/instructor';
+@import 'instructor/quiz/quiz';
 @import 'main/main';
 @import 'student/student';
 @import '../components/footer/footer';
@@ -73,3 +74,22 @@ $panel-primary-border: $brand-primary;
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
 @import '../bower_components/bootstrap-social/bootstrap-social.scss';
 @import "../bower_components/bootswatch-scss/darkly/bootswatch";
+
+// override background-color here to make code blocks look good.
+pre {
+  background-color: black;
+}
+.progress {
+  margin-bottom: 0;
+  height: 21px;
+}
+.progress .progress-bar {
+  font-size: 13px;
+  line-height: 21px;
+}
+
+// use flex-box to vertically center children (hint: put this class on the parent)
+.vertical-center {
+  display: flex;
+  align-items: center;
+}

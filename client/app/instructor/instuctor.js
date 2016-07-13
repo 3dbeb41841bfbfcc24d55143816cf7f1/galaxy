@@ -48,5 +48,21 @@ angular.module('galaxyApp')
     onEnter: () => {
       console.log('onEnter: instructor.projects');
     }
+  })
+  .state({
+    name: 'instructor.quizzes',
+    url: '/quizzes',
+    template: '<instructor-quizzes></instructor-quizzes>',
+    onEnter: () => {
+      console.log('onEnter: instructor.quizzes');
+    }
+  })
+  .state({
+    name: 'instructor.quiz',
+    url: '/quiz',
+    template: '<quiz></quiz>',
+    onEnter: () => {
+      console.log('onEnter: instructor.quiz');
+    }
   });
 });
