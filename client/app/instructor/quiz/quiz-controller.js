@@ -48,13 +48,8 @@
         console.log('answer:', answer);
         this.checkAnswer(answer);
       }
-      else if (!$('input[name=answer]:checked').length) {
-        alert('Answer not found in DOM');
-      }
       else {
-        answer = $('input[name=answer]:checked').val();
-        console.log('answer:', answer);
-        this.checkAnswer(answer);
+        alert('Answer not found in DOM');
       }
       this.answer = undefined;
       this.nextQuestion();
@@ -66,10 +61,10 @@
       this.numCorrect = 0;
       this.numGraded = 0;
       this.nextQuestion();
-      this.quizOver = false;
     }
     reset() {
       this.inProgress = false;
+      this.quizOver = false;
     }
   }
 
