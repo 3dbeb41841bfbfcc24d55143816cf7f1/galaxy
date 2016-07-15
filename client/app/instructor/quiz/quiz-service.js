@@ -95,7 +95,7 @@
               "d": "It will print both 'awesome' and 'fantastic'"
             },
             "answer": "fantastic",
-            "difficulty": "easy",
+            "difficulty": "medium",
           },
           {
             "number": 7,
