@@ -53,9 +53,10 @@ export function create(req, res, next) {
   var newUser = new User(req.body);
   newUser.provider = 'local';
 
-  return Cohort.findOne({ name: 'ATL WDI #6' })
-  .then((currentCohort) => {
-    newUser.cohort = currentCohort._id;
+  return User.findOne({ name: 'Admin' })
+  .then((adminUser) => {
+    newUser.cohort = adminUser.cohort._id;
+    console.log('creating new user with cohort = ' + newUser.cohort);
     return newUser.save()
     .then(function(user) {
       var token = jwt.sign({ _id: user._id }, config.secrets.session, {

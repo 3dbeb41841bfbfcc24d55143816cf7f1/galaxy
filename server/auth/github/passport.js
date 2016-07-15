@@ -14,13 +14,13 @@ exports.setup = function(User, config) {
     })
     .then(user => {
       if (!user) {
-        return Cohort.findOne({ name: 'ATL WDI #6' })
-        .then(currentCohort => {
+        return User.findOne({ name: 'Admin' })
+        .then(adminUser => {
           user = new User({
             name: profile.displayName,
             username: profile.username,
             role: 'student',
-            cohort: currentCohort._id,
+            cohort: adminUser.cohort._id,
             provider: 'github',
             github: profile._json
           });
