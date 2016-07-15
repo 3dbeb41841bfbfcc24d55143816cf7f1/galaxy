@@ -25,8 +25,22 @@ This project was generated with the [Angular Full-Stack Generator](https://githu
 
 ## Build & development
 
-Run `grunt build` for building and `grunt serve` for preview.
+Run `gulp build` for building and `gulp serve` for preview.
 
 ## Testing
 
 Running `npm test` will run the unit tests with karma.
+
+## Deployment
+
+Run `gulp build` to build the `dist` folder and then do the following:
+
+```bash
+cd dist
+git add -A
+git commit -m "some commit message."
+git push heroku master
+heroku ps   # check the status of the heroku app
+cd ..
+```
+
