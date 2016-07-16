@@ -7,12 +7,13 @@
           img(ng-show='student.github' src='{{ student.github.avatar_url }}' alt='Avatar' height='160' width='160')
         .col-sm-9
           strong {{student.name}}
+          //- pre {{ student.github | json }}
           br
           dl.dl-horizontal
             dt(ng-show='student.email') Local:
             dd(ng-show='student.email') {{student.email}}
             dt(ng-show='student.github') GitHub:
-            dd(ng-show='student.github') {{student.github.login}}
+            dd(ng-show='student.github') <a target="_blank" ng-href="https://github.com/{{student.github.login}}">{{student.github.login}}</a>
             dt Role:
             dd {{ student.role }}
             dt Cohort:

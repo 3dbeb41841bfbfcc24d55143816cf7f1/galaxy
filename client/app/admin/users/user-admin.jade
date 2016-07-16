@@ -15,7 +15,7 @@
             dt(ng-show='user.email') Local:
             dd(ng-show='user.email') {{user.email}}
             dt(ng-show='user.github') GitHub:
-            dd(ng-show='user.github') {{user.github.login}}
+            dd(ng-show='user.github') <a target="_blank" ng-href="https://github.com/{{user.github.login}}">{{user.github.login}}</a>
 
             dt Role:
             dd(ng-hide='user.name === "Admin"')
