@@ -47,6 +47,7 @@
         'late',
         'excused',
         'unexcused',
+        'not set'
       ];
 
       this.load();

@@ -185,10 +185,23 @@ export function changeAttendanceHelper(userId, newAttendance) {
       return a.date.getTime() === newAttendance.date.getTime();
     });
     if (oldAttendance) {
-      console.log('updating oldAttendance:', JSON.stringify(oldAttendance));
-      oldAttendance.value = newAttendance.value;
+      // if new value is 'not set' then remove attendance from array
+      if (newAttendance.value === 'not set') {
+        console.log('unsetting (removing) attendance:', oldAttendance);
+        let index = user.attendance.indexOf(oldAttendance);
+        if (index > -1) {
+          user.attendance.splice(index, 1);
+        }
+        else {
+          console.log('ERROR: could not find index for oldAttendance:', oldAttendance);
+        }
+      }
+      else {
+        console.log('updating oldAttendance:', JSON.stringify(oldAttendance));
+        oldAttendance.value = newAttendance.value;
+      }
     }
-    else {
+    else if (newAttendance.value !== 'not set') {
       console.log('adding attendance:', JSON.stringify(newAttendance));
       user.attendance.push(newAttendance);
     }
