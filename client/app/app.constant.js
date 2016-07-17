@@ -6,6 +6,7 @@
 		"student",
 		"admin",
 		"instructor",
+		"instructor associate",
 		"producer"
 	]
 })
