@@ -23,14 +23,17 @@ function createTestCohorts() {
     return Cohort.create({
       name: 'Test Cohort #1',
       info: 'Just a test cohort from the seed file.',
+      url:  'https://github.com/ATL-WDI-Curriculum/wdi-7',
       startDate: new Date(2016, 2, 21)
     }, {
       name: 'Test Cohort #2',
       info: 'Just a test cohort from the seed file.',
+      url:  'https://github.com/ATL-WDI-Curriculum/wdi-7',
       startDate: new Date(2016, 2, 21)
     }, {
       name: 'ATL WDI #6',
       info: 'Atlanta WDI #6 - Spring 2016',
+      url:  'https://github.com/ATL-WDI-Curriculum/wdi-7',
       startDate: new Date(2016, 2, 21)
     });
   })

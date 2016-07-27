@@ -6,9 +6,10 @@
       tr(style='font-weight: bold')
         td(style='width:15%') Name
         td(style='width:30%') Info
-        td(style='width:20%') Start Date
-        td(style='width:15%') Active
-        td(style='width:20%') Edit
+        td(style='width:20%') URL
+        td(style='width:10%') Start Date
+        td(style='width:10%') Active
+        td(style='width:15%') Edit
     tbody
       tr(ng-repeat='cohort in $ctrl.cohorts')
         td
@@ -17,6 +18,10 @@
         td
           span(editable-textarea='cohort.info', e-name='info', e-form='rowform', e-rows="3" e-cols="40" onbeforesave='$ctrl.checkInfo($data)')
             | {{ cohort.info || 'empty' }}
+        td
+          span(editable-text='cohort.url', e-name='url', e-form='rowform', onbeforesave='$ctrl.checkUrl($data)', e-required='')
+            a(ng-href="{{cohort.url}}", target="_blank")
+              | {{ cohort.url || 'empty' }}
         td
           span(editable-date='cohort.startDate', e-name='startDate', e-form='rowform', e-rows="3" e-cols="40" onbeforesave='$ctrl.checkStartDate($data)')
             | {{ cohort.startDate | date }}
