@@ -35,12 +35,14 @@ var SquadSchema = new mongoose.Schema({
   .multi(function(squads, ids, callback) {  // multi is used for queries with multiple fields
   // query studentCount for all found parents with single db query
     this.db.model('User')
-    .aggregate([{
-        $group: {
+    .aggregate([
+      { $match : { role : 'student' } },
+      { $group: {
           _id: '$squad',
           studentCount: {$sum: 1}
-        }},
-        {$match: {'_id': {$in: ids}}}
+        }
+      },
+      { $match: {'_id': {$in: ids}} }
     ],
       function(err, studentCounts) {
         console.log('calling callback 2 with studentCounts:', studentCounts);
