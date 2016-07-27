@@ -61,14 +61,14 @@ function handleError(res, statusCode) {
 
 // Gets a list of Cohorts
 export function index(req, res) {
-  return Cohort.find().sort('name')
+  return Cohort.find().fill('studentCount').sort('name')
   .then(respondWithResult(res))
   .catch(handleError(res));
 }
 
 // Gets a single Cohort from the DB
 export function show(req, res) {
-  return Cohort.findById(req.params.id).exec()
+  return Cohort.findById(req.params.id).fill('studentCount').exec()
     .then(handleEntityNotFound(res))
     .then(respondWithResult(res))
     .catch(handleError(res));
@@ -87,7 +87,7 @@ export function update(req, res) {
   if (req.body._id) {
     delete req.body._id;
   }
-  return Cohort.findById(req.params.id).exec()
+  return Cohort.findById(req.params.id).fill('studentCount').exec()
     .then(handleEntityNotFound(res))
     .then(saveUpdates(req.body))
     .then(respondWithResult(res))

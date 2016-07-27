@@ -1,6 +1,6 @@
 'use strict';
 
-let mongoose = require('mongoose');
+import mongoose from 'mongoose-fill';   // mongoose-fill monkey-patches mongoose.
 
 var HomeworkSchema = new mongoose.Schema({
   title: String,

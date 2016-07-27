@@ -4,8 +4,9 @@
   table.table.table-bordered.table-hover.table-condensed.vertical-align
     thead
       tr(style='font-weight: bold')
-        td(style='width:15%') Name
-        td(style='width:30%') Info
+        td(style='width:20%') Name
+        td(style='width:35%') Info
+        td(style='width:10%') Students
         td(style='width:15%') Active
         td(style='width:20%') Edit
     tbody
@@ -16,6 +17,8 @@
         td
           span(editable-textarea='squad.info', e-name='info', e-form='rowform', e-rows="3" e-cols="40" onbeforesave='$ctrl.checkInfo($data)')
             | {{ squad.info || 'empty' }}
+        td
+          | {{ squad.studentCount || 'NA' }}
         td
           span(editable-checkbox='squad.active', e-name='active', e-form='rowform', onbeforesave='$ctrl.checkActive($data)')
             | {{ squad.active }}

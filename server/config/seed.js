@@ -11,7 +11,7 @@ import Attendance from '../api/attendance/attendance.model';
 import Homework from '../api/homework/homework.model';
 import config from './environment';
 import Promise from 'bluebird';
-import mongoose from 'mongoose';
+import mongoose from 'mongoose-fill';   // mongoose-fill monkey-patches mongoose.
 
 mongoose.Promise = Promise;
 

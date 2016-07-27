@@ -61,14 +61,14 @@ function handleError(res, statusCode) {
 
 // Gets a list of Squads
 export function index(req, res) {
-  return Squad.find().sort('name')
+  return Squad.find().fill('studentCount').sort('name')
   .then(respondWithResult(res))
   .catch(handleError(res));
 }
 
 // Gets a single Squad from the DB
 export function show(req, res) {
-  return Squad.findById(req.params.id).exec()
+  return Squad.findById(req.params.id).fill('studentCount').exec()
     .then(handleEntityNotFound(res))
     .then(respondWithResult(res))
     .catch(handleError(res));
@@ -86,7 +86,7 @@ export function update(req, res) {
   if (req.body._id) {
     delete req.body._id;
   }
-  return Squad.findById(req.params.id).exec()
+  return Squad.findById(req.params.id).fill('studentCount').exec()
     .then(handleEntityNotFound(res))
     .then(saveUpdates(req.body))
     .then(respondWithResult(res))

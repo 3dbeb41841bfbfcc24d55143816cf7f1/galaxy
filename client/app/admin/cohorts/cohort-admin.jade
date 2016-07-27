@@ -5,9 +5,10 @@
     thead
       tr(style='font-weight: bold')
         td(style='width:15%') Name
-        td(style='width:30%') Info
+        td(style='width:25%') Info
         td(style='width:20%') URL
         td(style='width:10%') Start Date
+        td(style='width:5%')  Students
         td(style='width:10%') Active
         td(style='width:15%') Edit
     tbody
@@ -25,6 +26,8 @@
         td
           span(editable-date='cohort.startDate', e-name='startDate', e-form='rowform', e-rows="3" e-cols="40" onbeforesave='$ctrl.checkStartDate($data)')
             | {{ cohort.startDate | date }}
+        td
+          | {{ cohort.studentCount || 'NA' }}
         td
           span(editable-checkbox='cohort.active', e-name='active', e-form='rowform', onbeforesave='$ctrl.checkActive($data)')
             | {{ cohort.active }}

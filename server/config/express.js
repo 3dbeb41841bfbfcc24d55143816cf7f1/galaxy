@@ -19,7 +19,8 @@ import passport from 'passport';
 import session from 'express-session';
 import connectMongo from 'connect-mongo';
 import promise from 'bluebird';
-import mongoose from 'mongoose';
+import mongoose from 'mongoose-fill';   // mongoose-fill monkey-patches mongoose.
+
 var MongoStore = connectMongo(session);
 
 export default function(app) {

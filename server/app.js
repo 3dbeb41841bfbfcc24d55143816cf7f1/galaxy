@@ -5,8 +5,10 @@
 'use strict';
 
 import express from 'express';
-import mongoose from 'mongoose';
-mongoose.Promise = require('bluebird');
+
+// import mongoose from 'mongoose';
+import mongoose from 'mongoose-fill';   // mongoose-fill monkey-patches mongoose.
+
 import config from './config/environment';
 import http from 'http';
 

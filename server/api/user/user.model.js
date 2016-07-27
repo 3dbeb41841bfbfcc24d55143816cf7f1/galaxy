@@ -1,8 +1,9 @@
 'use strict';
 
 let crypto = require('crypto');
-let mongoose = require('mongoose');
-mongoose.Promise = require('bluebird');
+
+import mongoose from 'mongoose-fill';   // mongoose-fill monkey-patches mongoose.
+
 let Attendance = require('../attendance/attendance.model');
 let Project = require('../project/project.model');
 

@@ -5,8 +5,7 @@
 
 'use strict';
 
-let mongoose = require('mongoose');
-mongoose.Promise = require('bluebird');
+import mongoose from 'mongoose-fill';   // mongoose-fill monkey-patches mongoose.
 
 let User = require('../api/user/user.model');
 let Cohort = require('../api/cohort/cohort.model');
