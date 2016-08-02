@@ -176,6 +176,84 @@ export function changeSquad(req, res, next) {
   });
 }
 
+/**
+ * Get projects
+ */
+export function getProjects(req, res, next) {
+  var userId = req.params.id;
+  return User.findById(userId)
+  .then(user => {
+    res.status(200).json(user.projects);
+    return user.projects;
+  });
+}
+
+/**
+ * Add a project
+ */
+export function addProject(req, res, next) {
+  var userId = req.params.id;
+  var project = req.body;
+
+  return User.findById(userId)
+  .then(user => {
+    user.projects.push(project);
+    return user.save()
+    .then(() => {
+      res.status(201).json(user.projects[user.projects.length - 1]);
+    })
+    .catch(validationError(res));
+  });
+}
+
+/**
+ * Update a project
+ */
+ export function updateProject(req, res, next) {
+  var userId = req.params.id;
+  var projectId = req.params.projectId;
+  var updates = req.body;
+
+  return User.findById(userId)
+  .then(user => {
+    // let project = user.projects.id(projectId);
+    let project = user.projects.id(projectId);
+
+    // let updated = _.merge(project, updates);
+    project.num = updates.num;
+    project.title = updates.title;
+    project.info = updates.info;
+    project.githubUrl = updates.githubUrl;
+    project.deploymentUrl = updates.deploymentUrl;
+
+    return user.save()
+    .then(() => {
+      res.status(200).json(user.projects);
+    })
+    .catch(validationError(res));
+  });
+}
+
+/**
+ * Delete a project
+ */
+ export function deleteProject(req, res, next) {
+  var userId = req.params.id;
+  var projectId = req.params.projectId;
+
+  console.log('deleteProject called:', userId, projectId);
+
+  return User.findById(userId)
+  .then(user => {
+    user.projects.pull(projectId);
+    return user.save()
+    .then(() => {
+      res.status(200).json(user.projects);
+    })
+    .catch(validationError(res));
+  });
+}
+
 // Update a user with a new/modified attendance record
 export function changeAttendanceHelper(userId, newAttendance) {
   return User.findById(userId)

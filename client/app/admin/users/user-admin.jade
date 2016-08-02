@@ -2,7 +2,6 @@
   h3 User Admin
   ul.list-group
     li.list-group-item(ng-repeat='user in $ctrl.users')
-
       .row
         .col-sm-3
           img(ng-show='user.github' src='{{ user.github.avatar_url }}' alt='Avatar' height='160' width='160')
@@ -52,6 +51,9 @@
             div(ng-show='user.role === "student"')
               dt Attendance:
               dd {{ $ctrl.getAttendancePercentage(user) | number }}%
+                span(style='margin-left: 10px')
+                  | ({{ $ctrl.getAttendancePresentOrLate(user) }} /
+                  |  {{ user.attendance.length }})
 
           a.trash(ng-click='$ctrl.delete(user)')
             span.glyphicon.glyphicon-trash.pull-right(style='margin-top:-15px;')

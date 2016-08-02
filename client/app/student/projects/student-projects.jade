@@ -1,51 +1,55 @@
 .container-fluid
-  h2 Student Projects for
-    span(class='text-success') {{ ' ' + $ctrl.getCurrentUser().name }}
-
-  ul.list-group
+  h3 My Projects
+  ul.list-group.student-projects
     li.list-group-item(ng-repeat='project in $ctrl.projects | orderBy : "num"')
       .row
         .col-sm-3
-          h2 Project {{ project.num || 'empty' }}
+          h2 Project {{ project.num || 'NA' }}
         .col-sm-9
-          div.project-form
-            form(editable-form='' name='projectForm' onaftersave='$ctrl.saveProject()')
-              div
-                span(class='title') Title:
-                span(editable-text='project.title'
-                     e-name='title'
-                     e-required)
-                  | {{ project.title || 'empty' }}
-              div
-                span(class='title') Info:
-                span(editable-text='project.info'
-                     e-name='info')
-                  | {{ project.info || 'empty' }}
-              div
-                span(class='title') GitHub URL
-                span(editable-url='project.githubUrl'
-                     e-name='githubUrl')
-                  | {{ project.githubUrl || 'empty' }}
-              div
-                span(class='title') Deployment URL
-                span(editable-url='project.deploymentUrl'
-                     e-name='deploymentUrl')
-                  | {{ project.deploymentUrl || 'empty' }}
+          dl.dl-horizontal.text-left
+            dt Number:
+            dd
+              a(href='#',
+              editable-range='project.num',
+              e-step="1",
+              e-max="5",
+              ng-model='project.num',
+              onbeforesave="$ctrl.updateNumber(project, $data)")
+                | {{ project.num || 'empty' }}
+            dt Title:
+            dd
+              a(href='#',
+              editable-text='project.title',
+              ng-model='project.title',
+              onbeforesave="$ctrl.updateTitle(project, $data)")
+                | {{ project.title || 'empty' }}
+            dt Description:
+            dd
+              a(href='#',
+              editable-text='project.info',
+              ng-model='project.info',
+              onbeforesave="$ctrl.updateInfo(project, $data)")
+                | {{ project.info || 'empty' }}
+            dt GitHub URL
+            dd
+              a(href='#',
+              editable-text='project.githubUrl',
+              ng-model='project.githubUrl',
+              onbeforesave="$ctrl.updateGithubUrl(project, $data)")
+                | {{ project.githubUrl || 'empty' }}
+              a(ng-href="{{project.githubUrl}}", target="_blank", style="margin-left: 10px;")
+                | (Visit)
+            dt Deployment URL
+            dd
+              a(href='#',
+              editable-text='project.deploymentUrl',
+              ng-model='project.deploymentUrl',
+              onbeforesave="$ctrl.updateDeploymentUrl(project, $data)")
+                | {{ project.deploymentUrl || 'empty' }}
+              a(ng-href="{{project.deploymentUrl}}", target="_blank", style="margin-left: 10px;")
+                | (Visit)
 
-              .buttons
-                // button to show form
-                button.btn.btn-primary(type='button'
-                                       ng-click='projectForm.$show()'
-                                       ng-show='!projectForm.$visible')
-                  | Edit
-                // buttons to submit / cancel form
-                span(ng-show='projectForm.$visible')
-                  button.btn.btn-primary(type='submit'
-                                         ng-disabled='projectForm.$waiting')
-                    | Save
-                  button.btn.btn-default(type='button'
-                                         ng-disabled='projectForm.$waiting'
-                                         ng-click='projectForm.$cancel()')
-                    | Cancel
+          a.trash(ng-click='$ctrl.deleteProject(project)')
+            span.glyphicon.glyphicon-trash.pull-right(style='margin-top:-15px;')
 
   button.btn.btn-default(ng-click='$ctrl.addProject()') Add Project

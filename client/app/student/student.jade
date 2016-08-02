@@ -8,9 +8,9 @@ header#banner.hero2
               a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.dashboard') }",  ui-sref="student.dashboard")           Home
               a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.profiles') }",   ui-sref="student.profiles")            All Students
               a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.mysquad') }",    ui-sref="student.mysquad")             My Squad
+              a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.projects') }",   ui-sref="student.projects"           ) Projects
               a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.attendance') }", ui-sref="student.attendance" disabled) Attendance
               a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.homework') }",   ui-sref="student.homework"   disabled) Homework
               a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.quizzes') }",    ui-sref="student.quizzes"    disabled) Quizzes
-              a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('student.projects') }",   ui-sref="student.projects"   disabled) Projects
           .col-sm-10
             .inner-view(ui-view='')

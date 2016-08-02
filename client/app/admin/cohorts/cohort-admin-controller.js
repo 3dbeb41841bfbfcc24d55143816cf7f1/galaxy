@@ -32,6 +32,7 @@
     }
 
     enrichCohort(cohort, index) {
+      // convert startDate to a JavaScript Date object.
       cohort.startDate = new Date(cohort.startDate);
       this.cohorts[index] = cohort;
     }

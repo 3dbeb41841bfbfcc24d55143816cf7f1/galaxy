@@ -14,6 +14,13 @@ router.put('/:id/password',   auth.isAuthenticated(), controller.changePassword)
 router.put('/:id/role',       auth.hasRole('admin'),  controller.changeRole);
 router.put('/:id/cohort',     auth.hasRole('admin'),  controller.changeCohort);
 router.put('/:id/squad',      auth.hasRole('admin'),  controller.changeSquad);
+
+// Project Routes
+router.get('/:id/projects',               auth.hasRole('student'), controller.getProjects);
+router.post('/:id/projects',              auth.hasRole('student'), controller.addProject);
+router.put('/:id/projects/:projectId',    auth.hasRole('student'), controller.updateProject);
+router.delete('/:id/projects/:projectId', auth.hasRole('student'), controller.deleteProject);
+
 router.put('/:id/attendance', auth.hasRole('admin'),  controller.changeAttendance);
 router.get('/:id',            auth.isAuthenticated(), controller.show);
 

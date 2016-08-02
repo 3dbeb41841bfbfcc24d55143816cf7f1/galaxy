@@ -4,6 +4,7 @@
   class StudentProfilesController {
     constructor(Auth, Cohort, Squad, appConfig, $http, $filter, $rootScope) {
       console.log('StudentProfilesController is alive!');
+      this.pageTitle = 'Student Profiles';
       this.Auth = Auth;
       this.Cohort = Cohort;
       this.Squad = Squad;
@@ -15,6 +16,8 @@
       this.cohorts = [];
       this.squads = [];
 
+      this.isCollapsed = true;
+
       $rootScope.$on('cohortChangeEvent', () => {
         this.loadStudents();
       });
@@ -25,6 +28,10 @@
 
     get squad() {
       return this.Squad.getCurrentSquad();
+    }
+
+    isStudent() {
+      return this.Auth.getCurrentUser().role === 'student';
     }
 
     loadStudents() {
@@ -96,11 +103,9 @@
       var presentOrLate = 0;
       user.attendance.forEach((a) => {
         if (a.value === 'present' || a.value === 'late') {
-          console.log('whoop');
           ++presentOrLate;
         }
       });
-      console.log('getAttendancePresentOrLate returning', presentOrLate);
       return presentOrLate;
     }
 
@@ -113,6 +118,7 @@
   class MySquadController extends StudentProfilesController {
     constructor(Auth, Cohort, Squad, appConfig, $http, $filter, $rootScope) {
       super(Auth, Cohort, Squad, appConfig, $http, $filter, $rootScope);
+      this.pageTitle = 'My Squad';
     }
 
     get squad() {

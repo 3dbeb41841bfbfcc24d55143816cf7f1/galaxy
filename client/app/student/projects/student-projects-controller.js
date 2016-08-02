@@ -7,68 +7,65 @@
       console.log('StudentProjectsController is alive!');
       this.$http = $http;
       this.getCurrentUser = Auth.getCurrentUser;
+      this.baseProjectUrl = '/api/users/' + this.getCurrentUser()._id + '/projects/';
 
       // TODO:
-      // this.projects = this.getCurrentUser().projects
-      this.projects = [
-        {
-          _id: 1,
-          title: 'first project',
-          info: 'my first project',
-          num: 1,
-          githubUrl: 'https://www.github.com/drmikeh/project1',
-          deploymentUrl: 'http://bitballoon.com/project1'
-        },
-        {
-          _id: 2,
-          title: 'second project',
-          info: 'my second project',
-          num: 2,
-          githubUrl: 'https://www.github.com/drmikeh/project2',
-          deploymentUrl: 'http://bitballoon.com/project2'
-        }
-      ];
+      this.projects = this.getCurrentUser().projects
     }
 
     addProject() {
-      this.inserted = {
-        name: '',
-        info: null,
-        startDate: null,
-        active: true
+      let num = -1;
+      let newProject = {
+        num: num,
+        title: 'title goes here',
+        info: 'info goes here',
+        githubUrl: 'githubUrl goes here',
+        deploymentUrl: 'deploymentUrl goes here'
       };
-      this.projects.push(this.inserted);
+
+      this.$http.post(this.baseProjectUrl, newProject)
+      .then(response => {
+        this.projects.push(response.data);
+      });
     }
 
-    enrichProject(project, index) {
-      this.projects[index] = project;
+    update(project) {
+      this.$http.put(this.baseProjectUrl + project._id, project)
+      .then(response => {
+        this.projects = response.data;
+      });
     }
 
-    saveProject(index, data, id) {
-      if (id) {
-        data._id = id;
-        // TODO:
-        this.Project.save(data)
-        .then(response => {
-          this.enrichProject(response.data, index);
-        });
-      }
-      else {
-        alert('TODO: save project');
-        // TODO:
-        // this.Project.save(data)
-        // .then(response => {
-        //   this.enrichProject(response.data, index);
-        // });
-      }
+    updateNumber(project, num) {
+      project.num = num;
+      this.update(project);
     }
 
-    removeProject(index, project) {
+    updateTitle(project, title) {
+      project.title = title;
+      this.update(project);
+    }
+
+    updateInfo(project, info) {
+      project.info = info;
+      this.update(project);
+    }
+
+    updateGithubUrl(project, url) {
+      project.gitHubUrl = url;
+      this.update(project);
+    }
+
+    updateDeploymentUrl(project, url) {
+      project.deploymentUrl = url;
+      this.update(project);
+    }
+
+    deleteProject(project) {
       if (confirm('Are you sure?')) {
-        // TODO:
-        this.Project.remove(project)
-        .then(() => {
-          console.log('project deleted');
+        this.$http.delete(this.baseProjectUrl + project._id)
+        .then(response => {
+          this.projects = response.data;
         });
       }
     }
