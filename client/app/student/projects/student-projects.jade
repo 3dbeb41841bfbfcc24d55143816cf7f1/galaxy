@@ -49,6 +49,36 @@
               a(ng-href="{{project.deploymentUrl}}", target="_blank", style="margin-left: 10px;")
                 | (Visit)
 
+            dt Total Score:
+            dd {{ $ctrl.getTotalScore(project) }}
+
+            hr
+            // Project Requirements and Instructor Feedback
+
+            div(ng-init="project.requirementsIsCollapsed = true")
+              a(href='#' ng-click="project.requirementsIsCollapsed = !project.requirementsIsCollapsed")
+                | Requirements and Instructor Feedback
+                i.glyphicon(ng-class="{'glyphicon-chevron-down': !project.requirementsIsCollapsed, 'glyphicon-chevron-right': project.requirementsIsCollapsed}")
+              .panel.panel-warning(uib-collapse='project.requirementsIsCollapsed', style="margin-top: 10px")
+                .panel-body
+                  dl.dl-horizontal.text-left
+                    dt Summary Comments:
+                    dd {{project.comments}}
+                  h4 Requirements & Scoring:
+                  .panel.panel-primary(ng-repeat='requirement in project.requirements | orderBy : "num"')
+                    .panel-heading
+                      h3.panel-title {{ requirement.title }}
+                    .panel-body
+                      dl.dl-horizontal
+                        dt Info:
+                        dd {{ requirement.info }}
+                        dt Instructor Comments
+                        dd {{ requirement.comments || 'empty' }}
+                    .panel-footer
+                      dl.dl-horizontal(style="margin-top: 0; margin-bottom: 0;")
+                        dt Score (0 to 3):
+                        dd {{ requirement.score || 'empty' }}
+
           a.trash(ng-click='$ctrl.deleteProject(project)')
             span.glyphicon.glyphicon-trash.pull-right(style='margin-top:-15px;')
 

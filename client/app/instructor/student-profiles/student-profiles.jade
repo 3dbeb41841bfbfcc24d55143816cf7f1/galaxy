@@ -1,7 +1,7 @@
 .container-fluid
   h2 {{ $ctrl.pageTitle }}
   ul.list-group
-    li.list-group-item(ng-repeat='student in $ctrl.students')
+    li.list-group-item.panel.panel-primary(ng-repeat='student in $ctrl.students')
       .row
         .col-sm-3
           img(ng-show='student.github' src='{{ student.github.avatar_url }}' alt='Avatar' height='160' width='160')
@@ -26,31 +26,93 @@
                 | ({{ $ctrl.getAttendancePresentOrLate(student) }} /
                 |  {{ student.attendance.length }})
 
-          div(ng-hide='$ctrl.isStudent()')
-            a(href='#' ng-click="$ctrl.isCollapsed = !$ctrl.isCollapsed")
-              | Projects
-            div(uib-collapse="$ctrl.isCollapsed")
-              br
-              .panel.panel-default(ng-repeat='project in student.projects')
-                .panel-heading
-                  h3.panel-title Project {{ project.num }}
-                .panel-body
-                  dl.dl-horizontal
-                    dt Title:
-                    dd {{ project.title }}
-                    dt Info:
-                    dd {{ project.info }}
-                    dt GitHub URL:
-                    dd
-                      a(ng-href="{{project.githubUrl}}", target="_blank")
-                        | {{ project.githubUrl }}
-                    dt Deployment URL:
-                    dd
-                      a(ng-href="{{project.deploymentUrl}}", target="_blank")
-                        | {{ project.deploymentUrl }}
+      .row(style='margin-top: 20px')
+        .col-sm-12
+          // Projects
+          .student-profiles-projects(ng-hide='$ctrl.isStudent()')
+            hr
+            h4 Projects:
+            uib-accordion(close-others="'true'")
+              .panel-warning(uib-accordion-group='', is-open='status.open', ng-repeat='project in student.projects | orderBy : "num"')
+                uib-accordion-heading
+                  | Project {{ project.num }} - {{ project.title }} - {{ $ctrl.getTotalProjectScore(project) }}
+                  i.pull-right.glyphicon(ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}")
+                dl.dl-horizontal
+                  dt Title:
+                  dd {{ project.title }}
+                  dt Info:
+                  dd {{ project.info }}
+                  dt GitHub URL:
+                  dd
+                    a(ng-href="{{project.githubUrl}}", target="_blank")
+                      | {{ project.githubUrl }}
+                  dt Deployment URL:
+                  dd
+                    a(ng-href="{{project.deploymentUrl}}", target="_blank")
+                      | {{ project.deploymentUrl }}
+                  dt Instructor Comments
+                  dd
+                    a(href='#',
+                      editable-text='project.comments',
+                      ng-model='project.comments',
+                      onbeforesave="$ctrl.updateProjectComments(student, project, $data)")
+                      | {{ project.comments || 'empty' }}
+                  dt Total Score:
+                  dd {{ $ctrl.getTotalProjectScore(project) }}
 
+                hr
 
+                div(ng-init='project.requirementsIsCollapsed = true; project.keyIsCollapsed = true;')
+                  a(href='#' ng-click='project.requirementsIsCollapsed = !project.requirementsIsCollapsed')
+                    | Requirements and Instructor Feedback
+                  div(uib-collapse='project.requirementsIsCollapsed')
+                    a(href='#' ng-click='project.keyIsCollapsed = !project.keyIsCollapsed')
+                      small.text-danger Show Scoring Key
+                    .panel.panel-danger(uib-collapse='project.keyIsCollapsed')
+                      .panel-heading Scoring Key
+                      .panel-body
+                        table.table.table-bordered.table-striped(style='margin-top: 20px')
+                          thead
+                            tr
+                              th Score
+                              th Expectations
+                          tbody
+                            tr
+                              td 0
+                              td Incomplete.
+                            tr
+                              td 1
+                              td Does not meet expectations.
+                            tr
+                              td 2
+                              td Meets expectations, good job!
+                            tr
+                              td 3
+                              td Exceeds expectations, you wonderful creature, you!
 
-
-
-
+                    table.table.table-bordered.table-striped(style='margin-top: 20px')
+                      thead
+                        tr
+                          th Title
+                          th Info
+                          th Comments
+                          th Score
+                      tbody
+                        tr(ng-repeat='requirement in project.requirements | orderBy : "num"')
+                          td {{ requirement.title }}
+                          td {{ requirement.info }}
+                          td
+                            a(href='#',
+                              editable-text='requirement.comments',
+                              ng-model='requirement.comments',
+                              onbeforesave="$ctrl.updateRequirementComments(student, project, requirement, $data)")
+                                | {{ requirement.comments || 'empty' }}
+                          td
+                            a(href='#',
+                              editable-range='requirement.score',
+                              e-step="0.5",
+                              e-min="0",
+                              e-max="3",
+                              ng-model='requirement.score',
+                              onbeforesave='$ctrl.updateRequirementScore(student, project, requirement, $data)')
+                                | {{ requirement.score || 'empty' }}

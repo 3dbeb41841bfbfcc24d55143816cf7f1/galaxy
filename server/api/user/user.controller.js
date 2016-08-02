@@ -225,6 +225,10 @@ export function addProject(req, res, next) {
     project.info = updates.info;
     project.githubUrl = updates.githubUrl;
     project.deploymentUrl = updates.deploymentUrl;
+    project.comments = updates.comments;
+
+    // TODO:
+    // project.requirements = updates.requirements;
 
     return user.save()
     .then(() => {

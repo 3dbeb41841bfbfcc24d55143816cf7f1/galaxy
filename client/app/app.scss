@@ -41,6 +41,16 @@ code {
   }
 }
 
+.accordion-toggle:focus {
+  outline: none;
+}
+
+table {
+  th {
+    text-align: center;
+  }
+}
+
 @import "../bower_components/bootswatch-scss/darkly/variables";
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
 

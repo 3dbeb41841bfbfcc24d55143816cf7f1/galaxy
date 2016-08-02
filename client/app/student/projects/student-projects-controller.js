@@ -9,12 +9,15 @@
       this.getCurrentUser = Auth.getCurrentUser;
       this.baseProjectUrl = '/api/users/' + this.getCurrentUser()._id + '/projects/';
 
-      // TODO:
+      // TODO: improve this?
       this.projects = this.getCurrentUser().projects
     }
 
     addProject() {
-      let num = -1;
+      let num = this.projects.reduce(function(max, next) {
+        return Math.max(max, next.num);
+      }, 0) + 1;
+
       let newProject = {
         num: num,
         title: 'title goes here',
@@ -68,6 +71,13 @@
           this.projects = response.data;
         });
       }
+    }
+
+    getTotalScore(project) {
+      var result = project.requirements.reduce(function(sum, r) {
+        return sum + (r.score || r.score === 0) ? r.score : NaN;
+      }, 0);
+      return isNaN(result) ? 'NA' : result;
     }
   }
 

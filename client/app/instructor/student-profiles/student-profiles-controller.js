@@ -16,7 +16,7 @@
       this.cohorts = [];
       this.squads = [];
 
-      this.isCollapsed = true;
+      this.projectsIsCollapsed = true;
 
       $rootScope.$on('cohortChangeEvent', () => {
         this.loadStudents();
@@ -112,6 +112,26 @@
     getAttendancePercentage(user) {
       var total = user.attendance.length;
       return total === 0 ? 0.0 : this.getAttendancePresentOrLate(user) * 100.0 / total;
+    }
+
+    getTotalProjectScore(project) {
+      var result = project.requirements.reduce(function(sum, r) {
+        return sum + (r.score || r.score === 0) ? r.score : NaN;
+      }, 0);
+      return isNaN(result) ? 'NA' : result;
+    }
+
+    updateProject(user, project) {
+      var url = '/api/users/' + user._id + '/projects/' + project._id;
+      this.$http.put(url, project)
+      .then(response => {
+        // user.projects = response.data;
+      });
+    }
+
+    updateProjectComments(user, project, comments) {
+      project.comments = comments;
+      this.updateProject(user, project);
     }
   }
 
