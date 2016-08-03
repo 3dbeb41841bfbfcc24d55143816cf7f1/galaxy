@@ -116,7 +116,7 @@
 
     getTotalProjectScore(project) {
       var result = project.requirements.reduce(function(sum, r) {
-        return sum + (r.score || r.score === 0) ? r.score : NaN;
+        return sum += (r.score || r.score === 0) ? r.score : NaN;
       }, 0);
       return isNaN(result) ? 'NA' : result;
     }
@@ -125,13 +125,33 @@
       var url = '/api/users/' + user._id + '/projects/' + project._id;
       this.$http.put(url, project)
       .then(response => {
-        // user.projects = response.data;
+        // TODO???
+        // user.projects.findById(project._id) = response.data;
       });
     }
 
     updateProjectComments(user, project, comments) {
       project.comments = comments;
       this.updateProject(user, project);
+    }
+
+    updateProjectRequirement(user, project, requirement) {
+      var url = '/api/users/' + user._id + '/projects/' + project._id + '/requirements/' + requirement._id;
+      this.$http.put(url, requirement)
+      .then(response => {
+        // TODO???
+        // project.requirements.findById(requirement._id) = response.data;
+      });
+    }
+
+    updateProjectRequirementScore(user, project, requirement, score) {
+      requirement.score = score;
+      this.updateProjectRequirement(user, project, requirement);
+    }
+
+    updateProjectRequirementComments(user, project, requirement, comments) {
+      requirement.comments = comments;
+      this.updateProjectRequirement(user, project, requirement);
     }
   }
 

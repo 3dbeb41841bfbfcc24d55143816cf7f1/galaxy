@@ -21,6 +21,9 @@ router.post('/:id/projects',              auth.hasRole('student'), controller.ad
 router.put('/:id/projects/:projectId',    auth.hasRole('student'), controller.updateProject);
 router.delete('/:id/projects/:projectId', auth.hasRole('student'), controller.deleteProject);
 
+// Project Requirement Routes
+router.put('/:id/projects/:projectId/requirements/:requirementId', auth.hasRole('admin'), controller.updateProjectRequirement);
+
 router.put('/:id/attendance', auth.hasRole('admin'),  controller.changeAttendance);
 router.get('/:id',            auth.isAuthenticated(), controller.show);
 

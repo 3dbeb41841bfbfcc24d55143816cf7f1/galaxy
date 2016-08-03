@@ -1,7 +1,7 @@
 .container-fluid
   h3 My Projects
   ul.list-group.student-projects
-    li.list-group-item(ng-repeat='project in $ctrl.projects | orderBy : "num"')
+    li.list-group-item.panel.panel-primary(ng-repeat='project in $ctrl.projects | orderBy : "num"')
       .row
         .col-sm-3
           h2 Project {{ project.num || 'NA' }}
@@ -50,34 +50,60 @@
                 | (Visit)
 
             dt Total Score:
-            dd {{ $ctrl.getTotalScore(project) }}
+            dd {{ $ctrl.getTotalScore(project) }} / {{project.requirements.length * 2}}
 
-            hr
-            // Project Requirements and Instructor Feedback
-
-            div(ng-init="project.requirementsIsCollapsed = true")
-              a(href='#' ng-click="project.requirementsIsCollapsed = !project.requirementsIsCollapsed")
+      // Project Requirements and Instructor Feedback
+      .row
+        .col-sm-12
+          div(ng-init="project.requirementsIsCollapsed = true; project.keyIsCollapsed = true;")
+            a(href='#' ng-click="project.requirementsIsCollapsed = !project.requirementsIsCollapsed")
+              span.text-warning
                 | Requirements and Instructor Feedback
                 i.glyphicon(ng-class="{'glyphicon-chevron-down': !project.requirementsIsCollapsed, 'glyphicon-chevron-right': project.requirementsIsCollapsed}")
-              .panel.panel-warning(uib-collapse='project.requirementsIsCollapsed', style="margin-top: 10px")
+            .panel.panel-warning(uib-collapse='project.requirementsIsCollapsed', style="margin-top: 10px")
+              a(href='#' ng-click='project.keyIsCollapsed = !project.keyIsCollapsed')
+                small.text-danger Show Scoring Key
+                i.text-danger.glyphicon(ng-class="{'glyphicon-chevron-down': !project.keyIsCollapsed, 'glyphicon-chevron-right': project.keyIsCollapsed}")
+              .panel.panel-danger(uib-collapse='project.keyIsCollapsed')
+                .panel-heading Scoring Key
                 .panel-body
-                  dl.dl-horizontal.text-left
-                    dt Summary Comments:
-                    dd {{project.comments}}
-                  h4 Requirements & Scoring:
-                  .panel.panel-primary(ng-repeat='requirement in project.requirements | orderBy : "num"')
-                    .panel-heading
-                      h3.panel-title {{ requirement.title }}
-                    .panel-body
-                      dl.dl-horizontal
-                        dt Info:
-                        dd {{ requirement.info }}
-                        dt Instructor Comments
-                        dd {{ requirement.comments || 'empty' }}
-                    .panel-footer
-                      dl.dl-horizontal(style="margin-top: 0; margin-bottom: 0;")
-                        dt Score (0 to 3):
-                        dd {{ requirement.score || 'empty' }}
+                  table.table.table-bordered.table-striped(style='margin-top: 20px')
+                    thead
+                      tr
+                        th Score
+                        th Expectations
+                    tbody
+                      tr
+                        td 0
+                        td Incomplete.
+                      tr
+                        td 1
+                        td Does not meet expectations.
+                      tr
+                        td 2
+                        td Meets expectations, good job!
+                      tr
+                        td 3
+                        td Exceeds expectations, you wonderful creature, you!
+
+              table.table.table-bordered.table-striped(style='margin-top: 20px')
+                thead
+                  tr
+                    th Title
+                    th Info
+                    th Comments
+                    th Score
+                tbody
+                  tr(ng-repeat='requirement in project.requirements | orderBy : "num"')
+                    td {{ requirement.title }}
+                    td {{ requirement.info }}
+                    td {{ requirement.comments || 'empty' }}
+                    td {{ requirement.score || (requirement.score === 0 ? 0 : 'empty') }}
+                  tr
+                    td Summary
+                    td
+                    td {{project.comments}}
+                    td {{$ctrl.getTotalScore(project)}}
 
           a.trash(ng-click='$ctrl.deleteProject(project)')
             span.glyphicon.glyphicon-trash.pull-right(style='margin-top:-15px;')

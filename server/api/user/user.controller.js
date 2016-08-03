@@ -258,6 +258,35 @@ export function addProject(req, res, next) {
   });
 }
 
+/**
+ * Update a project requirement (comments or score)
+ */
+ export function updateProjectRequirement(req, res, next) {
+  var userId = req.params.id;
+  var projectId = req.params.projectId;
+  var requirementId = req.params.requirementId;
+  var updates = req.body;
+
+  return User.findById(userId)
+  .then(user => {
+    let project = user.projects.id(projectId);
+    let requirement = project.requirements.id(requirementId);
+
+    console.log('updating requirement:', requirement);
+    console.log('with updates:', updates);
+
+    // let updated = _.merge(requirement, updates);
+    requirement.score = updates.score ? updates.score : requirement.score;
+    requirement.comments = updates.comments ? updates.comments : requirement.comments;
+
+    return user.save()
+    .then(() => {
+      res.status(200).json(user.projects);
+    })
+    .catch(validationError(res));
+  });
+}
+
 // Update a user with a new/modified attendance record
 export function changeAttendanceHelper(userId, newAttendance) {
   return User.findById(userId)

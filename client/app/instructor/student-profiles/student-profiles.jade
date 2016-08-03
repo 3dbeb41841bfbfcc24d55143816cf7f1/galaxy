@@ -35,7 +35,7 @@
             uib-accordion(close-others="'true'")
               .panel-warning(uib-accordion-group='', is-open='status.open', ng-repeat='project in student.projects | orderBy : "num"')
                 uib-accordion-heading
-                  | Project {{ project.num }} - {{ project.title }} - {{ $ctrl.getTotalProjectScore(project) }}
+                  | Project {{ project.num }} - {{ project.title }} - {{ $ctrl.getTotalProjectScore(project) }} / {{project.requirements.length * 2}}
                   i.pull-right.glyphicon(ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}")
                 dl.dl-horizontal
                   dt Title:
@@ -64,10 +64,13 @@
 
                 div(ng-init='project.requirementsIsCollapsed = true; project.keyIsCollapsed = true;')
                   a(href='#' ng-click='project.requirementsIsCollapsed = !project.requirementsIsCollapsed')
-                    | Requirements and Instructor Feedback
+                    span.text-warning
+                      | Requirements and Instructor Feedback
+                    i.text-warning.glyphicon(ng-class="{'glyphicon-chevron-down': !project.requirementsIsCollapsed, 'glyphicon-chevron-right': project.requirementsIsCollapsed}")
                   div(uib-collapse='project.requirementsIsCollapsed')
                     a(href='#' ng-click='project.keyIsCollapsed = !project.keyIsCollapsed')
                       small.text-danger Show Scoring Key
+                      i.text-danger.glyphicon(ng-class="{'glyphicon-chevron-down': !project.keyIsCollapsed, 'glyphicon-chevron-right': project.keyIsCollapsed}")
                     .panel.panel-danger(uib-collapse='project.keyIsCollapsed')
                       .panel-heading Scoring Key
                       .panel-body
@@ -105,7 +108,7 @@
                             a(href='#',
                               editable-text='requirement.comments',
                               ng-model='requirement.comments',
-                              onbeforesave="$ctrl.updateRequirementComments(student, project, requirement, $data)")
+                              onbeforesave="$ctrl.updateProjectRequirementComments(student, project, requirement, $data)")
                                 | {{ requirement.comments || 'empty' }}
                           td
                             a(href='#',
@@ -114,5 +117,5 @@
                               e-min="0",
                               e-max="3",
                               ng-model='requirement.score',
-                              onbeforesave='$ctrl.updateRequirementScore(student, project, requirement, $data)')
-                                | {{ requirement.score || 'empty' }}
+                              onbeforesave='$ctrl.updateProjectRequirementScore(student, project, requirement, $data)')
+                                | {{ requirement.score || (requirement.score === 0 ? 0 : 'empty') }}

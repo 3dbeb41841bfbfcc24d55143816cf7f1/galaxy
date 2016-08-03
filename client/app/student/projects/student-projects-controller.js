@@ -75,7 +75,7 @@
 
     getTotalScore(project) {
       var result = project.requirements.reduce(function(sum, r) {
-        return sum + (r.score || r.score === 0) ? r.score : NaN;
+        return sum += (r.score || r.score === 0) ? r.score : NaN;
       }, 0);
       return isNaN(result) ? 'NA' : result;
     }
