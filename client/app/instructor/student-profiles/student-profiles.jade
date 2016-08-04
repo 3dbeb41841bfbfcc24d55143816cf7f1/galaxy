@@ -29,7 +29,7 @@
       .row(style='margin-top: 20px')
         .col-sm-12
           // Projects
-          .student-profiles-projects(ng-hide='$ctrl.isStudent()')
+          .student-projects(ng-hide='$ctrl.isStudent()')
             hr
             h4 Projects:
             uib-accordion(close-others="'true'")
@@ -117,5 +117,6 @@
                               e-min="0",
                               e-max="3",
                               ng-model='requirement.score',
+                              onshow='$ctrl.zeroForNull(requirement, "score")',
                               onbeforesave='$ctrl.updateProjectRequirementScore(student, project, requirement, $data)')
                                 | {{ requirement.score || (requirement.score === 0 ? 0 : 'empty') }}

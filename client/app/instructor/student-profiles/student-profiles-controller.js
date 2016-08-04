@@ -153,6 +153,13 @@
       requirement.comments = comments;
       this.updateProjectRequirement(user, project, requirement);
     }
+
+    zeroForNull(obj, prop) {
+      console.log('zeroForNull:', obj[prop]);
+      if (obj[prop] === null) {
+        obj[prop] = 0;
+      }
+    }
   }
 
   class MySquadController extends StudentProfilesController {
