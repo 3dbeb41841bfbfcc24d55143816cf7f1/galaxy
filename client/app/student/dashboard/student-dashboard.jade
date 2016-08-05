@@ -1,7 +1,22 @@
-h2 Student Dashboard for
-  span(class='text-success') {{ ' ' + $ctrl.getCurrentUser().name }}
+.container-fluid
+  h2 Student Dashboard for
+    span(class='text-primary') {{ ' ' + $ctrl.getCurrentUser().name }}
 
-p
-  | Welcome to the GAlaxy App.
-p
-  | Stay Tuned... there will be more to come soon!
+  .row(style='margin-top: 40px')
+    .col-sm-3
+      img(ng-show='$ctrl.getCurrentUser().github' src='{{ $ctrl.getCurrentUser().github.avatar_url }}' alt='Avatar' height='160' width='160')
+    .col-sm-9
+      dl.dl-horizontal
+        dt(ng-show='$ctrl.getCurrentUser().email') Local:
+        dd(ng-show='$ctrl.getCurrentUser().email') {{$ctrl.getCurrentUser().email}}
+        dt(ng-show='$ctrl.getCurrentUser().github') GitHub:
+        dd(ng-show='$ctrl.getCurrentUser().github') <a target="_blank" ng-href="https://github.com/{{$ctrl.getCurrentUser().github.login}}">{{$ctrl.getCurrentUser().github.login}}</a>
+        dt Cohort:
+        dd {{ $ctrl.getCurrentUser().cohort.name || 'Not Set' }}
+        dt Squad:
+        dd {{ $ctrl.getCurrentUser().squad.name || 'Not Set' }}
+        dt Attendance:
+        dd {{ $ctrl.getAttendancePercentage($ctrl.getCurrentUser()) | number }}%
+          span(style='margin-left: 10px')
+            | ({{ $ctrl.getAttendancePresentOrLate($ctrl.getCurrentUser()) }} /
+            |  {{ $ctrl.getCurrentUser().attendance.length }})
