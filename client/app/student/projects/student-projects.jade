@@ -1,7 +1,7 @@
 .container-fluid
   h3 My Projects
   ul.list-group.student-projects
-    li.list-group-item.panel.panel-primary(ng-repeat='project in $ctrl.projects | orderBy : "num"')
+    li.list-group-item.panel.panel-primary(ng-repeat='project in $ctrl.getCurrentUser().projects | orderBy : "num"')
       .row
         .col-sm-3
           h2 Project {{ project.num || 'NA' }}

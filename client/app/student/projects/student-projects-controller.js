@@ -8,13 +8,10 @@
       this.$http = $http;
       this.getCurrentUser = Auth.getCurrentUser;
       this.baseProjectUrl = '/api/users/' + this.getCurrentUser()._id + '/projects/';
-
-      // TODO: improve this?
-      this.projects = this.getCurrentUser().projects
     }
 
     addProject() {
-      let num = this.projects.reduce(function(max, next) {
+      let num = this.getCurrentUser().projects.reduce(function(max, next) {
         return Math.max(max, next.num);
       }, 0) + 1;
 
@@ -28,14 +25,14 @@
 
       this.$http.post(this.baseProjectUrl, newProject)
       .then(response => {
-        this.projects.push(response.data);
+        this.getCurrentUser().projects.push(response.data);
       });
     }
 
     update(project) {
       this.$http.put(this.baseProjectUrl + project._id, project)
       .then(response => {
-        this.projects = response.data;
+        this.getCurrentUser().projects = response.data;
       });
     }
 
@@ -68,7 +65,7 @@
       if (confirm('Are you sure?')) {
         this.$http.delete(this.baseProjectUrl + project._id)
         .then(response => {
-          this.projects = response.data;
+          this.getCurrentUser().projects = response.data;
         });
       }
     }
