@@ -195,11 +195,14 @@ export function addProject(req, res, next) {
   var userId = req.params.id;
   var project = req.body;
 
+  console.log('adding new project to user');
+
   return User.findById(userId)
   .then(user => {
     user.projects.push(project);
     return user.save()
     .then(() => {
+      console.log('new project added to user');
       res.status(201).json(user.projects[user.projects.length - 1]);
     })
     .catch(validationError(res));
