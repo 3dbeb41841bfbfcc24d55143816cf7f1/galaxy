@@ -7,7 +7,10 @@
       console.log('StudentProjectsController is alive!');
       this.$http = $http;
       this.getCurrentUser = Auth.getCurrentUser;
-      this.baseProjectUrl = '/api/users/' + this.getCurrentUser()._id + '/projects/';
+    }
+
+    getBaseProjectUrl() {
+      return '/api/users/' + this.getCurrentUser()._id + '/projects/';
     }
 
     addProject() {
@@ -23,14 +26,14 @@
         deploymentUrl: 'deploymentUrl goes here'
       };
 
-      this.$http.post(this.baseProjectUrl, newProject)
+      this.$http.post(this.getBaseProjectUrl(), newProject)
       .then(response => {
         this.getCurrentUser().projects.push(response.data);
       });
     }
 
     update(project) {
-      this.$http.put(this.baseProjectUrl + project._id, project)
+      this.$http.put(this.getBaseProjectUrl() + project._id, project)
       .then(response => {
         this.getCurrentUser().projects = response.data;
       });
@@ -63,7 +66,7 @@
 
     deleteProject(project) {
       if (confirm('Are you sure?')) {
-        this.$http.delete(this.baseProjectUrl + project._id)
+        this.$http.delete(this.getBaseProjectUrl() + project._id)
         .then(response => {
           this.getCurrentUser().projects = response.data;
         });
