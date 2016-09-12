@@ -7,7 +7,7 @@ import mongoose from 'mongoose-fill';   // mongoose-fill monkey-patches mongoose
 let Attendance = require('../attendance/attendance.model');
 let Project = require('../project/project.model');
 
-var UserSchema = new mongoose.Schema({
+let UserSchema = new mongoose.Schema({
   name: String,
   email:  { type: String, lowercase: true },
   role:   { type: String, default: 'student' },
@@ -22,6 +22,13 @@ var UserSchema = new mongoose.Schema({
   twitter: {},
   google: {},
   github: {}
+}, {
+  toObject: {
+    virtuals: true
+  },
+  toJSON: {
+    virtuals: true
+  }
 });
 
 (function() {
@@ -80,7 +87,7 @@ var UserSchema = new mongoose.Schema({
   UserSchema
     .path('email')
     .validate(function(value, respond) {
-      var self = this;
+      let self = this;
       return this.constructor.findOne({ email: value }).exec()
         .then(function(user) {
           if (user) {
@@ -96,7 +103,7 @@ var UserSchema = new mongoose.Schema({
         });
     }, 'The specified email address is already in use.');
 
-  var validatePresenceOf = function(value) {
+  let validatePresenceOf = function(value) {
     return value && value.length;
   };
 
@@ -135,12 +142,20 @@ var UserSchema = new mongoose.Schema({
     // console.log('Saved user:', this);
   });
 
+  UserSchema
+  .fill('groupProjects', function(callback) {
+    this.db.model('GroupProject')
+    .find( { team: this._id } )
+    .exec(callback)
+  });
+
   /**
    * Autopopulate hook
    */
-  var autoPopulate = function(next) {
+  let autoPopulate = function(next) {
     this.populate('cohort');
     this.populate('squad');
+    this.fill('groupProjects');   // TODO: why doesn't this work?
     next();
   };
 
@@ -187,7 +202,7 @@ var UserSchema = new mongoose.Schema({
      * @api public
      */
     makeSalt(byteSize, callback) {
-      var defaultByteSize = 16;
+      let defaultByteSize = 16;
 
       if (typeof arguments[0] === 'function') {
         callback = arguments[0];
@@ -226,9 +241,9 @@ var UserSchema = new mongoose.Schema({
         return null;
       }
 
-      var defaultIterations = 10000;
-      var defaultKeyLength = 64;
-      var salt = new Buffer(this.salt, 'base64');
+      let defaultIterations = 10000;
+      let defaultKeyLength = 64;
+      let salt = new Buffer(this.salt, 'base64');
 
       if (!callback) {
         return crypto.pbkdf2Sync(password, salt, defaultIterations, defaultKeyLength)

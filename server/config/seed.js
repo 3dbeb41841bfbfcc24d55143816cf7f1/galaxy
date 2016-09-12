@@ -17,6 +17,11 @@ import mongoose from 'mongoose-fill';   // mongoose-fill monkey-patches mongoose
 
 mongoose.Promise = Promise;
 
+// FOR DEBUGGING
+// mongoose.set('debug', (coll, method, query, doc) => {
+//   console.log(`MONGOOSE DEBUG: ${coll} ${method} ${JSON.stringify(query)} ${JSON.stringify(doc)}`);
+// });
+
 console.log('config.env:', config.env);
 
 function createTestCohorts() {
@@ -145,7 +150,7 @@ function createTestGroupProjects() {
   return GroupProject.find({}).remove()
   .then(() => {
     User.find( { name: { $in: ['Student1', 'Student4', 'Student7'] } } )
-    .then((team) => {
+    .then( team => {
       console.log('team size:', team.length);
       let project = new Project( {
         num: 13,
@@ -159,10 +164,15 @@ function createTestGroupProjects() {
     .then( () => {
       return GroupProject.find({}).populate('team');
     })
-    .then( (groupProjects) => {
+    .then( groupProjects => {
       console.log('groupProjects:', groupProjects.map( p => {
         return { project: p.project, team: p.team.map( u => u.name ) };
       }));
+      return User.findOne({ name: 'Student4' }).fill('groupProjects');
+    })
+    .then( student4 => {
+      console.log(`student4 id = ${student4._id}, groupProjects:`, student4.groupProjects);
+      // console.log('student4:', student4);
       return null;
     });
   });
@@ -220,7 +230,14 @@ function counts() {
       console.log(err);
     }
     else {
-      console.log('aggregate result:', result);
+      let ids = result.map( r => r._id );
+      Cohort.find( { _id: { $in: ids } } )
+      .then( cohorts => {
+        result.forEach( r => {
+          let cohort = cohorts.filter( c => c._id.equals(r._id) )[0];
+          console.log(`Squad ${cohort.name} has ${r.count} students.`);
+        });
+      })
     }
   });
 }

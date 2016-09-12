@@ -27,7 +27,7 @@ export function isAuthenticated() {
     })
     // Attach user to request
     .use(function(req, res, next) {
-      User.findById(req.user._id).exec()
+      User.findById(req.user._id).exec()   // .fill('groupProjects')
         .then(user => {
           if (!user) {
             return res.status(401).end();

@@ -7,6 +7,13 @@ let Project = require('../project/project.model');
 var GroupProjectSchema = new mongoose.Schema({
   project: { type: Project.schema, required: true},
   team: [ { type: mongoose.Schema.Types.ObjectId, ref: 'User' } ]
+}, {
+  toObject: {
+    virtuals: true
+  },
+  toJSON: {
+    virtuals: true
+  }
 });
 
 module.exports = mongoose.model('GroupProject', GroupProjectSchema);

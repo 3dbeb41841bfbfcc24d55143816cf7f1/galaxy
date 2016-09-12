@@ -12,7 +12,7 @@ export function setup(User, config) {
     ]
   },
   function(accessToken, refreshToken, profile, done) {
-    User.findOne({'facebook.id': profile.id}).exec()
+    User.findOne({'facebook.id': profile.id}).exec()      // .fill('groupProjects')
       .then(user => {
         if (user) {
           return done(null, user);
