@@ -9,6 +9,8 @@ import Cohort from '../api/cohort/cohort.model';
 import Squad from '../api/squad/squad.model';
 import Attendance from '../api/attendance/attendance.model';
 import Homework from '../api/homework/homework.model';
+import Project from '../api/project/project.model';
+import GroupProject from '../api/group-project/group-project.model';
 import config from './environment';
 import Promise from 'bluebird';
 import mongoose from 'mongoose-fill';   // mongoose-fill monkey-patches mongoose.
@@ -76,15 +78,16 @@ function createTestSquads() {
 }
 
 function createTestUsers() {
-  Promise.delay(100).then(() => {
-    return [
-      Cohort.findOne({name: 'Test Cohort #1'}),
-      Cohort.findOne({name: 'ATL WDI #6'}),
-      Squad.findOne({name: 'Test Squad #1'}),
-      Squad.findOne({name: 'Test Squad #2'}),
-      Squad.findOne({name: 'Test Squad #3'})
-    ];
-  })
+
+  let promises = [
+    Cohort.findOne({name: 'Test Cohort #1'}),
+    Cohort.findOne({name: 'ATL WDI #6'}),
+    Squad.findOne({name: 'Test Squad #1'}),
+    Squad.findOne({name: 'Test Squad #2'}),
+    Squad.findOne({name: 'Test Squad #3'})
+  ];
+
+  return Promise.all(promises)
   .spread((testCohort1, atlWDI6Squad, testSquad1, testSquad2, testSquad3) => {
     let testSquads = [testSquad1, testSquad2, testSquad3];
     return User.find({}).remove()
@@ -130,11 +133,38 @@ function createTestUsers() {
         promises.push(user.save());
       }
     });
-    return Promise.all(promises);
+    return Promise.all(promises)
+    .then((users) => {
+      console.log('finished populating %d users', users.length);
+      return null;
+    });
   })
-  .then((users) => {
-    console.log('finished populating %d users', users.length);
-    return null;
+}
+
+function createTestGroupProjects() {
+  return GroupProject.find({}).remove()
+  .then(() => {
+    User.find( { name: { $in: ['Student1', 'Student4', 'Student7'] } } )
+    .then((team) => {
+      console.log('team size:', team.length);
+      let project = new Project( {
+        num: 13,
+        title: 'Sample Group Project',
+        info: 'Just another group project',
+        score: 9,
+        comments: 'Great Job!'
+      });
+      return GroupProject.create( { project, team } );
+    })
+    .then( () => {
+      return GroupProject.find({}).populate('team');
+    })
+    .then( (groupProjects) => {
+      console.log('groupProjects:', groupProjects.map( p => {
+        return { project: p.project, team: p.team.map( u => u.name ) };
+      }));
+      return null;
+    });
   });
 }
 
@@ -197,18 +227,11 @@ function counts() {
 
 function createTestData() {
   createTestCohorts()
-  .then(() => {
-    return createTestSquads();
-  })
-  .then(() => {
-    return createTestUsers();
-  })
-  .then(() => {
-    return createTestHomework();
-  })
-  .then(() => {
-    return counts();
-  });
+  .then( () => createTestSquads() )
+  .then( () => createTestUsers() )
+  .then( () => createTestGroupProjects() )
+  .then( () => createTestHomework() )
+  .then( () => counts() );
 }
 
 if (config.env === 'development') {
