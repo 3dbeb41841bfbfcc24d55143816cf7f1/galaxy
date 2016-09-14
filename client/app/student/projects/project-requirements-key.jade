@@ -1,0 +1,24 @@
+a(href='#' ng-click='$ctrl.isCollapsed = !$ctrl.isCollapsed')
+  small.text-danger Show Scoring Key
+  i.text-danger.glyphicon(ng-class="{'glyphicon-chevron-down': !$ctrl.isCollapsed, 'glyphicon-chevron-right': $ctrl.isCollapsed}")
+.panel.panel-danger(uib-collapse='$ctrl.isCollapsed')
+  .panel-heading Scoring Key
+  .panel-body
+    table.table.table-bordered.table-striped(style='margin-top: 20px')
+      thead
+        tr
+          th Score
+          th Expectations
+      tbody
+        tr
+          td 0
+          td Incomplete.
+        tr
+          td 1
+          td Does not meet expectations.
+        tr
+          td 2
+          td Meets expectations, good job!
+        tr
+          td 3
+          td Exceeds expectations, you wonderful creature, you!

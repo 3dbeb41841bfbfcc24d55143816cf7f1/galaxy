@@ -145,8 +145,8 @@ let UserSchema = new mongoose.Schema({
   UserSchema
   .fill('groupProjects', function(callback) {
     this.db.model('GroupProject')
-    .find( { team: this._id } )
-    .exec(callback)
+    .find( { team: this._id } ).populate('team', '_id name email github')
+    .exec(callback);
   });
 
   /**
