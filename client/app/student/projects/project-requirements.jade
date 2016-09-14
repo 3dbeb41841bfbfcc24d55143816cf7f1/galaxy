@@ -1,0 +1,25 @@
+div
+  a(href='#' ng-click="$ctrl.isCollapsed = !$ctrl.isCollapsed")
+    span.text-warning
+      | Requirements and Instructor Feedback
+      i.glyphicon(ng-class="{'glyphicon-chevron-down': !$ctrl.isCollapsed, 'glyphicon-chevron-right': $ctrl.isCollapsed}")
+  .panel.panel-warning(uib-collapse='$ctrl.isCollapsed', style="margin-top: 10px")
+    project-requirements-key
+    table.table.table-bordered.table-striped(style='margin-top: 20px')
+      thead
+        tr
+          th Title
+          th Info
+          th Comments
+          th Score
+      tbody
+        tr(ng-repeat='requirement in $ctrl.project.requirements | orderBy : "num"')
+          td {{ requirement.title }}
+          td {{ requirement.info }}
+          td {{ requirement.comments || 'empty' }}
+          td {{ requirement.score || (requirement.score === 0 ? 0 : 'empty') }}
+        tr
+          td Summary
+          td
+          td {{$ctrl.project.comments}}
+          td {{$ctrl.getTotalScore($ctrl.project)}}

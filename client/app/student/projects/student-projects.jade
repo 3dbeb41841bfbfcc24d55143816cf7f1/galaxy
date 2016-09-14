@@ -6,81 +6,12 @@
         .col-sm-3
           h2 Project {{ project.num || 'NA' }}
         .col-sm-9
-          dl.dl-horizontal.text-left
-            dt Number:
-            dd
-              a(href='#',
-              editable-range='project.num',
-              e-step="1",
-              e-max="5",
-              ng-model='project.num',
-              onbeforesave="$ctrl.updateNumber(project, $data)")
-                | {{ project.num || 'empty' }}
-            dt Title:
-            dd
-              a(href='#',
-              editable-text='project.title',
-              ng-model='project.title',
-              onbeforesave="$ctrl.updateTitle(project, $data)")
-                | {{ project.title || 'empty' }}
-            dt Description:
-            dd
-              a(href='#',
-              editable-text='project.info',
-              ng-model='project.info',
-              onbeforesave="$ctrl.updateInfo(project, $data)")
-                | {{ project.info || 'empty' }}
-            dt GitHub URL
-            dd
-              a(href='#',
-              editable-text='project.githubUrl',
-              ng-model='project.githubUrl',
-              onbeforesave="$ctrl.updateGithubUrl(project, $data)")
-                | {{ project.githubUrl || 'empty' }}
-              a(ng-href="{{project.githubUrl}}", target="_blank", style="margin-left: 10px;")
-                | (Visit)
-            dt Deployment URL
-            dd
-              a(href='#',
-              editable-text='project.deploymentUrl',
-              ng-model='project.deploymentUrl',
-              onbeforesave="$ctrl.updateDeploymentUrl(project, $data)")
-                | {{ project.deploymentUrl || 'empty' }}
-              a(ng-href="{{project.deploymentUrl}}", target="_blank", style="margin-left: 10px;")
-                | (Visit)
-
-            dt Total Score:
-            dd {{ $ctrl.getTotalScore(project) }} / {{project.requirements.length * 2}}
+          project-info(project='project')
 
       // Project Requirements and Instructor Feedback
       .row
         .col-sm-12
-          div(ng-init="project.requirementsIsCollapsed = true;")
-            a(href='#' ng-click="project.requirementsIsCollapsed = !project.requirementsIsCollapsed")
-              span.text-warning
-                | Requirements and Instructor Feedback
-                i.glyphicon(ng-class="{'glyphicon-chevron-down': !project.requirementsIsCollapsed, 'glyphicon-chevron-right': project.requirementsIsCollapsed}")
-            .panel.panel-warning(uib-collapse='project.requirementsIsCollapsed', style="margin-top: 10px")
-              project-requirements-key
-              table.table.table-bordered.table-striped(style='margin-top: 20px')
-                thead
-                  tr
-                    th Title
-                    th Info
-                    th Comments
-                    th Score
-                tbody
-                  tr(ng-repeat='requirement in project.requirements | orderBy : "num"')
-                    td {{ requirement.title }}
-                    td {{ requirement.info }}
-                    td {{ requirement.comments || 'empty' }}
-                    td {{ requirement.score || (requirement.score === 0 ? 0 : 'empty') }}
-                  tr
-                    td Summary
-                    td
-                    td {{project.comments}}
-                    td {{$ctrl.getTotalScore(project)}}
-
+          project-requirements(project='project')
           a.trash(ng-click='$ctrl.deleteProject(project)')
             span.glyphicon.glyphicon-trash.pull-right(style='margin-top:-15px;')
 
@@ -106,77 +37,9 @@
                     dd {{ teamMember.email }}
         .col-sm-7
           h3 Info.
-          dl.dl-horizontal.text-left
-            dt Number:
-            dd
-              a(href='#',
-              editable-range='groupProject.project.num',
-              e-step="1",
-              e-max="5",
-              ng-model='groupProject.project.num',
-              onbeforesave="$ctrl.updateNumber(groupProject.project, $data)")
-                | {{ groupProject.project.num || 'empty' }}
-            dt Title:
-            dd
-              a(href='#',
-              editable-text='groupProject.project.title',
-              ng-model='groupProject.project.title',
-              onbeforesave="$ctrl.updateTitle(groupProject.project, $data)")
-                | {{ groupProject.project.title || 'empty' }}
-            dt Description:
-            dd
-              a(href='#',
-              editable-text='groupProject.project.info',
-              ng-model='groupProject.project.info',
-              onbeforesave="$ctrl.updateInfo(groupProject.project, $data)")
-                | {{ groupProject.project.info || 'empty' }}
-            dt GitHub URL
-            dd
-              a(href='#',
-              editable-text='groupProject.project.githubUrl',
-              ng-model='groupProject.project.githubUrl',
-              onbeforesave="$ctrl.updateGithubUrl(groupProject.project, $data)")
-                | {{ groupProject.project.githubUrl || 'empty' }}
-              a(ng-href="{{groupProject.project.githubUrl}}", target="_blank", style="margin-left: 10px;")
-                | (Visit)
-            dt Deployment URL
-            dd
-              a(href='#',
-              editable-text='groupProject.project.deploymentUrl',
-              ng-model='groupProject.project.deploymentUrl',
-              onbeforesave="$ctrl.updateDeploymentUrl(groupProject.project, $data)")
-                | {{ groupProject.project.deploymentUrl || 'empty' }}
-              a(ng-href="{{groupProject.project.deploymentUrl}}", target="_blank", style="margin-left: 10px;")
-                | (Visit)
-
-            dt Total Score:
-            dd {{ $ctrl.getTotalScore(groupProject.project) }} / {{groupProject.project.requirements.length * 2}}
+          project-info(project='groupProject.project')
 
       // Project Requirements and Instructor Feedback
       .row
         .col-sm-12
-          div(ng-init="groupProject.project.requirementsIsCollapsed = true;")
-            a(href='#' ng-click="groupProject.project.requirementsIsCollapsed = !groupProject.project.requirementsIsCollapsed")
-              span.text-warning
-                | Requirements and Instructor Feedback
-                i.glyphicon(ng-class="{'glyphicon-chevron-down': !groupProject.project.requirementsIsCollapsed, 'glyphicon-chevron-right': groupProject.project.requirementsIsCollapsed}")
-            .panel.panel-warning(uib-collapse='groupProject.project.requirementsIsCollapsed', style="margin-top: 10px")
-              project-requirements-key
-              table.table.table-bordered.table-striped(style='margin-top: 20px')
-                thead
-                  tr
-                    th Title
-                    th Info
-                    th Comments
-                    th Score
-                tbody
-                  tr(ng-repeat='requirement in groupProject.project.requirements | orderBy : "num"')
-                    td {{ requirement.title }}
-                    td {{ requirement.info }}
-                    td {{ requirement.comments || 'empty' }}
-                    td {{ requirement.score || (requirement.score === 0 ? 0 : 'empty') }}
-                  tr
-                    td Summary
-                    td
-                    td {{groupProject.project.comments}}
-                    td {{$ctrl.getTotalScore(groupProject.project)}}
+          project-requirements(project='groupProject.project')

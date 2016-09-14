@@ -1,0 +1,45 @@
+dl.dl-horizontal.text-left
+  dt Number:
+  dd
+    a(href='#',
+    editable-range='$ctrl.project.num',
+    e-step="1",
+    e-max="5",
+    ng-model='$ctrl.project.num',
+    onbeforesave="$ctrl.updateNumber($ctrl.project, $data)")
+      | {{ $ctrl.project.num || 'empty' }}
+  dt Title:
+  dd
+    a(href='#',
+    editable-text='$ctrl.project.title',
+    ng-model='$ctrl.project.title',
+    onbeforesave="$ctrl.updateTitle($ctrl.project, $data)")
+      | {{ $ctrl.project.title || 'empty' }}
+  dt Description:
+  dd
+    a(href='#',
+    editable-text='$ctrl.project.info',
+    ng-model='$ctrl.project.info',
+    onbeforesave="$ctrl.updateInfo($ctrl.project, $data)")
+      | {{ $ctrl.project.info || 'empty' }}
+  dt GitHub URL
+  dd
+    a(href='#',
+    editable-text='$ctrl.project.githubUrl',
+    ng-model='$ctrl.project.githubUrl',
+    onbeforesave="$ctrl.updateGithubUrl($ctrl.project, $data)")
+      | {{ $ctrl.project.githubUrl || 'empty' }}
+    a(ng-href="{{$ctrl.project.githubUrl}}", target="_blank", style="margin-left: 10px;")
+      | (Visit)
+  dt Deployment URL
+  dd
+    a(href='#',
+    editable-text='$ctrl.project.deploymentUrl',
+    ng-model='$ctrl.project.deploymentUrl',
+    onbeforesave="$ctrl.updateDeploymentUrl($ctrl.project, $data)")
+      | {{ $ctrl.project.deploymentUrl || 'empty' }}
+    a(ng-href="{{$ctrl.project.deploymentUrl}}", target="_blank", style="margin-left: 10px;")
+      | (Visit)
+
+  dt Total Score:
+  dd {{ $ctrl.getTotalScore($ctrl.project) }} / {{$ctrl.project.requirements.length * 2}}
