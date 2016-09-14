@@ -10,7 +10,7 @@ header#banner.hero2
               a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('instructor.attendance') }",       ui-sref="instructor.attendance")                  Attendance
               a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('instructor.homework') }",         ui-sref="instructor.homework")                    Homework
               a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('instructor.quizzes') }",          ui-sref="instructor.quizzes"            disabled) Quizzes
-              a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('instructor.projects') }",         ui-sref="instructor.projects"           disabled) Projects
+              a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('instructor.projects') }",         ui-sref="instructor.projects"                   ) Group Projects
               a.btn.btn-lg.btn-info(ng-class="{ selected: $ctrl.$state.includes('instructor.one-on-ones') }",      ui-sref="instructor.one-on-ones"        disabled) One-on-Ones
           .col-sm-10
             .inner-view(ui-view='')

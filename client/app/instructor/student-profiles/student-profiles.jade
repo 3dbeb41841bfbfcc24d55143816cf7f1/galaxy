@@ -28,10 +28,9 @@
 
       .row(style='margin-top: 20px')
         .col-sm-12
-          // Projects
           .student-projects(ng-hide='$ctrl.isStudent()')
             hr
-            h4 Projects:
+            h4 Individual Projects:
             uib-accordion(close-others="'true'")
               .panel-warning(uib-accordion-group='', is-open='status.open', ng-repeat='project in student.projects | orderBy : "num"')
                 uib-accordion-heading
@@ -68,30 +67,7 @@
                       | Requirements and Instructor Feedback
                     i.text-warning.glyphicon(ng-class="{'glyphicon-chevron-down': !project.requirementsIsCollapsed, 'glyphicon-chevron-right': project.requirementsIsCollapsed}")
                   div(uib-collapse='project.requirementsIsCollapsed')
-                    a(href='#' ng-click='project.keyIsCollapsed = !project.keyIsCollapsed')
-                      small.text-danger Show Scoring Key
-                      i.text-danger.glyphicon(ng-class="{'glyphicon-chevron-down': !project.keyIsCollapsed, 'glyphicon-chevron-right': project.keyIsCollapsed}")
-                    .panel.panel-danger(uib-collapse='project.keyIsCollapsed')
-                      .panel-heading Scoring Key
-                      .panel-body
-                        table.table.table-bordered.table-striped(style='margin-top: 20px')
-                          thead
-                            tr
-                              th Score
-                              th Expectations
-                          tbody
-                            tr
-                              td 0
-                              td Incomplete.
-                            tr
-                              td 1
-                              td Does not meet expectations.
-                            tr
-                              td 2
-                              td Meets expectations, good job!
-                            tr
-                              td 3
-                              td Exceeds expectations, you wonderful creature, you!
+                    project-requirements-key
 
                     table.table.table-bordered.table-striped(style='margin-top: 20px')
                       thead
@@ -120,3 +96,4 @@
                               onshow='$ctrl.zeroForNull(requirement, "score")',
                               onbeforesave='$ctrl.updateProjectRequirementScore(student, project, requirement, $data)')
                                 | {{ requirement.score || (requirement.score === 0 ? 0 : 'empty') }}
+            h4 Group Projects:
