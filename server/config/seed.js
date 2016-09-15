@@ -144,6 +144,24 @@ function createTestUsers() {
       return null;
     });
   })
+  .then( () => {
+    return User.findOne( { name: 'Student1'} );
+  })
+  .then( (student1) => {
+    let project = new Project( {
+      num: 1,
+      title: 'Duck Hunt',
+      info: 'A remake of the classic Nintendo game.',
+      githubUrl: 'https://github.com/drmikeh/duck-hunt',
+      deploymentUrl: 'http://juggler-horse-43246.bitballoon.com/',
+      comments: 'Nice First Project!'
+    });
+    student1.projects.push(project);
+    return student1.save()
+  })
+  .then((student1) => {
+    console.log('new project added to student1:', student1);
+  });
 }
 
 function createTestGroupProjects() {
@@ -156,6 +174,8 @@ function createTestGroupProjects() {
         num: 13,
         title: 'Sample Group Project',
         info: 'Just another group project',
+        githubUrl: 'https://github.com/drmikeh/duck-hunt',
+        deploymentUrl: 'http://juggler-horse-43246.bitballoon.com/',
         score: 9,
         comments: 'Great Job!'
       });
