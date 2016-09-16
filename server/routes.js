@@ -9,15 +9,16 @@ import path from 'path';
 
 export default function(app) {
   // Insert routes below
-  app.use('/api/projects',    require('./api/project'));
-  app.use('/api/homeworks',   require('./api/homework'));
-  app.use('/api/attendances', require('./api/attendance'));
-  app.use('/api/squads',      require('./api/squad'));
-  app.use('/api/cohorts',     require('./api/cohort'));
-  app.use('/api/users',       require('./api/user'));
-  app.use('/api/settings',    require('./api/settings'));
+  app.use('/api/projects',       require('./api/project'));
+  app.use('/api/group-projects', require('./api/group-project'));
+  app.use('/api/homeworks',      require('./api/homework'));
+  app.use('/api/attendances',    require('./api/attendance'));
+  app.use('/api/squads',         require('./api/squad'));
+  app.use('/api/cohorts',        require('./api/cohort'));
+  app.use('/api/users',          require('./api/user'));
+  app.use('/api/settings',       require('./api/settings'));
 
-  app.use('/auth', require('./auth'));
+  app.use('/auth',               require('./auth'));
 
   // All undefined asset or api routes should return a 404
   app.route('/:url(api|auth|components|app|bower_components|assets)/*')

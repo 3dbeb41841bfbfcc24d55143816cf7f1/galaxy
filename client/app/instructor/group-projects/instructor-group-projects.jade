@@ -1,0 +1,48 @@
+.container-fluid
+
+  h2.text-warning Group Projects
+  ul.list-group.student-projects
+    li.list-group-item.panel.panel-primary(ng-repeat='groupProject in $ctrl.groupProjects | orderBy : "num"')
+      h3.text-success Project {{ groupProject.project.num || 'NA' }}
+      .row
+        .col-sm-5
+          h3 Team
+            small(ng-hide='$ctrl.editMode')
+              span.btn-group(style='display: inline-block; margin-left: 10px; margin-bottom: 10px;')
+                button.btn.btn-xs.btn-warning(type='button' aria-label='Edit' ng-click='$ctrl.goTeamEditMode(groupProject)')
+                  span.glyphicon.glyphicon-pencil(aria-hidden='true')
+            small(ng-show='$ctrl.editMode')
+              span.btn-group(style='display: inline-block; margin-left: 10px; margin-bottom: 10px;')
+                button.btn.btn-xs.btn-success(type='button' aria-label='Edit' ng-click='$ctrl.goSaveTeamUpdates(groupProject)')
+                  span.glyphicon.glyphicon-ok(aria-hidden='true')
+                button.btn.btn-xs.btn-danger(type='button' aria-label='Edit' ng-click='$ctrl.cancelTeamEditMode()')
+                  span.glyphicon.glyphicon-remove(aria-hidden='true')
+
+          .row(ng-hide='$ctrl.editMode' ng-repeat='teamMember in groupProject.team | orderBy : "email"')
+            .col-sm-2
+              img(ng-show='teamMember.github' src='{{ teamMember.github.avatar_url }}' alt='Avatar' height='60' width='60')
+            .col-sm-10
+              div(style='margin-left: -60px')
+                dl.dl-horizontal.text-left
+                  dt Name:
+                  dd {{ teamMember.name }}
+                  dt Email:
+                  dd {{ teamMember.email }}
+
+          .groupProjectTeamEdit.row(ng-show='$ctrl.editMode')
+            .col-md-6(ng-repeat='(listName, list) in $ctrl.teamMembers.lists')
+              .panel.panel-info
+                .panel-heading
+                  h3.panel-title {{listName}}
+                .panel-body
+                  ul(dnd-list='list')
+                    li(ng-repeat='student in list | orderBy : ["name", "email"]',
+                       dnd-draggable='student',
+                       dnd-moved='list.splice($index, 1)',
+                       dnd-effect-allowed='move',
+                       dnd-selected='$ctrl.teamMembers.selected = student',
+                       ng-class="{'selected': $ctrl.teamMembers.selected === student}")
+                      | {{ $ctrl.getUserLabel(student) }}
+        .col-sm-7
+          h3 Info.
+          project-info(project='groupProject.project')

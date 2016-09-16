@@ -13,7 +13,8 @@ angular.module('galaxyApp', [
   'ui.bootstrap',
   'validation.match',
   'xeditable',
-  'ngBusy'
+  'ngBusy',
+  'dndLists'
 ])
 .config(function($urlRouterProvider, $locationProvider) {
   $urlRouterProvider
