@@ -93,7 +93,7 @@ function createTestUsers() {
   ];
 
   return Promise.all(promises)
-  .spread((testCohort1, atlWDI6Squad, testSquad1, testSquad2, testSquad3) => {
+  .spread((testCohort1, atlWDI6Cohort, testSquad1, testSquad2, testSquad3) => {
     let testSquads = [testSquad1, testSquad2, testSquad3];
     return User.find({}).remove()
     .then(() => {
@@ -104,7 +104,7 @@ function createTestUsers() {
           role: 'admin',
           email: 'admin@ga.co',
           password: process.env.ADMIN_PASSWORD || 'admin',
-          cohort: atlWDI6Squad._id
+          cohort: testCohort1._id
         }
       ];
 

@@ -24,10 +24,12 @@ function respondWithResult(res, statusCode) {
 function saveUpdates(updates) {
   return function(entity) {
     var updated = _.merge(entity, updates);
+    updated.team = updates.team;
+    console.log('updated:', updated);
     return updated.save()
-      .then(updated => {
-        return updated;
-      });
+    .then(updated => {
+      return updated;
+    });
   };
 }
 
@@ -83,12 +85,16 @@ export function create(req, res) {
 
 // Updates an existing GroupProject in the DB
 export function update(req, res) {
+  console.log('groupProject: update:', req.body);
   if (req.body._id) {
     delete req.body._id;
   }
   return GroupProject.findById(req.params.id).exec()
     .then(handleEntityNotFound(res))
-    .then(saveUpdates(req.body))
+    .then((res) => {
+      return saveUpdates(req.body)(res);
+    })
+    .then( saved => GroupProject.findById(saved._id).populate('team', '_id name email github') )
     .then(respondWithResult(res))
     .catch(handleError(res));
 }

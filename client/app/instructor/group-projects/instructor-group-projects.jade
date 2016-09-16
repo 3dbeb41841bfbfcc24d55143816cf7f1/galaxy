@@ -13,7 +13,7 @@
                   span.glyphicon.glyphicon-pencil(aria-hidden='true')
             small(ng-show='$ctrl.editMode')
               span.btn-group(style='display: inline-block; margin-left: 10px; margin-bottom: 10px;')
-                button.btn.btn-xs.btn-success(type='button' aria-label='Edit' ng-click='$ctrl.goSaveTeamUpdates(groupProject)')
+                button.btn.btn-xs.btn-success(type='button' aria-label='Edit' ng-click='$ctrl.saveTeamUpdates($index, groupProject)')
                   span.glyphicon.glyphicon-ok(aria-hidden='true')
                 button.btn.btn-xs.btn-danger(type='button' aria-label='Edit' ng-click='$ctrl.cancelTeamEditMode()')
                   span.glyphicon.glyphicon-remove(aria-hidden='true')
@@ -36,7 +36,7 @@
                   h3.panel-title {{listName}}
                 .panel-body
                   ul(dnd-list='list')
-                    li(ng-repeat='student in list | orderBy : ["name", "email"]',
+                    li(ng-repeat='student in list',
                        dnd-draggable='student',
                        dnd-moved='list.splice($index, 1)',
                        dnd-effect-allowed='move',

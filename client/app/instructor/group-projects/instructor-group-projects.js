@@ -43,7 +43,6 @@
       this.getAllStudents()
       .then((response) => {
         this.allStudents = response.data;
-        console.log('allStudents 1:', JSON.stringify(this.allStudents));
         console.log('allStudents 2:', this.allStudents.map( student => { return { name: student.name }; } ));
         this.allStudents.forEach( student => {
           if (!this.containsStudent(groupProject.team, student)) {
@@ -63,9 +62,14 @@
       this.editMode = false;
     }
 
-    goSaveTeamUpdates(groupProject) {
+    saveTeamUpdates(index, groupProject) {
       // TODO: save team updates to groupProject
-      this.editMode = false;
+      groupProject.team = this.teamMembers.lists.Assigned.map( member => member._id );
+      this.$http.put('/api/group-projects/' + groupProject._id, groupProject)
+      .then( res => {
+        this.groupProjects[index] = res.data;
+        this.cancelTeamEditMode();
+      });
     }
 
     getUserLabel(user) {
