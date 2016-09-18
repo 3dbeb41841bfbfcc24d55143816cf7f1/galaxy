@@ -38,7 +38,8 @@ export function index(req, res) {
     filter.squad = req.query.squad;
   }
   console.log('user index has filter:', filter);
-  return User.find(filter, '-salt -password').fill('groupProjects').sort('name')
+  return User.find(filter, '-salt -password')
+  .fill('groupProjects').sort('name')
   .then(users => {
     res.status(200).json(users);
     return users;
@@ -74,7 +75,8 @@ export function create(req, res, next) {
 export function show(req, res, next) {
   var userId = req.params.id;
 
-  return User.findById(userId).fill('groupProjects')
+  return User.findById(userId)
+  .fill('groupProjects')
     .then(user => {
       if (!user) {
         return res.status(404).end();
@@ -181,10 +183,13 @@ export function changeSquad(req, res, next) {
  */
 export function getProjects(req, res, next) {
   var userId = req.params.id;
-  return User.findById(userId).fill('groupProjects')
+  return User.findById(userId)
+  .fill('groupProjects')
   .then(user => {
-    res.status(200).json(user.projects);
-    return user.projects;
+    res.status(200).json( {
+      projects: user.projects,
+      groupProjects: user.groupProjects
+    });
   });
 }
 
@@ -217,7 +222,8 @@ export function addProject(req, res, next) {
   var projectId = req.params.projectId;
   var updates = req.body;
 
-  return User.findById(userId).fill('groupProjects')
+  return User.findById(userId)
+  .fill('groupProjects')
   .then(user => {
     // let project = user.projects.id(projectId);
     let project = user.projects.id(projectId);
@@ -270,7 +276,8 @@ export function addProject(req, res, next) {
   var requirementId = req.params.requirementId;
   var updates = req.body;
 
-  return User.findById(userId).fill('groupProjects')
+  return User.findById(userId)
+  .fill('groupProjects')
   .then(user => {
     let project = user.projects.id(projectId);
     let requirement = project.requirements.id(requirementId);
@@ -345,14 +352,15 @@ export function changeAttendance(req, res, next) {
 export function me(req, res, next) {
   var userId = req.user._id;
 
-  return User.findOne({ _id: userId }, '-salt -password').fill('groupProjects')
-    .then(user => { // don't ever give out the password or salt
-      if (!user) {
-        return res.status(401).end();
-      }
-      res.json(user);
-    })
-    .catch(err => next(err));
+  return User.findOne({ _id: userId }, '-salt -password')
+  .fill('groupProjects')
+  .then(user => { // don't ever give out the password or salt
+    if (!user) {
+      return res.status(401).end();
+    }
+    res.json(user);
+  })
+  .catch(err => next(err));
 }
 
 /**

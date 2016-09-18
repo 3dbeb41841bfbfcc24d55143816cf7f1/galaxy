@@ -12,6 +12,13 @@
 import _ from 'lodash';
 import GroupProject from './group-project.model';
 
+function validationError(res, statusCode) {
+  statusCode = statusCode || 422;
+  return function(err) {
+    res.status(statusCode).json(err);
+  }
+}
+
 function respondWithResult(res, statusCode) {
   statusCode = statusCode || 200;
   return function(entity) {
@@ -63,17 +70,30 @@ function handleError(res, statusCode) {
 
 // Gets a list of GroupProjects
 export function index(req, res) {
-  return GroupProject.find().populate('team', '_id name email github').exec()
-    .then(respondWithResult(res))
-    .catch(handleError(res));
+
+  console.log('req.query:', req.query);
+  let filter = {};
+  if (req.query.cohort) {
+    filter.cohort = req.query.cohort;
+  }
+  console.log('groupProject index has filter:', filter);
+  return GroupProject.find(filter)
+  .populate('cohort')
+  .populate('team', '_id name email github')
+  .sort('name')
+  .exec()
+  .then(respondWithResult(res))
+  .catch(handleError(res));
 }
 
 // Gets a single GroupProject from the DB
 export function show(req, res) {
-  return GroupProject.findById(req.params.id).populate('team', '_id name email github').exec()
-    .then(handleEntityNotFound(res))
-    .then(respondWithResult(res))
-    .catch(handleError(res));
+  return GroupProject.findById(req.params.id)
+  .populate('cohort')
+  .populate('team', '_id name email github').exec()
+  .then(handleEntityNotFound(res))
+  .then(respondWithResult(res))
+  .catch(handleError(res));
 }
 
 // Creates a new GroupProject in the DB
@@ -94,10 +114,32 @@ export function update(req, res) {
     .then((res) => {
       return saveUpdates(req.body)(res);
     })
-    .then( saved => GroupProject.findById(saved._id).populate('team', '_id name email github') )
+    .then( saved => GroupProject.findById(saved._id)
+          .populate('cohort')
+          .populate('team', '_id name email github') )
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
+
+/**
+ * Change a groupProject's cohort
+ */
+export function changeCohort(req, res, next) {
+  var groupProjectId = req.params.id;
+  var newCohortId = String(req.body.cohort);
+
+  return GroupProject.findById(groupProjectId)
+  .then(groupProject => {
+    console.log('setting cohort for groupProject', groupProject.name, 'to', newCohortId);
+    groupProject.cohort = newCohortId;
+    return groupProject.save()
+      .then(() => {
+        res.status(204).end();
+      })
+      .catch(validationError(res));
+  });
+}
+
 
 // Deletes a GroupProject from the DB
 export function destroy(req, res) {

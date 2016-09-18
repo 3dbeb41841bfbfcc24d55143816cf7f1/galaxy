@@ -2,9 +2,9 @@
 
 (function() {
 
-  class ProjectRequirementsController {
+  class ProjectRequirementsViewController {
     constructor() {
-      console.log('ProjectRequirementsController is alive!');
+      console.log('ProjectRequirementsViewController is alive!');
       this.isCollapsed = true;
     }
 
@@ -18,9 +18,9 @@
   }
 
   angular.module('galaxyApp')
-  .component('projectRequirements', {
-    templateUrl: 'app/student/projects/project-requirements.html',
-    controller: ProjectRequirementsController,
+  .component('projectRequirementsView', {
+    templateUrl: 'components/project-requirements-view/project-requirements-view.html',
+    controller: ProjectRequirementsViewController,
     bindings: {
       project: '<'
     }

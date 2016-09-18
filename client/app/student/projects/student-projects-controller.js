@@ -7,6 +7,33 @@
       console.log('StudentProjectsController is alive!');
       this.$http = $http;
       this.getCurrentUser = Auth.getCurrentUser;
+
+      // this object is used as a delegate for the `project-info` component
+      this.projectUpdater = {
+        update: project => {
+          console.log('=== you reached the delegated update of a project ===');
+          this.$http.put(this.getBaseProjectUrl() + project._id, project)
+          .then(response => {
+            this.getCurrentUser().projects = response.data;
+          });
+        }
+      }
+
+      // this object is used as a delegate for the `project-info` component
+      this.groupProjectUpdater = {
+        update: groupProject => {
+          console.log('=== you reached the delegated update of a groupProject ===');
+          this.$http.put('/api/group-projects/' + groupProject._id, groupProject)
+          .then(response => {
+            this.$http.get(this.getBaseProjectUrl())
+            .then( res => {
+              console.log('res.data:', res.data);
+              this.getCurrentUser().projects = res.data.projects;
+              this.getCurrentUser().groupProjects = res.data.groupProjects;
+            });
+          });
+        }
+      }
     }
 
     getBaseProjectUrl() {

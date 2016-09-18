@@ -74,6 +74,8 @@
       }
     }
 
+    // This is needed to sync the xeditable select options with the user's
+    // currently set cohort object
     setCohortInVM(user, cohort) {
       if (!cohort) {
         return;
@@ -82,6 +84,8 @@
       user.cohort = selected.length ? selected[0] : null;
     }
 
+    // This is needed to sync the xeditable select options with the user's
+    // currently set squad object
     setSquadInVM(user, squad) {
       if (!squad) {
         return;

@@ -4,14 +4,14 @@
     li.list-group-item.panel.panel-primary(ng-repeat='project in $ctrl.getCurrentUser().projects | orderBy : "num"')
       .row
         .col-sm-3
-          h2 Project {{ project.num || 'NA' }}
+          h2.text-success Project {{ project.num || 'NA' }}
         .col-sm-9
-          project-info(project='project')
+          project-info(project='project' saveable='project' updater='$ctrl.projectUpdater')
 
       // Project Requirements and Instructor Feedback
       .row
         .col-sm-12
-          project-requirements(project='project')
+          project-requirements-view(project='project')
           a.trash(ng-click='$ctrl.deleteProject(project)')
             span.glyphicon.glyphicon-trash.pull-right(style='margin-top:-15px;')
 
@@ -20,7 +20,7 @@
   h2.text-warning Group Projects
   ul.list-group.student-projects
     li.list-group-item.panel.panel-primary(ng-repeat='groupProject in $ctrl.getCurrentUser().groupProjects | orderBy : "num"')
-      h2 Project {{ groupProject.project.num || 'NA' }}
+      h2.text-success {{ groupProject.name }}
       .row
         .col-sm-5
           h3 Team
@@ -37,9 +37,9 @@
                     dd {{ teamMember.email }}
         .col-sm-7
           h3 Info.
-          project-info(project='groupProject.project')
+          project-info(project='groupProject.project' saveable='groupProject' updater='$ctrl.groupProjectUpdater')
 
       // Project Requirements and Instructor Feedback
       .row
         .col-sm-12
-          project-requirements(project='groupProject.project')
+          project-requirements-view(project='groupProject.project')

@@ -171,7 +171,7 @@ function createTestGroupProjects() {
     .then( team => {
       console.log('team size:', team.length);
       let project = new Project( {
-        num: 13,
+        num: 3,
         title: 'Sample Group Project',
         info: 'Just another group project',
         githubUrl: 'https://github.com/drmikeh/duck-hunt',
@@ -179,7 +179,15 @@ function createTestGroupProjects() {
         score: 9,
         comments: 'Great Job!'
       });
-      return GroupProject.create( { project, team } );
+      return Cohort.findOne({name: 'Test Cohort #1'})
+      .then((testCohort1) => {
+        return GroupProject.create( {
+          name: 'Sample Team Project',
+          cohort: testCohort1,
+          project: project,
+          team: team
+        });
+      });
     })
     .then( () => {
       return GroupProject.find({}).populate('team');

@@ -3,46 +3,35 @@
 (function() {
 
   class ProjectInfoController {
-    constructor($http, Auth) {
+    constructor() {
       console.log('ProjectInfoController is alive!');
-      this.$http = $http;
-      this.getCurrentUser = Auth.getCurrentUser;
-    }
-
-    getBaseProjectUrl() {
-      return '/api/users/' + this.getCurrentUser()._id + '/projects/';
-    }
-
-    update(project) {
-      this.$http.put(this.getBaseProjectUrl() + project._id, project)
-      .then(response => {
-        this.getCurrentUser().projects = response.data;
-      });
+      console.log('this:', this);
     }
 
     updateNumber(project, num) {
       project.num = num;
-      this.update(project);
+      console.log('about to call this.update:', this.update);
+      this.updater.update(this.saveable);
     }
 
     updateTitle(project, title) {
       project.title = title;
-      this.update(project);
+      this.updater.update(this.saveable);
     }
 
     updateInfo(project, info) {
       project.info = info;
-      this.update(project);
+      this.updater.update(this.saveable);
     }
 
     updateGithubUrl(project, url) {
       project.gitHubUrl = url;
-      this.update(project);
+      this.updater.update(this.saveable);
     }
 
     updateDeploymentUrl(project, url) {
       project.deploymentUrl = url;
-      this.update(project);
+      this.updater.update(this.saveable);
     }
 
     // TODO: DRY this up!
@@ -56,10 +45,12 @@
 
   angular.module('galaxyApp')
   .component('projectInfo', {
-    templateUrl: 'app/student/projects/project-info.html',
+    templateUrl: 'components/project-info/project-info.html',
     controller: ProjectInfoController,
     bindings: {
-      project: '<'
+      project: '<',
+      saveable: '<',
+      updater: '<'
     }
   });
 

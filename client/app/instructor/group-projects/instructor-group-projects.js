@@ -3,32 +3,63 @@
 (function() {
 
   class InstructorGroupProjectsController {
-    constructor($http, Cohort) {
+    constructor($http, Cohort, $filter, $rootScope) {
       console.log('InstructorGroupProjectsController is alive!');
       this.$http = $http;
       this.Cohort = Cohort;
-      this.editMode = false;
+      this.$filter = $filter;
 
       this.groupProjects = [];
-      this.getGroupProjects();
+      this.loadGroupProjects();
 
+      this.cohorts = [];
+
+      $rootScope.$on('cohortChangeEvent', () => {
+        this.loadGroupProjects();
+      });
+
+      // This is used in the drag and drop control when editing a
+      // groupProject's team.
       this.teamMembers = {
         selected: null,
         lists: {"Available": [], "Assigned": []}
       };
+
+      // this object is used as a delegate for the `project-info` component
+      this.groupProjectUpdater = {
+        update: groupProject => {
+          console.log('=== you reached the delegated update of a groupProject ===');
+          this.$http.put('/api/group-projects/' + groupProject._id, groupProject)
+          .then(response => {
+            this.loadGroupProjects();
+          });
+        }
+      }
     }
 
-    getAllStudents() {
-      let currentCohort = this.Cohort.getCurrentCohort();
-      let cohortId = currentCohort ? currentCohort._id : undefined;
+    getStudentsForCohort(cohort) {
+      let cohortId = undefined;
+      if (cohort) {
+        cohortId = cohort._id ? cohort._id : cohort;
+      }
+      else if (this.Cohort.getCurrentCohort()) {
+        cohortId = this.Cohort.getCurrentCohort()._id;
+      }
       return this.$http.get('/api/users', { params: { role: 'student', cohort: cohortId } } );
     }
 
-    getGroupProjects() {
-      this.$http.get('/api/group-projects')
+    loadGroupProjects() {
+      let theCohort = this.Cohort.getCurrentCohort();
+      let cohortId = theCohort ? theCohort._id : undefined;
+      return this.$http.get('/api/group-projects', { params: { cohort: cohortId } })
       .then( res => {
         this.groupProjects = res.data;
       });
+    }
+
+    updateName(groupProject, name) {
+      groupProject.name = name;
+      this.groupProjectUpdater.update(groupProject);
     }
 
     containsStudent(list, student) {
@@ -40,11 +71,11 @@
       this.teamMembers.lists.Available.length = 0;
       this.teamMembers.lists.Assigned.length = 0;
 
-      this.getAllStudents()
+      this.getStudentsForCohort(groupProject.cohort)
       .then((response) => {
-        this.allStudents = response.data;
-        console.log('allStudents 2:', this.allStudents.map( student => { return { name: student.name }; } ));
-        this.allStudents.forEach( student => {
+        let students = response.data;
+        // console.log('allStudents 2:', students.map( student => { return { name: student.name }; } ));
+        students.forEach( student => {
           if (!this.containsStudent(groupProject.team, student)) {
             this.teamMembers.lists.Available.push(student);
           }
@@ -55,11 +86,11 @@
         this.teamMembers.lists.Assigned.push(teamMember);
       });
 
-      this.editMode = true;
+      groupProject.teamEditMode = true;
     }
 
-    cancelTeamEditMode() {
-      this.editMode = false;
+    cancelTeamEditMode(groupProject) {
+      groupProject.teamEditMode = false;
     }
 
     saveTeamUpdates(index, groupProject) {
@@ -68,13 +99,83 @@
       this.$http.put('/api/group-projects/' + groupProject._id, groupProject)
       .then( res => {
         this.groupProjects[index] = res.data;
-        this.cancelTeamEditMode();
+        this.cancelTeamEditMode(groupProject);
       });
     }
 
     getUserLabel(user) {
       return user.name ? user.name : user.email;
       // return `${user.name} ( ${user.email} )`;
+    }
+
+    newGroupProject() {
+      let currentCohort = this.Cohort.getCurrentCohort();
+      let cohortId = currentCohort ? currentCohort._id : undefined;
+
+      let newGroupProject = {
+        name: 'New Group Project',
+        cohort: cohortId,
+        project: {
+          num: 3,
+          title: 'title goes here',
+          info: 'info goes here',
+          githubUrl: 'githubUrl goes here',
+          deploymentUrl: 'deploymentUrl goes here'
+        },
+        team: []
+      };
+      this.$http.post('/api/group-projects', newGroupProject)
+      .then(response => {
+        console.log('Created new Group Project:', response.data);
+        this.loadGroupProjects();
+      });
+    }
+
+    updateGroupProjectCohort(groupProject, cohort) {
+      if (!cohort) {
+        return;
+      }
+      return this.$http.put('/api/group-projects/' + groupProject._id + '/cohort',
+                            { cohort: cohort._id }
+                           )
+      .then(() => {
+        console.log('groupProject updated with new cohort.');
+      });
+    }
+
+
+    // TODO: handle newly created cohorts
+    loadCohorts(groupProject) {
+      if (this.cohorts.length) {
+        this.setCohortInVM(groupProject, groupProject.cohort);
+        return null;
+      }
+      else {
+        return this.$http.get('/api/cohorts')
+        .then((response) => {
+          this.cohorts = response.data;
+          this.setCohortInVM(groupProject, groupProject.cohort);
+        });
+      }
+    }
+
+    // This is needed to sync the xeditable select options with the
+    // groupProject's currently set cohort object
+    setCohortInVM(groupProject, cohort) {
+      if (!cohort) {
+        return;
+      }
+      var selected = this.$filter('filter')(this.cohorts, {_id: cohort._id} );
+      groupProject.cohort = selected.length ? selected[0] : null;
+    }
+
+    deleteProject(groupProject) {
+      if (confirm('Are you sure?')) {
+        this.$http.delete('/api/group-projects/' + groupProject._id)
+        .then(response => {
+          this.loadGroupProjects();
+        });
+      }
     }
   }
 
