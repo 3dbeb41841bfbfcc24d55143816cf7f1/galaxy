@@ -6,14 +6,28 @@
     constructor() {
       console.log('ProjectRequirementsEditorController is alive!');
       this.isCollapsed = true;
+
+      console.log('student:', this.student);
+      console.log('project:', this.project);
+      console.log('saveable:', this.saveable);
+      console.log('updater:', this.updater);
     }
 
-    // TODO: DRY this up!
-    getTotalScore(project) {
-      let result = project.requirements.reduce( (sum, r) => {
-        return sum += (r.score || r.score === 0) ? r.score : NaN;
-      }, 0);
-      return isNaN(result) ? 'NA' : result;
+    updateScore(requirement, score) {
+      requirement.score = score;
+      this.updater.update(this.student, this.saveable, requirement);
+    }
+
+    updateComments(requirement, comments) {
+      requirement.comments = comments;
+      this.updater.update(this.student, this.saveable, requirement);
+    }
+
+    zeroForNull(obj, prop) {
+      console.log('zeroForNull:', obj[prop]);
+      if (obj[prop] === null) {
+        obj[prop] = 0;
+      }
     }
   }
 
@@ -22,7 +36,10 @@
     templateUrl: 'components/project-requirements-editor/project-requirements-editor.html',
     controller: ProjectRequirementsEditorController,
     bindings: {
-      project: '<'
+      student: '<',
+      project: '<',
+      saveable: '<',
+      updater: '<'
     }
   });
 

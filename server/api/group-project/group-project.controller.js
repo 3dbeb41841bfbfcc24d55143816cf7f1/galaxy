@@ -90,7 +90,8 @@ export function index(req, res) {
 export function show(req, res) {
   return GroupProject.findById(req.params.id)
   .populate('cohort')
-  .populate('team', '_id name email github').exec()
+  .populate('team', '_id name email github')
+  .exec()
   .then(handleEntityNotFound(res))
   .then(respondWithResult(res))
   .catch(handleError(res));
@@ -109,16 +110,19 @@ export function update(req, res) {
   if (req.body._id) {
     delete req.body._id;
   }
-  return GroupProject.findById(req.params.id).exec()
-    .then(handleEntityNotFound(res))
-    .then((res) => {
-      return saveUpdates(req.body)(res);
-    })
-    .then( saved => GroupProject.findById(saved._id)
-          .populate('cohort')
-          .populate('team', '_id name email github') )
-    .then(respondWithResult(res))
-    .catch(handleError(res));
+  return GroupProject.findById(req.params.id)
+  .exec()
+  .then(handleEntityNotFound(res))
+  .then( (res) => {
+    return saveUpdates(req.body)(res);
+  })
+  .then( (saved) => {
+    return GroupProject.findById(saved._id)
+    .populate('cohort')
+    .populate('team', '_id name email github')
+  })
+  .then(respondWithResult(res))
+  .catch(handleError(res));
 }
 
 /**
@@ -140,11 +144,38 @@ export function changeCohort(req, res, next) {
   });
 }
 
+/**
+ * Update a project requirement (comments or score)
+ */
+ export function updateProjectRequirement(req, res, next) {
+  var groupProjectId = req.params.id;
+  var requirementId = req.params.requirementId;
+  var updates = req.body;
+
+  return GroupProject.findById(groupProjectId)
+  .then(groupProject => {
+    let requirement = groupProject.project.requirements.id(requirementId);
+
+    console.log('updating requirement:', requirement);
+    console.log('with updates:', updates);
+
+    // let updated = _.merge(requirement, updates);
+    requirement.score = updates.score ? updates.score : requirement.score;
+    requirement.comments = updates.comments ? updates.comments : requirement.comments;
+
+    return groupProject.save()
+    .then(() => {
+      res.status(200).json(groupProject);
+    })
+    .catch(validationError(res));
+  });
+}
 
 // Deletes a GroupProject from the DB
 export function destroy(req, res) {
-  return GroupProject.findById(req.params.id).exec()
-    .then(handleEntityNotFound(res))
-    .then(removeEntity(res))
-    .catch(handleError(res));
+  return GroupProject.findById(req.params.id)
+  .exec()
+  .then(handleEntityNotFound(res))
+  .then(removeEntity(res))
+  .catch(handleError(res));
 }

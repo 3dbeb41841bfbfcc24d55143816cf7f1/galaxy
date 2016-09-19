@@ -34,7 +34,20 @@
             this.loadGroupProjects();
           });
         }
-      }
+      };
+
+      this.groupProjectRequirementsUpdater = {
+        update: (student, saveable, requirement) => {
+          console.log('=== you reached the delegated update of a groupProject requirement ===');
+          var url = '/api/group-projects/' + saveable._id + '/requirements/' + requirement._id;
+          this.$http.put(url, requirement)
+          .then(response => {
+            console.log('updated groupProject:', response.data);
+            // TODO???
+            // project.requirements.findById(requirement._id) = response.data;
+          });
+        }
+      };
     }
 
     getStudentsForCohort(cohort) {

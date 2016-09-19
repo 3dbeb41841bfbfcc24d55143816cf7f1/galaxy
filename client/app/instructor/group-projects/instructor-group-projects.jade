@@ -68,7 +68,7 @@
       // Project Requirements and Instructor Feedback
       .row
         .col-sm-12
-          project-requirements-editor(project='groupProject.project')
+          project-requirements-editor(project='groupProject.project' saveable='groupProject' updater='$ctrl.groupProjectRequirementsUpdater')
           a.trash(ng-click='$ctrl.deleteProject(groupProject)')
             span.glyphicon.glyphicon-trash.pull-right(style='margin-top:-15px;')
 

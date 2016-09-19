@@ -24,6 +24,19 @@
       $rootScope.$on('squadChangeEvent', () => {
         this.loadStudents();
       });
+
+
+      // this object is used as a delegate for the `project-requirements-editor` component
+      this.projectRequirementsUpdater = {
+        update: (user, project, requirement) => {
+          var url = '/api/users/' + user._id + '/projects/' + project._id + '/requirements/' + requirement._id;
+          this.$http.put(url, requirement)
+          .then(response => {
+            // TODO???
+            // project.requirements.findById(requirement._id) = response.data;
+          });
+        }
+      };
     }
 
     get squad() {
@@ -133,32 +146,6 @@
     updateProjectComments(user, project, comments) {
       project.comments = comments;
       this.updateProject(user, project);
-    }
-
-    updateProjectRequirement(user, project, requirement) {
-      var url = '/api/users/' + user._id + '/projects/' + project._id + '/requirements/' + requirement._id;
-      this.$http.put(url, requirement)
-      .then(response => {
-        // TODO???
-        // project.requirements.findById(requirement._id) = response.data;
-      });
-    }
-
-    updateProjectRequirementScore(user, project, requirement, score) {
-      requirement.score = score;
-      this.updateProjectRequirement(user, project, requirement);
-    }
-
-    updateProjectRequirementComments(user, project, requirement, comments) {
-      requirement.comments = comments;
-      this.updateProjectRequirement(user, project, requirement);
-    }
-
-    zeroForNull(obj, prop) {
-      console.log('zeroForNull:', obj[prop]);
-      if (obj[prop] === null) {
-        obj[prop] = 0;
-      }
     }
   }
 

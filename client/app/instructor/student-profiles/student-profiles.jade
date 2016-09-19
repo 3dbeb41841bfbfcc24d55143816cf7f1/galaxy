@@ -60,40 +60,6 @@
                   dd {{ $ctrl.getTotalProjectScore(project) }}
 
                 hr
-
-                div(ng-init='project.requirementsIsCollapsed = true; project.keyIsCollapsed = true;')
-                  a(href='#' ng-click='project.requirementsIsCollapsed = !project.requirementsIsCollapsed')
-                    span.text-warning
-                      | Requirements and Instructor Feedback
-                    i.text-warning.glyphicon(ng-class="{'glyphicon-chevron-down': !project.requirementsIsCollapsed, 'glyphicon-chevron-right': project.requirementsIsCollapsed}")
-                  div(uib-collapse='project.requirementsIsCollapsed')
-                    project-requirements-key
-
-                    table.table.table-bordered.table-striped(style='margin-top: 20px')
-                      thead
-                        tr
-                          th Title
-                          th Info
-                          th Comments
-                          th Score
-                      tbody
-                        tr(ng-repeat='requirement in project.requirements | orderBy : "num"')
-                          td {{ requirement.title }}
-                          td {{ requirement.info }}
-                          td
-                            a(href='#',
-                              editable-text='requirement.comments',
-                              ng-model='requirement.comments',
-                              onbeforesave="$ctrl.updateProjectRequirementComments(student, project, requirement, $data)")
-                                | {{ requirement.comments || 'empty' }}
-                          td
-                            a(href='#',
-                              editable-range='requirement.score',
-                              e-step="0.5",
-                              e-min="0",
-                              e-max="3",
-                              ng-model='requirement.score',
-                              onshow='$ctrl.zeroForNull(requirement, "score")',
-                              onbeforesave='$ctrl.updateProjectRequirementScore(student, project, requirement, $data)')
-                                | {{ requirement.score || (requirement.score === 0 ? 0 : 'empty') }}
+                project-requirements-editor(student='student' project='project' saveable='project' updater='$ctrl.projectRequirementsUpdater')
             h4 Group Projects:
+            p.text-warning NOTE: To see group projects, go to the Group Projects page.

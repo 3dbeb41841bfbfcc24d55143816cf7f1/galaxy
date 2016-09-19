@@ -2,4 +2,4 @@
 
 ## Instructor View
 
-* Add component for editing Group Projects
+* Add editing of Group Projects from Student Profiles page.
