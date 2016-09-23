@@ -17,7 +17,7 @@
             this.getCurrentUser().projects = response.data;
           });
         }
-      }
+      };
 
       // this object is used as a delegate for the `project-info` component
       this.groupProjectUpdater = {
@@ -33,7 +33,7 @@
             });
           });
         }
-      }
+      };
     }
 
     getBaseProjectUrl() {

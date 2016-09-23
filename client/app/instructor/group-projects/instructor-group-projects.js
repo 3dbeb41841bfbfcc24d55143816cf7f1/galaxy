@@ -22,7 +22,7 @@
       // groupProject's team.
       this.teamMembers = {
         selected: null,
-        lists: {"Available": [], "Assigned": []}
+        lists: {'Available': [], 'Assigned': []}
       };
 
       // this object is used as a delegate for the `project-info` component
@@ -51,7 +51,7 @@
     }
 
     getStudentsForCohort(cohort) {
-      let cohortId = undefined;
+      let cohortId;
       if (cohort) {
         cohortId = cohort._id ? cohort._id : cohort;
       }
