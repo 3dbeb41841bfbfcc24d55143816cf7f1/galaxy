@@ -9,12 +9,21 @@
       dl.dl-horizontal
         dt(ng-show='$ctrl.getCurrentUser().email') Local:
         dd(ng-show='$ctrl.getCurrentUser().email') {{$ctrl.getCurrentUser().email}}
+
         dt(ng-show='$ctrl.getCurrentUser().github') GitHub:
-        dd(ng-show='$ctrl.getCurrentUser().github') <a target="_blank" ng-href="https://github.com/{{$ctrl.getCurrentUser().github.login}}">{{$ctrl.getCurrentUser().github.login}}</a>
+        dd(ng-show='$ctrl.getCurrentUser().github')
+          a(target='_blank' ng-href='https://github.com/{{$ctrl.getCurrentUser().github.login}}')
+            | {{$ctrl.getCurrentUser().github.login}}</a>
+
         dt Cohort:
-        dd {{ $ctrl.getCurrentUser().cohort.name || 'Not Set' }}
+        dd(ng-show='$ctrl.getCurrentUser().cohort')
+          a(target='_blank' ng-href='{{$ctrl.getCurrentUser().cohort.url}}') {{ $ctrl.getCurrentUser().cohort.name }}
+        dd(ng-hide='$ctrl.getCurrentUser().cohort') Not Set
+
         dt Squad:
-        dd {{ $ctrl.getCurrentUser().squad.name || 'Not Set' }}
+        dd(ng-show='$ctrl.getCurrentUser().squad') {{ $ctrl.getCurrentUser().squad.name }}
+        dd(ng-hide='$ctrl.getCurrentUser().squad') Not Set
+
         dt Attendance:
         dd {{ $ctrl.getAttendancePercentage($ctrl.getCurrentUser()) | number }}%
           span(style='margin-left: 10px')

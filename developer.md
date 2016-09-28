@@ -36,6 +36,7 @@ Running `npm test` will run the unit tests with karma.
 Run `gulp build` to build the `dist` folder and then do the following:
 
 ```bash
+gulp build
 cd dist
 git add -A
 git commit -m "some commit message."
