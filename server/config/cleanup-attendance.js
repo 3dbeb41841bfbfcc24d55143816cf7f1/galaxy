@@ -26,6 +26,7 @@ function mapValueToInteger(v) {
     case 'late':      return  1;
     case 'excused':   return  2;
     case 'unexcused': return  3;
+    case 'dropped':   return  4;
     default:          return -1;
   }
 }

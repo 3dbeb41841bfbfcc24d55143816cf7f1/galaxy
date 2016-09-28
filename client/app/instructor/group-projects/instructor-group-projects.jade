@@ -1,6 +1,6 @@
 .container-fluid
-
   h2.text-warning Group Projects
+    button.btn.btn-sm.btn-success(ng-click='$ctrl.newGroupProject()' style="margin-left: 10px;") New
   ul.list-group.student-projects
     li.list-group-item.panel.panel-primary(ng-repeat='groupProject in $ctrl.groupProjects | orderBy : "num"')
       h3.text-success
@@ -42,10 +42,13 @@
             .col-sm-10
               div(style='margin-left: -60px')
                 dl.dl-horizontal.text-left
-                  dt Name:
-                  dd {{ teamMember.name }}
-                  dt Email:
-                  dd {{ teamMember.email }}
+                  dt(ng-show='teamMember.name') Name:
+                  dd(ng-show='teamMember.name') {{ teamMember.name }}
+                  dt(ng-show='teamMember.email') Email:
+                  dd(ng-show='teamMember.email') {{ teamMember.email }}
+                  dt(ng-show='teamMember.github') GitHub:
+                  dd(ng-show='teamMember.github')
+                    a(target='_blank' ng-href='https://github.com/{{teamMember.github.login}}') {{teamMember.github.login}}
 
           .groupProjectTeamEdit.row(ng-show='groupProject.teamEditMode')
             .col-md-6(ng-repeat='(listName, list) in $ctrl.teamMembers.lists')
@@ -71,5 +74,3 @@
           project-requirements-editor(project='groupProject.project' saveable='groupProject' updater='$ctrl.groupProjectRequirementsUpdater')
           a.trash(ng-click='$ctrl.deleteProject(groupProject)')
             span.glyphicon.glyphicon-trash.pull-right(style='margin-top:-15px;')
-
-  button.btn.btn-primary(ng-click='$ctrl.newGroupProject()') New Group Project

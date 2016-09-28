@@ -11,6 +11,9 @@ table a {
   &.unexcused {
     color: red !important;
   }
+  &.dropped {
+    color: red !important;
+  }
   &.unset {
     color: grey !important;
   }

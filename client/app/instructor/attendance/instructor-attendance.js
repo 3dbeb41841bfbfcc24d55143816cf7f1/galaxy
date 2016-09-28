@@ -47,6 +47,7 @@
         'late',
         'excused',
         'unexcused',
+        'dropped',
         'not set'
       ];
 
@@ -121,14 +122,6 @@
 
     findOptionValue(value) {
       return _.find(this.attendanceValues, function(av) { return angular.equals(av, value); });
-    }
-
-    getStudentNameAndLogin(student) {
-      let result = student.name ? student.name : '???';
-      if (student.github) {
-        result += ' (' + student.github.login + ')';
-      }
-      return result;
     }
 
     showAttendance(dateIndex, studentIndex) {

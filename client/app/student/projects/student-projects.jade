@@ -31,10 +31,13 @@
               .col-sm-10
                 div(style='margin-left: -60px')
                   dl.dl-horizontal.text-left
-                    dt Name:
-                    dd {{ teamMember.name }}
-                    dt Email:
-                    dd {{ teamMember.email }}
+                    dt(ng-show='teamMember.name') Name:
+                    dd(ng-show='teamMember.name') {{ teamMember.name }}
+                    dt(ng-show='teamMember.email') Email:
+                    dd(ng-show='teamMember.email') {{ teamMember.email }}
+                    dt(ng-show='teamMember.github') GitHub:
+                    dd(ng-show='teamMember.github')
+                      a(target='_blank' ng-href='https://github.com/{{teamMember.github.login}}') {{teamMember.github.login}}
         .col-sm-7
           h3 Info.
           project-info(project='groupProject.project' saveable='groupProject' updater='$ctrl.groupProjectUpdater')
