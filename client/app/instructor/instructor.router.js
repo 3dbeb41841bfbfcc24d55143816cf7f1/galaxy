@@ -48,5 +48,13 @@ angular.module('galaxyApp')
     onEnter: () => {
       console.log('onEnter: instructor.projects');
     }
+  })
+  .state({
+    name: 'instructor.resources',
+    url: '/resources',
+    template: '<instructor-resources></instructor-resources>',
+    onEnter: () => {
+      console.log('onEnter: instructor-resources');
+    }
   });
 });
