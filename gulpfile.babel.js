@@ -17,6 +17,12 @@ import runSequence from 'run-sequence';
 import {protractor, webdriver_update} from 'gulp-protractor';
 import {Instrumenter} from 'isparta';
 
+
+// Add a task to list all of the tasks
+import taskListing from 'gulp-task-listing';
+gulp.task('help', taskListing);
+
+
 var plugins = gulpLoadPlugins();
 var config;
 

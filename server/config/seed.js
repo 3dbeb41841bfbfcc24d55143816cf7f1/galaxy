@@ -11,6 +11,8 @@ import Attendance from '../api/attendance/attendance.model';
 import Homework from '../api/homework/homework.model';
 import Project from '../api/project/project.model';
 import GroupProject from '../api/group-project/group-project.model';
+import Resource from '../api/resource/resource.model';
+
 import config from './environment';
 import Promise from 'bluebird';
 import mongoose from 'mongoose-fill';   // mongoose-fill monkey-patches mongoose.
@@ -244,6 +246,45 @@ function createTestHomework() {
   });
 }
 
+function createTestResources() {
+  return Resource.find({}).remove()
+  .then(() => {
+    return Resource.create({
+      title: 'HTML5 Cheat Sheet',
+      info: 'HTML5 Cheat Sheet',
+      url:  'http://www.hostingreviewbox.com/wp-content/uploads/2016/02/html5-cheat-sheet-1.png',
+      tags: ['HTML', 'Cheat Sheet'],
+      rating: 3
+    }, {
+      title: 'Learn JavaScript - Resources',
+      info: 'Learn JavaScript: The best methods and resources according to 25 JavaScript experts',
+      url:  'https://psdtowp.net/learn-javascript.html',
+      tags: ['JavaScript'],
+      upvotes: 1234,
+      downvotes: 13,
+      rating: 5
+    }, {
+      title: 'CSS2SASS',
+      info: 'Convert CSS Snippets to Syntactically Awesome StyleSheets code',
+      url:  'http://css2sass.herokuapp.com/',
+      tags: ['CSS', 'SASS'],
+      rating: 4,
+      upvotes: 7,
+      downvotes: 3
+    });
+  })
+  .then(() => {
+    return Resource.find({})
+    .then((resources) => {
+      console.log('resources:', resources.map( r => {
+        return { title: r.title, tags: r.tags.join(',') };
+      }));
+      console.log('finished populating %d resources', resources.length);
+      return null;
+    });
+  });
+}
+
 function counts() {
   return User.aggregate([
     {
@@ -275,6 +316,7 @@ function createTestData() {
   .then( () => createTestSquads() )
   .then( () => createTestUsers() )
   .then( () => createTestGroupProjects() )
+  .then( () => createTestResources() )
   .then( () => createTestHomework() )
   .then( () => counts() );
 }
