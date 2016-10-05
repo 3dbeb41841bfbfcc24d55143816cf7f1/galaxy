@@ -1,2 +1,74 @@
 .container-fluid
-  h2.text-warning Resources
+  h3.text-warning Resources
+    button.btn.btn-xs.btn-success(ng-click='$ctrl.addResource()' style='margin-left: 20px') Add
+
+  p newResource from modal: {{ $ctrl.newResource | json }}
+
+  .btn-group(role='group')
+    button.btn.btn-sm(ng-repeat='tag in $ctrl.tags'
+                      ng-class='$ctrl.isSelected(tag) ? "btn-success" : "btn-primary"'
+                      ng-click='$ctrl.toggleSelected(tag)')
+      | {{tag}}
+
+  .btn-group(role='group' style="margin-left: 20px")
+    label.btn.btn-xs(ng-class='$ctrl.selectionMode === "any" ? "btn-success" : "btn-primary"'
+                              ng-model='$ctrl.selectionMode'
+                              uib-btn-radio='"any"') Any
+    label.btn.btn-xs(ng-class='$ctrl.selectionMode === "all" ? "btn-success" : "btn-primary"'
+                     ng-model='$ctrl.selectionMode'
+                     uib-btn-radio='"all"') All
+
+  hr
+
+  table.table.table-bordered.table-hover.table-condensed.vertical-align
+    thead
+      tr(style='font-weight: bold')
+        td(style='width:15%') Title
+        td(style='width:25%') Info
+        td(style='width:20%') URL
+        td(style='width:15%') Tags
+        td(style='width:5%')  Rating
+        td(style='width:5%')
+          span.glyphicon.glyphicon-thumbs-up
+        td(style='width:5%')
+          span.glyphicon.glyphicon-thumbs-down
+        td(style='width:10%') Actions
+    tbody
+      tr(ng-repeat='resource in $ctrl.resources | tagfilter : $ctrl.selectedTags : $ctrl.selectionMode')
+        td
+          span(editable-textarea='resource.title', e-name='title', e-form='rowform', onbeforesave='$ctrl.checkTitle($data)', e-required='')
+            | {{ resource.title || 'empty' }}
+        td
+          span(editable-textarea='resource.info', e-name='info', e-form='rowform', e-rows="3" e-cols="40" onbeforesave='$ctrl.checkInfo($data)')
+            | {{ resource.info || 'empty' }}
+        td
+          span(editable-textarea='resource.url', e-name='url', e-form='rowform', onbeforesave='$ctrl.checkUrl($data)', e-required='')
+            a(ng-href="{{resource.url}}", target="_blank")
+              | {{ resource.url || 'empty' }}
+        td
+          span(editable-textarea='resource.tags', e-name='tags[]', e-form='rowform', onbeforesave='$ctrl.checkTags($data)', e-required='')
+            | {{ resource.tags || 'empty' }}
+        td
+          span(editable-range='resource.rating',
+               e-step="0.5",
+               e-min="0",
+               e-max="3",
+               e-name='rating',
+               e-form='rowform',
+               onbeforesave='$ctrl.checkRating($data)',
+               e-required='')
+            | {{ resource.rating || (resource.rating === 0 ? 0 : 'empty') }}
+
+        td {{ resource.upvotes }}
+        td {{ resource.downvotes }}
+
+        td(style='white-space: nowrap')
+          // form
+          form.form-buttons.form-inline(editable-form='', name='rowform', onbeforesave='$ctrl.saveResource($index, $data, resource._id)', ng-show='rowform.$visible', shown='$ctrl.inserted == resource')
+            button.btn.btn-primary(type='submit', ng-disabled='rowform.$waiting')
+              | save
+            button.btn.btn-default(type='button', ng-disabled='rowform.$waiting', ng-click='rowform.$cancel()')
+              | cancel
+          .buttons(ng-show='!rowform.$visible')
+            button.btn.btn-sm.btn-primary(ng-click='rowform.$show()') Edit
+            button.btn.btn-sm.btn-danger(ng-click='$ctrl.deleteResource($index, resource)') Del
