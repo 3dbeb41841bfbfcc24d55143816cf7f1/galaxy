@@ -10,3 +10,15 @@ table {
   padding: 3px 7px !important;
   font-size: 12px !important;
 }
+
+tags-input .tags .tag-item {
+  color: white;
+  background: #428bca;
+  border: 1px solid #357ebd;
+  border-radius: 4px;
+}
+tags-input .tags .tag-item.selected {
+  color: #fff;
+  background: #d9534f;
+  border: 1px solid #d43f3a;
+}

@@ -3,15 +3,14 @@
 (function() {
 
   class InstructorResourcesController {
-    constructor(Resource, $uibModal, $log) {
-      console.log('InstructorResourcesController is alive!');
+    constructor(Resource, Tag, $uibModal, $log) {
+      $log.info('InstructorResourcesController is alive!');
 
       this.Resource = Resource;
+      this.Tag = Tag;
       this.$uibModal = $uibModal;
       this.$log = $log;
 
-      // TODO: fetch these from server
-      this.tags = ['Lesson', 'Exercise', 'WDI', 'Cheat Sheet', 'HTML', 'JavaScript', 'CSS', 'SASS'];
       this.selectedTags = [];
       this.selectionMode = 'any';
 
@@ -39,7 +38,7 @@
         info: '',
         url: '',
         tags: []
-      }
+      };
 
       let modalInstance = this.$uibModal.open({
         animation: true,
@@ -56,8 +55,9 @@
       });
 
       modalInstance.result.then( (newResourceData) => {
-        console.log('modalInstance returned newResourceData:', newResourceData);
-
+        // extract the tag strings from the tag objects
+        newResourceData.tags = newResourceData.tags.map( t => t.text );
+        // save it via a POST
         let newResource = new this.Resource(newResourceData);
         newResource.$save( (savedResource) => {
           this.$log.info('savedResource', savedResource);
@@ -70,7 +70,7 @@
 
     deleteResource(index, resource) {
       if (confirm('Are you sure?')) {
-        (new this.Resource(resource)).$delete( () => {
+        new this.Resource(resource).$delete( () => {
           this.$log.info('resource has been deleted');
           this.resources = this.Resource.query();
         });
@@ -91,9 +91,20 @@
       return selectedTags.length === 0 ? resources : resources.filter(f);
     };
   })
-  .controller('ModalInstanceCtrl', function($uibModalInstance, resource) {
+  .controller('ModalInstanceCtrl', function($uibModalInstance, resource, Tag, $log) {
     this.resource = resource;
-    console.log('ModalInstanceCtrl got resource:', this.resource);
+    this.Tag = Tag;
+    this.$log = $log;
+    this.$log.info('ModalInstanceCtrl got resource:', this.resource);
+
+    // $query is the input text that we want to filter against
+    this.getMatchingTags = ($query) => {
+      return this.Tag.allTags.filter(function(tag) {
+        // return tag.name.toLowerCase().indexOf($query.toLowerCase()) !== -1;
+        return tag.toLowerCase().indexOf($query.toLowerCase()) !== -1;
+      });
+    };
+
     this.ok     = () => { $uibModalInstance.close(this.resource); };
     this.cancel = () => { $uibModalInstance.dismiss('cancel'); };
   });
