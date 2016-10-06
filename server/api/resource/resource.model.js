@@ -5,7 +5,7 @@ import mongoose from 'mongoose';
 var ResourceSchema = new mongoose.Schema({
     title:     { type: String, required: true },
     info:      String,
-    url:       String,
+    url:       { type: String, required: true },
     tags:      [String],
     rating:    { type: Number, min: 0, max: 5 },
     upvotes:   { type: Number, default: 0 },

@@ -1,11 +1,10 @@
 .container-fluid
+
   h3.text-warning Resources
     button.btn.btn-xs.btn-success(ng-click='$ctrl.addResource()' style='margin-left: 20px') Add
 
-  p newResource from modal: {{ $ctrl.newResource | json }}
-
   .btn-group(role='group')
-    button.btn.btn-sm(ng-repeat='tag in $ctrl.tags'
+    button.btn.btn-sm(ng-repeat='tag in $ctrl.Tag.allTags'
                       ng-class='$ctrl.isSelected(tag) ? "btn-success" : "btn-primary"'
                       ng-click='$ctrl.toggleSelected(tag)')
       | {{tag}}
@@ -47,7 +46,7 @@
               | {{ resource.url || 'empty' }}
         td
           span(editable-textarea='resource.tags', e-name='tags[]', e-form='rowform', onbeforesave='$ctrl.checkTags($data)', e-required='')
-            | {{ resource.tags || 'empty' }}
+            | {{ resource.tags.join(', ') || 'empty' }}
         td
           span(editable-range='resource.rating',
                e-step="0.5",

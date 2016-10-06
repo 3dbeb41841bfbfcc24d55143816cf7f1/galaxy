@@ -15,7 +15,20 @@
       .col-sm-10
         input#inputUrl.form-control(type='url', ng-model='$ctrl.resource.url', placeholder='URL')
 
-
+      .form-group
+        label.col-sm-2.control-label(for='inputUrl') Tags
+        .col-sm-10
+          tags-input(ng-model='$ctrl.resource.tags',
+                     /*display-property="name",*/
+                     placeholder='Add a tag',
+                     replace-spaces-with-dashes='true',
+                     add-from-autocomplete-only='false')
+            auto-complete(source='$ctrl.getMatchingTags($query)',
+                          /*display-property="name",*/
+                          min-length='0',
+                          debounce-delay='0',
+                          max-results-to-show='10',
+                          selectFirstMatch='true')
 .modal-footer
   button.btn.btn-primary(type='button', ng-click='$ctrl.ok()') OK
   button.btn.btn-warning(type='button', ng-click='$ctrl.cancel()') Cancel
