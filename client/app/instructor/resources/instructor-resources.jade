@@ -1,7 +1,15 @@
 .container-fluid
 
-  h3.text-warning Resources
-    button.btn.btn-xs.btn-success(ng-click='$ctrl.addResource()' style='margin-left: 20px') Add
+  .row
+    .col-md-9
+      h3.text-warning Resources
+        button.btn.btn-xs.btn-success(ng-click='$ctrl.addResource()' style='margin-left: 20px') Add
+    .col-md-3
+      button.btn.btn-xs.btn-info(popover-placement='bottom-right'
+                                 popover-class='resource-help'
+                                 uib-popover-template='"app/instructor/resources/resource-help.html"'
+                                 popover-title='Help'
+                                 style="margin-left: 10px;") Help...
 
   .btn-group(role='group')
     button.btn.btn-sm(ng-repeat='tag in $ctrl.Tag.allTags | orderBy: "name"'

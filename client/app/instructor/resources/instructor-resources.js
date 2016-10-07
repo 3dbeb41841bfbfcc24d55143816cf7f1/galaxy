@@ -3,7 +3,7 @@
 (function() {
 
   class InstructorResourcesController {
-    constructor(Resource, Tag, $uibModal, $log) {
+    constructor(Resource, Tag, $uibModal, $log, $sce) {
       $log.info('InstructorResourcesController is alive!');
 
       this.Resource = Resource;
