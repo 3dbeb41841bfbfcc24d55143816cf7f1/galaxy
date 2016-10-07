@@ -249,29 +249,96 @@ function createTestHomework() {
 function createTestResources() {
   return Resource.find({}).remove()
   .then(() => {
-    return Resource.create({
-      title: 'HTML5 Cheat Sheet',
-      info: 'HTML5 Cheat Sheet',
-      url:  'http://www.hostingreviewbox.com/wp-content/uploads/2016/02/html5-cheat-sheet-1.png',
-      tags: ['HTML', 'Cheat Sheet'],
-      rating: 3
-    }, {
-      title: 'Learn JavaScript - Resources',
-      info: 'Learn JavaScript: The best methods and resources according to 25 JavaScript experts',
-      url:  'https://psdtowp.net/learn-javascript.html',
-      tags: ['JavaScript'],
-      upvotes: 1234,
-      downvotes: 13,
-      rating: 5
-    }, {
-      title: 'CSS2SASS',
-      info: 'Convert CSS Snippets to Syntactically Awesome StyleSheets code',
-      url:  'http://css2sass.herokuapp.com/',
-      tags: ['CSS', 'SASS'],
-      rating: 4,
-      upvotes: 7,
-      downvotes: 3
-    });
+    return Resource.create(
+      {
+        title: 'HTML5 Cheat Sheet',
+        info: 'HTML5 Cheat Sheet',
+        url:  'http://www.hostingreviewbox.com/wp-content/uploads/2016/02/html5-cheat-sheet-1.png',
+        tags: ['HTML', 'Cheat Sheet'],
+        rating: 3
+      },
+      {
+        title: 'CSS2SASS',
+        info: 'Convert CSS Snippets to Syntactically Awesome StyleSheets code',
+        url:  'http://css2sass.herokuapp.com/',
+        tags: ['CSS', 'SASS'],
+        rating: 4,
+        upvotes: 7,
+        downvotes: 3
+      },
+      {
+        title: 'A Visual Guide to CSS3 Flexbox Properties',
+        info: 'A nice overview of the features of Flexbox',
+        url:  'https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties',
+        tags: ['CSS', 'Flexbox'],
+        upvotes: 0,
+        downvotes: 0,
+        rating: 5
+      },
+      {
+        title: 'FLEXBOX FROGGY',
+        info: 'A fun game that helps you learn Flexbox',
+        url:  'http://flexboxfroggy.com/',
+        tags: ['CSS', 'Flexbox', 'Game'],
+        upvotes: 0,
+        downvotes: 0,
+        rating: 5
+      },
+      {
+        title: 'Flexbox Defense',
+        info: 'A tower defense game that teaches you Flexbox',
+        url:  'http://www.flexboxdefense.com/',
+        tags: ['CSS', 'Flexbox', 'Game'],
+        upvotes: 0,
+        downvotes: 0,
+        rating: 5
+      },
+      {
+        title: 'Learn JavaScript - Resources',
+        info: 'Learn JavaScript: The best methods and resources according to 25 JavaScript experts',
+        url:  'https://psdtowp.net/learn-javascript.html',
+        tags: ['JavaScript'],
+        upvotes: 1234,
+        downvotes: 13,
+        rating: 5
+      },
+      {
+        title: '5 Array Methods That You Should Be Using Now',
+        info: 'indexOf, filter, forEach, map, reduce',
+        url:  'http://colintoh.com/blog/5-array-methods-that-you-should-use-today',
+        tags: ['JavaScript', 'Arrays'],
+        upvotes: 23,
+        downvotes: 1,
+        rating: 5
+      },
+      {
+        title: 'ECMAScript 6 — New Features: Overview & Comparison',
+        info: 'Browse the new ES6 features with examples',
+        url:  'http://es6-features.org',
+        tags: ['JavaScript', 'Arrays'],
+        upvotes: 3,
+        downvotes: 0,
+        rating: 5
+      },
+      {
+        title: 'Essential JavaScript Links',
+        info: 'A Meta-List of JavaScript Links',
+        url:  'https://github.com/ericelliott/essential-javascript-links#essential-javascript-links',
+        tags: ['JavaScript', 'meta-list'],
+        upvotes: 0,
+        downvotes: 0,
+        rating: 5
+      },
+      {
+        title: 'How it feels to learn JavaScript in 2016',
+        info: 'A Humorous narrative of the various concepts, libraries, and tools associated with JavaScript.',
+        url:  'https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f',
+        tags: ['JavaScript', 'Humor'],
+        upvotes: 0,
+        downvotes: 0,
+        rating: 5
+      }
+    );
   })
   .then(() => {
     return Resource.find({})
