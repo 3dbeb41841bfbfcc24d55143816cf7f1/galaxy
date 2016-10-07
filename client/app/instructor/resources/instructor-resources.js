@@ -14,7 +14,13 @@
       this.selectionMode = 'any';
 
       // TODO: handle newly created cohorts
-      this.resources = this.Resource.query();
+      this.loadResources();
+    }
+
+    loadResources() {
+      this.resources = this.Resource.query( (resources) => {
+        resources.forEach( resource => this.Tag.addTags(resource.tags) );
+      });
     }
 
     toggleTag(tag) {
@@ -55,7 +61,7 @@
         let newResource = new this.Resource(newResourceData);
         newResource.$save( (savedResource) => {
           this.$log.info('savedResource', savedResource);
-          this.resources = this.Resource.query();
+          this.loadResources();
         });
       }, () => {
         this.$log.info('Modal dismissed at: ' + new Date());
