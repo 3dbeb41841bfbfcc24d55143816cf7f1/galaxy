@@ -2,15 +2,9 @@
 
 (function() {
 
-  const defaultTags = [
-    { name: 'Lesson',        mode: 'neutral' },
-    { name: 'Exercise',      mode: 'neutral' },
-    { name: 'WDI',           mode: 'neutral' }
-  ];
-
   class Tag {
     constructor() {
-      this.allTags = defaultTags;
+      this.allTags = [];
     }
 
     contains(tags, tagToMatch) {
