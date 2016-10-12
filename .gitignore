@@ -9,4 +9,5 @@ dist
 npm-debug.log
 coverage
 heroku-setup
-utils
+utils/db
+credentials.js

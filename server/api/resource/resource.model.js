@@ -2,17 +2,29 @@
 
 import mongoose from 'mongoose';
 
-var ResourceSchema = new mongoose.Schema({
+let ResourceSchema = new mongoose.Schema({
     title:     { type: String, required: true },
     info:      String,
     url:       { type: String, required: true },
     tags:      [String],
     rating:    { type: Number, min: 0, max: 5 },
     upvotes:   { type: Number, default: 0 },
-    downvotes: { type: Number, default: 0 }
+    downvotes: { type: Number, default: 0 },
+    github:    {
+                created_at: Date,
+                updated_at: Date,
+                open_issues_count: Number,
+                forks_count: Number
+    }
   },
   { timestamps: true }  // createdAt, updatedAt
 );
+
+// convert all tags to lowercase before saving
+ResourceSchema.pre("save", function(next) {
+  this.tags = this.tags.map( t => t.toLowerCase() );
+  next();
+});
 
 function date2String(date) {
   let options = {
