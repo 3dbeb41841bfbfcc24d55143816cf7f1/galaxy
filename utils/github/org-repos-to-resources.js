@@ -5,10 +5,10 @@ authenticate();
 
 const orgs = [
   'ATL-WDI-Curriculum',
-  'ATL-WDI-Exercises'
-  // 'GA-WDI-Lessons',
-  // 'GA-WDI-Exercises',
-  // 'ga-wdi-boston'
+  'ATL-WDI-Exercises',
+  'GA-WDI-Lessons',
+  'GA-WDI-Exercises',
+  'ga-wdi-boston'
 ];
 
 function printRepoVerbose(repo) {
@@ -82,7 +82,11 @@ orgs.forEach( org => {
     console.log(`Org ${org} has ${repos.length} repos.`);
     // console.log('first repo:', repos[0]);
     let reposAsResources = repos.map( repo => { return repoToResourceObject(repo, org); });
+
+    // sort repos by title so that repeated results can be diffed:
+    reposAsResources.sort( (a,b) => a.title.localeCompare(b.title) );
+
     // console.log('reposAsResources:', reposAsResources);
-    writeToFile(org.toLowerCase() + '.json', reposAsResources);
+    writeToFile('../../data/' + org.toLowerCase() + '.json', reposAsResources);
   });
 });
