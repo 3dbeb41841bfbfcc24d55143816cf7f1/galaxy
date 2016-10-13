@@ -1,10 +1,10 @@
 .container-fluid
 
   .row
-    .col-md-9
+    .col-md-10
       h3.text-warning Resources
         button.btn.btn-xs.btn-success(ng-click='$ctrl.addResource()' style='margin-left: 20px') Add
-    .col-md-3
+    .col-md-2
       button.btn.btn-xs.btn-info(popover-placement='bottom-right'
                                  popover-class='resource-help'
                                  uib-popover-template='"app/instructor/resources/resource-help.html"'
@@ -12,10 +12,12 @@
                                  style="margin-left: 10px;") Help...
 
   .btn-group(role='group')
-    button.btn.btn-sm(ng-repeat='tag in $ctrl.Tag.allTags | orderBy: "name"'
-                      ng-class='{ "btn-success": tag.mode === "include", "btn-primary": tag.mode === "neutral", "btn-danger": tag.mode === "exclude" }'
-                      ng-click='$ctrl.toggleTag(tag)')
-      | {{tag.name}}
+    .row
+      button.btn.btn-sm.col-md-2(ng-repeat='tag in $ctrl.Tag.allTags | orderBy: "name"'
+                        ng-class='$ctrl.getClassForTag(tag)'
+                        ng-click='$ctrl.toggleTag(tag)')
+        | {{tag.name}}
+        span.text-warning(ng-show='$ctrl.countTagInFilteredResults(tag)') ( {{ $ctrl.countTagInFilteredResults(tag) }} )
 
   .btn-group(role='group' style="margin-left: 20px")
     label.btn.btn-xs(ng-class='$ctrl.selectionMode === "any" ? "btn-success" : "btn-primary"'
@@ -25,57 +27,60 @@
                      ng-model='$ctrl.selectionMode'
                      uib-btn-radio='"all"') All
 
+  h4 Displaying {{ $ctrl.paginatedFilteredResources.length || 0 }} out of {{ $ctrl.filteredResources.length || 0 }} matches.
   hr
 
-  table.table.table-bordered.table-hover.table-condensed.vertical-align
-    thead
-      tr(style='font-weight: bold')
-        td(style='width:15%') Title
-        td(style='width:25%') Info
-        td(style='width:20%') URL
-        td(style='width:15%') Tags
-        td(style='width:5%')  Rating
-        td(style='width:5%')
-          span.glyphicon.glyphicon-thumbs-up
-        td(style='width:5%')
-          span.glyphicon.glyphicon-thumbs-down
-        td(style='width:10%') Actions
-    tbody
-      tr(ng-repeat='resource in $ctrl.resources | tagfilter : $ctrl.Tag.allTags : $ctrl.selectionMode')
-        td
-          span(editable-textarea='resource.title', e-name='title', e-form='rowform', onbeforesave='$ctrl.checkTitle($data)', e-required='')
-            | {{ resource.title || 'empty' }}
-        td
-          span(editable-textarea='resource.info', e-name='info', e-form='rowform', e-rows="3" e-cols="40" onbeforesave='$ctrl.checkInfo($data)')
+  ul.list-group
+    //- dl.dl-horizontal(ng-repeat='resource in $ctrl.resources' ng-show='([resource] | tagfilter : $ctrl.Tag.allTags : $ctrl.selectionMode).length > 0')
+    //- dl.dl-horizontal(ng-repeat='resource in $ctrl.filteredResources | tagfilter : $ctrl.Tag.allTags : $ctrl.selectionMode')
+    li.list-group-item(ng-repeat='resource in $ctrl.paginatedFilteredResources track by resource._id')
+      h3.text-warning {{ resource.title || 'empty' }}
+      br
+      //- span.text-muted(ng-show='user.email') EMail: {{user.email}}
+      //- span.text-muted(ng-show='user.github') GitHub:{{user.github.login}}
+      dl.dl-horizontal
+        //- dt ID:
+        //- dd {{ resource._id }}
+        dt Info:
+        dd
+          a(href='#',
+          editable-text='resource.info',
+          ng-model='resource.info',
+          onbeforesave="$ctrl.updateResource(resource, $data)")
             | {{ resource.info || 'empty' }}
-        td
-          span(editable-textarea='resource.url', e-name='url', e-form='rowform', onbeforesave='$ctrl.checkUrl($data)', e-required='')
-            a(ng-href="{{resource.url}}", target="_blank")
-              | {{ resource.url || 'empty' }}
-        td
-          span(editable-textarea='resource.tags', e-name='tags[]', e-form='rowform', onbeforesave='$ctrl.checkTags($data)', e-required='')
-            | {{ resource.tags.join(', ') || 'empty' }}
-        td
-          span(editable-range='resource.rating',
-               e-step="0.5",
-               e-min="0",
-               e-max="3",
-               e-name='rating',
-               e-form='rowform',
-               onbeforesave='$ctrl.checkRating($data)',
-               e-required='')
+        dt URL
+        dd
+          a(href='#',
+          editable-text='resource.url',
+          ng-model='resource.url',
+          onbeforesave="$ctrl.updateResource(resource, $data)")
+            | {{ resource.url || 'empty' }}
+          a(ng-href="{{resource.url}}", target="_blank", style="margin-left: 10px;")
+            | (Visit)
+        dt Tags
+        dd {{ resource.tags.join(', ') || 'empty' }}
+        dt Rating
+        dd
+          a(href='#',
+          editable-range='resource.rating',
+          e-step="1",
+          e-max="5",
+          ng-model='resource.rating',
+          onbeforesave="$ctrl.updateResource(resource, $data)")
             | {{ resource.rating || (resource.rating === 0 ? 0 : 'empty') }}
+        dt Up Votes
+        dd {{ resource.upvotes }}
+        dt Down Votes
+        dd {{ resource.downvotes }}
 
-        td {{ resource.upvotes }}
-        td {{ resource.downvotes }}
+        h4.text-info GitHub Meta
 
-        td(style='white-space: nowrap')
-          // form
-          form.form-buttons.form-inline(editable-form='', name='rowform', onbeforesave='$ctrl.saveResource($index, $data, resource._id)', ng-show='rowform.$visible', shown='$ctrl.inserted == resource')
-            button.btn.btn-primary(type='submit', ng-disabled='rowform.$waiting')
-              | save
-            button.btn.btn-default(type='button', ng-disabled='rowform.$waiting', ng-click='rowform.$cancel()')
-              | cancel
-          .buttons(ng-show='!rowform.$visible')
-            button.btn.btn-sm.btn-primary(ng-click='rowform.$show()') Edit
-            button.btn.btn-sm.btn-danger(ng-click='$ctrl.deleteResource($index, resource)') Del
+        dd(ng-show='resource.github')
+          dt Created At
+          dd {{ resource.github.created_at | date : 'medium' }}
+          dt Updated At
+          dd {{ resource.github.updated_at | date : 'medium' }}
+          dt Open Issues
+          dd {{ resource.github.open_issues_count }}
+          dt Forks
+          dd {{ resource.github.forks_count }}

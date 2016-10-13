@@ -3,23 +3,39 @@
 (function() {
 
   class InstructorResourcesController {
-    constructor(Resource, Tag, $uibModal, $log, $sce) {
+    constructor(Resource, Tag, $uibModal, $log, $filter, $scope) {
       $log.info('InstructorResourcesController is alive!');
 
       this.Resource = Resource;
       this.Tag = Tag;
       this.$uibModal = $uibModal;
       this.$log = $log;
+      this.$filter = $filter;
 
       this.selectionMode = 'any';
+
+      let vm = this;
+      $scope.$watch(
+        function watchSelectionMode(scope) {
+          return vm.selectionMode;
+        },
+        function handleChangeToSelectionMode(newValue, oldValue) {
+          vm.filterResources();
+        }
+      );
 
       // TODO: handle newly created cohorts
       this.loadResources();
     }
 
     loadResources() {
+      console.time('loading Resources');
       this.resources = this.Resource.query( (resources) => {
+        console.timeEnd('loading Resources');
+        console.time('adding tags');
         resources.forEach( resource => this.Tag.addTags(resource.tags) );
+        console.timeEnd('adding tags');
+        this.filterResources();
       });
     }
 
@@ -30,6 +46,29 @@
         case 'exclude':  tag.mode = 'neutral'; break;
         default:         tag.mode = 'neutral'; break;
       }
+      this.filterResources();
+    }
+
+    getClassForTag(tag) {
+      switch (tag.mode) {
+        case 'include': return 'btn-success'; break;
+        case 'neutral': return 'btn-primary'; break;
+        case 'exclude': return 'btn-danger'; break;
+        default:        return 'btn-info';
+      }
+    }
+
+    filterResources() {
+      console.time('filtering resources');
+      this.filteredResources = this.$filter('tagfilter')(this.resources,
+                                                         this.Tag.allTags,
+                                                         this.selectionMode);
+      this.paginatedFilteredResources = this.$filter('limitTo')(this.filteredResources, 30);
+      console.timeEnd('filtering resources');
+    }
+
+    countTagInFilteredResults(tag) {
+      return this.filteredResources.reduce( (acc, r) => acc + (this.Tag.contains(r.tags, tag) ? 1 : 0), 0);
     }
 
     addResource() {

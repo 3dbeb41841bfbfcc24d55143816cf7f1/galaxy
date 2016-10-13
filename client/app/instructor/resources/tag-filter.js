@@ -5,11 +5,13 @@
   angular.module('galaxyApp')
   .filter('tagfilter', (Tag) => {
     return function(resources, allTags, mode) {
+      console.log('tagFilter started:', new Date());
       let includedTags = allTags.filter( tag => tag.mode === 'include' );
       let excludedTags = allTags.filter( tag => tag.mode === 'exclude' );
 
       // if no filtering, return all of the resources
       if (includedTags.length === 0 && excludedTags.length === 0) {
+        console.log(`tagFilter returning: ${resources.length} resources at ${new Date()}`);
         return resources;
       }
 
@@ -21,7 +23,9 @@
 
       // filter out the resources that contain an excluded tag
       let exclude = resource => excludedTags.reduce((acc, tag) => acc && !Tag.contains(resource.tags, tag), true );
-      return result.filter(exclude);
+      let finalResult = result.filter(exclude);
+      console.log(`tagFilter returning: ${finalResult.length} resources at ${new Date()}`);
+      return finalResult;
     };
   });
 

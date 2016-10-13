@@ -6,7 +6,7 @@
         .col-sm-3
           img(ng-show='user.github' src='{{ user.github.avatar_url }}' alt='Avatar' height='160' width='160')
         .col-sm-9
-          strong {{user.name}}
+          strong.text-warning {{user.name}}
           br
           //- span.text-muted(ng-show='user.email') EMail: {{user.email}}
           //- span.text-muted(ng-show='user.github') GitHub:{{user.github.login}}
