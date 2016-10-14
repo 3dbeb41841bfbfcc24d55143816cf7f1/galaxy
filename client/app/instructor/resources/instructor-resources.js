@@ -22,6 +22,17 @@
       this.loadResources();
     }
 
+    resetMode() {
+      this.selectionMode = 'any';
+      this.Tag.allTags.forEach( tag => tag.mode = 'neutral' );
+    }
+
+    getTags() {
+      return this.selectionMode === 'any' ?
+             this.Tag.allTags :
+             this.Tag.allTags.filter( tag => tag.mode !== 'neutral' || this.countTagInFilteredResults(tag) > 0);
+    }
+
     loadResources() {
       console.time('loading Resources');
       this.resources = this.Resource.query( (resources) => {
