@@ -1,76 +1,5 @@
 [
   {
-    "title": "12-days-of-christmas",
-    "info": "Write a program to print out the lyrics to the 12 days of Christmas. TAGS=[javascript, ruby, control-flow]",
-    "url": "https://github.com/ATL-WDI-Exercises/12-days-of-christmas",
-    "tags": [
-      "javascript",
-      "ruby",
-      "control-flow",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 47575808,
-      "created_at": "2015-12-07T19:58:20Z",
-      "updated_at": "2016-07-14T20:06:01Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
-    "title": "active-record",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/active-record",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46519524,
-      "created_at": "2015-11-19T20:50:08Z",
-      "updated_at": "2016-03-15T15:36:44Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "active-record-associations",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/active-record-associations",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46519544,
-      "created_at": "2015-11-19T20:50:34Z",
-      "updated_at": "2016-07-14T20:04:38Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "active-record-instructors-students",
-    "info": "Simple Example of using Active Record to create an Instructor / Student database.",
-    "url": "https://github.com/ATL-WDI-Exercises/active-record-instructors-students",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 68859210,
-      "created_at": "2016-09-21T21:32:03Z",
-      "updated_at": "2016-09-21T21:32:53Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
     "title": "activerecord-intro",
     "info": "Test description. [ruby,activerecord]",
     "url": "https://github.com/ga-wdi-lessons/activerecord-intro",
@@ -166,40 +95,6 @@
     }
   },
   {
-    "title": "angular-camping-store-code-along",
-    "info": "GA Camping Store using the Yeoman Gulp-Angular Generator (no server code)",
-    "url": "https://github.com/ATL-WDI-Exercises/angular-camping-store-code-along",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 51602106,
-      "created_at": "2016-02-12T16:48:36Z",
-      "updated_at": "2016-02-12T16:48:36Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "angular-clickboxes",
-    "info": null,
-    "url": "https://github.com/ATL-WDI-Exercises/angular-clickboxes",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 66652974,
-      "created_at": "2016-08-26T14:13:32Z",
-      "updated_at": "2016-08-26T16:08:39Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
     "title": "angular-custom-directives-abridged",
     "info": null,
     "url": "https://github.com/ga-wdi-lessons/angular-custom-directives-abridged",
@@ -271,23 +166,6 @@
     }
   },
   {
-    "title": "angular-http-lab",
-    "info": "Angular Lab for $http",
-    "url": "https://github.com/ATL-WDI-Exercises/angular-http-lab",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 52374233,
-      "created_at": "2016-02-23T16:37:03Z",
-      "updated_at": "2016-02-23T16:37:15Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
     "title": "angular-intro",
     "info": "[angular]",
     "url": "https://github.com/ga-wdi-lessons/angular-intro",
@@ -303,23 +181,6 @@
       "updated_at": "2016-01-21T18:01:36Z",
       "open_issues_count": 2,
       "forks_count": 0
-    }
-  },
-  {
-    "title": "angular-music-browser",
-    "info": "A simple AngularJS app using angular-ui-router with nested routes that are data driven.",
-    "url": "https://github.com/ATL-WDI-Exercises/angular-music-browser",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 52116413,
-      "created_at": "2016-02-19T21:06:49Z",
-      "updated_at": "2016-05-26T16:05:20Z",
-      "open_issues_count": 0,
-      "forks_count": 3
     }
   },
   {
@@ -414,44 +275,6 @@
     }
   },
   {
-    "title": "angular-ui-router-lab",
-    "info": "[angular]",
-    "url": "https://github.com/ATL-WDI-Exercises/angular-ui-router-lab",
-    "tags": [
-      "angular",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 51602032,
-      "created_at": "2016-02-12T16:47:19Z",
-      "updated_at": "2016-02-12T16:48:14Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "animal-shelter-express-mongoose",
-    "info": "[node, express, mongoose]",
-    "url": "https://github.com/ATL-WDI-Exercises/animal-shelter-express-mongoose",
-    "tags": [
-      "node",
-      "express",
-      "mongoose",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 50792623,
-      "created_at": "2016-01-31T20:05:47Z",
-      "updated_at": "2016-01-31T20:07:06Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
     "title": "api-intro",
     "info": "[js,rest,api,ajax]",
     "url": "https://github.com/ga-wdi-lessons/api-intro",
@@ -509,25 +332,6 @@
       "updated_at": "2016-06-14T14:53:15Z",
       "open_issues_count": 0,
       "forks_count": 4
-    }
-  },
-  {
-    "title": "async_intro",
-    "info": "[async, ajax]",
-    "url": "https://github.com/ga-wdi-exercises/async_intro",
-    "tags": [
-      "async",
-      "ajax",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37552669,
-      "created_at": "2015-06-16T19:54:38Z",
-      "updated_at": "2016-02-02T23:46:24Z",
-      "open_issues_count": 0,
-      "forks_count": 0
     }
   },
   {
@@ -621,23 +425,6 @@
     }
   },
   {
-    "title": "big-goal-and-culture",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/big-goal-and-culture",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446757,
-      "created_at": "2015-11-18T20:52:04Z",
-      "updated_at": "2016-03-15T01:49:20Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
     "title": "bootstrap-intro",
     "info": "[css,bootstrap]",
     "url": "https://github.com/ga-wdi-lessons/bootstrap-intro",
@@ -669,23 +456,6 @@
       "id": 63858651,
       "created_at": "2016-07-21T10:04:58Z",
       "updated_at": "2016-07-21T19:04:23Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "bowling",
-    "info": "Write a function to calculate the final score in bowling.",
-    "url": "https://github.com/ATL-WDI-Exercises/bowling",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 67647363,
-      "created_at": "2016-09-07T22:12:28Z",
-      "updated_at": "2016-09-07T22:12:40Z",
       "open_issues_count": 0,
       "forks_count": 0
     }
@@ -773,44 +543,6 @@
     }
   },
   {
-    "title": "busy-hands",
-    "info": "[html, css, dom]",
-    "url": "https://github.com/ATL-WDI-Exercises/busy-hands",
-    "tags": [
-      "html",
-      "css",
-      "dom",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 54063018,
-      "created_at": "2016-03-16T20:09:45Z",
-      "updated_at": "2016-03-16T20:12:08Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
-    "title": "buzzer",
-    "info": "[TODELETE]",
-    "url": "https://github.com/ga-wdi-exercises/buzzer",
-    "tags": [
-      "TODELETE",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 32800909,
-      "created_at": "2015-03-24T13:38:26Z",
-      "updated_at": "2016-02-02T23:46:27Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
     "title": "cancancan",
     "info": "[rails,auth]",
     "url": "https://github.com/ga-wdi-lessons/cancancan",
@@ -825,40 +557,6 @@
       "id": 50125457,
       "created_at": "2016-01-21T17:48:52Z",
       "updated_at": "2016-01-21T17:48:52Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "channel-chat-code-along",
-    "info": "A Group Chat App written in the MEAN Stack with the angular-fullstack generator",
-    "url": "https://github.com/ATL-WDI-Exercises/channel-chat-code-along",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 52375882,
-      "created_at": "2016-02-23T16:59:08Z",
-      "updated_at": "2016-02-23T16:59:08Z",
-      "open_issues_count": 0,
-      "forks_count": 3
-    }
-  },
-  {
-    "title": "chrome-console-debugger",
-    "info": "Introduction to chorme console and basic debugging",
-    "url": "https://github.com/ATL-WDI-Curriculum/chrome-console-debugger",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446665,
-      "created_at": "2015-11-18T20:50:21Z",
-      "updated_at": "2016-07-14T20:04:35Z",
       "open_issues_count": 0,
       "forks_count": 0
     }
@@ -882,25 +580,6 @@
     }
   },
   {
-    "title": "club_ruby",
-    "info": "[ruby, loops]",
-    "url": "https://github.com/ATL-WDI-Exercises/club_ruby",
-    "tags": [
-      "ruby",
-      "loops",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 68619070,
-      "created_at": "2016-09-19T15:28:23Z",
-      "updated_at": "2016-09-19T15:28:24Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
     "title": "code-design",
     "info": "[workflow]",
     "url": "https://github.com/ga-wdi-lessons/code-design",
@@ -919,43 +598,6 @@
     }
   },
   {
-    "title": "codebar",
-    "info": "[ruby, basics, oop]",
-    "url": "https://github.com/ga-wdi-exercises/codebar",
-    "tags": [
-      "ruby",
-      "basics",
-      "oop",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37596310,
-      "created_at": "2015-06-17T13:23:50Z",
-      "updated_at": "2016-02-02T23:46:31Z",
-      "open_issues_count": 0,
-      "forks_count": 4
-    }
-  },
-  {
-    "title": "codestyle-and-linting",
-    "info": "Practice with Good Code Style and linting tools.",
-    "url": "https://github.com/ATL-WDI-Exercises/codestyle-and-linting",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 54912378,
-      "created_at": "2016-03-28T18:03:12Z",
-      "updated_at": "2016-03-28T18:03:22Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
     "title": "coding_for_beginners_workshop",
     "info": null,
     "url": "https://github.com/ga-wdi-lessons/coding_for_beginners_workshop",
@@ -968,78 +610,6 @@
       "id": 61899302,
       "created_at": "2016-06-24T16:58:00Z",
       "updated_at": "2016-06-24T16:58:16Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "coffee-grinder",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Exercises/coffee-grinder",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 54901827,
-      "created_at": "2016-03-28T15:24:25Z",
-      "updated_at": "2016-03-28T15:26:42Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "color-scheme-switcher",
-    "info": "[js,basics,DOM,events]",
-    "url": "https://github.com/ATL-WDI-Exercises/color-scheme-switcher",
-    "tags": [
-      "js",
-      "basics",
-      "DOM",
-      "events",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 63348532,
-      "created_at": "2016-07-14T15:33:56Z",
-      "updated_at": "2016-07-14T15:33:57Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "command-line",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/command-line",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446766,
-      "created_at": "2015-11-18T20:52:21Z",
-      "updated_at": "2016-03-15T15:21:35Z",
-      "open_issues_count": 0,
-      "forks_count": 5
-    }
-  },
-  {
-    "title": "crud-forms",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/crud-forms",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46519597,
-      "created_at": "2015-11-19T20:51:36Z",
-      "updated_at": "2016-07-14T20:04:35Z",
       "open_issues_count": 0,
       "forks_count": 0
     }
@@ -1079,23 +649,6 @@
     }
   },
   {
-    "title": "css_boxmodel_lab_wdi6",
-    "info": "css box model lab wdi6",
-    "url": "https://github.com/ATL-WDI-Exercises/css_boxmodel_lab_wdi6",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 54458883,
-      "created_at": "2016-03-22T08:40:56Z",
-      "updated_at": "2016-03-22T08:46:52Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
     "title": "css-animations",
     "info": "[css]",
     "url": "https://github.com/ga-wdi-lessons/css-animations",
@@ -1111,23 +664,6 @@
       "updated_at": "2016-01-21T18:23:35Z",
       "open_issues_count": 0,
       "forks_count": 1
-    }
-  },
-  {
-    "title": "css-box-model",
-    "info": "Introduction to css box model",
-    "url": "https://github.com/ATL-WDI-Curriculum/css-box-model",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446438,
-      "created_at": "2015-11-18T20:46:37Z",
-      "updated_at": "2016-07-08T03:05:29Z",
-      "open_issues_count": 1,
-      "forks_count": 3
     }
   },
   {
@@ -1182,25 +718,6 @@
       "created_at": "2016-01-21T18:04:29Z",
       "updated_at": "2016-01-21T18:04:29Z",
       "open_issues_count": 1,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "css-ghost",
-    "info": "[css, animations]",
-    "url": "https://github.com/ATL-WDI-Exercises/css-ghost",
-    "tags": [
-      "css",
-      "animations",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 54064374,
-      "created_at": "2016-03-16T20:31:39Z",
-      "updated_at": "2016-03-16T20:31:40Z",
-      "open_issues_count": 0,
       "forks_count": 1
     }
   },
@@ -1261,26 +778,6 @@
     }
   },
   {
-    "title": "css-intro-and-box-model",
-    "info": "[lab, html, css]",
-    "url": "https://github.com/ATL-WDI-Exercises/css-intro-and-box-model",
-    "tags": [
-      "lab",
-      "html",
-      "css",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46509283,
-      "created_at": "2015-11-19T17:37:19Z",
-      "updated_at": "2016-07-14T20:06:01Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
     "title": "css-layout",
     "info": "[css, layout]",
     "url": "https://github.com/ga-wdi-lessons/css-layout",
@@ -1297,23 +794,6 @@
       "updated_at": "2016-06-29T15:31:06Z",
       "open_issues_count": 1,
       "forks_count": 3
-    }
-  },
-  {
-    "title": "css-positioning",
-    "info": "Introduction to css selectors",
-    "url": "https://github.com/ATL-WDI-Curriculum/css-positioning",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446481,
-      "created_at": "2015-11-18T20:47:17Z",
-      "updated_at": "2016-07-08T03:27:49Z",
-      "open_issues_count": 0,
-      "forks_count": 2
     }
   },
   {
@@ -1357,24 +837,6 @@
   {
     "title": "css-review",
     "info": "[css]",
-    "url": "https://github.com/ATL-WDI-Exercises/css-review",
-    "tags": [
-      "css",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 54064071,
-      "created_at": "2016-03-16T20:26:59Z",
-      "updated_at": "2016-03-16T20:27:00Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
-    "title": "css-review",
-    "info": "[css]",
     "url": "https://github.com/ga-wdi-lessons/css-review",
     "tags": [
       "css",
@@ -1388,80 +850,6 @@
       "updated_at": "2016-05-25T13:45:57Z",
       "open_issues_count": 2,
       "forks_count": 7
-    }
-  },
-  {
-    "title": "css-selectors",
-    "info": "[css, html]",
-    "url": "https://github.com/ATL-WDI-Exercises/css-selectors",
-    "tags": [
-      "css",
-      "html",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46509561,
-      "created_at": "2015-11-19T17:43:01Z",
-      "updated_at": "2016-07-14T20:06:04Z",
-      "open_issues_count": 10,
-      "forks_count": 11
-    }
-  },
-  {
-    "title": "css-selectors-basic-exercise",
-    "info": "[css, html]",
-    "url": "https://github.com/ATL-WDI-Exercises/css-selectors-basic-exercise",
-    "tags": [
-      "css",
-      "html",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 54065539,
-      "created_at": "2016-03-16T20:50:28Z",
-      "updated_at": "2016-03-16T20:51:35Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "currency_converter",
-    "info": "[javascript, basics]",
-    "url": "https://github.com/ga-wdi-exercises/currency_converter",
-    "tags": [
-      "javascript",
-      "basics",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37559764,
-      "created_at": "2015-06-16T22:39:21Z",
-      "updated_at": "2016-02-02T23:46:32Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "curriculum",
-    "info": "Curriculum Resources for GA's Web Development Immersive",
-    "url": "https://github.com/ATL-WDI-Exercises/curriculum",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 56721840,
-      "created_at": "2016-04-20T21:21:37Z",
-      "updated_at": "2016-04-20T21:21:40Z",
-      "open_issues_count": 0,
-      "forks_count": 0
     }
   },
   {
@@ -1481,63 +869,6 @@
       "updated_at": "2016-03-25T02:50:24Z",
       "open_issues_count": 1,
       "forks_count": 1
-    }
-  },
-  {
-    "title": "databases-and-sql",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/databases-and-sql",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46519497,
-      "created_at": "2015-11-19T20:49:35Z",
-      "updated_at": "2016-04-12T18:09:36Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
-    "title": "dc_directory_tree",
-    "info": "Use both absolute and relative paths to traverse a directory tree. [quick, html, paths, web]",
-    "url": "https://github.com/ga-wdi-exercises/dc_directory_tree",
-    "tags": [
-      "quick",
-      "html",
-      "paths",
-      "web",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37337592,
-      "created_at": "2015-06-12T18:22:29Z",
-      "updated_at": "2016-05-23T19:29:13Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "deck_o_cards",
-    "info": "[ruby,basics]",
-    "url": "https://github.com/ga-wdi-exercises/deck_o_cards",
-    "tags": [
-      "ruby",
-      "basics",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37595589,
-      "created_at": "2015-06-17T13:10:14Z",
-      "updated_at": "2016-02-02T23:46:33Z",
-      "open_issues_count": 0,
-      "forks_count": 0
     }
   },
   {
@@ -1568,7 +899,7 @@
   },
   {
     "title": "dev-ops",
-    "info": "",
+    "info": null,
     "url": "https://github.com/ga-wdi-lessons/dev-ops",
     "tags": [
       "ga",
@@ -1602,44 +933,6 @@
     }
   },
   {
-    "title": "dew_about_me_css",
-    "info": "[css, needs-solution]",
-    "url": "https://github.com/ga-wdi-exercises/dew_about_me_css",
-    "tags": [
-      "css",
-      "needs-solution",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37551356,
-      "created_at": "2015-06-16T19:28:09Z",
-      "updated_at": "2016-02-12T17:10:30Z",
-      "open_issues_count": 1,
-      "forks_count": 39
-    }
-  },
-  {
-    "title": "dirty_words",
-    "info": "[basics, ruby]",
-    "url": "https://github.com/ga-wdi-exercises/dirty_words",
-    "tags": [
-      "basics",
-      "ruby",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37595764,
-      "created_at": "2015-06-17T13:12:59Z",
-      "updated_at": "2016-02-02T23:46:34Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
     "title": "dns-domains",
     "info": "[web]",
     "url": "https://github.com/ga-wdi-lessons/dns-domains",
@@ -1655,40 +948,6 @@
       "updated_at": "2016-01-21T18:16:51Z",
       "open_issues_count": 0,
       "forks_count": 0
-    }
-  },
-  {
-    "title": "dom-manipulation",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/dom-manipulation",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446366,
-      "created_at": "2015-11-18T20:45:20Z",
-      "updated_at": "2016-07-14T20:04:37Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "dom-manipulation-and-events",
-    "info": "DOM Manipulation and Events using vanilla JavaScript",
-    "url": "https://github.com/ATL-WDI-Curriculum/dom-manipulation-and-events",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446386,
-      "created_at": "2015-11-18T20:45:42Z",
-      "updated_at": "2016-03-30T15:30:01Z",
-      "open_issues_count": 0,
-      "forks_count": 3
     }
   },
   {
@@ -1726,59 +985,6 @@
       "updated_at": "2016-02-19T04:41:41Z",
       "open_issues_count": 0,
       "forks_count": 0
-    }
-  },
-  {
-    "title": "elves-wrapping-presents",
-    "info": "Calculate how much wrapping paper the elves are going to need. TAGS=[javascript, control-flow]",
-    "url": "https://github.com/ATL-WDI-Exercises/elves-wrapping-presents",
-    "tags": [
-      "javascript",
-      "control-flow",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 47411513,
-      "created_at": "2015-12-04T15:18:44Z",
-      "updated_at": "2016-07-14T20:06:03Z",
-      "open_issues_count": 13,
-      "forks_count": 13
-    }
-  },
-  {
-    "title": "emergency_compliment",
-    "info": "emergency compliment",
-    "url": "https://github.com/ATL-WDI-Exercises/emergency_compliment",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 49232979,
-      "created_at": "2016-01-07T21:53:12Z",
-      "updated_at": "2016-07-14T20:06:01Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "encrypt_ruby",
-    "info": "Encrypt and decrypt Ruby files.",
-    "url": "https://github.com/ga-wdi-boston/encrypt_ruby",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15905765,
-      "created_at": "2014-01-14T15:17:42Z",
-      "updated_at": "2015-02-10T02:48:13Z",
-      "open_issues_count": 0,
-      "forks_count": 1
     }
   },
   {
@@ -1835,79 +1041,6 @@
       "updated_at": "2016-09-02T12:46:42Z",
       "open_issues_count": 0,
       "forks_count": 0
-    }
-  },
-  {
-    "title": "everything_conf",
-    "info": "Students teach anything for 15 minutes each. [presentation]",
-    "url": "https://github.com/ga-wdi-exercises/everything_conf",
-    "tags": [
-      "presentation",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 36033289,
-      "created_at": "2015-05-21T19:31:56Z",
-      "updated_at": "2016-02-02T23:46:38Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "express_restful_router_practice",
-    "info": "[express, mongo, nosql, node]",
-    "url": "https://github.com/ATL-WDI-Exercises/express_restful_router_practice",
-    "tags": [
-      "express",
-      "mongo",
-      "nosql",
-      "node",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 50512396,
-      "created_at": "2016-01-27T14:20:58Z",
-      "updated_at": "2016-01-27T14:24:11Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
-    "title": "express-cars",
-    "info": "A Simple Express / Node Web App for Cars",
-    "url": "https://github.com/ATL-WDI-Exercises/express-cars",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 65044789,
-      "created_at": "2016-08-05T19:46:10Z",
-      "updated_at": "2016-08-05T19:46:22Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "express-debugging",
-    "info": "Students must reproduce and fix the bugs in a simple TODO app written in Express and Mongoose.",
-    "url": "https://github.com/ATL-WDI-Exercises/express-debugging",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 58591516,
-      "created_at": "2016-05-12T00:01:29Z",
-      "updated_at": "2016-05-12T00:02:22Z",
-      "open_issues_count": 0,
-      "forks_count": 1
     }
   },
   {
@@ -1973,23 +1106,6 @@
     }
   },
   {
-    "title": "express-hacker-cola",
-    "info": "A simple vending machine using Express and Node",
-    "url": "https://github.com/ATL-WDI-Exercises/express-hacker-cola",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 65306104,
-      "created_at": "2016-08-09T15:25:14Z",
-      "updated_at": "2016-08-09T15:25:30Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
     "title": "express-intro",
     "info": "[node,express]",
     "url": "https://github.com/ga-wdi-lessons/express-intro",
@@ -2028,44 +1144,6 @@
       "created_at": "2016-04-05T13:36:32Z",
       "updated_at": "2016-07-22T23:37:13Z",
       "open_issues_count": 4,
-      "forks_count": 3
-    }
-  },
-  {
-    "title": "express-movies",
-    "info": "A simple Movies App with Express - Coded in Class as a Review",
-    "url": "https://github.com/ATL-WDI-Exercises/express-movies",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 65934487,
-      "created_at": "2016-08-17T19:04:53Z",
-      "updated_at": "2016-08-17T19:05:22Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "express-node-mongoose-lab",
-    "info": "[express, node, mongoose, javascript]",
-    "url": "https://github.com/ATL-WDI-Exercises/express-node-mongoose-lab",
-    "tags": [
-      "express",
-      "node",
-      "mongoose",
-      "javascript",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 50611635,
-      "created_at": "2016-01-28T20:32:05Z",
-      "updated_at": "2016-01-28T20:32:05Z",
-      "open_issues_count": 0,
       "forks_count": 3
     }
   },
@@ -2170,40 +1248,6 @@
     }
   },
   {
-    "title": "express-search-page",
-    "info": "A simple Express Movies App illustrating how to do a Search page",
-    "url": "https://github.com/ATL-WDI-Exercises/express-search-page",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 66495274,
-      "created_at": "2016-08-24T19:56:21Z",
-      "updated_at": "2016-08-24T19:56:34Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "express-security-with-passport",
-    "info": "Starter and Solution code for the Express Security With Passport Lesson",
-    "url": "https://github.com/ATL-WDI-Exercises/express-security-with-passport",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 58463979,
-      "created_at": "2016-05-10T13:34:02Z",
-      "updated_at": "2016-05-10T13:34:36Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
     "title": "express-sequelize",
     "info": "[express,sql]",
     "url": "https://github.com/ga-wdi-lessons/express-sequelize",
@@ -2218,99 +1262,6 @@
       "id": 50127827,
       "created_at": "2016-01-21T18:27:38Z",
       "updated_at": "2016-01-21T18:27:38Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "fashion-blog",
-    "info": "[css, html]",
-    "url": "https://github.com/ATL-WDI-Exercises/fashion-blog",
-    "tags": [
-      "css",
-      "html",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 54065698,
-      "created_at": "2016-03-16T20:53:14Z",
-      "updated_at": "2016-03-16T20:58:43Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
-    "title": "fellowship",
-    "info": "[javascript, dom, objects]",
-    "url": "https://github.com/ATL-WDI-Exercises/fellowship",
-    "tags": [
-      "javascript",
-      "dom",
-      "objects",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 47722286,
-      "created_at": "2015-12-09T22:11:56Z",
-      "updated_at": "2016-03-31T17:14:02Z",
-      "open_issues_count": 0,
-      "forks_count": 12
-    }
-  },
-  {
-    "title": "final-countdown",
-    "info": "[javascript, timer, dom]",
-    "url": "https://github.com/ga-wdi-exercises/final-countdown",
-    "tags": [
-      "javascript",
-      "timer",
-      "dom",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 34886578,
-      "created_at": "2015-05-01T02:25:37Z",
-      "updated_at": "2016-02-29T01:50:44Z",
-      "open_issues_count": 8,
-      "forks_count": 100
-    }
-  },
-  {
-    "title": "fizz-buzz",
-    "info": "Introduction to Fizz Buzz with Solutions in JavaScript",
-    "url": "https://github.com/ATL-WDI-Exercises/fizz-buzz",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 64228625,
-      "created_at": "2016-07-26T14:37:03Z",
-      "updated_at": "2016-07-26T14:37:14Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "fizzBuzz_redux",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Exercises/fizzBuzz_redux",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 54793123,
-      "created_at": "2016-03-26T18:23:51Z",
-      "updated_at": "2016-03-26T18:23:53Z",
       "open_issues_count": 0,
       "forks_count": 1
     }
@@ -2336,28 +1287,8 @@
     }
   },
   {
-    "title": "fridge_tracker",
-    "info": "[activerecord, ruby, sql]",
-    "url": "https://github.com/ga-wdi-exercises/fridge_tracker",
-    "tags": [
-      "activerecord",
-      "ruby",
-      "sql",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37552022,
-      "created_at": "2015-06-16T19:41:52Z",
-      "updated_at": "2016-02-02T23:46:42Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
     "title": "function-fundamentals",
-    "info": "",
+    "info": null,
     "url": "https://github.com/ga-wdi-lessons/function-fundamentals",
     "tags": [
       "ga",
@@ -2391,23 +1322,6 @@
     }
   },
   {
-    "title": "ga-camping-store-fullstack",
-    "info": "The GA Camping Store built with the MEAN stack via the Yeoman angular-fullstack generator.",
-    "url": "https://github.com/ATL-WDI-Exercises/ga-camping-store-fullstack",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 60199558,
-      "created_at": "2016-06-01T18:01:58Z",
-      "updated_at": "2016-06-01T20:23:24Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
     "title": "ga-wdi-curriculum.github.io",
     "info": "Test 123",
     "url": "https://github.com/ga-wdi-lessons/ga-wdi-curriculum.github.io",
@@ -2420,42 +1334,6 @@
       "id": 50133471,
       "created_at": "2016-01-21T20:07:46Z",
       "updated_at": "2016-01-23T13:41:01Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "game-of-war",
-    "info": "[javascript, recursion]",
-    "url": "https://github.com/ga-wdi-exercises/game-of-war",
-    "tags": [
-      "javascript",
-      "recursion",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 34663641,
-      "created_at": "2015-04-27T11:52:02Z",
-      "updated_at": "2016-07-09T12:48:25Z",
-      "open_issues_count": 0,
-      "forks_count": 41
-    }
-  },
-  {
-    "title": "garnet",
-    "info": "Classroom Management tools",
-    "url": "https://github.com/ATL-WDI-Curriculum/garnet",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46450153,
-      "created_at": "2015-11-18T21:57:49Z",
-      "updated_at": "2016-07-14T20:04:39Z",
       "open_issues_count": 0,
       "forks_count": 0
     }
@@ -2477,23 +1355,6 @@
       "updated_at": "2016-01-21T16:35:32Z",
       "open_issues_count": 6,
       "forks_count": 10
-    }
-  },
-  {
-    "title": "git-branching-and-github-pages",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/git-branching-and-github-pages",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446943,
-      "created_at": "2015-11-18T20:55:55Z",
-      "updated_at": "2016-07-14T20:04:38Z",
-      "open_issues_count": 1,
-      "forks_count": 3
     }
   },
   {
@@ -2593,42 +1454,6 @@
     }
   },
   {
-    "title": "githug",
-    "info": "Git your game on!",
-    "url": "https://github.com/ga-wdi-boston/githug",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15980972,
-      "created_at": "2014-01-16T21:05:26Z",
-      "updated_at": "2014-01-17T18:42:25Z",
-      "open_issues_count": 0,
-      "forks_count": 8
-    }
-  },
-  {
-    "title": "grumblr",
-    "info": "Tumblr clone. [backbone, rails]",
-    "url": "https://github.com/ga-wdi-exercises/grumblr",
-    "tags": [
-      "backbone",
-      "rails",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 35842669,
-      "created_at": "2015-05-18T21:07:10Z",
-      "updated_at": "2016-02-02T23:46:45Z",
-      "open_issues_count": 4,
-      "forks_count": 28
-    }
-  },
-  {
     "title": "handlebars",
     "info": "[hbs, handlebars, js]",
     "url": "https://github.com/ga-wdi-lessons/handlebars",
@@ -2664,99 +1489,6 @@
       "updated_at": "2016-01-28T23:17:13Z",
       "open_issues_count": 0,
       "forks_count": 0
-    }
-  },
-  {
-    "title": "high_card",
-    "info": "[basics, ruby]",
-    "url": "https://github.com/ga-wdi-exercises/high_card",
-    "tags": [
-      "basics",
-      "ruby",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37595801,
-      "created_at": "2015-06-17T13:13:34Z",
-      "updated_at": "2016-02-02T23:46:50Z",
-      "open_issues_count": 2,
-      "forks_count": 205
-    }
-  },
-  {
-    "title": "hogwartjs",
-    "info": "[javascript]",
-    "url": "https://github.com/ga-wdi-exercises/hogwartjs",
-    "tags": [
-      "javascript",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37560029,
-      "created_at": "2015-06-16T22:46:41Z",
-      "updated_at": "2016-02-02T23:46:53Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "html_tag_matching",
-    "info": "[quick, html, characters]",
-    "url": "https://github.com/ga-wdi-exercises/html_tag_matching",
-    "tags": [
-      "quick",
-      "html",
-      "characters",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37337628,
-      "created_at": "2015-06-12T18:23:30Z",
-      "updated_at": "2016-02-09T14:40:49Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "html-dom",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/html-dom",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446786,
-      "created_at": "2015-11-18T20:52:42Z",
-      "updated_at": "2016-06-27T02:52:50Z",
-      "open_issues_count": 0,
-      "forks_count": 4
-    }
-  },
-  {
-    "title": "html-dom",
-    "info": "[lab, html]",
-    "url": "https://github.com/ATL-WDI-Exercises/html-dom",
-    "tags": [
-      "lab",
-      "html",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46508985,
-      "created_at": "2015-11-19T17:31:44Z",
-      "updated_at": "2016-03-16T16:34:48Z",
-      "open_issues_count": 0,
-      "forks_count": 4
     }
   },
   {
@@ -2837,84 +1569,6 @@
     }
   },
   {
-    "title": "hyrule_potion_shop",
-    "info": "[css, flexbox]",
-    "url": "https://github.com/ATL-WDI-Exercises/hyrule_potion_shop",
-    "tags": [
-      "css",
-      "flexbox",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 63726372,
-      "created_at": "2016-07-19T20:36:49Z",
-      "updated_at": "2016-07-19T20:36:50Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "infinite-giphy",
-    "info": "[ajax, api, javascript]",
-    "url": "https://github.com/ga-wdi-exercises/infinite-giphy",
-    "tags": [
-      "ajax",
-      "api",
-      "javascript",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 35218140,
-      "created_at": "2015-05-07T12:14:26Z",
-      "updated_at": "2016-02-02T23:46:54Z",
-      "open_issues_count": 14,
-      "forks_count": 52
-    }
-  },
-  {
-    "title": "instagram",
-    "info": "[html, css]",
-    "url": "https://github.com/ATL-WDI-Exercises/instagram",
-    "tags": [
-      "html",
-      "css",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 63192078,
-      "created_at": "2016-07-12T21:01:09Z",
-      "updated_at": "2016-07-12T21:01:10Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "instructor_code_challenge",
-    "info": "[ruby, rails, node]",
-    "url": "https://github.com/ga-wdi-exercises/instructor_code_challenge",
-    "tags": [
-      "ruby",
-      "rails",
-      "node",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 35900531,
-      "created_at": "2015-05-19T18:25:41Z",
-      "updated_at": "2016-02-02T23:46:54Z",
-      "open_issues_count": 0,
-      "forks_count": 22
-    }
-  },
-  {
     "title": "intro_backend_via_php",
     "info": "[php, http]",
     "url": "https://github.com/ga-wdi-lessons/intro_backend_via_php",
@@ -2931,167 +1585,6 @@
       "updated_at": "2016-06-12T19:07:09Z",
       "open_issues_count": 0,
       "forks_count": 2
-    }
-  },
-  {
-    "title": "intro-to-command-line",
-    "info": "[lab, command line]",
-    "url": "https://github.com/ATL-WDI-Exercises/intro-to-command-line",
-    "tags": [
-      "lab",
-      "command line",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46508463,
-      "created_at": "2015-11-19T17:21:59Z",
-      "updated_at": "2016-07-14T20:06:04Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "jasmine_specs",
-    "info": "[tdd, javascript, jasmine]",
-    "url": "https://github.com/ga-wdi-exercises/jasmine_specs",
-    "tags": [
-      "tdd",
-      "javascript",
-      "jasmine",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37559843,
-      "created_at": "2015-06-16T22:41:31Z",
-      "updated_at": "2016-02-02T23:46:56Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "javascript_objects",
-    "info": "[javascript, functions, programming]",
-    "url": "https://github.com/ATL-WDI-Exercises/javascript_objects",
-    "tags": [
-      "javascript",
-      "functions",
-      "programming",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 47640212,
-      "created_at": "2015-12-08T18:11:55Z",
-      "updated_at": "2016-07-14T20:06:04Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
-    "title": "Javascript_whiteboard_questions",
-    "info": "Questions to be worked out on the board in javascript",
-    "url": "https://github.com/ATL-WDI-Exercises/Javascript_whiteboard_questions",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 52553455,
-      "created_at": "2016-02-25T20:09:35Z",
-      "updated_at": "2016-02-25T20:09:35Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "javascript-control-flows",
-    "info": "Introduction to javascript control flows",
-    "url": "https://github.com/ATL-WDI-Curriculum/javascript-control-flows",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446585,
-      "created_at": "2015-11-18T20:48:54Z",
-      "updated_at": "2016-03-17T16:07:23Z",
-      "open_issues_count": 1,
-      "forks_count": 6
-    }
-  },
-  {
-    "title": "javascript-expressions",
-    "info": "Introduction to javascript expressions and data types",
-    "url": "https://github.com/ATL-WDI-Curriculum/javascript-expressions",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446547,
-      "created_at": "2015-11-18T20:48:12Z",
-      "updated_at": "2016-03-24T14:46:16Z",
-      "open_issues_count": 0,
-      "forks_count": 3
-    }
-  },
-  {
-    "title": "jedi-javascript-jquery",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Exercises/jedi-javascript-jquery",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 55099026,
-      "created_at": "2016-03-30T21:26:51Z",
-      "updated_at": "2016-03-30T21:28:42Z",
-      "open_issues_count": 0,
-      "forks_count": 3
-    }
-  },
-  {
-    "title": "jquery",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/jquery",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446407,
-      "created_at": "2015-11-18T20:46:03Z",
-      "updated_at": "2016-03-30T21:38:46Z",
-      "open_issues_count": 0,
-      "forks_count": 5
-    }
-  },
-  {
-    "title": "jquery",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Exercises/jquery",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 47715364,
-      "created_at": "2015-12-09T19:57:06Z",
-      "updated_at": "2016-03-30T21:12:33Z",
-      "open_issues_count": 0,
-      "forks_count": 1
     }
   },
   {
@@ -3225,78 +1718,6 @@
     }
   },
   {
-    "title": "js_geometry",
-    "info": "[javascript]",
-    "url": "https://github.com/ga-wdi-exercises/js_geometry",
-    "tags": [
-      "javascript",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37559955,
-      "created_at": "2015-06-16T22:44:35Z",
-      "updated_at": "2016-02-02T23:46:59Z",
-      "open_issues_count": 1,
-      "forks_count": 82
-    }
-  },
-  {
-    "title": "js_quiz_4",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/js_quiz_4",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15908946,
-      "created_at": "2014-01-14T16:59:58Z",
-      "updated_at": "2015-02-10T02:48:16Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "js_warmup",
-    "info": "[basics, javascript, quick]",
-    "url": "https://github.com/ga-wdi-exercises/js_warmup",
-    "tags": [
-      "basics",
-      "javascript",
-      "quick",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37560310,
-      "created_at": "2015-06-16T22:55:19Z",
-      "updated_at": "2016-02-02T23:46:59Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "js-advanced-review",
-    "info": "A set of JavaScript coding challenges to aid in reviewing the JavaScript language",
-    "url": "https://github.com/ATL-WDI-Exercises/js-advanced-review",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 50371860,
-      "created_at": "2016-01-25T18:35:29Z",
-      "updated_at": "2016-01-25T18:35:45Z",
-      "open_issues_count": 0,
-      "forks_count": 3
-    }
-  },
-  {
     "title": "js-ajax",
     "info": "[js,ajax]",
     "url": "https://github.com/ga-wdi-lessons/js-ajax",
@@ -3313,78 +1734,6 @@
       "updated_at": "2016-06-07T14:22:33Z",
       "open_issues_count": 1,
       "forks_count": 1
-    }
-  },
-  {
-    "title": "js-ajax-doughnuts-exercise",
-    "info": "[js, ajax, jquery]",
-    "url": "https://github.com/ATL-WDI-Exercises/js-ajax-doughnuts-exercise",
-    "tags": [
-      "js",
-      "ajax",
-      "jquery",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 58464946,
-      "created_at": "2016-05-10T13:46:54Z",
-      "updated_at": "2016-05-10T13:47:38Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "js-arrays-and-loops",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/js-arrays-and-loops",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446392,
-      "created_at": "2015-11-18T20:45:49Z",
-      "updated_at": "2016-07-25T18:01:10Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
-    "title": "js-calculator",
-    "info": "[js] Practice JS objects and functions.",
-    "url": "https://github.com/ATL-WDI-Exercises/js-calculator",
-    "tags": [
-      "js",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 54900196,
-      "created_at": "2016-03-28T15:00:08Z",
-      "updated_at": "2016-03-28T15:00:09Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
-    "title": "js-codestyle",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/js-codestyle",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446430,
-      "created_at": "2015-11-18T20:46:28Z",
-      "updated_at": "2016-03-28T18:04:33Z",
-      "open_issues_count": 1,
-      "forks_count": 3
     }
   },
   {
@@ -3405,25 +1754,6 @@
       "updated_at": "2016-04-04T03:44:45Z",
       "open_issues_count": 0,
       "forks_count": 0
-    }
-  },
-  {
-    "title": "js-control-flows",
-    "info": "[js, programming]",
-    "url": "https://github.com/ATL-WDI-Exercises/js-control-flows",
-    "tags": [
-      "js",
-      "programming",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46509838,
-      "created_at": "2015-11-19T17:47:55Z",
-      "updated_at": "2016-07-14T20:06:05Z",
-      "open_issues_count": 10,
-      "forks_count": 12
     }
   },
   {
@@ -3523,23 +1853,6 @@
     }
   },
   {
-    "title": "js-dom-quotes",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Exercises/js-dom-quotes",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 47711231,
-      "created_at": "2015-12-09T18:40:30Z",
-      "updated_at": "2016-02-02T23:46:59Z",
-      "open_issues_count": 0,
-      "forks_count": 3
-    }
-  },
-  {
     "title": "js-events-callbacks",
     "info": "[js,events,callbacks]",
     "url": "https://github.com/ga-wdi-lessons/js-events-callbacks",
@@ -3557,23 +1870,6 @@
       "updated_at": "2016-01-21T16:34:39Z",
       "open_issues_count": 1,
       "forks_count": 5
-    }
-  },
-  {
-    "title": "js-functions",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/js-functions",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446442,
-      "created_at": "2015-11-18T20:46:43Z",
-      "updated_at": "2016-07-14T20:04:39Z",
-      "open_issues_count": 0,
-      "forks_count": 3
     }
   },
   {
@@ -3650,23 +1946,6 @@
       "updated_at": "2016-01-21T16:35:50Z",
       "open_issues_count": 0,
       "forks_count": 8
-    }
-  },
-  {
-    "title": "js-objects-and-json",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/js-objects-and-json",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446463,
-      "created_at": "2015-11-18T20:47:00Z",
-      "updated_at": "2016-03-29T18:00:43Z",
-      "open_issues_count": 1,
-      "forks_count": 6
     }
   },
   {
@@ -3763,23 +2042,6 @@
     }
   },
   {
-    "title": "JS-Scope",
-    "info": "Javascript scope lesson",
-    "url": "https://github.com/ATL-WDI-Exercises/JS-Scope",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 47669179,
-      "created_at": "2015-12-09T04:49:00Z",
-      "updated_at": "2015-12-09T04:51:30Z",
-      "open_issues_count": 0,
-      "forks_count": 3
-    }
-  },
-  {
     "title": "js-timing-functions",
     "info": "[js]",
     "url": "https://github.com/ga-wdi-lessons/js-timing-functions",
@@ -3815,46 +2077,6 @@
     }
   },
   {
-    "title": "landlord",
-    "info": "[oop, ruby, basics]",
-    "url": "https://github.com/ga-wdi-exercises/landlord",
-    "tags": [
-      "oop",
-      "ruby",
-      "basics",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37464788,
-      "created_at": "2015-06-15T12:50:10Z",
-      "updated_at": "2016-05-23T18:19:40Z",
-      "open_issues_count": 8,
-      "forks_count": 108
-    }
-  },
-  {
-    "title": "leap-year",
-    "info": "JavaScript and Ruby exercises for determining if a year is a leap year.  TAGS=[javascript, ruby, control-flow]",
-    "url": "https://github.com/ATL-WDI-Exercises/leap-year",
-    "tags": [
-      "javascript",
-      "ruby",
-      "control-flow",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 47496439,
-      "created_at": "2015-12-06T12:48:13Z",
-      "updated_at": "2016-04-08T01:53:53Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
     "title": "leveraging_your_commmunity",
     "info": "Leveraging Your Community [problem solving, uxdi]",
     "url": "https://github.com/ga-wdi-lessons/leveraging_your_commmunity",
@@ -3871,61 +2093,6 @@
       "updated_at": "2016-03-23T01:29:58Z",
       "open_issues_count": 0,
       "forks_count": 0
-    }
-  },
-  {
-    "title": "local-and-remote-git",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/local-and-remote-git",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46447121,
-      "created_at": "2015-11-18T20:59:46Z",
-      "updated_at": "2016-03-23T13:00:54Z",
-      "open_issues_count": 1,
-      "forks_count": 5
-    }
-  },
-  {
-    "title": "lunch_orders",
-    "info": "[activerecord, ruby, sql, db]",
-    "url": "https://github.com/ga-wdi-exercises/lunch_orders",
-    "tags": [
-      "activerecord",
-      "ruby",
-      "sql",
-      "db",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37553136,
-      "created_at": "2015-06-16T20:04:36Z",
-      "updated_at": "2016-02-02T23:47:04Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "mean_todo_app",
-    "info": "A Simple TODO app using the MEAN Stack and the Express Generator",
-    "url": "https://github.com/ATL-WDI-Exercises/mean_todo_app",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 58348936,
-      "created_at": "2016-05-09T04:44:14Z",
-      "updated_at": "2016-05-10T13:52:14Z",
-      "open_issues_count": 2,
-      "forks_count": 3
     }
   },
   {
@@ -3949,40 +2116,6 @@
     }
   },
   {
-    "title": "mean-movies-simple-with-ui-router",
-    "info": "Simple Review of MEAN Stack with express generator and manually adding angular and angular-ui-router",
-    "url": "https://github.com/ATL-WDI-Exercises/mean-movies-simple-with-ui-router",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 60297102,
-      "created_at": "2016-06-02T21:02:05Z",
-      "updated_at": "2016-06-03T18:34:50Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "mean-stack-starter-app",
-    "info": "A Starter App for the MEAN Stack. Includes Passport security.",
-    "url": "https://github.com/ATL-WDI-Exercises/mean-stack-starter-app",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 66998772,
-      "created_at": "2016-08-31T03:16:36Z",
-      "updated_at": "2016-08-31T03:16:53Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
     "title": "metaprogramming",
     "info": "[metaprogramming]",
     "url": "https://github.com/ga-wdi-lessons/metaprogramming",
@@ -3998,44 +2131,6 @@
       "updated_at": "2016-01-28T23:17:40Z",
       "open_issues_count": 0,
       "forks_count": 0
-    }
-  },
-  {
-    "title": "metro",
-    "info": "[ruby]",
-    "url": "https://github.com/ga-wdi-exercises/metro",
-    "tags": [
-      "ruby",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37595865,
-      "created_at": "2015-06-17T13:14:39Z",
-      "updated_at": "2016-02-02T23:47:04Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "moma_db",
-    "info": "[db, activerecord, ruby]",
-    "url": "https://github.com/ga-wdi-exercises/moma_db",
-    "tags": [
-      "db",
-      "activerecord",
-      "ruby",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37552203,
-      "created_at": "2015-06-16T19:45:15Z",
-      "updated_at": "2016-02-27T16:05:01Z",
-      "open_issues_count": 3,
-      "forks_count": 58
     }
   },
   {
@@ -4059,25 +2154,6 @@
     }
   },
   {
-    "title": "mongo-pokemon",
-    "info": "[mongo, nosql]",
-    "url": "https://github.com/ATL-WDI-Exercises/mongo-pokemon",
-    "tags": [
-      "mongo",
-      "nosql",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 50374859,
-      "created_at": "2016-01-25T19:24:11Z",
-      "updated_at": "2016-01-25T19:24:11Z",
-      "open_issues_count": 1,
-      "forks_count": 3
-    }
-  },
-  {
     "title": "mongo-relationships",
     "info": "[nosql,mongo]",
     "url": "https://github.com/ga-wdi-lessons/mongo-relationships",
@@ -4094,23 +2170,6 @@
       "updated_at": "2016-01-21T18:20:48Z",
       "open_issues_count": 0,
       "forks_count": 0
-    }
-  },
-  {
-    "title": "mongo-reminders",
-    "info": "Demonstrates a one-to-many association in Mongoose and MongoDB (using an embedded document).",
-    "url": "https://github.com/ATL-WDI-Exercises/mongo-reminders",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 58955319,
-      "created_at": "2016-05-16T18:07:20Z",
-      "updated_at": "2016-05-16T18:07:32Z",
-      "open_issues_count": 0,
-      "forks_count": 1
     }
   },
   {
@@ -4134,81 +2193,6 @@
     }
   },
   {
-    "title": "mongoose-pets-and-owners",
-    "info": "A Simple Mongoose and NodeJS exercise for working with 2 related (referenced) models.",
-    "url": "https://github.com/ATL-WDI-Exercises/mongoose-pets-and-owners",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 65494946,
-      "created_at": "2016-08-11T19:12:23Z",
-      "updated_at": "2016-08-11T19:12:39Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "movie-browser",
-    "info": "[javascript, ajax, api]",
-    "url": "https://github.com/ga-wdi-exercises/movie-browser",
-    "tags": [
-      "javascript",
-      "ajax",
-      "api",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 35218438,
-      "created_at": "2015-05-07T12:21:26Z",
-      "updated_at": "2016-06-07T13:18:08Z",
-      "open_issues_count": 1,
-      "forks_count": 82
-    }
-  },
-  {
-    "title": "movieappcontest",
-    "info": "repo for the movie db app contest",
-    "url": "https://github.com/ATL-WDI-Exercises/movieappcontest",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 49604647,
-      "created_at": "2016-01-13T21:55:42Z",
-      "updated_at": "2016-01-13T21:55:42Z",
-      "open_issues_count": 2,
-      "forks_count": 3
-    }
-  },
-  {
-    "title": "murican_css",
-    "info": "[html, css, quick, basics]",
-    "url": "https://github.com/ga-wdi-exercises/murican_css",
-    "tags": [
-      "html",
-      "css",
-      "quick",
-      "basics",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37466956,
-      "created_at": "2015-06-15T13:32:15Z",
-      "updated_at": "2016-02-02T23:47:06Z",
-      "open_issues_count": 0,
-      "forks_count": 6
-    }
-  },
-  {
     "title": "mvc-intro",
     "info": "[mvc]",
     "url": "https://github.com/ga-wdi-lessons/mvc-intro",
@@ -4224,161 +2208,6 @@
       "updated_at": "2016-01-21T17:40:57Z",
       "open_issues_count": 0,
       "forks_count": 1
-    }
-  },
-  {
-    "title": "my-blawg",
-    "info": "[jquery,js]",
-    "url": "https://github.com/ATL-WDI-Exercises/my-blawg",
-    "tags": [
-      "jquery",
-      "js",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 54792514,
-      "created_at": "2016-03-26T18:09:47Z",
-      "updated_at": "2016-03-26T18:09:48Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "name_taker",
-    "info": "[ruby, basics, collections, loops]",
-    "url": "https://github.com/ga-wdi-exercises/name_taker",
-    "tags": [
-      "ruby",
-      "basics",
-      "collections",
-      "loops",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37596001,
-      "created_at": "2015-06-17T13:17:28Z",
-      "updated_at": "2016-02-02T23:47:06Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "never_ending_story",
-    "info": "[basics, ruby, collections, loops]",
-    "url": "https://github.com/ga-wdi-exercises/never_ending_story",
-    "tags": [
-      "basics",
-      "ruby",
-      "collections",
-      "loops",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37596034,
-      "created_at": "2015-06-17T13:18:09Z",
-      "updated_at": "2016-02-02T23:47:06Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "nightclub",
-    "info": "[ruby, activerecord, db, sql]",
-    "url": "https://github.com/ga-wdi-exercises/nightclub",
-    "tags": [
-      "ruby",
-      "activerecord",
-      "db",
-      "sql",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37553174,
-      "created_at": "2015-06-16T20:05:36Z",
-      "updated_at": "2016-02-02T23:47:06Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "node-express-routing-lab",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Exercises/node-express-routing-lab",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 58027449,
-      "created_at": "2016-05-04T06:13:21Z",
-      "updated_at": "2016-05-04T06:18:28Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "node-testing-mocha-chai-lab",
-    "info": "[node, testing, mocha, chai, express]",
-    "url": "https://github.com/ATL-WDI-Exercises/node-testing-mocha-chai-lab",
-    "tags": [
-      "node",
-      "testing",
-      "mocha",
-      "chai",
-      "express",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 51526291,
-      "created_at": "2016-02-11T16:00:10Z",
-      "updated_at": "2016-06-02T16:18:36Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "oop-inheritance",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/oop-inheritance",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46519482,
-      "created_at": "2015-11-19T20:49:05Z",
-      "updated_at": "2016-04-12T07:58:09Z",
-      "open_issues_count": 1,
-      "forks_count": 3
-    }
-  },
-  {
-    "title": "oop-intro",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/oop-intro",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46519412,
-      "created_at": "2015-11-19T20:47:45Z",
-      "updated_at": "2016-03-15T15:35:08Z",
-      "open_issues_count": 1,
-      "forks_count": 2
     }
   },
   {
@@ -4402,25 +2231,6 @@
     }
   },
   {
-    "title": "p_o_k_e_m_o_n",
-    "info": "[underscore, javascript]",
-    "url": "https://github.com/ga-wdi-exercises/p_o_k_e_m_o_n",
-    "tags": [
-      "underscore",
-      "javascript",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37560169,
-      "created_at": "2015-06-16T22:51:22Z",
-      "updated_at": "2016-02-02T23:47:07Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
     "title": "pair-programming",
     "info": "[workflow]",
     "url": "https://github.com/ga-wdi-lessons/pair-programming",
@@ -4436,41 +2246,6 @@
       "updated_at": "2016-01-21T18:23:16Z",
       "open_issues_count": 0,
       "forks_count": 0
-    }
-  },
-  {
-    "title": "password-checker",
-    "info": "Write a program to verify that a password meets a set of criteria.",
-    "url": "https://github.com/ATL-WDI-Exercises/password-checker",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 48552431,
-      "created_at": "2015-12-24T17:54:23Z",
-      "updated_at": "2016-07-14T20:06:03Z",
-      "open_issues_count": 0,
-      "forks_count": 5
-    }
-  },
-  {
-    "title": "pbj-project3",
-    "info": "[project]",
-    "url": "https://github.com/ga-wdi-exercises/pbj-project3",
-    "tags": [
-      "project",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37552220,
-      "created_at": "2015-06-16T19:45:34Z",
-      "updated_at": "2016-02-02T23:47:07Z",
-      "open_issues_count": 0,
-      "forks_count": 3
     }
   },
   {
@@ -4511,67 +2286,6 @@
     }
   },
   {
-    "title": "pixart_js",
-    "info": "Use JS events and programmatically generated DOM elements to build a drawing application. [javascript, dom]",
-    "url": "https://github.com/ga-wdi-exercises/pixart_js",
-    "tags": [
-      "javascript",
-      "dom",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 34754821,
-      "created_at": "2015-04-28T20:41:44Z",
-      "updated_at": "2016-08-30T14:26:43Z",
-      "open_issues_count": 6,
-      "forks_count": 274
-    }
-  },
-  {
-    "title": "playlists_db",
-    "info": "[activerecord, ruby, sql, db]",
-    "url": "https://github.com/ga-wdi-exercises/playlists_db",
-    "tags": [
-      "activerecord",
-      "ruby",
-      "sql",
-      "db",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37553224,
-      "created_at": "2015-06-16T20:06:31Z",
-      "updated_at": "2016-02-02T23:47:12Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "portfolio-part-one",
-    "info": "[lab, js, html, css]",
-    "url": "https://github.com/ATL-WDI-Exercises/portfolio-part-one",
-    "tags": [
-      "lab",
-      "js",
-      "html",
-      "css",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46447916,
-      "created_at": "2015-11-18T21:14:42Z",
-      "updated_at": "2016-05-31T19:09:38Z",
-      "open_issues_count": 0,
-      "forks_count": 3
-    }
-  },
-  {
     "title": "porting-sinatra-to-rails",
     "info": "[mvc,rails]",
     "url": "https://github.com/ga-wdi-lessons/porting-sinatra-to-rails",
@@ -4587,27 +2301,6 @@
       "created_at": "2016-01-21T17:44:48Z",
       "updated_at": "2016-04-14T19:53:54Z",
       "open_issues_count": 1,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "post_tagger",
-    "info": "[activerecord, ruby, sql, db]",
-    "url": "https://github.com/ga-wdi-exercises/post_tagger",
-    "tags": [
-      "activerecord",
-      "ruby",
-      "sql",
-      "db",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37553489,
-      "created_at": "2015-06-16T20:11:53Z",
-      "updated_at": "2016-02-02T23:47:13Z",
-      "open_issues_count": 0,
       "forks_count": 0
     }
   },
@@ -4650,145 +2343,6 @@
     }
   },
   {
-    "title": "progressive-tax-calc",
-    "info": "Write a program to calculate the income tax using a progressive tax calculation.",
-    "url": "https://github.com/ATL-WDI-Exercises/progressive-tax-calc",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 50377433,
-      "created_at": "2016-01-25T20:06:19Z",
-      "updated_at": "2016-01-25T20:06:34Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "project-four-requirements",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Exercises/project-four-requirements",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 51856686,
-      "created_at": "2016-02-16T18:03:37Z",
-      "updated_at": "2016-02-16T18:03:37Z",
-      "open_issues_count": 0,
-      "forks_count": 3
-    }
-  },
-  {
-    "title": "project-one-requirements",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Exercises/project-one-requirements",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 47789164,
-      "created_at": "2015-12-10T21:43:11Z",
-      "updated_at": "2016-07-14T20:06:03Z",
-      "open_issues_count": 1,
-      "forks_count": 5
-    }
-  },
-  {
-    "title": "project-three-requirements",
-    "info": "GA WDI Project 3 Requirements",
-    "url": "https://github.com/ATL-WDI-Exercises/project-three-requirements",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 50668182,
-      "created_at": "2016-01-29T14:41:36Z",
-      "updated_at": "2016-01-29T21:28:57Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "project-two-requirements",
-    "info": "project 2 requirements",
-    "url": "https://github.com/ATL-WDI-Exercises/project-two-requirements",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 49299817,
-      "created_at": "2016-01-08T22:21:14Z",
-      "updated_at": "2016-04-25T18:56:09Z",
-      "open_issues_count": 0,
-      "forks_count": 4
-    }
-  },
-  {
-    "title": "project1",
-    "info": "[project] GA- Project 1",
-    "url": "https://github.com/ga-wdi-exercises/project1",
-    "tags": [
-      "project",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37551869,
-      "created_at": "2015-06-16T19:38:36Z",
-      "updated_at": "2016-06-01T15:42:53Z",
-      "open_issues_count": 2,
-      "forks_count": 54
-    }
-  },
-  {
-    "title": "project2",
-    "info": "[project]",
-    "url": "https://github.com/ga-wdi-exercises/project2",
-    "tags": [
-      "project",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37552117,
-      "created_at": "2015-06-16T19:43:43Z",
-      "updated_at": "2016-07-05T02:03:15Z",
-      "open_issues_count": 0,
-      "forks_count": 24
-    }
-  },
-  {
-    "title": "project4",
-    "info": "[project]",
-    "url": "https://github.com/ga-wdi-exercises/project4",
-    "tags": [
-      "project",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37552303,
-      "created_at": "2015-06-16T19:46:37Z",
-      "updated_at": "2016-08-05T13:03:32Z",
-      "open_issues_count": 1,
-      "forks_count": 5
-    }
-  },
-  {
     "title": "pseudocode",
     "info": "Introduction to Pseudocode [pseudocode]",
     "url": "https://github.com/ga-wdi-lessons/pseudocode",
@@ -4807,46 +2361,6 @@
     }
   },
   {
-    "title": "puppy_db",
-    "info": "[activerecord, ruby, sql, db]",
-    "url": "https://github.com/ga-wdi-exercises/puppy_db",
-    "tags": [
-      "activerecord",
-      "ruby",
-      "sql",
-      "db",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37553334,
-      "created_at": "2015-06-16T20:08:37Z",
-      "updated_at": "2016-02-02T23:47:17Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "pyramid",
-    "info": "[basics, ruby]",
-    "url": "https://github.com/ga-wdi-exercises/pyramid",
-    "tags": [
-      "basics",
-      "ruby",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37596081,
-      "created_at": "2015-06-17T13:18:55Z",
-      "updated_at": "2016-02-02T23:47:17Z",
-      "open_issues_count": 0,
-      "forks_count": 30
-    }
-  },
-  {
     "title": "rails_features_CRD",
     "info": "[rails]",
     "url": "https://github.com/ga-wdi-lessons/rails_features_CRD",
@@ -4860,66 +2374,6 @@
       "id": 56463759,
       "created_at": "2016-04-17T23:31:44Z",
       "updated_at": "2016-06-14T15:41:55Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "rails_httparty_movie_app",
-    "info": "[rails, httparty, ruby, api]",
-    "url": "https://github.com/ATL-WDI-Exercises/rails_httparty_movie_app",
-    "tags": [
-      "rails",
-      "httparty",
-      "ruby",
-      "api",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 50695001,
-      "created_at": "2016-01-29T22:15:06Z",
-      "updated_at": "2016-01-29T22:15:16Z",
-      "open_issues_count": 0,
-      "forks_count": 3
-    }
-  },
-  {
-    "title": "rails_todo_app",
-    "info": "A Simple Rails TODO app with Homegrown User Authentication",
-    "url": "https://github.com/ATL-WDI-Exercises/rails_todo_app",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 56701859,
-      "created_at": "2016-04-20T16:09:12Z",
-      "updated_at": "2016-04-25T18:56:06Z",
-      "open_issues_count": 0,
-      "forks_count": 4
-    }
-  },
-  {
-    "title": "rails-active-record-migrations",
-    "info": "[rails, active record, migrations, ruby, sql]",
-    "url": "https://github.com/ATL-WDI-Exercises/rails-active-record-migrations",
-    "tags": [
-      "rails",
-      "active record",
-      "migrations",
-      "ruby",
-      "sql",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 56520714,
-      "created_at": "2016-04-18T15:43:28Z",
-      "updated_at": "2016-04-18T15:43:28Z",
       "open_issues_count": 0,
       "forks_count": 1
     }
@@ -5096,23 +2550,6 @@
     }
   },
   {
-    "title": "rails-pets",
-    "info": "A Simple Pets CRUD app in RoR (used for introducing RAILS).",
-    "url": "https://github.com/ATL-WDI-Exercises/rails-pets",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 56515084,
-      "created_at": "2016-04-18T14:33:05Z",
-      "updated_at": "2016-09-26T01:37:12Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
     "title": "rails-review",
     "info": "[rails]",
     "url": "https://github.com/ga-wdi-lessons/rails-review",
@@ -5260,23 +2697,6 @@
     }
   },
   {
-    "title": "rails-views-and-controller",
-    "info": "rails views and controllers",
-    "url": "https://github.com/ATL-WDI-Exercises/rails-views-and-controller",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 56598116,
-      "created_at": "2016-04-19T13:16:00Z",
-      "updated_at": "2016-04-19T13:20:47Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
     "title": "react_todo_walkthrough",
     "info": null,
     "url": "https://github.com/ga-wdi-lessons/react_todo_walkthrough",
@@ -5367,43 +2787,6 @@
     }
   },
   {
-    "title": "reindeer-olympics",
-    "info": "Help Santa determine which reindeer is the fastest.",
-    "url": "https://github.com/ATL-WDI-Exercises/reindeer-olympics",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 48960275,
-      "created_at": "2016-01-03T20:50:14Z",
-      "updated_at": "2016-05-03T14:28:21Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
-    "title": "roman_js",
-    "info": "[javascript, tdd, jasmine]",
-    "url": "https://github.com/ga-wdi-exercises/roman_js",
-    "tags": [
-      "javascript",
-      "tdd",
-      "jasmine",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37560264,
-      "created_at": "2015-06-16T22:53:50Z",
-      "updated_at": "2016-02-02T23:47:18Z",
-      "open_issues_count": 1,
-      "forks_count": 27
-    }
-  },
-  {
     "title": "rspec",
     "info": "[ruby,tdd,rspec]",
     "url": "https://github.com/ga-wdi-lessons/rspec",
@@ -5424,183 +2807,6 @@
     }
   },
   {
-    "title": "ruby_air_conditioner",
-    "info": "[ruby, conditionals]",
-    "url": "https://github.com/ATL-WDI-Exercises/ruby_air_conditioner",
-    "tags": [
-      "ruby",
-      "conditionals",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 48177400,
-      "created_at": "2015-12-17T13:59:29Z",
-      "updated_at": "2016-07-14T20:06:04Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "ruby_method_scavenger_hunt",
-    "info": "[ruby, basics, methods, pry]",
-    "url": "https://github.com/ga-wdi-exercises/ruby_method_scavenger_hunt",
-    "tags": [
-      "ruby",
-      "basics",
-      "methods",
-      "pry",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37596236,
-      "created_at": "2015-06-17T13:22:11Z",
-      "updated_at": "2016-02-02T23:47:19Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "ruby_methods_practice",
-    "info": "[ruby, basics, methods, quick]",
-    "url": "https://github.com/ga-wdi-exercises/ruby_methods_practice",
-    "tags": [
-      "ruby",
-      "basics",
-      "methods",
-      "quick",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37465086,
-      "created_at": "2015-06-15T12:55:55Z",
-      "updated_at": "2016-02-02T23:47:19Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "ruby_refactor_me",
-    "info": "[ruby, refactoring, quick, basics]",
-    "url": "https://github.com/ga-wdi-exercises/ruby_refactor_me",
-    "tags": [
-      "ruby",
-      "refactoring",
-      "quick",
-      "basics",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37465254,
-      "created_at": "2015-06-15T12:59:15Z",
-      "updated_at": "2016-02-02T23:47:19Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "ruby_search_for_obi_wan",
-    "info": "[ruby, conditionals]",
-    "url": "https://github.com/ATL-WDI-Exercises/ruby_search_for_obi_wan",
-    "tags": [
-      "ruby",
-      "conditionals",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 48177234,
-      "created_at": "2015-12-17T13:56:07Z",
-      "updated_at": "2016-07-14T20:06:05Z",
-      "open_issues_count": 0,
-      "forks_count": 3
-    }
-  },
-  {
-    "title": "ruby_smoothies",
-    "info": "[ruby, oop]",
-    "url": "https://github.com/ATL-WDI-Exercises/ruby_smoothies",
-    "tags": [
-      "ruby",
-      "oop",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 56237331,
-      "created_at": "2016-04-14T12:56:26Z",
-      "updated_at": "2016-04-14T12:58:17Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "ruby_utopia_self",
-    "info": "[ruby, oop]",
-    "url": "https://github.com/ATL-WDI-Exercises/ruby_utopia_self",
-    "tags": [
-      "ruby",
-      "oop",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 56237543,
-      "created_at": "2016-04-14T12:59:28Z",
-      "updated_at": "2016-04-14T12:59:28Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "ruby_vars_quiz",
-    "info": "Variables quiz. [ruby, quick, quiz]",
-    "url": "https://github.com/ga-wdi-exercises/ruby_vars_quiz",
-    "tags": [
-      "ruby",
-      "quick",
-      "quiz",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37221182,
-      "created_at": "2015-06-10T20:36:07Z",
-      "updated_at": "2016-02-02T23:47:19Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "ruby-basics-exercises",
-    "info": "[ruby]",
-    "url": "https://github.com/ATL-WDI-Exercises/ruby-basics-exercises",
-    "tags": [
-      "ruby",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 55598623,
-      "created_at": "2016-04-06T10:59:37Z",
-      "updated_at": "2016-04-04T12:29:53Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
     "title": "ruby-enumerables",
     "info": "[ruby,enumerables]",
     "url": "https://github.com/ga-wdi-lessons/ruby-enumerables",
@@ -5617,23 +2823,6 @@
       "updated_at": "2016-01-21T17:42:08Z",
       "open_issues_count": 1,
       "forks_count": 7
-    }
-  },
-  {
-    "title": "ruby-enumerations",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Exercises/ruby-enumerations",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 48135825,
-      "created_at": "2015-12-16T21:20:24Z",
-      "updated_at": "2016-04-14T13:09:41Z",
-      "open_issues_count": 0,
-      "forks_count": 3
     }
   },
   {
@@ -5712,23 +2901,6 @@
     }
   },
   {
-    "title": "ruby-problems",
-    "info": "Solving algorithms with Ruby!",
-    "url": "https://github.com/ATL-WDI-Exercises/ruby-problems",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 55803618,
-      "created_at": "2016-04-08T19:14:04Z",
-      "updated_at": "2016-04-08T19:14:07Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
     "title": "sass-directives",
     "info": "[sass]",
     "url": "https://github.com/ga-wdi-lessons/sass-directives",
@@ -5766,62 +2938,6 @@
     }
   },
   {
-    "title": "scope-and-context",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/scope-and-context",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446330,
-      "created_at": "2015-11-18T20:44:39Z",
-      "updated_at": "2016-07-14T20:04:38Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "scrabbler",
-    "info": "[ruby, oop, quick]",
-    "url": "https://github.com/ATL-WDI-Exercises/scrabbler",
-    "tags": [
-      "ruby",
-      "oop",
-      "quick",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 49214451,
-      "created_at": "2016-01-07T15:59:10Z",
-      "updated_at": "2016-02-02T23:47:20Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "search_for_obi_wan",
-    "info": "[basics, ruby]",
-    "url": "https://github.com/ga-wdi-exercises/search_for_obi_wan",
-    "tags": [
-      "basics",
-      "ruby",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37596102,
-      "created_at": "2015-06-17T13:19:19Z",
-      "updated_at": "2016-02-02T23:47:22Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
     "title": "server-from-scratch",
     "info": "[web]",
     "url": "https://github.com/ga-wdi-lessons/server-from-scratch",
@@ -5835,45 +2951,6 @@
       "id": 50127867,
       "created_at": "2016-01-21T18:28:18Z",
       "updated_at": "2016-01-21T18:28:18Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
-    "title": "shopping_list",
-    "info": "[basics, ruby]",
-    "url": "https://github.com/ga-wdi-exercises/shopping_list",
-    "tags": [
-      "basics",
-      "ruby",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37596119,
-      "created_at": "2015-06-17T13:19:43Z",
-      "updated_at": "2016-02-02T23:47:22Z",
-      "open_issues_count": 0,
-      "forks_count": 4
-    }
-  },
-  {
-    "title": "sinatra-99-bottles",
-    "info": "[sinatra, route, server]",
-    "url": "https://github.com/ATL-WDI-Exercises/sinatra-99-bottles",
-    "tags": [
-      "sinatra",
-      "route",
-      "server",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 49155840,
-      "created_at": "2016-01-06T19:11:51Z",
-      "updated_at": "2016-07-14T20:06:05Z",
       "open_issues_count": 0,
       "forks_count": 2
     }
@@ -5894,23 +2971,6 @@
       "id": 50125050,
       "created_at": "2016-01-21T17:42:38Z",
       "updated_at": "2016-01-21T17:43:01Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "sinatra-layouts-and-templates-lab",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Exercises/sinatra-layouts-and-templates-lab",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 49280798,
-      "created_at": "2016-01-08T15:48:35Z",
-      "updated_at": "2016-07-14T20:06:05Z",
       "open_issues_count": 0,
       "forks_count": 1
     }
@@ -6005,83 +3065,9 @@
     "github": {
       "id": 55649126,
       "created_at": "2016-04-06T23:46:13Z",
-      "updated_at": "2016-10-13T03:22:02Z",
+      "updated_at": "2016-10-13T14:45:28Z",
       "open_issues_count": 0,
       "forks_count": 2
-    }
-  },
-  {
-    "title": "slidey-mcshowington",
-    "info": "[ajax, api, javascript]",
-    "url": "https://github.com/ga-wdi-exercises/slidey-mcshowington",
-    "tags": [
-      "ajax",
-      "api",
-      "javascript",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 34816562,
-      "created_at": "2015-04-29T20:26:13Z",
-      "updated_at": "2016-02-02T23:47:22Z",
-      "open_issues_count": 2,
-      "forks_count": 44
-    }
-  },
-  {
-    "title": "smoothie-recipes",
-    "info": "A simple HTML and CSS static web page containing fun Smoothie Recipes!",
-    "url": "https://github.com/ATL-WDI-Exercises/smoothie-recipes",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 65306239,
-      "created_at": "2016-08-09T15:27:00Z",
-      "updated_at": "2016-08-09T15:27:01Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "socket-io-chat",
-    "info": "[websockets, node, handlebars]",
-    "url": "https://github.com/ga-wdi-exercises/socket-io-chat",
-    "tags": [
-      "websockets",
-      "node",
-      "handlebars",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 35954488,
-      "created_at": "2015-05-20T14:51:07Z",
-      "updated_at": "2016-08-08T15:14:51Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "software-development-life-cycle",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/software-development-life-cycle",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446419,
-      "created_at": "2015-11-18T20:46:16Z",
-      "updated_at": "2016-07-14T20:04:39Z",
-      "open_issues_count": 0,
-      "forks_count": 0
     }
   },
   {
@@ -6100,46 +3086,6 @@
       "updated_at": "2016-01-21T18:28:03Z",
       "open_issues_count": 1,
       "forks_count": 0
-    }
-  },
-  {
-    "title": "spotify-me",
-    "info": "[javascript, ajax, api]",
-    "url": "https://github.com/ga-wdi-exercises/spotify-me",
-    "tags": [
-      "javascript",
-      "ajax",
-      "api",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 35218319,
-      "created_at": "2015-05-07T12:18:31Z",
-      "updated_at": "2016-04-20T21:09:18Z",
-      "open_issues_count": 23,
-      "forks_count": 93
-    }
-  },
-  {
-    "title": "spotify-me",
-    "info": "[jquery, express, ajax]",
-    "url": "https://github.com/ATL-WDI-Exercises/spotify-me",
-    "tags": [
-      "jquery",
-      "express",
-      "ajax",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 50741342,
-      "created_at": "2016-01-30T19:36:40Z",
-      "updated_at": "2016-01-30T19:48:21Z",
-      "open_issues_count": 0,
-      "forks_count": 4
     }
   },
   {
@@ -6199,81 +3145,6 @@
     }
   },
   {
-    "title": "sql-joins",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/sql-joins",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46519516,
-      "created_at": "2015-11-19T20:49:52Z",
-      "updated_at": "2016-04-13T13:23:25Z",
-      "open_issues_count": 0,
-      "forks_count": 4
-    }
-  },
-  {
-    "title": "stargazer",
-    "info": "[ajax, javascript, api]",
-    "url": "https://github.com/ga-wdi-exercises/stargazer",
-    "tags": [
-      "ajax",
-      "javascript",
-      "api",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37553602,
-      "created_at": "2015-06-16T20:14:37Z",
-      "updated_at": "2016-02-02T23:47:24Z",
-      "open_issues_count": 1,
-      "forks_count": 18
-    }
-  },
-  {
-    "title": "stock-tracker",
-    "info": "[ajax, api, javascript, rails]",
-    "url": "https://github.com/ga-wdi-exercises/stock-tracker",
-    "tags": [
-      "ajax",
-      "api",
-      "javascript",
-      "rails",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 35071695,
-      "created_at": "2015-05-05T01:54:51Z",
-      "updated_at": "2016-02-02T23:47:24Z",
-      "open_issues_count": 0,
-      "forks_count": 40
-    }
-  },
-  {
-    "title": "sublime",
-    "info": "Introduction to Sublime",
-    "url": "https://github.com/ATL-WDI-Curriculum/sublime",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46446361,
-      "created_at": "2015-11-18T20:45:14Z",
-      "updated_at": "2016-06-27T02:50:39Z",
-      "open_issues_count": 2,
-      "forks_count": 8
-    }
-  },
-  {
     "title": "teaching-es6",
     "info": "[meta]",
     "url": "https://github.com/ga-wdi-lessons/teaching-es6",
@@ -6289,23 +3160,6 @@
       "updated_at": "2016-09-23T12:49:47Z",
       "open_issues_count": 0,
       "forks_count": 0
-    }
-  },
-  {
-    "title": "temperature_converter",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Exercises/temperature_converter",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 47334883,
-      "created_at": "2015-12-03T13:49:38Z",
-      "updated_at": "2016-02-02T23:47:29Z",
-      "open_issues_count": 0,
-      "forks_count": 2
     }
   },
   {
@@ -6325,140 +3179,6 @@
       "updated_at": "2016-01-21T18:22:55Z",
       "open_issues_count": 1,
       "forks_count": 1
-    }
-  },
-  {
-    "title": "the-last-samurai",
-    "info": "Determine which Samurai will be left standing.",
-    "url": "https://github.com/ATL-WDI-Exercises/the-last-samurai",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 50370776,
-      "created_at": "2016-01-25T18:17:29Z",
-      "updated_at": "2016-01-25T18:17:29Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
-    "title": "tic-tac-toe",
-    "info": "[lab, html, css, js]",
-    "url": "https://github.com/ATL-WDI-Exercises/tic-tac-toe",
-    "tags": [
-      "lab",
-      "html",
-      "css",
-      "js",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46447997,
-      "created_at": "2015-11-18T21:16:28Z",
-      "updated_at": "2016-07-14T20:06:04Z",
-      "open_issues_count": 1,
-      "forks_count": 4
-    }
-  },
-  {
-    "title": "todo_list",
-    "info": "[rails, mvc, crud]",
-    "url": "https://github.com/ga-wdi-exercises/todo_list",
-    "tags": [
-      "rails",
-      "mvc",
-      "crud",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37553914,
-      "created_at": "2015-06-16T20:21:15Z",
-      "updated_at": "2016-02-02T23:47:33Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "trillo",
-    "info": "An AJAX powered trello clone, on rails! [ajax, javascript, oop, rails, crud]",
-    "url": "https://github.com/ga-wdi-exercises/trillo",
-    "tags": [
-      "ajax",
-      "javascript",
-      "oop",
-      "rails",
-      "crud",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 35098184,
-      "created_at": "2015-05-05T12:35:53Z",
-      "updated_at": "2016-02-02T23:47:33Z",
-      "open_issues_count": 0,
-      "forks_count": 39
-    }
-  },
-  {
-    "title": "tunr_rails_routes_resources",
-    "info": "[tunr]",
-    "url": "https://github.com/ATL-WDI-Exercises/tunr_rails_routes_resources",
-    "tags": [
-      "tunr",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 56078050,
-      "created_at": "2016-04-12T16:04:01Z",
-      "updated_at": "2016-04-12T16:04:02Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "tunr_sinatra",
-    "info": "The Classic TUNR app written with Sinatra and Active Record",
-    "url": "https://github.com/ATL-WDI-Exercises/tunr_sinatra",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 68954907,
-      "created_at": "2016-09-22T19:26:15Z",
-      "updated_at": "2016-09-22T19:29:21Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "tunr-active-record",
-    "info": "[ruby, activerecord]",
-    "url": "https://github.com/ATL-WDI-Exercises/tunr-active-record",
-    "tags": [
-      "ruby",
-      "activerecord",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 55908638,
-      "created_at": "2016-04-10T16:01:56Z",
-      "updated_at": "2016-03-08T20:02:19Z",
-      "open_issues_count": 0,
-      "forks_count": 2
     }
   },
   {
@@ -6501,23 +3221,6 @@
     }
   },
   {
-    "title": "utils",
-    "info": "Collection of utils for automating the management of these repos.",
-    "url": "https://github.com/ATL-WDI-Curriculum/utils",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46454249,
-      "created_at": "2015-11-18T23:27:38Z",
-      "updated_at": "2016-07-14T20:04:37Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
     "title": "uxdi-flip",
     "info": "[ux]",
     "url": "https://github.com/ga-wdi-lessons/uxdi-flip",
@@ -6531,1523 +3234,6 @@
       "id": 50621474,
       "created_at": "2016-01-28T23:26:49Z",
       "updated_at": "2016-06-14T15:42:32Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "watchio",
-    "info": "Basically the same thing as movie_browser, but in Rails. [rails, crud, activerecord, backbone]",
-    "url": "https://github.com/ga-wdi-exercises/watchio",
-    "tags": [
-      "rails",
-      "crud",
-      "activerecord",
-      "backbone",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37559008,
-      "created_at": "2015-06-16T22:17:59Z",
-      "updated_at": "2016-02-02T23:47:40Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "wdi_1_git_lab_colormaster",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_1_git_lab_colormaster",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13065183,
-      "created_at": "2013-09-24T13:29:06Z",
-      "updated_at": "2014-12-08T19:28:01Z",
-      "open_issues_count": 32,
-      "forks_count": 43
-    }
-  },
-  {
-    "title": "wdi_1_ruby_demo_rspec_math",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_1_ruby_demo_rspec_math",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13300978,
-      "created_at": "2013-10-03T14:48:39Z",
-      "updated_at": "2015-01-20T07:56:46Z",
-      "open_issues_count": 0,
-      "forks_count": 21
-    }
-  },
-  {
-    "title": "wdi_1_ruby_demo_rspec_word_count",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_1_ruby_demo_rspec_word_count",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 10252541,
-      "created_at": "2013-05-23T20:17:16Z",
-      "updated_at": "2015-01-20T04:31:35Z",
-      "open_issues_count": 0,
-      "forks_count": 37
-    }
-  },
-  {
-    "title": "wdi_1_ruby_example_rspec_word_count",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_1_ruby_example_rspec_word_count",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15808696,
-      "created_at": "2014-01-10T20:26:03Z",
-      "updated_at": "2015-01-20T07:52:39Z",
-      "open_issues_count": 0,
-      "forks_count": 13
-    }
-  },
-  {
-    "title": "wdi_1_ruby_hw_git_first_turnin",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_1_ruby_hw_git_first_turnin",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15686732,
-      "created_at": "2014-01-06T21:58:13Z",
-      "updated_at": "2015-02-10T02:49:27Z",
-      "open_issues_count": 0,
-      "forks_count": 16
-    }
-  },
-  {
-    "title": "wdi_1_ruby_hw_mbta",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_1_ruby_hw_mbta",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13103743,
-      "created_at": "2013-09-25T19:50:43Z",
-      "updated_at": "2015-02-10T02:49:29Z",
-      "open_issues_count": 0,
-      "forks_count": 24
-    }
-  },
-  {
-    "title": "wdi_1_ruby_hw_objects_rental_app",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_1_ruby_hw_objects_rental_app",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13132848,
-      "created_at": "2013-09-26T19:58:26Z",
-      "updated_at": "2015-02-10T02:49:33Z",
-      "open_issues_count": 9,
-      "forks_count": 10
-    }
-  },
-  {
-    "title": "wdi_1_ruby_lab_array_calendar",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_1_ruby_lab_array_calendar",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15909199,
-      "created_at": "2014-01-14T17:08:49Z",
-      "updated_at": "2015-02-10T02:49:37Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "wdi_1_ruby_lab_class_smoothies",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_1_ruby_lab_class_smoothies",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15909120,
-      "created_at": "2014-01-14T17:05:43Z",
-      "updated_at": "2015-02-10T02:49:39Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "wdi_1_ruby_lab_credit_card_class",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_1_ruby_lab_credit_card_class",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13312725,
-      "created_at": "2013-10-03T23:50:38Z",
-      "updated_at": "2015-01-13T22:32:57Z",
-      "open_issues_count": 15,
-      "forks_count": 41
-    }
-  },
-  {
-    "title": "wdi_1_ruby_lab_guess_number_old",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_1_ruby_lab_guess_number_old",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13076971,
-      "created_at": "2013-09-24T21:25:05Z",
-      "updated_at": "2015-02-10T02:49:40Z",
-      "open_issues_count": 2,
-      "forks_count": 10
-    }
-  },
-  {
-    "title": "wdi_1_ruby_lab_objects_classes",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_1_ruby_lab_objects_classes",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13131742,
-      "created_at": "2013-09-26T19:11:51Z",
-      "updated_at": "2015-02-10T02:49:43Z",
-      "open_issues_count": 0,
-      "forks_count": 22
-    }
-  },
-  {
-    "title": "wdi_1_ruby_lab_prompts",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_1_ruby_lab_prompts",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13075739,
-      "created_at": "2013-09-24T20:25:23Z",
-      "updated_at": "2015-02-10T02:49:44Z",
-      "open_issues_count": 2,
-      "forks_count": 10
-    }
-  },
-  {
-    "title": "wdi_1_ruby_lab_string_analysis",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_1_ruby_lab_string_analysis",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13282866,
-      "created_at": "2013-10-02T21:03:27Z",
-      "updated_at": "2015-02-10T02:49:45Z",
-      "open_issues_count": 9,
-      "forks_count": 35
-    }
-  },
-  {
-    "title": "wdi_1_ruby_quiz_array_groupmaker",
-    "info": "Week 1 pop quiz!",
-    "url": "https://github.com/ga-wdi-boston/wdi_1_ruby_quiz_array_groupmaker",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15772858,
-      "created_at": "2014-01-09T16:55:18Z",
-      "updated_at": "2015-02-10T02:49:49Z",
-      "open_issues_count": 10,
-      "forks_count": 15
-    }
-  },
-  {
-    "title": "wdi_1_ruby_quiz_hashes",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_1_ruby_quiz_hashes",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15909274,
-      "created_at": "2014-01-14T17:11:51Z",
-      "updated_at": "2015-02-10T02:49:49Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "wdi_1_ruby_quiz_method_conditionals",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_1_ruby_quiz_method_conditionals",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13083618,
-      "created_at": "2013-09-25T03:50:44Z",
-      "updated_at": "2014-04-14T17:02:26Z",
-      "open_issues_count": 0,
-      "forks_count": 24
-    }
-  },
-  {
-    "title": "wdi_1_ruby_quiz_pry",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_1_ruby_quiz_pry",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13297139,
-      "created_at": "2013-10-03T12:06:13Z",
-      "updated_at": "2015-02-10T02:49:51Z",
-      "open_issues_count": 0,
-      "forks_count": 8
-    }
-  },
-  {
-    "title": "wdi_10_rails_caching_redis",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_10_rails_caching_redis",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 14567401,
-      "created_at": "2013-11-20T19:56:13Z",
-      "updated_at": "2015-02-10T02:48:38Z",
-      "open_issues_count": 0,
-      "forks_count": 26
-    }
-  },
-  {
-    "title": "wdi_10_rails_demo_angular_storefront",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_10_rails_demo_angular_storefront",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 14900855,
-      "created_at": "2013-12-03T17:34:33Z",
-      "updated_at": "2015-02-10T02:48:39Z",
-      "open_issues_count": 0,
-      "forks_count": 12
-    }
-  },
-  {
-    "title": "wdi_11_rails_demo_amazon_cdn",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_11_rails_demo_amazon_cdn",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15110284,
-      "created_at": "2013-12-11T15:01:41Z",
-      "updated_at": "2015-02-10T02:48:49Z",
-      "open_issues_count": 0,
-      "forks_count": 11
-    }
-  },
-  {
-    "title": "wdi_11_rails_example_coffeescript",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_11_rails_example_coffeescript",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15111716,
-      "created_at": "2013-12-11T15:56:08Z",
-      "updated_at": "2015-02-10T02:48:51Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "wdi_11_rails_lab_load_testing",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_11_rails_lab_load_testing",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 14526705,
-      "created_at": "2013-11-19T14:23:06Z",
-      "updated_at": "2015-02-10T02:48:54Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "wdi_2_ruby_demo_classmethods",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_2_ruby_demo_classmethods",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 16001558,
-      "created_at": "2014-01-17T14:20:51Z",
-      "updated_at": "2015-02-10T02:50:04Z",
-      "open_issues_count": 0,
-      "forks_count": 15
-    }
-  },
-  {
-    "title": "wdi_2_ruby_demo_modules",
-    "info": "Demonstration of Ruby modules used for namespaces and mixins. Also, includes a lab.",
-    "url": "https://github.com/ga-wdi-boston/wdi_2_ruby_demo_modules",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15905280,
-      "created_at": "2014-01-14T15:01:52Z",
-      "updated_at": "2015-02-10T02:50:09Z",
-      "open_issues_count": 1,
-      "forks_count": 30
-    }
-  },
-  {
-    "title": "wdi_2_ruby_hw_roman_numeral_kata",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_2_ruby_hw_roman_numeral_kata",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15978245,
-      "created_at": "2014-01-16T19:16:52Z",
-      "updated_at": "2014-01-16T19:55:41Z",
-      "open_issues_count": 0,
-      "forks_count": 15
-    }
-  },
-  {
-    "title": "wdi_2_ruby_lab_arguments",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_2_ruby_lab_arguments",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15874963,
-      "created_at": "2014-01-13T16:59:04Z",
-      "updated_at": "2014-04-14T18:46:36Z",
-      "open_issues_count": 0,
-      "forks_count": 15
-    }
-  },
-  {
-    "title": "wdi_2_ruby_lab_exceptions",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_2_ruby_lab_exceptions",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15871193,
-      "created_at": "2014-01-13T14:55:39Z",
-      "updated_at": "2015-02-10T02:50:16Z",
-      "open_issues_count": 0,
-      "forks_count": 40
-    }
-  },
-  {
-    "title": "wdi_2_ruby_lab_nokogiri_scraping_hn",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_2_ruby_lab_nokogiri_scraping_hn",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15974776,
-      "created_at": "2014-01-16T17:13:15Z",
-      "updated_at": "2015-02-10T02:50:17Z",
-      "open_issues_count": 1,
-      "forks_count": 5
-    }
-  },
-  {
-    "title": "wdi_2_ruby_lab_require_multi_file",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_2_ruby_lab_require_multi_file",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15871144,
-      "created_at": "2014-01-13T14:54:07Z",
-      "updated_at": "2015-02-10T02:50:18Z",
-      "open_issues_count": 0,
-      "forks_count": 14
-    }
-  },
-  {
-    "title": "wdi_2_ruby_lab_rspec_geometry",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_2_ruby_lab_rspec_geometry",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13305665,
-      "created_at": "2013-10-03T18:10:12Z",
-      "updated_at": "2015-02-10T02:50:20Z",
-      "open_issues_count": 0,
-      "forks_count": 60
-    }
-  },
-  {
-    "title": "wdi_2_ruby_lab_twitter_api_access",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_2_ruby_lab_twitter_api_access",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13225743,
-      "created_at": "2013-09-30T20:00:01Z",
-      "updated_at": "2015-02-10T02:50:21Z",
-      "open_issues_count": 9,
-      "forks_count": 12
-    }
-  },
-  {
-    "title": "wdi_2_ruby_lab_yahtzee",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_2_ruby_lab_yahtzee",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15975949,
-      "created_at": "2014-01-16T17:53:59Z",
-      "updated_at": "2015-02-10T02:50:22Z",
-      "open_issues_count": 0,
-      "forks_count": 10
-    }
-  },
-  {
-    "title": "wdi_2_ruby_quiz_spiral_array",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_2_ruby_quiz_spiral_array",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13203173,
-      "created_at": "2013-09-30T01:07:13Z",
-      "updated_at": "2014-01-14T15:50:59Z",
-      "open_issues_count": 13,
-      "forks_count": 14
-    }
-  },
-  {
-    "title": "wdi_2_ruby_quiz_string_manipulation",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_2_ruby_quiz_string_manipulation",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 12270408,
-      "created_at": "2013-08-21T13:06:52Z",
-      "updated_at": "2015-02-10T02:50:25Z",
-      "open_issues_count": 0,
-      "forks_count": 24
-    }
-  },
-  {
-    "title": "wdi_2_ruby_quiz_string_manipulation_2",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_2_ruby_quiz_string_manipulation_2",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 14150305,
-      "created_at": "2013-11-05T18:38:54Z",
-      "updated_at": "2014-01-14T15:24:38Z",
-      "open_issues_count": 14,
-      "forks_count": 10
-    }
-  },
-  {
-    "title": "wdi_2_ruby_quiz_string_manipulation_again",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_2_ruby_quiz_string_manipulation_again",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 15969462,
-      "created_at": "2014-01-16T14:05:07Z",
-      "updated_at": "2014-01-16T14:44:57Z",
-      "open_issues_count": 0,
-      "forks_count": 15
-    }
-  },
-  {
-    "title": "wdi_3_css_demo_bootstrap",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_3_css_demo_bootstrap",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 16128328,
-      "created_at": "2014-01-22T04:06:30Z",
-      "updated_at": "2014-01-22T15:08:24Z",
-      "open_issues_count": 0,
-      "forks_count": 14
-    }
-  },
-  {
-    "title": "wdi_3_ruby_demo_rspec_activerecord",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_3_ruby_demo_rspec_activerecord",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 11207401,
-      "created_at": "2013-07-05T19:56:43Z",
-      "updated_at": "2015-02-10T02:50:56Z",
-      "open_issues_count": 0,
-      "forks_count": 14
-    }
-  },
-  {
-    "title": "wdi_3_ruby_demo_sinatra_activerecord",
-    "info": "GA WDI Summer 2012. Moving from writing our own SQL to AR before we jump into Rails",
-    "url": "https://github.com/ga-wdi-boston/wdi_3_ruby_demo_sinatra_activerecord",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 11126335,
-      "created_at": "2013-07-02T14:17:12Z",
-      "updated_at": "2015-02-10T02:50:57Z",
-      "open_issues_count": 0,
-      "forks_count": 21
-    }
-  },
-  {
-    "title": "wdi_3_ruby_demo_sinatra_game_of_thrones",
-    "info": "An example of using multiple tables in a sinatra application",
-    "url": "https://github.com/ga-wdi-boston/wdi_3_ruby_demo_sinatra_game_of_thrones",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 11103019,
-      "created_at": "2013-07-01T18:14:42Z",
-      "updated_at": "2015-02-10T02:50:59Z",
-      "open_issues_count": 0,
-      "forks_count": 19
-    }
-  },
-  {
-    "title": "wdi_3_ruby_demo_sinatra_intro",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_3_ruby_demo_sinatra_intro",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 10970374,
-      "created_at": "2013-06-26T14:41:28Z",
-      "updated_at": "2015-02-10T02:51:00Z",
-      "open_issues_count": 0,
-      "forks_count": 34
-    }
-  },
-  {
-    "title": "wdi_3_ruby_demo_sinatra_links",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_3_ruby_demo_sinatra_links",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 10940393,
-      "created_at": "2013-06-25T14:23:05Z",
-      "updated_at": "2015-02-10T02:51:02Z",
-      "open_issues_count": 0,
-      "forks_count": 20
-    }
-  },
-  {
-    "title": "wdi_3_ruby_demo_sinatra_workflow",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_3_ruby_demo_sinatra_workflow",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 10999908,
-      "created_at": "2013-06-27T15:04:11Z",
-      "updated_at": "2015-02-10T02:51:05Z",
-      "open_issues_count": 0,
-      "forks_count": 14
-    }
-  },
-  {
-    "title": "wdi_3_ruby_hw_activerecord_sinatra_hacker_news",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_3_ruby_hw_activerecord_sinatra_hacker_news",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13481386,
-      "created_at": "2013-10-10T19:52:18Z",
-      "updated_at": "2015-02-10T02:51:06Z",
-      "open_issues_count": 8,
-      "forks_count": 12
-    }
-  },
-  {
-    "title": "wdi_3_ruby_hw_activerecord_sinatra_reddit",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_3_ruby_hw_activerecord_sinatra_reddit",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13507178,
-      "created_at": "2013-10-11T19:02:35Z",
-      "updated_at": "2015-02-10T02:51:07Z",
-      "open_issues_count": 8,
-      "forks_count": 12
-    }
-  },
-  {
-    "title": "wdi_3_ruby_hw_sinatra_mbta",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_3_ruby_hw_sinatra_mbta",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13425076,
-      "created_at": "2013-10-08T20:43:38Z",
-      "updated_at": "2015-02-10T02:51:08Z",
-      "open_issues_count": 9,
-      "forks_count": 11
-    }
-  },
-  {
-    "title": "wdi_3_ruby_hw_sinatra_multi_page",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_3_ruby_hw_sinatra_multi_page",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 10926629,
-      "created_at": "2013-06-25T02:57:48Z",
-      "updated_at": "2015-02-10T02:51:09Z",
-      "open_issues_count": 23,
-      "forks_count": 20
-    }
-  },
-  {
-    "title": "wdi_3_ruby_hw_sinatra_twitter",
-    "info": "Starting to use the Twitter API with Sinatra",
-    "url": "https://github.com/ga-wdi-boston/wdi_3_ruby_hw_sinatra_twitter",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 10975808,
-      "created_at": "2013-06-26T18:37:14Z",
-      "updated_at": "2015-02-10T02:51:11Z",
-      "open_issues_count": 19,
-      "forks_count": 21
-    }
-  },
-  {
-    "title": "wdi_3_ruby_lab_sinatra_api_and_files",
-    "info": "Using APIs and writing to files with Sinatra",
-    "url": "https://github.com/ga-wdi-boston/wdi_3_ruby_lab_sinatra_api_and_files",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 10974129,
-      "created_at": "2013-06-26T17:19:07Z",
-      "updated_at": "2015-02-10T02:51:11Z",
-      "open_issues_count": 9,
-      "forks_count": 23
-    }
-  },
-  {
-    "title": "wdi_3_ruby_lab_sinatra_bookmarks",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_3_ruby_lab_sinatra_bookmarks",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13506711,
-      "created_at": "2013-10-11T18:42:42Z",
-      "updated_at": "2015-02-10T02:51:12Z",
-      "open_issues_count": 0,
-      "forks_count": 26
-    }
-  },
-  {
-    "title": "wdi_3_ruby_lab_sinatra_stock_twitter",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_3_ruby_lab_sinatra_stock_twitter",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13417607,
-      "created_at": "2013-10-08T15:34:26Z",
-      "updated_at": "2014-11-27T14:37:27Z",
-      "open_issues_count": 13,
-      "forks_count": 12
-    }
-  },
-  {
-    "title": "wdi_3_ruby_lab_sinatra_stocks",
-    "info": "wdi_4",
-    "url": "https://github.com/ga-wdi-boston/wdi_3_ruby_lab_sinatra_stocks",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 10926593,
-      "created_at": "2013-06-25T02:56:07Z",
-      "updated_at": "2015-02-10T02:51:15Z",
-      "open_issues_count": 21,
-      "forks_count": 38
-    }
-  },
-  {
-    "title": "wdi_3_web_hw_html_css",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_3_web_hw_html_css",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13395248,
-      "created_at": "2013-10-07T20:42:19Z",
-      "updated_at": "2014-01-21T16:48:27Z",
-      "open_issues_count": 0,
-      "forks_count": 22
-    }
-  },
-  {
-    "title": "wdi_3_web_lab_basic_html",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_3_web_lab_basic_html",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 16088923,
-      "created_at": "2014-01-21T01:21:22Z",
-      "updated_at": "2014-01-21T02:40:33Z",
-      "open_issues_count": 14,
-      "forks_count": 14
-    }
-  },
-  {
-    "title": "wdi_3_web_lab_research",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_3_web_lab_research",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 16117308,
-      "created_at": "2014-01-21T20:05:13Z",
-      "updated_at": "2014-01-21T22:35:52Z",
-      "open_issues_count": 0,
-      "forks_count": 8
-    }
-  },
-  {
-    "title": "wdi_4_rails_demo_model_tweets",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_4_rails_demo_model_tweets",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 11284255,
-      "created_at": "2013-07-09T14:16:12Z",
-      "updated_at": "2015-02-10T02:51:30Z",
-      "open_issues_count": 0,
-      "forks_count": 16
-    }
-  },
-  {
-    "title": "wdi_4_rails_demo_non_restful_routes",
-    "info": "General Assembly June 2012 App Store Example of non-Restful routes",
-    "url": "https://github.com/ga-wdi-boston/wdi_4_rails_demo_non_restful_routes",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 11454640,
-      "created_at": "2013-07-16T16:43:06Z",
-      "updated_at": "2015-02-10T02:51:31Z",
-      "open_issues_count": 0,
-      "forks_count": 13
-    }
-  },
-  {
-    "title": "wdi_4_rails_demo_project_starter_instructions",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_4_rails_demo_project_starter_instructions",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13332274,
-      "created_at": "2013-10-04T19:01:33Z",
-      "updated_at": "2015-02-10T02:51:34Z",
-      "open_issues_count": 0,
-      "forks_count": 10
-    }
-  },
-  {
-    "title": "wdi_4_rails_demo_storefront",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_4_rails_demo_storefront",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 14904143,
-      "created_at": "2013-12-03T19:54:06Z",
-      "updated_at": "2015-02-10T02:51:36Z",
-      "open_issues_count": 0,
-      "forks_count": 3
-    }
-  },
-  {
-    "title": "wdi_4_rails_demo_twitter",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_4_rails_demo_twitter",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 11425582,
-      "created_at": "2013-07-15T14:49:49Z",
-      "updated_at": "2015-02-10T02:51:39Z",
-      "open_issues_count": 0,
-      "forks_count": 6
-    }
-  },
-  {
-    "title": "wdi_4_rails_lab_activerecord_associations_harry_potter",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_4_rails_lab_activerecord_associations_harry_potter",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13658703,
-      "created_at": "2013-10-17T19:21:41Z",
-      "updated_at": "2015-02-10T02:51:50Z",
-      "open_issues_count": 15,
-      "forks_count": 9
-    }
-  },
-  {
-    "title": "wdi_4_rails_lab_crud_dream_tracker",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_4_rails_lab_crud_dream_tracker",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13600487,
-      "created_at": "2013-10-15T19:53:44Z",
-      "updated_at": "2015-02-10T02:51:52Z",
-      "open_issues_count": 13,
-      "forks_count": 8
-    }
-  },
-  {
-    "title": "wdi_4_rails_lab_heroku_deploy",
-    "info": "Example code and documentation to deploy to Heroku for GA Summer 2013",
-    "url": "https://github.com/ga-wdi-boston/wdi_4_rails_lab_heroku_deploy",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 11348023,
-      "created_at": "2013-07-11T17:16:56Z",
-      "updated_at": "2015-02-10T02:51:52Z",
-      "open_issues_count": 0,
-      "forks_count": 18
-    }
-  },
-  {
-    "title": "wdi_4_rails_lab_hogwarts_errors",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_4_rails_lab_hogwarts_errors",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 11452179,
-      "created_at": "2013-07-16T14:51:50Z",
-      "updated_at": "2015-02-10T02:51:53Z",
-      "open_issues_count": 0,
-      "forks_count": 0
-    }
-  },
-  {
-    "title": "wdi_5_js_lab_geometry",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_5_js_lab_geometry",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 11590741,
-      "created_at": "2013-07-22T19:47:59Z",
-      "updated_at": "2015-02-10T02:51:58Z",
-      "open_issues_count": 11,
-      "forks_count": 16
-    }
-  },
-  {
-    "title": "wdi_5_rails_demo_auth_bcrypt",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_5_rails_demo_auth_bcrypt",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 11477883,
-      "created_at": "2013-07-17T14:19:08Z",
-      "updated_at": "2015-02-10T02:52:00Z",
-      "open_issues_count": 0,
-      "forks_count": 18
-    }
-  },
-  {
-    "title": "wdi_5_rails_demo_authorization_twitter",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_5_rails_demo_authorization_twitter",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 11465849,
-      "created_at": "2013-07-17T03:04:28Z",
-      "updated_at": "2015-02-10T02:52:03Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "wdi_5_rails_demo_nokogiri",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_5_rails_demo_nokogiri",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 11536577,
-      "created_at": "2013-07-19T20:28:41Z",
-      "updated_at": "2015-02-10T02:52:07Z",
-      "open_issues_count": 0,
-      "forks_count": 4
-    }
-  },
-  {
-    "title": "wdi_5_rails_demo_youtube_oauth",
-    "info": "Something I threw together trying to figure out Devise/Youtube and Rails 4. Probably not best to use...",
-    "url": "https://github.com/ga-wdi-boston/wdi_5_rails_demo_youtube_oauth",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13812555,
-      "created_at": "2013-10-23T19:32:16Z",
-      "updated_at": "2015-02-10T02:52:07Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
-    "title": "wdi_6_js_demo_jquery",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_6_js_demo_jquery",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 11636207,
-      "created_at": "2013-07-24T14:06:14Z",
-      "updated_at": "2015-02-10T02:52:17Z",
-      "open_issues_count": 0,
-      "forks_count": 34
-    }
-  },
-  {
-    "title": "wdi_6_js_hw_interest_numberguess",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_6_js_hw_interest_numberguess",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13936399,
-      "created_at": "2013-10-28T19:37:45Z",
-      "updated_at": "2015-02-10T02:52:19Z",
-      "open_issues_count": 0,
-      "forks_count": 28
-    }
-  },
-  {
-    "title": "wdi_6_js_hw_todo_app",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_6_js_hw_todo_app",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 11741566,
-      "created_at": "2013-07-29T14:27:44Z",
-      "updated_at": "2015-02-10T02:52:23Z",
-      "open_issues_count": 7,
-      "forks_count": 54
-    }
-  },
-  {
-    "title": "wdi_6_js_lab_jasmine_song_player",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_6_js_lab_jasmine_song_player",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 14024582,
-      "created_at": "2013-10-31T18:08:25Z",
-      "updated_at": "2015-02-10T02:52:26Z",
-      "open_issues_count": 3,
-      "forks_count": 55
-    }
-  },
-  {
-    "title": "wdi_6_rails_lab_resque_email",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_6_rails_lab_resque_email",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 14591197,
-      "created_at": "2013-11-21T15:24:01Z",
-      "updated_at": "2015-02-10T02:52:38Z",
-      "open_issues_count": 0,
-      "forks_count": 9
-    }
-  },
-  {
-    "title": "wdi_6_ruby_demo_string_stats_gem",
-    "info": "TODO: one-line summary of your gem",
-    "url": "https://github.com/ga-wdi-boston/wdi_6_ruby_demo_string_stats_gem",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13333442,
-      "created_at": "2013-10-04T19:58:38Z",
-      "updated_at": "2015-02-10T02:52:39Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "wdi_6_ruby_example_gem",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_6_ruby_example_gem",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 14674211,
-      "created_at": "2013-11-25T02:26:36Z",
-      "updated_at": "2014-02-12T21:40:54Z",
-      "open_issues_count": 0,
-      "forks_count": 15
-    }
-  },
-  {
-    "title": "wdi_7_js_hw_bank",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_7_js_hw_bank",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 13966324,
-      "created_at": "2013-10-29T19:32:46Z",
-      "updated_at": "2015-02-10T02:52:59Z",
-      "open_issues_count": 11,
-      "forks_count": 10
-    }
-  },
-  {
-    "title": "wdi_7_js_hw_school_objects",
-    "info": "Create a, very simple, course registration course with javascript. ",
-    "url": "https://github.com/ga-wdi-boston/wdi_7_js_hw_school_objects",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 14001171,
-      "created_at": "2013-10-30T22:07:54Z",
-      "updated_at": "2015-02-10T02:53:01Z",
-      "open_issues_count": 3,
-      "forks_count": 4
-    }
-  },
-  {
-    "title": "wdi_7_js_quiz_2_jasmine",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_7_js_quiz_2_jasmine",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 14111630,
-      "created_at": "2013-11-04T14:19:09Z",
-      "updated_at": "2014-02-20T15:36:40Z",
-      "open_issues_count": 1,
-      "forks_count": 29
-    }
-  },
-  {
-    "title": "wdi_7_js_quiz_3_jasmine",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_7_js_quiz_3_jasmine",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 14174898,
-      "created_at": "2013-11-06T14:32:11Z",
-      "updated_at": "2014-10-08T10:35:12Z",
-      "open_issues_count": 1,
-      "forks_count": 25
-    }
-  },
-  {
-    "title": "wdi_8_js_hw_twitter_ajax",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_8_js_hw_twitter_ajax",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 14122596,
-      "created_at": "2013-11-04T20:27:00Z",
-      "updated_at": "2015-03-01T22:40:47Z",
-      "open_issues_count": 34,
-      "forks_count": 27
-    }
-  },
-  {
-    "title": "wdi_8_rails_hw_ajax_flags",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_8_rails_hw_ajax_flags",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 14432582,
-      "created_at": "2013-11-15T19:04:29Z",
-      "updated_at": "2015-02-10T02:53:36Z",
-      "open_issues_count": 0,
-      "forks_count": 24
-    }
-  },
-  {
-    "title": "wdi_8_rails_hw_hacker_news_ajax",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_8_rails_hw_hacker_news_ajax",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 14215485,
-      "created_at": "2013-11-07T20:49:31Z",
-      "updated_at": "2015-02-10T02:53:37Z",
-      "open_issues_count": 11,
-      "forks_count": 10
-    }
-  },
-  {
-    "title": "wdi_8_rails_hw_hn_ajax_refactor",
-    "info": "With POST and GET",
-    "url": "https://github.com/ga-wdi-boston/wdi_8_rails_hw_hn_ajax_refactor",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 14187086,
-      "created_at": "2013-11-06T22:06:39Z",
-      "updated_at": "2015-02-10T02:53:39Z",
-      "open_issues_count": 2,
-      "forks_count": 5
-    }
-  },
-  {
-    "title": "wdi_8_ruby_hw_ajax_flags",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_8_ruby_hw_ajax_flags",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 12090030,
-      "created_at": "2013-08-13T19:03:15Z",
-      "updated_at": "2015-02-10T02:53:43Z",
-      "open_issues_count": 18,
-      "forks_count": 14
-    }
-  },
-  {
-    "title": "wdi_first_project",
-    "info": null,
-    "url": "https://github.com/ga-wdi-boston/wdi_first_project",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 11351672,
-      "created_at": "2013-07-11T20:00:22Z",
-      "updated_at": "2014-07-07T20:56:14Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
-    "title": "wdi-5",
-    "info": "",
-    "url": "https://github.com/ATL-WDI-Curriculum/wdi-5",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 46447197,
-      "created_at": "2015-11-18T21:01:46Z",
-      "updated_at": "2016-07-14T20:04:39Z",
       "open_issues_count": 0,
       "forks_count": 0
     }
@@ -8107,23 +3293,6 @@
     }
   },
   {
-    "title": "wearwolfgame",
-    "info": "rules for creating the werewolf game",
-    "url": "https://github.com/ATL-WDI-Exercises/wearwolfgame",
-    "tags": [
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 51164036,
-      "created_at": "2016-02-05T17:56:35Z",
-      "updated_at": "2016-02-05T18:11:11Z",
-      "open_issues_count": 0,
-      "forks_count": 2
-    }
-  },
-  {
     "title": "web-intro",
     "info": "[web]",
     "url": "https://github.com/ga-wdi-lessons/web-intro",
@@ -8161,47 +3330,6 @@
     }
   },
   {
-    "title": "websocket-arcade",
-    "info": "[websockets, mongodb, node, express]",
-    "url": "https://github.com/ga-wdi-exercises/websocket-arcade",
-    "tags": [
-      "websockets",
-      "mongodb",
-      "node",
-      "express",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 35966172,
-      "created_at": "2015-05-20T18:25:12Z",
-      "updated_at": "2016-07-28T22:02:57Z",
-      "open_issues_count": 13,
-      "forks_count": 10
-    }
-  },
-  {
-    "title": "websockets-chat-lab",
-    "info": "[node, express, socket]",
-    "url": "https://github.com/ATL-WDI-Exercises/websockets-chat-lab",
-    "tags": [
-      "node",
-      "express",
-      "socket",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 51086197,
-      "created_at": "2016-02-04T15:49:23Z",
-      "updated_at": "2016-02-04T15:51:18Z",
-      "open_issues_count": 0,
-      "forks_count": 3
-    }
-  },
-  {
     "title": "websockets-node",
     "info": "[websockets, node, socket.io]",
     "url": "https://github.com/ga-wdi-lessons/websockets-node",
@@ -8217,44 +3345,6 @@
       "id": 64234269,
       "created_at": "2016-07-26T15:49:52Z",
       "updated_at": "2016-07-26T15:49:52Z",
-      "open_issues_count": 0,
-      "forks_count": 1
-    }
-  },
-  {
-    "title": "wendy_bite",
-    "info": "[css, html]",
-    "url": "https://github.com/ga-wdi-exercises/wendy_bite",
-    "tags": [
-      "css",
-      "html",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37551901,
-      "created_at": "2015-06-16T19:39:24Z",
-      "updated_at": "2016-03-17T05:24:08Z",
-      "open_issues_count": 1,
-      "forks_count": 202
-    }
-  },
-  {
-    "title": "wendy_bite",
-    "info": "[css, html]",
-    "url": "https://github.com/ATL-WDI-Exercises/wendy_bite",
-    "tags": [
-      "css",
-      "html",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 54064330,
-      "created_at": "2016-03-16T20:30:49Z",
-      "updated_at": "2016-03-16T20:30:49Z",
       "open_issues_count": 0,
       "forks_count": 1
     }
@@ -8276,67 +3366,6 @@
       "updated_at": "2016-04-14T14:11:36Z",
       "open_issues_count": 1,
       "forks_count": 3
-    }
-  },
-  {
-    "title": "yo-yo-da",
-    "info": "[javascript, ajax, api]",
-    "url": "https://github.com/ga-wdi-exercises/yo-yo-da",
-    "tags": [
-      "javascript",
-      "ajax",
-      "api",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 35246766,
-      "created_at": "2015-05-07T22:30:08Z",
-      "updated_at": "2016-02-02T23:47:46Z",
-      "open_issues_count": 0,
-      "forks_count": 46
-    }
-  },
-  {
-    "title": "yum",
-    "info": "We like Milk-n-Cookies!  Where can we find some? [mongodb, javascript, node, express]",
-    "url": "https://github.com/ga-wdi-exercises/yum",
-    "tags": [
-      "mongodb",
-      "javascript",
-      "node",
-      "express",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 35918406,
-      "created_at": "2015-05-20T01:28:43Z",
-      "updated_at": "2016-02-02T23:47:48Z",
-      "open_issues_count": 1,
-      "forks_count": 89
-    }
-  },
-  {
-    "title": "zanesville_zoo",
-    "info": "[sinatra, backbone, mvc]",
-    "url": "https://github.com/ga-wdi-exercises/zanesville_zoo",
-    "tags": [
-      "sinatra",
-      "backbone",
-      "mvc",
-      "ga",
-      "wdi",
-      "GA-WDI-Lessons"
-    ],
-    "github": {
-      "id": 37553700,
-      "created_at": "2015-06-16T20:16:47Z",
-      "updated_at": "2016-02-02T23:47:48Z",
-      "open_issues_count": 0,
-      "forks_count": 0
     }
   }
 ]
