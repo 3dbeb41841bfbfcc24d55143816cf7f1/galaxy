@@ -10,77 +10,85 @@
                                  uib-popover-template='"app/instructor/resources/resource-help.html"'
                                  popover-title='Help'
                                  style="margin-left: 10px;") Help...
+  .row
+    .col-md-3
+      .btn-group(role='group' style="margin-left: 20px")
+        label.btn.btn-xs(ng-class='$ctrl.selectionMode === "any" ? "btn-success" : "btn-primary"'
+                         ng-model='$ctrl.selectionMode'
+                         uib-btn-radio='"any"') Any
+        label.btn.btn-xs(ng-class='$ctrl.selectionMode === "all" ? "btn-success" : "btn-primary"'
+                         ng-model='$ctrl.selectionMode'
+                         uib-btn-radio='"all"') All
+      .btn-group-vertical(role='group')
+        button.btn.btn-sm(ng-repeat='tag in $ctrl.Tag.allTags | orderBy: "name"'
+                          ng-class='$ctrl.getClassForTag(tag)'
+                          ng-click='$ctrl.toggleTag(tag)')
+          | {{tag.name}}
+          span.text-warning(ng-show='$ctrl.countTagInFilteredResults(tag)') ( {{ $ctrl.countTagInFilteredResults(tag) }} )
 
-  .btn-group(role='group')
-    .row
-      button.btn.btn-sm.col-md-2(ng-repeat='tag in $ctrl.Tag.allTags | orderBy: "name"'
-                        ng-class='$ctrl.getClassForTag(tag)'
-                        ng-click='$ctrl.toggleTag(tag)')
-        | {{tag.name}}
-        span.text-warning(ng-show='$ctrl.countTagInFilteredResults(tag)') ( {{ $ctrl.countTagInFilteredResults(tag) }} )
+    .col-md-9
+      h4 Displaying matches {{ $ctrl.getBeginIndex() + 1 }} to {{ $ctrl.getEndIndex() + 1 }} out of {{ $ctrl.filteredResources.length || 0 }} matches.
+      //- pre {{ $ctrl.currentPage }} - {{ $ctrl.pageSize }} - {{ ($ctrl.currentPage-1) * $ctrl.pageSize }}
+      ul.pagination-sm(uib-pagination='',
+                       total-items='$ctrl.filteredResources.length',
+                       ng-model='$ctrl.currentPage',
+                       ng-change='$ctrl.updatePage()',
+                       max-size='$ctrl.pageSize',
+                       boundary-links='true',
+                       force-ellipses='true')
+      hr
 
-  .btn-group(role='group' style="margin-left: 20px")
-    label.btn.btn-xs(ng-class='$ctrl.selectionMode === "any" ? "btn-success" : "btn-primary"'
-                     ng-model='$ctrl.selectionMode'
-                     uib-btn-radio='"any"') Any
-    label.btn.btn-xs(ng-class='$ctrl.selectionMode === "all" ? "btn-success" : "btn-primary"'
-                     ng-model='$ctrl.selectionMode'
-                     uib-btn-radio='"all"') All
+      ul.list-group
+        //- dl.dl-horizontal(ng-repeat='resource in $ctrl.resources' ng-show='([resource] | tagfilter : $ctrl.Tag.allTags : $ctrl.selectionMode).length > 0')
+        //- dl.dl-horizontal(ng-repeat='resource in $ctrl.filteredResources | tagfilter : $ctrl.Tag.allTags : $ctrl.selectionMode')
+        li.list-group-item(ng-repeat='resource in $ctrl.paginatedFilteredResources track by resource._id')
+          h3.text-warning {{ resource.title || 'empty' }}
+          br
+          //- span.text-muted(ng-show='user.email') EMail: {{user.email}}
+          //- span.text-muted(ng-show='user.github') GitHub:{{user.github.login}}
+          dl.dl-horizontal.text-left
+            //- dt ID:
+            //- dd {{ resource._id }}
+            dt Info:
+            dd
+              a(href='#',
+              editable-text='resource.info',
+              ng-model='resource.info',
+              onbeforesave="$ctrl.updateResource(resource, $data)")
+                | {{ resource.info || 'empty' }}
+            dt URL
+            dd
+              a(href='#',
+              editable-text='resource.url',
+              ng-model='resource.url',
+              onbeforesave="$ctrl.updateResource(resource, $data)")
+                | {{ resource.url || 'empty' }}
+              a(ng-href="{{resource.url}}", target="_blank", style="margin-left: 10px;")
+                | (Visit)
+            dt Tags
+            dd {{ resource.tags.join(', ') || 'empty' }}
+            dt Rating
+            dd
+              a(href='#',
+              editable-range='resource.rating',
+              e-step="1",
+              e-max="5",
+              ng-model='resource.rating',
+              onbeforesave="$ctrl.updateResource(resource, $data)")
+                | {{ resource.rating || (resource.rating === 0 ? 0 : 'empty') }}
+            dt Up Votes
+            dd {{ resource.upvotes }}
+            dt Down Votes
+            dd {{ resource.downvotes }}
 
-  h4 Displaying {{ $ctrl.paginatedFilteredResources.length || 0 }} out of {{ $ctrl.filteredResources.length || 0 }} matches.
-  hr
-
-  ul.list-group
-    //- dl.dl-horizontal(ng-repeat='resource in $ctrl.resources' ng-show='([resource] | tagfilter : $ctrl.Tag.allTags : $ctrl.selectionMode).length > 0')
-    //- dl.dl-horizontal(ng-repeat='resource in $ctrl.filteredResources | tagfilter : $ctrl.Tag.allTags : $ctrl.selectionMode')
-    li.list-group-item(ng-repeat='resource in $ctrl.paginatedFilteredResources track by resource._id')
-      h3.text-warning {{ resource.title || 'empty' }}
-      br
-      //- span.text-muted(ng-show='user.email') EMail: {{user.email}}
-      //- span.text-muted(ng-show='user.github') GitHub:{{user.github.login}}
-      dl.dl-horizontal
-        //- dt ID:
-        //- dd {{ resource._id }}
-        dt Info:
-        dd
-          a(href='#',
-          editable-text='resource.info',
-          ng-model='resource.info',
-          onbeforesave="$ctrl.updateResource(resource, $data)")
-            | {{ resource.info || 'empty' }}
-        dt URL
-        dd
-          a(href='#',
-          editable-text='resource.url',
-          ng-model='resource.url',
-          onbeforesave="$ctrl.updateResource(resource, $data)")
-            | {{ resource.url || 'empty' }}
-          a(ng-href="{{resource.url}}", target="_blank", style="margin-left: 10px;")
-            | (Visit)
-        dt Tags
-        dd {{ resource.tags.join(', ') || 'empty' }}
-        dt Rating
-        dd
-          a(href='#',
-          editable-range='resource.rating',
-          e-step="1",
-          e-max="5",
-          ng-model='resource.rating',
-          onbeforesave="$ctrl.updateResource(resource, $data)")
-            | {{ resource.rating || (resource.rating === 0 ? 0 : 'empty') }}
-        dt Up Votes
-        dd {{ resource.upvotes }}
-        dt Down Votes
-        dd {{ resource.downvotes }}
-
-        h4.text-info GitHub Meta
-
-        dd(ng-show='resource.github')
-          dt Created At
-          dd {{ resource.github.created_at | date : 'medium' }}
-          dt Updated At
-          dd {{ resource.github.updated_at | date : 'medium' }}
-          dt Open Issues
-          dd {{ resource.github.open_issues_count }}
-          dt Forks
-          dd {{ resource.github.forks_count }}
+            div(ng-show='resource.github')
+              h4.text-info.text-center GitHub Meta
+              dd
+                dt Created At
+                dd {{ resource.github.created_at | date : 'medium' }}
+                dt Updated At
+                dd {{ resource.github.updated_at | date : 'medium' }}
+                dt Open Issues
+                dd {{ resource.github.open_issues_count }}
+                dt Forks
+                dd {{ resource.github.forks_count }}
