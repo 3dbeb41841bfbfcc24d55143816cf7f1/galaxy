@@ -28,6 +28,7 @@ function splitCommaSepStr(str) {
 }
 
 function repoToResourceObject(repo, org) {
+  // console.log('repo:', repo);
   let tags = [];
   let info = repo.description;
 
@@ -66,18 +67,20 @@ function writeToFile(fileName, data) {
   });
 }
 
-let repos = []
-let pager = function(res) {
-   repos = repos.concat(res)
-   if (github.hasNextPage(res)) {
-     return github.getNextPage(res).then(pager)
-   }
-   return repos
-};
+function makePager() {
+  let repos = [];
+  return function pager(res) {
+    repos = repos.concat(res);
+    if (github.hasNextPage(res)) {
+      return github.getNextPage(res).then(pager);
+    }
+    return repos;
+  };
+}
 
-orgs.forEach( org => {
-  github.repos.getForOrg({ org: org })
-  .then(pager)
+function exportReposForOrg(org) {
+  return github.repos.getForOrg({ org: org })
+  .then(makePager())
   .then( repos => {
     console.log(`Org ${org} has ${repos.length} repos.`);
     // console.log('first repo:', repos[0]);
@@ -89,4 +92,6 @@ orgs.forEach( org => {
     // console.log('reposAsResources:', reposAsResources);
     writeToFile('../../data/' + org.toLowerCase() + '.json', reposAsResources);
   });
-});
+}
+
+orgs.forEach( org => exportReposForOrg(org) );
