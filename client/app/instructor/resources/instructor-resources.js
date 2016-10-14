@@ -14,15 +14,9 @@
 
       this.selectionMode = 'any';
 
-      let vm = this;
-      $scope.$watch(
-        function watchSelectionMode(scope) {
-          return vm.selectionMode;
-        },
-        function handleChangeToSelectionMode(newValue, oldValue) {
-          vm.filterResources();
-        }
-      );
+      $scope.$watch( (scope) => this.selectionMode,
+                     (newValue, oldValue) => this.filterResources()
+                   );
 
       // TODO: handle newly created cohorts
       this.loadResources();
@@ -35,6 +29,9 @@
         console.time('adding tags');
         resources.forEach( resource => this.Tag.addTags(resource.tags) );
         console.timeEnd('adding tags');
+        this.pageSize = 10;
+        this.currentPage = 1;
+        this.beginIndex = 0;
         this.filterResources();
       });
     }
@@ -63,8 +60,22 @@
       this.filteredResources = this.$filter('tagfilter')(this.resources,
                                                          this.Tag.allTags,
                                                          this.selectionMode);
-      this.paginatedFilteredResources = this.$filter('limitTo')(this.filteredResources, 30);
+      this.updatePage();
       console.timeEnd('filtering resources');
+    }
+
+    updatePage() {
+      this.paginatedFilteredResources = this.$filter('limitTo')(this.filteredResources,
+                                                                this.pageSize,
+                                                                this.getBeginIndex());
+    }
+
+    getBeginIndex() {
+      return this.filteredResources.length === 0 ? -1 : (this.currentPage-1) * this.pageSize;
+    }
+
+    getEndIndex() {
+      return Math.min(this.filteredResources.length, this.currentPage * this.pageSize) - 1;
     }
 
     countTagInFilteredResults(tag) {
