@@ -11,28 +11,6 @@
                                  popover-title='Help'
                                  style="margin-left: 10px;") Help...
   .row
-    .col-md-3
-      div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
-        label Mode:
-        .btn-group(role='group' style="margin-left: 20px")
-          label.btn.btn-xs(ng-class='$ctrl.selectionMode === "any" ? "btn-success" : "btn-primary"'
-                           ng-model='$ctrl.selectionMode'
-                           uib-btn-radio='"any"') Any
-          label.btn.btn-xs(ng-class='$ctrl.selectionMode === "all" ? "btn-success" : "btn-primary"'
-                           ng-model='$ctrl.selectionMode'
-                           uib-btn-radio='"all"') All
-          label.btn.btn-xs.btn-primary(ng-click='$ctrl.resetMode()') Reset
-
-      .btn-group-vertical(role='group' style="margin-top: 10px;")
-        button.btn.btn-sm(ng-repeat='tag in $ctrl.getTags() | orderBy: "name"'
-                          ng-class='$ctrl.getClassForTag(tag)'
-                          ng-click='$ctrl.toggleTag(tag)')
-          | {{tag.name}}
-          //- span.badge(ng-show='$ctrl.countTagInFilteredResults(tag)' style='margin-left: 10px')
-          //-   | {{ $ctrl.countTagInFilteredResults(tag) }}
-          span.label.label-warning.label-as-badge(ng-show='$ctrl.countTagInFilteredResults(tag)' style='margin-left: 10px')
-            | {{ $ctrl.countTagInFilteredResults(tag) }}
-
     .col-md-9
       h4 Displaying matches {{ $ctrl.getBeginIndex() + 1 }} to {{ $ctrl.getEndIndex() + 1 }} out of {{ $ctrl.filteredResources.length || 0 }} matches.
       //- pre {{ $ctrl.currentPage }} - {{ $ctrl.pageSize }} - {{ ($ctrl.currentPage-1) * $ctrl.pageSize }}
@@ -99,3 +77,25 @@
                 dd {{ resource.github.open_issues_count }}
                 dt Forks
                 dd {{ resource.github.forks_count }}
+
+    .col-md-3
+      div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
+        label Mode:
+        .btn-group(role='group' style="margin-left: 20px")
+          label.btn.btn-xs(ng-class='$ctrl.selectionMode === "any" ? "btn-success" : "btn-primary"'
+                           ng-model='$ctrl.selectionMode'
+                           uib-btn-radio='"any"') Any
+          label.btn.btn-xs(ng-class='$ctrl.selectionMode === "all" ? "btn-success" : "btn-primary"'
+                           ng-model='$ctrl.selectionMode'
+                           uib-btn-radio='"all"') All
+          label.btn.btn-xs.btn-primary(ng-click='$ctrl.resetMode()') Reset
+
+      .btn-group-vertical(role='group' style="margin-top: 10px;")
+        button.btn.btn-sm(ng-repeat='tag in $ctrl.getTags() | orderBy: "name"'
+                          ng-class='$ctrl.getClassForTag(tag)'
+                          ng-click='$ctrl.toggleTag(tag)')
+          | {{tag.name}}
+          //- span.badge(ng-show='$ctrl.countTagInFilteredResults(tag)' style='margin-left: 10px')
+          //-   | {{ $ctrl.countTagInFilteredResults(tag) }}
+          span.label.label-warning.label-as-badge(ng-show='$ctrl.countTagInFilteredResults(tag)' style='margin-left: 10px')
+            | {{ $ctrl.countTagInFilteredResults(tag) }}
