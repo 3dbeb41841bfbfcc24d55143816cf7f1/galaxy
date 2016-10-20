@@ -42,6 +42,7 @@ angular.module('galaxyApp')
     }
   })
   .state({
+<<<<<<< HEAD
     name: 'instructor.projects',
     url: '/projects',
     template: '<instructor-projects></instructor-projects>',
@@ -50,6 +51,8 @@ angular.module('galaxyApp')
     }
   })
   .state({
+=======
+>>>>>>> 20e27bad53e28221243f49f61ace06d5f850b7a7
     name: 'instructor.quizzes',
     url: '/quizzes',
     template: '<instructor-quizzes></instructor-quizzes>',
