@@ -12,23 +12,29 @@
       this.$log = $log;
       this.$filter = $filter;
 
-      this.selectionMode = 'any';
+      this.selectionMode = 'union';
+      this.resourceTextFilter = '';
 
-      $scope.$watch( (scope) => this.selectionMode,
-                     (newValue, oldValue) => this.filterResources()
+      $scope.$watch( () => this.selectionMode,
+                     () => this.filterResources()
                    );
 
-      // TODO: handle newly created cohorts
+      $scope.$watch( () => this.resourceTextFilter,
+                     () => this.filterResources()
+                   );
+
+      // TODO: handle newly created resources
       this.loadResources();
     }
 
-    resetMode() {
-      this.selectionMode = 'any';
+    resetFiltering() {
+      this.resourceTextFilter = '';
+      this.selectionMode = 'union';
       this.Tag.allTags.forEach( tag => tag.mode = 'neutral' );
     }
 
     getTags() {
-      return this.selectionMode === 'any' ?
+      return this.selectionMode === 'union' ?
              this.Tag.allTags :
              this.Tag.allTags.filter( tag => tag.mode !== 'neutral' || this.countTagInFilteredResults(tag) > 0);
     }
@@ -71,6 +77,12 @@
       this.filteredResources = this.$filter('tagfilter')(this.resources,
                                                          this.Tag.allTags,
                                                          this.selectionMode);
+      if (this.resourceTextFilter) {
+        this.filteredResources = this.$filter('filter')(this.filteredResources,
+                                                        this.resourceTextFilter,
+                                                        false // comparator
+                                                      /* , anyPropertyKey */ )
+      }
       this.updatePage();
       console.timeEnd('filtering resources');
     }

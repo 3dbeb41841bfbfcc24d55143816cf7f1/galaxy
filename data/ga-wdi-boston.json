@@ -114,8 +114,8 @@
       "id": 43747911,
       "created_at": "2015-10-06T12:03:35Z",
       "updated_at": "2016-10-11T20:41:22Z",
-      "open_issues_count": 15,
-      "forks_count": 56
+      "open_issues_count": 16,
+      "forks_count": 57
     }
   },
   {
@@ -336,7 +336,7 @@
       "created_at": "2016-03-17T16:50:59Z",
       "updated_at": "2016-03-17T16:50:59Z",
       "open_issues_count": 3,
-      "forks_count": 43
+      "forks_count": 62
     }
   },
   {
@@ -353,7 +353,7 @@
       "created_at": "2016-03-17T16:51:14Z",
       "updated_at": "2016-03-17T16:51:14Z",
       "open_issues_count": 5,
-      "forks_count": 40
+      "forks_count": 41
     }
   },
   {
@@ -371,23 +371,6 @@
       "updated_at": "2016-05-24T12:51:30Z",
       "open_issues_count": 3,
       "forks_count": 66
-    }
-  },
-  {
-    "title": "css-layout-positioning-08",
-    "info": "CSS Positioning",
-    "url": "https://github.com/ga-wdi-boston/css-layout-positioning-08",
-    "tags": [
-      "ga",
-      "wdi",
-      "ga-wdi-boston"
-    ],
-    "github": {
-      "id": 35038244,
-      "created_at": "2015-05-04T14:04:46Z",
-      "updated_at": "2015-06-28T21:29:33Z",
-      "open_issues_count": 1,
-      "forks_count": 8
     }
   },
   {
@@ -471,7 +454,7 @@
       "id": 50840865,
       "created_at": "2016-02-01T13:23:58Z",
       "updated_at": "2016-02-01T13:23:58Z",
-      "open_issues_count": 2,
+      "open_issues_count": 4,
       "forks_count": 2
     }
   },
@@ -539,8 +522,8 @@
       "id": 47384376,
       "created_at": "2015-12-04T05:54:46Z",
       "updated_at": "2016-08-05T06:53:39Z",
-      "open_issues_count": 8,
-      "forks_count": 64
+      "open_issues_count": 9,
+      "forks_count": 65
     }
   },
   {
@@ -760,7 +743,7 @@
       "id": 47704333,
       "created_at": "2015-12-09T16:36:14Z",
       "updated_at": "2016-03-20T23:13:30Z",
-      "open_issues_count": 12,
+      "open_issues_count": 13,
       "forks_count": 73
     }
   },
@@ -964,8 +947,8 @@
       "id": 47567473,
       "created_at": "2015-12-07T17:18:07Z",
       "updated_at": "2016-08-14T18:49:14Z",
-      "open_issues_count": 5,
-      "forks_count": 18
+      "open_issues_count": 6,
+      "forks_count": 19
     }
   },
   {
@@ -1066,8 +1049,8 @@
       "id": 53265207,
       "created_at": "2016-03-06T16:45:08Z",
       "updated_at": "2016-10-12T14:59:42Z",
-      "open_issues_count": 12,
-      "forks_count": 24
+      "open_issues_count": 14,
+      "forks_count": 25
     }
   },
   {
@@ -1168,7 +1151,7 @@
       "id": 53548341,
       "created_at": "2016-03-10T02:28:56Z",
       "updated_at": "2016-05-12T14:13:39Z",
-      "open_issues_count": 9,
+      "open_issues_count": 10,
       "forks_count": 74
     }
   },
@@ -1287,8 +1270,8 @@
       "id": 49525709,
       "created_at": "2016-01-12T20:05:24Z",
       "updated_at": "2016-08-22T19:15:13Z",
-      "open_issues_count": 1,
-      "forks_count": 86
+      "open_issues_count": 2,
+      "forks_count": 111
     }
   },
   {
@@ -1320,7 +1303,7 @@
     "github": {
       "id": 43710813,
       "created_at": "2015-10-05T20:08:36Z",
-      "updated_at": "2016-09-08T13:55:24Z",
+      "updated_at": "2016-10-24T17:04:20Z",
       "open_issues_count": 2,
       "forks_count": 46
     }
@@ -1372,7 +1355,7 @@
       "id": 55244461,
       "created_at": "2016-04-01T15:57:08Z",
       "updated_at": "2016-04-01T15:57:08Z",
-      "open_issues_count": 22,
+      "open_issues_count": 3,
       "forks_count": 66
     }
   },
@@ -1388,8 +1371,8 @@
     "github": {
       "id": 63422589,
       "created_at": "2016-07-15T13:06:41Z",
-      "updated_at": "2016-08-29T20:09:45Z",
-      "open_issues_count": 4,
+      "updated_at": "2016-10-24T16:02:56Z",
+      "open_issues_count": 2,
       "forks_count": 5
     }
   },
@@ -1406,8 +1389,8 @@
       "id": 37847396,
       "created_at": "2015-06-22T09:35:36Z",
       "updated_at": "2016-01-12T19:43:01Z",
-      "open_issues_count": 2,
-      "forks_count": 21
+      "open_issues_count": 3,
+      "forks_count": 23
     }
   },
   {
@@ -1440,8 +1423,8 @@
       "id": 43326185,
       "created_at": "2015-09-28T20:49:01Z",
       "updated_at": "2016-01-12T15:16:31Z",
-      "open_issues_count": 1,
-      "forks_count": 109
+      "open_issues_count": 3,
+      "forks_count": 133
     }
   },
   {
@@ -1474,8 +1457,8 @@
       "id": 43333488,
       "created_at": "2015-09-28T23:46:10Z",
       "updated_at": "2016-03-21T02:50:10Z",
-      "open_issues_count": 6,
-      "forks_count": 7
+      "open_issues_count": 5,
+      "forks_count": 9
     }
   },
   {
@@ -1509,7 +1492,24 @@
       "created_at": "2015-09-28T12:05:21Z",
       "updated_at": "2016-05-10T17:59:30Z",
       "open_issues_count": 3,
-      "forks_count": 15
+      "forks_count": 17
+    }
+  },
+  {
+    "title": "git-github-practice",
+    "info": "Step by step for fork, clone, edit, add, commit, push, pull ",
+    "url": "https://github.com/ga-wdi-boston/git-github-practice",
+    "tags": [
+      "ga",
+      "wdi",
+      "ga-wdi-boston"
+    ],
+    "github": {
+      "id": 34796597,
+      "created_at": "2015-04-29T13:52:45Z",
+      "updated_at": "2016-10-19T14:19:25Z",
+      "open_issues_count": 7,
+      "forks_count": 7
     }
   },
   {
@@ -1576,7 +1576,7 @@
       "id": 46541556,
       "created_at": "2015-11-20T05:29:19Z",
       "updated_at": "2016-05-17T20:53:44Z",
-      "open_issues_count": 6,
+      "open_issues_count": 9,
       "forks_count": 11
     }
   },
@@ -1611,7 +1611,7 @@
       "created_at": "2016-02-24T14:37:04Z",
       "updated_at": "2016-02-24T14:38:15Z",
       "open_issues_count": 10,
-      "forks_count": 81
+      "forks_count": 80
     }
   },
   {
@@ -1678,8 +1678,8 @@
       "id": 43695193,
       "created_at": "2015-10-05T15:41:02Z",
       "updated_at": "2016-05-20T20:06:25Z",
-      "open_issues_count": 4,
-      "forks_count": 107
+      "open_issues_count": 6,
+      "forks_count": 128
     }
   },
   {
@@ -1695,7 +1695,7 @@
       "id": 43823091,
       "created_at": "2015-10-07T14:53:17Z",
       "updated_at": "2016-01-27T13:50:13Z",
-      "open_issues_count": 23,
+      "open_issues_count": 1,
       "forks_count": 86
     }
   },
@@ -1712,7 +1712,7 @@
       "id": 43799866,
       "created_at": "2015-10-07T07:01:07Z",
       "updated_at": "2016-07-31T12:49:35Z",
-      "open_issues_count": 7,
+      "open_issues_count": 3,
       "forks_count": 78
     }
   },
@@ -1730,7 +1730,7 @@
       "created_at": "2015-07-06T12:04:02Z",
       "updated_at": "2016-07-31T13:18:48Z",
       "open_issues_count": 5,
-      "forks_count": 97
+      "forks_count": 98
     }
   },
   {
@@ -1763,7 +1763,7 @@
       "id": 43914382,
       "created_at": "2015-10-08T20:23:27Z",
       "updated_at": "2016-01-21T16:30:44Z",
-      "open_issues_count": 24,
+      "open_issues_count": 2,
       "forks_count": 64
     }
   },
@@ -1849,7 +1849,7 @@
       "created_at": "2015-01-17T06:48:40Z",
       "updated_at": "2016-01-27T21:48:59Z",
       "open_issues_count": 22,
-      "forks_count": 118
+      "forks_count": 117
     }
   },
   {
@@ -1984,7 +1984,7 @@
       "id": 50840816,
       "created_at": "2016-02-01T13:22:55Z",
       "updated_at": "2016-02-01T13:22:55Z",
-      "open_issues_count": 24,
+      "open_issues_count": 25,
       "forks_count": 81
     }
   },
@@ -2069,7 +2069,7 @@
       "id": 38372182,
       "created_at": "2015-07-01T13:19:20Z",
       "updated_at": "2016-01-21T17:26:24Z",
-      "open_issues_count": 7,
+      "open_issues_count": 8,
       "forks_count": 70
     }
   },
@@ -2103,7 +2103,7 @@
       "id": 50441105,
       "created_at": "2016-01-26T16:14:15Z",
       "updated_at": "2016-01-26T17:28:14Z",
-      "open_issues_count": 23,
+      "open_issues_count": 1,
       "forks_count": 68
     }
   },
@@ -2307,8 +2307,8 @@
       "id": 43660683,
       "created_at": "2015-10-05T01:56:34Z",
       "updated_at": "2016-01-25T02:14:04Z",
-      "open_issues_count": 4,
-      "forks_count": 100
+      "open_issues_count": 7,
+      "forks_count": 121
     }
   },
   {
@@ -2324,7 +2324,7 @@
       "id": 43658172,
       "created_at": "2015-10-05T00:25:39Z",
       "updated_at": "2016-01-24T19:32:54Z",
-      "open_issues_count": 6,
+      "open_issues_count": 10,
       "forks_count": 75
     }
   },
@@ -2341,7 +2341,7 @@
       "id": 44049875,
       "created_at": "2015-10-11T11:41:53Z",
       "updated_at": "2016-03-30T19:22:36Z",
-      "open_issues_count": 26,
+      "open_issues_count": 3,
       "forks_count": 93
     }
   },
@@ -2358,8 +2358,8 @@
       "id": 43336899,
       "created_at": "2015-09-29T01:15:53Z",
       "updated_at": "2016-07-31T12:55:18Z",
-      "open_issues_count": 3,
-      "forks_count": 112
+      "open_issues_count": 5,
+      "forks_count": 135
     }
   },
   {
@@ -2375,8 +2375,8 @@
       "id": 43336051,
       "created_at": "2015-09-29T00:55:40Z",
       "updated_at": "2016-01-12T16:26:26Z",
-      "open_issues_count": 3,
-      "forks_count": 109
+      "open_issues_count": 6,
+      "forks_count": 132
     }
   },
   {
@@ -2392,8 +2392,8 @@
       "id": 49597337,
       "created_at": "2016-01-13T19:43:59Z",
       "updated_at": "2016-01-22T03:13:19Z",
-      "open_issues_count": 18,
-      "forks_count": 85
+      "open_issues_count": 12,
+      "forks_count": 108
     }
   },
   {
@@ -2563,7 +2563,7 @@
       "created_at": "2015-08-11T13:13:46Z",
       "updated_at": "2016-08-25T13:51:29Z",
       "open_issues_count": 22,
-      "forks_count": 112
+      "forks_count": 132
     }
   },
   {
@@ -2579,13 +2579,13 @@
       "id": 37874304,
       "created_at": "2015-06-22T18:51:29Z",
       "updated_at": "2016-01-24T20:28:18Z",
-      "open_issues_count": 12,
-      "forks_count": 109
+      "open_issues_count": 15,
+      "forks_count": 129
     }
   },
   {
     "title": "js-functions-ins-and-outs-diagnostic",
-    "info": "Assessment JavaScript Functions - \"Ins & Outs\"",
+    "info": "JavaScript Functions - \"Ins & Outs\" Diagnostic",
     "url": "https://github.com/ga-wdi-boston/js-functions-ins-and-outs-diagnostic",
     "tags": [
       "ga",
@@ -2595,9 +2595,9 @@
     "github": {
       "id": 43652662,
       "created_at": "2015-10-04T21:02:56Z",
-      "updated_at": "2016-01-20T19:42:09Z",
-      "open_issues_count": 26,
-      "forks_count": 111
+      "updated_at": "2016-10-24T13:14:47Z",
+      "open_issues_count": 20,
+      "forks_count": 131
     }
   },
   {
@@ -2613,8 +2613,8 @@
       "id": 50296443,
       "created_at": "2016-01-24T16:30:38Z",
       "updated_at": "2016-01-24T16:30:38Z",
-      "open_issues_count": 2,
-      "forks_count": 64
+      "open_issues_count": 24,
+      "forks_count": 85
     }
   },
   {
@@ -2698,8 +2698,8 @@
       "id": 43776779,
       "created_at": "2015-10-06T20:31:27Z",
       "updated_at": "2016-01-25T21:32:42Z",
-      "open_issues_count": 5,
-      "forks_count": 57
+      "open_issues_count": 7,
+      "forks_count": 77
     }
   },
   {
@@ -2766,7 +2766,7 @@
       "id": 40207403,
       "created_at": "2015-08-04T20:27:22Z",
       "updated_at": "2016-03-04T21:13:55Z",
-      "open_issues_count": 17,
+      "open_issues_count": 18,
       "forks_count": 92
     }
   },
@@ -2818,7 +2818,7 @@
       "created_at": "2015-10-05T13:25:36Z",
       "updated_at": "2016-01-12T15:48:50Z",
       "open_issues_count": 10,
-      "forks_count": 109
+      "forks_count": 130
     }
   },
   {
@@ -2834,8 +2834,8 @@
       "id": 43454453,
       "created_at": "2015-09-30T19:32:11Z",
       "updated_at": "2016-01-12T16:24:51Z",
-      "open_issues_count": 25,
-      "forks_count": 109
+      "open_issues_count": 15,
+      "forks_count": 130
     }
   },
   {
@@ -2868,8 +2868,8 @@
       "id": 43454379,
       "created_at": "2015-09-30T19:31:03Z",
       "updated_at": "2016-07-06T13:43:11Z",
-      "open_issues_count": 4,
-      "forks_count": 98
+      "open_issues_count": 3,
+      "forks_count": 121
     }
   },
   {
@@ -2885,8 +2885,8 @@
       "id": 49589099,
       "created_at": "2016-01-13T17:14:52Z",
       "updated_at": "2016-01-22T14:34:23Z",
-      "open_issues_count": 3,
-      "forks_count": 86
+      "open_issues_count": 4,
+      "forks_count": 107
     }
   },
   {
@@ -2902,8 +2902,8 @@
       "id": 43750201,
       "created_at": "2015-10-06T12:48:38Z",
       "updated_at": "2016-01-21T17:57:12Z",
-      "open_issues_count": 14,
-      "forks_count": 110
+      "open_issues_count": 11,
+      "forks_count": 133
     }
   },
   {
@@ -2919,25 +2919,8 @@
       "id": 49510566,
       "created_at": "2016-01-12T15:50:33Z",
       "updated_at": "2016-01-22T02:50:17Z",
-      "open_issues_count": 5,
-      "forks_count": 75
-    }
-  },
-  {
-    "title": "js-objects-this-08",
-    "info": "Using `this` for the first time.",
-    "url": "https://github.com/ga-wdi-boston/js-objects-this-08",
-    "tags": [
-      "ga",
-      "wdi",
-      "ga-wdi-boston"
-    ],
-    "github": {
-      "id": 37996400,
-      "created_at": "2015-06-24T16:24:50Z",
-      "updated_at": "2015-06-26T16:19:40Z",
-      "open_issues_count": 1,
-      "forks_count": 12
+      "open_issues_count": 8,
+      "forks_count": 96
     }
   },
   {
@@ -2970,8 +2953,8 @@
       "id": 43402701,
       "created_at": "2015-09-30T00:40:34Z",
       "updated_at": "2016-01-24T20:13:10Z",
-      "open_issues_count": 6,
-      "forks_count": 110
+      "open_issues_count": 12,
+      "forks_count": 133
     }
   },
   {
@@ -2987,8 +2970,8 @@
       "id": 49585262,
       "created_at": "2016-01-13T16:12:44Z",
       "updated_at": "2016-03-22T13:43:34Z",
-      "open_issues_count": 24,
-      "forks_count": 68
+      "open_issues_count": 3,
+      "forks_count": 90
     }
   },
   {
@@ -3004,8 +2987,8 @@
       "id": 43519065,
       "created_at": "2015-10-01T20:24:10Z",
       "updated_at": "2016-01-12T15:34:54Z",
-      "open_issues_count": 8,
-      "forks_count": 112
+      "open_issues_count": 21,
+      "forks_count": 136
     }
   },
   {
@@ -3072,8 +3055,8 @@
       "id": 54518321,
       "created_at": "2016-03-23T00:27:52Z",
       "updated_at": "2016-03-23T15:10:56Z",
-      "open_issues_count": 1,
-      "forks_count": 67
+      "open_issues_count": 23,
+      "forks_count": 89
     }
   },
   {
@@ -3159,6 +3142,23 @@
       "updated_at": "2016-10-12T18:50:43Z",
       "open_issues_count": 3,
       "forks_count": 70
+    }
+  },
+  {
+    "title": "library-api-walkthrough",
+    "info": null,
+    "url": "https://github.com/ga-wdi-boston/library-api-walkthrough",
+    "tags": [
+      "ga",
+      "wdi",
+      "ga-wdi-boston"
+    ],
+    "github": {
+      "id": 71017689,
+      "created_at": "2016-10-15T22:45:45Z",
+      "updated_at": "2016-10-15T22:45:45Z",
+      "open_issues_count": 1,
+      "forks_count": 0
     }
   },
   {
@@ -3565,7 +3565,7 @@
       "id": 52820120,
       "created_at": "2016-02-29T19:56:54Z",
       "updated_at": "2016-04-13T18:37:53Z",
-      "open_issues_count": 11,
+      "open_issues_count": 12,
       "forks_count": 43
     }
   },
@@ -3599,8 +3599,8 @@
       "id": 43747882,
       "created_at": "2015-10-06T12:02:52Z",
       "updated_at": "2016-02-09T04:19:54Z",
-      "open_issues_count": 0,
-      "forks_count": 10
+      "open_issues_count": 5,
+      "forks_count": 12
     }
   },
   {
@@ -3633,8 +3633,8 @@
       "id": 43072447,
       "created_at": "2015-09-24T14:38:16Z",
       "updated_at": "2016-10-03T19:04:20Z",
-      "open_issues_count": 39,
-      "forks_count": 50
+      "open_issues_count": 42,
+      "forks_count": 74
     }
   },
   {
@@ -3803,7 +3803,7 @@
       "id": 43726820,
       "created_at": "2015-10-06T02:55:18Z",
       "updated_at": "2016-01-21T15:52:54Z",
-      "open_issues_count": 3,
+      "open_issues_count": 4,
       "forks_count": 34
     }
   },
@@ -3820,7 +3820,7 @@
       "id": 50118248,
       "created_at": "2016-01-21T15:55:04Z",
       "updated_at": "2016-01-21T15:55:13Z",
-      "open_issues_count": 3,
+      "open_issues_count": 1,
       "forks_count": 23
     }
   },
@@ -4397,7 +4397,7 @@
     "github": {
       "id": 52012270,
       "created_at": "2016-02-18T14:17:20Z",
-      "updated_at": "2016-10-11T20:42:27Z",
+      "updated_at": "2016-10-16T13:18:59Z",
       "open_issues_count": 7,
       "forks_count": 47
     }
@@ -5061,7 +5061,7 @@
       "id": 28931199,
       "created_at": "2015-01-07T19:54:23Z",
       "updated_at": "2016-02-06T19:44:21Z",
-      "open_issues_count": 3,
+      "open_issues_count": 2,
       "forks_count": 15
     }
   },
@@ -5351,7 +5351,7 @@
       "created_at": "2015-07-15T15:43:53Z",
       "updated_at": "2016-02-16T17:59:11Z",
       "open_issues_count": 4,
-      "forks_count": 120
+      "forks_count": 121
     }
   },
   {
@@ -5571,8 +5571,8 @@
       "id": 43164228,
       "created_at": "2015-09-25T17:25:17Z",
       "updated_at": "2016-07-01T17:37:31Z",
-      "open_issues_count": 3,
-      "forks_count": 34
+      "open_issues_count": 4,
+      "forks_count": 37
     }
   },
   {
@@ -5588,8 +5588,8 @@
       "id": 43322354,
       "created_at": "2015-09-28T19:32:49Z",
       "updated_at": "2016-07-01T17:37:31Z",
-      "open_issues_count": 6,
-      "forks_count": 99
+      "open_issues_count": 9,
+      "forks_count": 122
     }
   },
   {
@@ -5709,23 +5709,6 @@
       "updated_at": "2014-03-11T21:28:42Z",
       "open_issues_count": 0,
       "forks_count": 0
-    }
-  },
-  {
-    "title": "wdi_1_git_quiz_script",
-    "info": "Step by step for fork, clone, edit, add, commit, push, pull ",
-    "url": "https://github.com/ga-wdi-boston/wdi_1_git_quiz_script",
-    "tags": [
-      "ga",
-      "wdi",
-      "ga-wdi-boston"
-    ],
-    "github": {
-      "id": 34796597,
-      "created_at": "2015-04-29T13:52:45Z",
-      "updated_at": "2015-04-29T19:29:50Z",
-      "open_issues_count": 0,
-      "forks_count": 7
     }
   },
   {
@@ -6099,7 +6082,7 @@
       "created_at": "2014-06-12T20:38:15Z",
       "updated_at": "2015-01-09T21:55:41Z",
       "open_issues_count": 1,
-      "forks_count": 65
+      "forks_count": 64
     }
   },
   {

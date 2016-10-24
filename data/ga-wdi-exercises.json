@@ -222,6 +222,23 @@
     }
   },
   {
+    "title": "angular-superheroes",
+    "info": null,
+    "url": "https://github.com/ga-wdi-exercises/angular-superheroes",
+    "tags": [
+      "ga",
+      "wdi",
+      "GA-WDI-Exercises"
+    ],
+    "github": {
+      "id": 71495279,
+      "created_at": "2016-10-20T19:08:07Z",
+      "updated_at": "2016-10-20T19:43:13Z",
+      "open_issues_count": 18,
+      "forks_count": 22
+    }
+  },
+  {
     "title": "angular-ui-router-stoplight",
     "info": "[angular, uirouter]",
     "url": "https://github.com/ga-wdi-exercises/angular-ui-router-stoplight",
@@ -314,8 +331,8 @@
     "github": {
       "id": 37615907,
       "created_at": "2015-06-17T19:21:59Z",
-      "updated_at": "2016-02-26T01:36:41Z",
-      "open_issues_count": 36,
+      "updated_at": "2016-10-17T23:41:39Z",
+      "open_issues_count": 14,
       "forks_count": 192
     }
   },
@@ -435,6 +452,23 @@
       "updated_at": "2016-02-02T23:46:26Z",
       "open_issues_count": 0,
       "forks_count": 0
+    }
+  },
+  {
+    "title": "bay-swatch",
+    "info": null,
+    "url": "https://github.com/ga-wdi-exercises/bay-swatch",
+    "tags": [
+      "ga",
+      "wdi",
+      "GA-WDI-Exercises"
+    ],
+    "github": {
+      "id": 71403265,
+      "created_at": "2016-10-19T22:07:22Z",
+      "updated_at": "2016-10-19T23:52:34Z",
+      "open_issues_count": 0,
+      "forks_count": 1
     }
   },
   {
@@ -745,7 +779,7 @@
       "id": 38573254,
       "created_at": "2015-07-05T15:10:46Z",
       "updated_at": "2016-02-02T23:46:28Z",
-      "open_issues_count": 21,
+      "open_issues_count": 0,
       "forks_count": 94
     }
   },
@@ -860,7 +894,7 @@
       "created_at": "2016-09-18T23:09:24Z",
       "updated_at": "2016-09-19T12:56:15Z",
       "open_issues_count": 1,
-      "forks_count": 24
+      "forks_count": 45
     }
   },
   {
@@ -1067,6 +1101,23 @@
       "updated_at": "2016-03-02T04:05:18Z",
       "open_issues_count": 1,
       "forks_count": 4
+    }
+  },
+  {
+    "title": "code_wars_snippets",
+    "info": null,
+    "url": "https://github.com/ga-wdi-exercises/code_wars_snippets",
+    "tags": [
+      "ga",
+      "wdi",
+      "GA-WDI-Exercises"
+    ],
+    "github": {
+      "id": 71416087,
+      "created_at": "2016-10-20T02:02:28Z",
+      "updated_at": "2016-10-20T02:02:28Z",
+      "open_issues_count": 0,
+      "forks_count": 3
     }
   },
   {
@@ -1912,7 +1963,7 @@
       "created_at": "2016-09-22T13:26:36Z",
       "updated_at": "2016-09-22T13:46:28Z",
       "open_issues_count": 0,
-      "forks_count": 1
+      "forks_count": 2
     }
   },
   {
@@ -1933,7 +1984,7 @@
       "created_at": "2016-09-22T13:19:34Z",
       "updated_at": "2016-09-22T13:26:51Z",
       "open_issues_count": 0,
-      "forks_count": 1
+      "forks_count": 3
     }
   },
   {
@@ -1953,7 +2004,7 @@
       "created_at": "2016-07-31T19:57:57Z",
       "updated_at": "2016-07-31T19:58:11Z",
       "open_issues_count": 0,
-      "forks_count": 2
+      "forks_count": 3
     }
   },
   {
@@ -2262,7 +2313,7 @@
       "created_at": "2016-05-27T05:20:29Z",
       "updated_at": "2016-05-27T05:20:43Z",
       "open_issues_count": 0,
-      "forks_count": 3
+      "forks_count": 4
     }
   },
   {
@@ -2518,7 +2569,7 @@
       "created_at": "2016-01-03T02:39:40Z",
       "updated_at": "2016-02-02T23:46:45Z",
       "open_issues_count": 12,
-      "forks_count": 33
+      "forks_count": 32
     }
   },
   {
@@ -2555,7 +2606,7 @@
       "created_at": "2015-12-08T20:27:51Z",
       "updated_at": "2016-02-02T23:46:46Z",
       "open_issues_count": 3,
-      "forks_count": 125
+      "forks_count": 146
     }
   },
   {
@@ -2879,7 +2930,7 @@
       "id": 47145720,
       "created_at": "2015-11-30T20:59:33Z",
       "updated_at": "2016-06-30T04:17:22Z",
-      "open_issues_count": 20,
+      "open_issues_count": 0,
       "forks_count": 117
     }
   },
@@ -3516,7 +3567,7 @@
       "created_at": "2015-06-26T21:26:40Z",
       "updated_at": "2016-02-11T13:13:08Z",
       "open_issues_count": 5,
-      "forks_count": 99
+      "forks_count": 100
     }
   },
   {
@@ -3591,7 +3642,7 @@
       "created_at": "2016-09-23T02:46:39Z",
       "updated_at": "2016-09-23T02:47:12Z",
       "open_issues_count": 0,
-      "forks_count": 23
+      "forks_count": 29
     }
   },
   {
@@ -3684,7 +3735,7 @@
       "id": 37464788,
       "created_at": "2015-06-15T12:50:10Z",
       "updated_at": "2016-05-23T18:19:40Z",
-      "open_issues_count": 8,
+      "open_issues_count": 1,
       "forks_count": 108
     }
   },
@@ -4407,7 +4458,7 @@
       "id": 37620394,
       "created_at": "2015-06-17T20:55:29Z",
       "updated_at": "2016-02-02T23:47:06Z",
-      "open_issues_count": 9,
+      "open_issues_count": 2,
       "forks_count": 72
     }
   },
@@ -5315,6 +5366,23 @@
     }
   },
   {
+    "title": "prework",
+    "info": null,
+    "url": "https://github.com/ga-wdi-exercises/prework",
+    "tags": [
+      "ga",
+      "wdi",
+      "GA-WDI-Exercises"
+    ],
+    "github": {
+      "id": 70945499,
+      "created_at": "2016-10-14T20:36:46Z",
+      "updated_at": "2016-10-14T20:36:46Z",
+      "open_issues_count": 1,
+      "forks_count": 0
+    }
+  },
+  {
     "title": "problem_modeling",
     "info": "List of problems to be solved [modeling]",
     "url": "https://github.com/ga-wdi-exercises/problem_modeling",
@@ -5380,8 +5448,8 @@
     "github": {
       "id": 37551869,
       "created_at": "2015-06-16T19:38:36Z",
-      "updated_at": "2016-06-01T15:42:53Z",
-      "open_issues_count": 3,
+      "updated_at": "2016-10-15T03:36:20Z",
+      "open_issues_count": 0,
       "forks_count": 56
     }
   },
@@ -5399,8 +5467,8 @@
       "id": 37552117,
       "created_at": "2015-06-16T19:43:43Z",
       "updated_at": "2016-07-05T02:03:15Z",
-      "open_issues_count": 0,
-      "forks_count": 24
+      "open_issues_count": 1,
+      "forks_count": 25
     }
   },
   {
@@ -5484,11 +5552,11 @@
   },
   {
     "title": "pyramid",
-    "info": "[basics, ruby]",
+    "info": "[basics, javascript]",
     "url": "https://github.com/ga-wdi-exercises/pyramid",
     "tags": [
       "basics",
-      "ruby",
+      "javascript",
       "ga",
       "wdi",
       "GA-WDI-Exercises"
@@ -5496,7 +5564,7 @@
     "github": {
       "id": 37596081,
       "created_at": "2015-06-17T13:18:55Z",
-      "updated_at": "2016-02-02T23:47:17Z",
+      "updated_at": "2016-10-24T15:10:06Z",
       "open_issues_count": 0,
       "forks_count": 30
     }
@@ -5534,7 +5602,7 @@
       "id": 64330521,
       "created_at": "2016-07-27T18:01:20Z",
       "updated_at": "2016-07-27T18:01:20Z",
-      "open_issues_count": 18,
+      "open_issues_count": 7,
       "forks_count": 8
     }
   },
@@ -6263,7 +6331,7 @@
       "created_at": "2015-06-15T12:55:55Z",
       "updated_at": "2016-02-02T23:47:19Z",
       "open_issues_count": 0,
-      "forks_count": 1
+      "forks_count": 0
     }
   },
   {
@@ -6462,7 +6530,7 @@
       "id": 39733014,
       "created_at": "2015-07-26T16:46:45Z",
       "updated_at": "2016-02-02T23:47:21Z",
-      "open_issues_count": 24,
+      "open_issues_count": 2,
       "forks_count": 160
     }
   },
@@ -6505,6 +6573,23 @@
     }
   },
   {
+    "title": "shaping-up-with-angular",
+    "info": null,
+    "url": "https://github.com/ga-wdi-exercises/shaping-up-with-angular",
+    "tags": [
+      "ga",
+      "wdi",
+      "GA-WDI-Exercises"
+    ],
+    "github": {
+      "id": 71490411,
+      "created_at": "2016-10-20T18:06:07Z",
+      "updated_at": "2016-10-20T18:06:07Z",
+      "open_issues_count": 23,
+      "forks_count": 0
+    }
+  },
+  {
     "title": "shopping_list",
     "info": "[basics, ruby]",
     "url": "https://github.com/ga-wdi-exercises/shopping_list",
@@ -6537,7 +6622,7 @@
       "id": 69809532,
       "created_at": "2016-10-02T16:57:31Z",
       "updated_at": "2016-10-02T16:57:46Z",
-      "open_issues_count": 7,
+      "open_issues_count": 0,
       "forks_count": 25
     }
   },
@@ -7020,7 +7105,7 @@
       "created_at": "2015-07-15T11:21:53Z",
       "updated_at": "2016-06-17T17:21:32Z",
       "open_issues_count": 0,
-      "forks_count": 87
+      "forks_count": 90
     }
   },
   {
@@ -7077,6 +7162,23 @@
       "updated_at": "2016-02-02T23:47:30Z",
       "open_issues_count": 0,
       "forks_count": 23
+    }
+  },
+  {
+    "title": "the-jquery-review",
+    "info": null,
+    "url": "https://github.com/ga-wdi-exercises/the-jquery-review",
+    "tags": [
+      "ga",
+      "wdi",
+      "GA-WDI-Exercises"
+    ],
+    "github": {
+      "id": 71175266,
+      "created_at": "2016-10-17T19:49:48Z",
+      "updated_at": "2016-10-17T19:50:27Z",
+      "open_issues_count": 0,
+      "forks_count": 1
     }
   },
   {
@@ -7454,7 +7556,7 @@
     "github": {
       "id": 40496940,
       "created_at": "2015-08-10T17:48:49Z",
-      "updated_at": "2016-02-02T23:47:35Z",
+      "updated_at": "2016-10-23T21:18:20Z",
       "open_issues_count": 0,
       "forks_count": 69
     }
@@ -7882,7 +7984,7 @@
       "created_at": "2015-06-17T13:26:44Z",
       "updated_at": "2016-02-02T23:47:39Z",
       "open_issues_count": 1,
-      "forks_count": 18
+      "forks_count": 19
     }
   },
   {
@@ -7901,7 +8003,7 @@
       "created_at": "2016-07-14T02:26:18Z",
       "updated_at": "2016-07-18T18:40:40Z",
       "open_issues_count": 0,
-      "forks_count": 2
+      "forks_count": 4
     }
   },
   {
@@ -8197,6 +8299,23 @@
       "updated_at": "2016-02-02T23:47:45Z",
       "open_issues_count": 0,
       "forks_count": 1
+    }
+  },
+  {
+    "title": "weather_underground_ajax",
+    "info": null,
+    "url": "https://github.com/ga-wdi-exercises/weather_underground_ajax",
+    "tags": [
+      "ga",
+      "wdi",
+      "GA-WDI-Exercises"
+    ],
+    "github": {
+      "id": 71728232,
+      "created_at": "2016-10-23T20:35:26Z",
+      "updated_at": "2016-10-23T20:41:59Z",
+      "open_issues_count": 0,
+      "forks_count": 0
     }
   },
   {

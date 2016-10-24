@@ -230,9 +230,10 @@
   },
   {
     "title": "big-goal-and-culture",
-    "info": null,
+    "info": "[classroom]",
     "url": "https://github.com/ATL-WDI-Curriculum/big-goal-and-culture",
     "tags": [
+      "classroom",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -240,7 +241,7 @@
     "github": {
       "id": 46446757,
       "created_at": "2015-11-18T20:52:04Z",
-      "updated_at": "2016-03-15T01:49:20Z",
+      "updated_at": "2016-10-24T15:16:34Z",
       "open_issues_count": 0,
       "forks_count": 1
     }
@@ -259,7 +260,7 @@
     "github": {
       "id": 63431370,
       "created_at": "2016-07-15T15:17:17Z",
-      "updated_at": "2016-01-21T18:03:56Z",
+      "updated_at": "2016-10-24T16:28:57Z",
       "open_issues_count": 0,
       "forks_count": 2
     }
@@ -283,9 +284,11 @@
   },
   {
     "title": "command-line",
-    "info": null,
+    "info": "Introduction to CLI, Terminal, Brew, Bash. [cli, bash]",
     "url": "https://github.com/ATL-WDI-Curriculum/command-line",
     "tags": [
+      "cli",
+      "bash",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -293,8 +296,8 @@
     "github": {
       "id": 46446766,
       "created_at": "2015-11-18T20:52:21Z",
-      "updated_at": "2016-03-15T15:21:35Z",
-      "open_issues_count": 0,
+      "updated_at": "2016-10-21T12:32:34Z",
+      "open_issues_count": 1,
       "forks_count": 5
     }
   },
@@ -317,9 +320,11 @@
   },
   {
     "title": "css-box-model",
-    "info": "Introduction to css box model",
+    "info": "Introduction to css box model. [css, box-model]",
     "url": "https://github.com/ATL-WDI-Curriculum/css-box-model",
     "tags": [
+      "css",
+      "box-model",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -327,17 +332,18 @@
     "github": {
       "id": 46446438,
       "created_at": "2015-11-18T20:46:37Z",
-      "updated_at": "2016-07-08T03:05:29Z",
+      "updated_at": "2016-10-21T12:37:44Z",
       "open_issues_count": 1,
       "forks_count": 3
     }
   },
   {
     "title": "css-flexbox",
-    "info": "[css]",
+    "info": "[css, flexbox]",
     "url": "https://github.com/ATL-WDI-Curriculum/css-flexbox",
     "tags": [
       "css",
+      "flexbox",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -345,14 +351,14 @@
     "github": {
       "id": 63431184,
       "created_at": "2016-07-15T15:14:32Z",
-      "updated_at": "2016-01-21T18:04:12Z",
+      "updated_at": "2016-10-21T12:45:00Z",
       "open_issues_count": 0,
       "forks_count": 0
     }
   },
   {
     "title": "css-intro",
-    "info": "[css]",
+    "info": "Intro. to CSS. [css]",
     "url": "https://github.com/ATL-WDI-Curriculum/css-intro",
     "tags": [
       "css",
@@ -363,7 +369,7 @@
     "github": {
       "id": 63253359,
       "created_at": "2016-07-13T14:31:53Z",
-      "updated_at": "2016-01-29T21:00:34Z",
+      "updated_at": "2016-10-21T12:38:19Z",
       "open_issues_count": 0,
       "forks_count": 0
     }
@@ -387,9 +393,12 @@
   },
   {
     "title": "css-responsive",
-    "info": "Lesson on making Responsive web sites with CSS using Media Queries and Flexbox",
+    "info": "Responsive web sites with CSS using Media Queries and Flexbox. [css, responsive, flexbox]",
     "url": "https://github.com/ATL-WDI-Curriculum/css-responsive",
     "tags": [
+      "css",
+      "responsive",
+      "flexbox",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -397,7 +406,7 @@
     "github": {
       "id": 63789935,
       "created_at": "2016-07-20T14:51:57Z",
-      "updated_at": "2016-07-20T14:51:57Z",
+      "updated_at": "2016-10-21T12:55:55Z",
       "open_issues_count": 0,
       "forks_count": 0
     }
@@ -439,9 +448,11 @@
   },
   {
     "title": "css-selectors",
-    "info": "Introduction to CSS Selectors and Pseudo-selectors.",
+    "info": "Introduction to CSS Selectors and Pseudo-selectors. [css, css-selectors]",
     "url": "https://github.com/ATL-WDI-Curriculum/css-selectors",
     "tags": [
+      "css",
+      "css-selectors",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -449,7 +460,7 @@
     "github": {
       "id": 63703158,
       "created_at": "2016-07-19T14:54:45Z",
-      "updated_at": "2016-07-19T14:54:45Z",
+      "updated_at": "2016-10-21T12:39:57Z",
       "open_issues_count": 0,
       "forks_count": 0
     }
@@ -559,9 +570,12 @@
   },
   {
     "title": "dom-manipulation-and-events",
-    "info": "DOM Manipulation and Events using vanilla JavaScript",
+    "info": "[javascript, dom, events]",
     "url": "https://github.com/ATL-WDI-Curriculum/dom-manipulation-and-events",
     "tags": [
+      "javascript",
+      "dom",
+      "events",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -569,8 +583,8 @@
     "github": {
       "id": 46446386,
       "created_at": "2015-11-18T20:45:42Z",
-      "updated_at": "2016-03-30T15:30:01Z",
-      "open_issues_count": 0,
+      "updated_at": "2016-10-24T16:42:44Z",
+      "open_issues_count": 1,
       "forks_count": 3
     }
   },
@@ -698,11 +712,14 @@
   },
   {
     "title": "git-branching",
-    "info": "[git,cli]",
+    "info": "[git, github, branching, version-control, tools]",
     "url": "https://github.com/ATL-WDI-Curriculum/git-branching",
     "tags": [
       "git",
-      "cli",
+      "github",
+      "branching",
+      "version-control",
+      "tools",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -710,16 +727,21 @@
     "github": {
       "id": 54129718,
       "created_at": "2016-03-17T15:31:55Z",
-      "updated_at": "2016-01-21T16:35:32Z",
+      "updated_at": "2016-10-24T16:30:30Z",
       "open_issues_count": 0,
       "forks_count": 3
     }
   },
   {
     "title": "git-branching-and-github-pages",
-    "info": null,
+    "info": "[git, github, tools, version-control, branching]",
     "url": "https://github.com/ATL-WDI-Curriculum/git-branching-and-github-pages",
     "tags": [
+      "git",
+      "github",
+      "tools",
+      "version-control",
+      "branching",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -727,7 +749,7 @@
     "github": {
       "id": 46446943,
       "created_at": "2015-11-18T20:55:55Z",
-      "updated_at": "2016-07-14T20:04:38Z",
+      "updated_at": "2016-10-21T12:56:39Z",
       "open_issues_count": 1,
       "forks_count": 3
     }
@@ -823,9 +845,12 @@
   },
   {
     "title": "homebrew",
-    "info": "A short lesson on installing and using the Homebrew package manager for Mac OSX.",
+    "info": "Installing and using the Homebrew package manager. [tools, brew, package-managers]",
     "url": "https://github.com/ATL-WDI-Curriculum/homebrew",
     "tags": [
+      "tools",
+      "brew",
+      "package-managers",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -833,7 +858,7 @@
     "github": {
       "id": 62754451,
       "created_at": "2016-07-06T21:26:51Z",
-      "updated_at": "2016-07-06T21:26:51Z",
+      "updated_at": "2016-10-21T12:33:54Z",
       "open_issues_count": 0,
       "forks_count": 0
     }
@@ -850,16 +875,18 @@
     "github": {
       "id": 49290749,
       "created_at": "2016-01-08T19:04:21Z",
-      "updated_at": "2016-07-14T20:04:38Z",
+      "updated_at": "2016-10-20T15:19:52Z",
       "open_issues_count": 0,
       "forks_count": 3
     }
   },
   {
     "title": "html-dom",
-    "info": null,
+    "info": "Intro to HTML and the DOM. [html, dom]",
     "url": "https://github.com/ATL-WDI-Curriculum/html-dom",
     "tags": [
+      "html",
+      "dom",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -867,7 +894,7 @@
     "github": {
       "id": 46446786,
       "created_at": "2015-11-18T20:52:42Z",
-      "updated_at": "2016-06-27T02:52:50Z",
+      "updated_at": "2016-10-21T12:37:00Z",
       "open_issues_count": 0,
       "forks_count": 4
     }
@@ -891,9 +918,11 @@
   },
   {
     "title": "javascript-control-flows",
-    "info": "Introduction to javascript control flows",
+    "info": "Introduction to javascript control flows. [javascript, control-flow]",
     "url": "https://github.com/ATL-WDI-Curriculum/javascript-control-flows",
     "tags": [
+      "javascript",
+      "control-flow",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -901,16 +930,19 @@
     "github": {
       "id": 46446585,
       "created_at": "2015-11-18T20:48:54Z",
-      "updated_at": "2016-03-17T16:07:23Z",
+      "updated_at": "2016-10-21T21:16:54Z",
       "open_issues_count": 1,
       "forks_count": 6
     }
   },
   {
     "title": "javascript-expressions",
-    "info": "Introduction to javascript expressions and data types",
+    "info": "[javascript, expressions, data-types]",
     "url": "https://github.com/ATL-WDI-Curriculum/javascript-expressions",
     "tags": [
+      "javascript",
+      "expressions",
+      "data-types",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -918,16 +950,19 @@
     "github": {
       "id": 46446547,
       "created_at": "2015-11-18T20:48:12Z",
-      "updated_at": "2016-03-24T14:46:16Z",
+      "updated_at": "2016-10-24T16:36:27Z",
       "open_issues_count": 0,
       "forks_count": 3
     }
   },
   {
     "title": "jquery",
-    "info": null,
+    "info": "[javascript, jquery, dom]",
     "url": "https://github.com/ATL-WDI-Curriculum/jquery",
     "tags": [
+      "javascript",
+      "jquery",
+      "dom",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -935,7 +970,7 @@
     "github": {
       "id": 46446407,
       "created_at": "2015-11-18T20:46:03Z",
-      "updated_at": "2016-03-30T21:38:46Z",
+      "updated_at": "2016-10-24T16:46:13Z",
       "open_issues_count": 0,
       "forks_count": 5
     }
@@ -959,9 +994,13 @@
   },
   {
     "title": "js-arrays-and-loops",
-    "info": null,
+    "info": "[javascript, arrays, loops, control-flow]",
     "url": "https://github.com/ATL-WDI-Curriculum/js-arrays-and-loops",
     "tags": [
+      "javascript",
+      "arrays",
+      "loops",
+      "control-flow",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -969,16 +1008,18 @@
     "github": {
       "id": 46446392,
       "created_at": "2015-11-18T20:45:49Z",
-      "updated_at": "2016-07-25T18:01:10Z",
+      "updated_at": "2016-10-21T21:19:01Z",
       "open_issues_count": 0,
       "forks_count": 2
     }
   },
   {
     "title": "js-codestyle",
-    "info": null,
+    "info": "[javascript, code-style]",
     "url": "https://github.com/ATL-WDI-Curriculum/js-codestyle",
     "tags": [
+      "javascript",
+      "code-style",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -986,16 +1027,18 @@
     "github": {
       "id": 46446430,
       "created_at": "2015-11-18T20:46:28Z",
-      "updated_at": "2016-03-28T18:04:33Z",
+      "updated_at": "2016-10-21T21:26:34Z",
       "open_issues_count": 1,
       "forks_count": 3
     }
   },
   {
     "title": "js-functions",
-    "info": null,
+    "info": "[javascript, functions]",
     "url": "https://github.com/ATL-WDI-Curriculum/js-functions",
     "tags": [
+      "javascript",
+      "functions",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -1003,18 +1046,19 @@
     "github": {
       "id": 46446442,
       "created_at": "2015-11-18T20:46:43Z",
-      "updated_at": "2016-07-14T20:04:39Z",
+      "updated_at": "2016-10-21T21:27:04Z",
       "open_issues_count": 0,
       "forks_count": 3
     }
   },
   {
     "title": "js-jquery",
-    "info": "[js,jquery]",
+    "info": "[javascript, jquery, dom]",
     "url": "https://github.com/ATL-WDI-Curriculum/js-jquery",
     "tags": [
-      "js",
+      "javascript",
       "jquery",
+      "dom",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -1022,16 +1066,19 @@
     "github": {
       "id": 54789748,
       "created_at": "2016-03-26T17:05:09Z",
-      "updated_at": "2016-01-21T16:35:50Z",
+      "updated_at": "2016-10-24T16:47:10Z",
       "open_issues_count": 0,
       "forks_count": 2
     }
   },
   {
     "title": "js-objects-and-json",
-    "info": null,
+    "info": "[javascript, objects, json]",
     "url": "https://github.com/ATL-WDI-Curriculum/js-objects-and-json",
     "tags": [
+      "javascript",
+      "objects",
+      "json",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -1039,17 +1086,19 @@
     "github": {
       "id": 46446463,
       "created_at": "2015-11-18T20:47:00Z",
-      "updated_at": "2016-03-29T18:00:43Z",
+      "updated_at": "2016-10-21T21:28:55Z",
       "open_issues_count": 1,
       "forks_count": 6
     }
   },
   {
     "title": "js-objects-functions",
-    "info": "[js,oop]",
+    "info": "[javascript, functions, objects, oop]",
     "url": "https://github.com/ATL-WDI-Curriculum/js-objects-functions",
     "tags": [
-      "js",
+      "javascript",
+      "functions",
+      "objects",
       "oop",
       "ga",
       "wdi",
@@ -1058,16 +1107,20 @@
     "github": {
       "id": 54793084,
       "created_at": "2016-03-26T18:23:01Z",
-      "updated_at": "2016-01-20T05:38:58Z",
+      "updated_at": "2016-10-21T21:28:00Z",
       "open_issues_count": 0,
       "forks_count": 2
     }
   },
   {
     "title": "local-and-remote-git",
-    "info": null,
+    "info": "[git, github, tools, version-control]",
     "url": "https://github.com/ATL-WDI-Curriculum/local-and-remote-git",
     "tags": [
+      "git",
+      "github",
+      "tools",
+      "version-control",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -1075,7 +1128,7 @@
     "github": {
       "id": 46447121,
       "created_at": "2015-11-18T20:59:46Z",
-      "updated_at": "2016-03-23T13:00:54Z",
+      "updated_at": "2016-10-21T12:54:46Z",
       "open_issues_count": 1,
       "forks_count": 5
     }
@@ -1099,9 +1152,15 @@
   },
   {
     "title": "mean-stack-intro",
-    "info": "An introduction to the MEAN Stack",
+    "info": "[javascript, mean, mongodb, express, angularjs, nodejs]",
     "url": "https://github.com/ATL-WDI-Curriculum/mean-stack-intro",
     "tags": [
+      "javascript",
+      "mean",
+      "mongodb",
+      "express",
+      "angularjs",
+      "nodejs",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -1109,7 +1168,7 @@
     "github": {
       "id": 50366118,
       "created_at": "2016-01-25T17:01:01Z",
-      "updated_at": "2016-03-15T15:34:29Z",
+      "updated_at": "2016-10-24T17:03:17Z",
       "open_issues_count": 0,
       "forks_count": 5
     }
@@ -1187,10 +1246,10 @@
   },
   {
     "title": "node-express-intro-lesson",
-    "info": "[node, express, server, javascript]",
+    "info": "[nodejs, express, server, javascript]",
     "url": "https://github.com/ATL-WDI-Curriculum/node-express-intro-lesson",
     "tags": [
-      "node",
+      "nodejs",
       "express",
       "server",
       "javascript",
@@ -1201,16 +1260,19 @@
     "github": {
       "id": 50374786,
       "created_at": "2016-01-25T19:23:03Z",
-      "updated_at": "2016-01-25T19:23:03Z",
+      "updated_at": "2016-10-24T17:05:03Z",
       "open_issues_count": 1,
       "forks_count": 5
     }
   },
   {
     "title": "node-intro",
-    "info": "Introduction to NodeJS",
+    "info": "[javascript, nodejs, server]",
     "url": "https://github.com/ATL-WDI-Curriculum/node-intro",
     "tags": [
+      "javascript",
+      "nodejs",
+      "server",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -1218,7 +1280,7 @@
     "github": {
       "id": 50403665,
       "created_at": "2016-01-26T04:38:37Z",
-      "updated_at": "2016-03-15T15:31:23Z",
+      "updated_at": "2016-10-24T17:08:04Z",
       "open_issues_count": 0,
       "forks_count": 3
     }
@@ -1279,9 +1341,11 @@
   },
   {
     "title": "projects",
-    "info": "Requirements for all of the WDI Projects.",
+    "info": "Requirements for all of the WDI Projects. [projects, requirements]",
     "url": "https://github.com/ATL-WDI-Curriculum/projects",
     "tags": [
+      "projects",
+      "requirements",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -1289,7 +1353,7 @@
     "github": {
       "id": 64144751,
       "created_at": "2016-07-25T15:09:45Z",
-      "updated_at": "2016-07-25T15:09:45Z",
+      "updated_at": "2016-10-24T16:39:26Z",
       "open_issues_count": 1,
       "forks_count": 1
     }
@@ -1673,9 +1737,13 @@
   },
   {
     "title": "scope-and-context",
-    "info": null,
+    "info": "[javascript, scope, context, closures]",
     "url": "https://github.com/ATL-WDI-Curriculum/scope-and-context",
     "tags": [
+      "javascript",
+      "scope",
+      "context",
+      "closures",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -1683,8 +1751,8 @@
     "github": {
       "id": 46446330,
       "created_at": "2015-11-18T20:44:39Z",
-      "updated_at": "2016-07-14T20:04:38Z",
-      "open_issues_count": 0,
+      "updated_at": "2016-10-24T16:21:52Z",
+      "open_issues_count": 1,
       "forks_count": 1
     }
   },
@@ -1707,9 +1775,11 @@
   },
   {
     "title": "sdlc",
-    "info": "Software Development Lifecycle",
+    "info": "[sdlc, agile]",
     "url": "https://github.com/ATL-WDI-Curriculum/sdlc",
     "tags": [
+      "sdlc",
+      "agile",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -1717,7 +1787,7 @@
     "github": {
       "id": 47786946,
       "created_at": "2015-12-10T20:56:26Z",
-      "updated_at": "2016-03-15T16:04:59Z",
+      "updated_at": "2016-10-24T16:45:23Z",
       "open_issues_count": 0,
       "forks_count": 5
     }
@@ -1799,12 +1869,11 @@
   },
   {
     "title": "sinatra-views",
-    "info": "[sinatra, server, html, erb]",
+    "info": "[sinatra, server, erb]",
     "url": "https://github.com/ATL-WDI-Curriculum/sinatra-views",
     "tags": [
       "sinatra",
       "server",
-      "html",
       "erb",
       "ga",
       "wdi",
@@ -1813,7 +1882,7 @@
     "github": {
       "id": 49155522,
       "created_at": "2016-01-06T19:05:35Z",
-      "updated_at": "2016-07-14T20:04:38Z",
+      "updated_at": "2016-10-24T15:39:16Z",
       "open_issues_count": 0,
       "forks_count": 5
     }
@@ -1871,9 +1940,11 @@
   },
   {
     "title": "student-laptop-requirements-and-setup",
-    "info": "A description of the requirements for a Student Laptop including Administrative Rights and BASH configuration",
+    "info": "The requirements for a Student Laptop including Basic Setup. [bash, mac]",
     "url": "https://github.com/ATL-WDI-Curriculum/student-laptop-requirements-and-setup",
     "tags": [
+      "bash",
+      "mac",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -1881,7 +1952,7 @@
     "github": {
       "id": 59499839,
       "created_at": "2016-05-23T16:35:47Z",
-      "updated_at": "2016-05-23T16:35:47Z",
+      "updated_at": "2016-10-21T12:28:12Z",
       "open_issues_count": 0,
       "forks_count": 0
     }
@@ -1956,9 +2027,10 @@
   },
   {
     "title": "wdi",
-    "info": "Master Repo for all things Atlanta WDI",
+    "info": "Master Repo for all things Atlanta WDI.  [classroom]",
     "url": "https://github.com/ATL-WDI-Curriculum/wdi",
     "tags": [
+      "classroom",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -1966,16 +2038,17 @@
     "github": {
       "id": 62648935,
       "created_at": "2016-07-05T15:39:05Z",
-      "updated_at": "2016-07-05T16:32:31Z",
+      "updated_at": "2016-10-21T12:30:03Z",
       "open_issues_count": 0,
       "forks_count": 0
     }
   },
   {
     "title": "wdi-5",
-    "info": null,
+    "info": "[classroom]",
     "url": "https://github.com/ATL-WDI-Curriculum/wdi-5",
     "tags": [
+      "classroom",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -1983,16 +2056,17 @@
     "github": {
       "id": 46447197,
       "created_at": "2015-11-18T21:01:46Z",
-      "updated_at": "2016-07-14T20:04:39Z",
+      "updated_at": "2016-10-21T12:30:36Z",
       "open_issues_count": 0,
       "forks_count": 0
     }
   },
   {
     "title": "wdi-7",
-    "info": "Atlanta WDI #7",
+    "info": "Atlanta WDI #7 [classroom]",
     "url": "https://github.com/ATL-WDI-Curriculum/wdi-7",
     "tags": [
+      "classroom",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -2000,16 +2074,17 @@
     "github": {
       "id": 62652939,
       "created_at": "2016-07-05T16:35:42Z",
-      "updated_at": "2016-07-18T14:55:22Z",
+      "updated_at": "2016-10-21T12:29:47Z",
       "open_issues_count": 0,
       "forks_count": 1
     }
   },
   {
     "title": "wdi-8",
-    "info": "Atlanta WDI #8",
+    "info": "Atlanta WDI #8 [classroom]",
     "url": "https://github.com/ATL-WDI-Curriculum/wdi-8",
     "tags": [
+      "classroom",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -2017,16 +2092,17 @@
     "github": {
       "id": 62653116,
       "created_at": "2016-07-05T16:38:39Z",
-      "updated_at": "2016-07-05T16:38:39Z",
+      "updated_at": "2016-10-21T12:29:20Z",
       "open_issues_count": 0,
       "forks_count": 0
     }
   },
   {
     "title": "wdi-9",
-    "info": "Atlanta WDI #9",
+    "info": "Atlanta WDI #9. [classroom]",
     "url": "https://github.com/ATL-WDI-Curriculum/wdi-9",
     "tags": [
+      "classroom",
       "ga",
       "wdi",
       "ATL-WDI-Curriculum"
@@ -2034,7 +2110,7 @@
     "github": {
       "id": 62653173,
       "created_at": "2016-07-05T16:39:41Z",
-      "updated_at": "2016-07-05T16:39:41Z",
+      "updated_at": "2016-10-21T12:31:07Z",
       "open_issues_count": 0,
       "forks_count": 0
     }

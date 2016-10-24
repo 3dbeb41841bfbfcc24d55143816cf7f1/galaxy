@@ -80,16 +80,18 @@
 
     .col-md-3
       div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
-        label Mode:
+        label Text Search:
+          input(ng-model="$ctrl.resourceTextFilter")
+      div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
+        label Match:
         .btn-group(role='group' style="margin-left: 20px")
-          label.btn.btn-xs(ng-class='$ctrl.selectionMode === "any" ? "btn-success" : "btn-primary"'
+          label.btn.btn-xs(ng-class='$ctrl.selectionMode === "union" ? "btn-success" : "btn-primary"'
                            ng-model='$ctrl.selectionMode'
-                           uib-btn-radio='"any"') Any
-          label.btn.btn-xs(ng-class='$ctrl.selectionMode === "all" ? "btn-success" : "btn-primary"'
+                           uib-btn-radio='"union"') Union
+          label.btn.btn-xs(ng-class='$ctrl.selectionMode === "intersection" ? "btn-success" : "btn-primary"'
                            ng-model='$ctrl.selectionMode'
-                           uib-btn-radio='"all"') All
-          label.btn.btn-xs.btn-primary(ng-click='$ctrl.resetMode()') Reset
-
+                           uib-btn-radio='"intersection"') Intersection
+          label.btn.btn-xs.btn-primary(ng-click='$ctrl.resetFiltering()') Reset
       .btn-group-vertical(role='group' style="margin-top: 10px;")
         button.btn.btn-sm(ng-repeat='tag in $ctrl.getTags() | orderBy: "name"'
                           ng-class='$ctrl.getClassForTag(tag)'

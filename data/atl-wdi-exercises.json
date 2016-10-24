@@ -217,9 +217,13 @@
   },
   {
     "title": "codestyle-and-linting",
-    "info": "Practice with Good Code Style and linting tools.",
+    "info": "Practice with Good Code Style and linting tools. [javascript, code-style, linting, static-code-analysis]",
     "url": "https://github.com/ATL-WDI-Exercises/codestyle-and-linting",
     "tags": [
+      "javascript",
+      "code-style",
+      "linting",
+      "static-code-analysis",
       "ga",
       "wdi",
       "ATL-WDI-Exercises"
@@ -227,7 +231,7 @@
     "github": {
       "id": 54912378,
       "created_at": "2016-03-28T18:03:12Z",
-      "updated_at": "2016-03-28T18:03:22Z",
+      "updated_at": "2016-10-24T16:13:29Z",
       "open_issues_count": 0,
       "forks_count": 1
     }
@@ -308,10 +312,10 @@
   },
   {
     "title": "css-intro-and-box-model",
-    "info": "[lab, html, css]",
+    "info": "[exercise, html, css]",
     "url": "https://github.com/ATL-WDI-Exercises/css-intro-and-box-model",
     "tags": [
-      "lab",
+      "exercise",
       "html",
       "css",
       "ga",
@@ -321,7 +325,7 @@
     "github": {
       "id": 46509283,
       "created_at": "2015-11-19T17:37:19Z",
-      "updated_at": "2016-07-14T20:06:01Z",
+      "updated_at": "2016-10-21T12:44:32Z",
       "open_issues_count": 0,
       "forks_count": 2
     }
@@ -365,11 +369,12 @@
   },
   {
     "title": "css-selectors-basic-exercise",
-    "info": "[css, html]",
+    "info": "[css, html, exercise]",
     "url": "https://github.com/ATL-WDI-Exercises/css-selectors-basic-exercise",
     "tags": [
       "css",
       "html",
+      "exercise",
       "ga",
       "wdi",
       "ATL-WDI-Exercises"
@@ -377,7 +382,7 @@
     "github": {
       "id": 54065539,
       "created_at": "2016-03-16T20:50:28Z",
-      "updated_at": "2016-03-16T20:51:35Z",
+      "updated_at": "2016-10-21T12:42:30Z",
       "open_issues_count": 0,
       "forks_count": 1
     }
@@ -581,11 +586,12 @@
   },
   {
     "title": "fashion-blog",
-    "info": "[css, html]",
+    "info": "[css, html, exercise]",
     "url": "https://github.com/ATL-WDI-Exercises/fashion-blog",
     "tags": [
       "css",
       "html",
+      "exercise",
       "ga",
       "wdi",
       "ATL-WDI-Exercises"
@@ -593,7 +599,7 @@
     "github": {
       "id": 54065698,
       "created_at": "2016-03-16T20:53:14Z",
-      "updated_at": "2016-03-16T20:58:43Z",
+      "updated_at": "2016-10-21T12:43:01Z",
       "open_issues_count": 0,
       "forks_count": 2
     }
@@ -620,9 +626,13 @@
   },
   {
     "title": "fizz-buzz",
-    "info": "Introduction to Fizz Buzz with Solutions in JavaScript",
+    "info": "Introduction to Fizz Buzz with Solutions in JavaScript. [javascript, fizzbuzz, control-flow, loops]",
     "url": "https://github.com/ATL-WDI-Exercises/fizz-buzz",
     "tags": [
+      "javascript",
+      "fizzbuzz",
+      "control-flow",
+      "loops",
       "ga",
       "wdi",
       "ATL-WDI-Exercises"
@@ -630,7 +640,7 @@
     "github": {
       "id": 64228625,
       "created_at": "2016-07-26T14:37:03Z",
-      "updated_at": "2016-07-26T14:37:14Z",
+      "updated_at": "2016-10-21T21:23:24Z",
       "open_issues_count": 0,
       "forks_count": 0
     }
@@ -873,11 +883,12 @@
   },
   {
     "title": "js-control-flows",
-    "info": "[js, programming]",
+    "info": "[javascript, control-flow, exercise]",
     "url": "https://github.com/ATL-WDI-Exercises/js-control-flows",
     "tags": [
-      "js",
-      "programming",
+      "javascript",
+      "control-flow",
+      "exercise",
       "ga",
       "wdi",
       "ATL-WDI-Exercises"
@@ -885,7 +896,7 @@
     "github": {
       "id": 46509838,
       "created_at": "2015-11-19T17:47:55Z",
-      "updated_at": "2016-07-14T20:06:05Z",
+      "updated_at": "2016-10-21T21:17:44Z",
       "open_issues_count": 10,
       "forks_count": 12
     }
@@ -1163,9 +1174,13 @@
   },
   {
     "title": "progressive-tax-calc",
-    "info": "Write a program to calculate the income tax using a progressive tax calculation.",
+    "info": "Write a program to calculate the income tax using a progressive tax calculation. [javascript, control-flow, exercise, homework]",
     "url": "https://github.com/ATL-WDI-Exercises/progressive-tax-calc",
     "tags": [
+      "javascript",
+      "control-flow",
+      "exercise",
+      "homework",
       "ga",
       "wdi",
       "ATL-WDI-Exercises"
@@ -1173,7 +1188,7 @@
     "github": {
       "id": 50377433,
       "created_at": "2016-01-25T20:06:19Z",
-      "updated_at": "2016-01-25T20:06:34Z",
+      "updated_at": "2016-10-24T15:54:37Z",
       "open_issues_count": 0,
       "forks_count": 1
     }
@@ -1598,9 +1613,15 @@
   },
   {
     "title": "the-last-samurai",
-    "info": "Determine which Samurai will be left standing.",
+    "info": "Determine which Samurai will be left standing. [javascript, control-flow, arrays, loops, exercise, homework]",
     "url": "https://github.com/ATL-WDI-Exercises/the-last-samurai",
     "tags": [
+      "javascript",
+      "control-flow",
+      "arrays",
+      "loops",
+      "exercise",
+      "homework",
       "ga",
       "wdi",
       "ATL-WDI-Exercises"
@@ -1608,7 +1629,7 @@
     "github": {
       "id": 50370776,
       "created_at": "2016-01-25T18:17:29Z",
-      "updated_at": "2016-01-25T18:17:29Z",
+      "updated_at": "2016-10-24T15:54:13Z",
       "open_issues_count": 0,
       "forks_count": 2
     }
