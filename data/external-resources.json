@@ -4,6 +4,7 @@
     "info": "HTML5 Cheat Sheet",
     "url":  "http://www.hostingreviewbox.com/wp-content/uploads/2016/02/html5-cheat-sheet-1.png",
     "tags": ["HTML", "Cheat Sheet"],
+    "org": "External",
     "rating": 3
   },
   {
@@ -11,6 +12,7 @@
     "info": "Convert CSS Snippets to Syntactically Awesome StyleSheets code",
     "url":  "http://css2sass.herokuapp.com/",
     "tags": ["CSS", "SASS"],
+    "org": "External",
     "rating": 4,
     "upvotes": 7,
     "downvotes": 3
@@ -20,6 +22,7 @@
     "info": "A nice overview of the features of Flexbox",
     "url":  "https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties",
     "tags": ["CSS", "Flexbox"],
+    "org": "External",
     "upvotes": 0,
     "downvotes": 0,
     "rating": 5
@@ -29,6 +32,7 @@
     "info": "A fun game that helps you learn Flexbox",
     "url":  "http://flexboxfroggy.com/",
     "tags": ["CSS", "Flexbox", "Game"],
+    "org": "External",
     "upvotes": 0,
     "downvotes": 0,
     "rating": 5
@@ -38,6 +42,7 @@
     "info": "A tower defense game that teaches you Flexbox",
     "url":  "http://www.flexboxdefense.com/",
     "tags": ["CSS", "Flexbox", "Game"],
+    "org": "External",
     "upvotes": 0,
     "downvotes": 0,
     "rating": 5
@@ -47,6 +52,7 @@
     "info": "Learn JavaScript: The best methods and resources according to 25 JavaScript experts",
     "url":  "https://psdtowp.net/learn-javascript.html",
     "tags": ["JavaScript"],
+    "org": "External",
     "upvotes": 1234,
     "downvotes": 13,
     "rating": 5
@@ -56,6 +62,7 @@
     "info": "indexOf, filter, forEach, map, reduce",
     "url":  "http://colintoh.com/blog/5-array-methods-that-you-should-use-today",
     "tags": ["JavaScript", "Arrays"],
+    "org": "External",
     "upvotes": 23,
     "downvotes": 1,
     "rating": 5
@@ -65,6 +72,7 @@
     "info": "Browse the new ES6 features with examples",
     "url":  "http://es6-features.org",
     "tags": ["JavaScript", "Arrays"],
+    "org": "External",
     "upvotes": 3,
     "downvotes": 0,
     "rating": 5
@@ -74,6 +82,7 @@
     "info": "A Meta-List of JavaScript Links",
     "url":  "https://github.com/ericelliott/essential-javascript-links#essential-javascript-links",
     "tags": ["JavaScript", "meta-list"],
+    "org": "External",
     "upvotes": 0,
     "downvotes": 0,
     "rating": 5
@@ -83,6 +92,7 @@
     "info": "A Humorous narrative of the various concepts, libraries, and tools associated with JavaScript.",
     "url":  "https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f",
     "tags": ["JavaScript", "Humor"],
+    "org": "External",
     "upvotes": 0,
     "downvotes": 0,
     "rating": 5
@@ -92,6 +102,7 @@
     "info": "Includes flavors of JS, frameworks, tools, etc.",
     "url":  "http://stateofjs.com/",
     "tags": ["JavaScript", "Survey"],
+    "org": "External",
     "upvotes": 0,
     "downvotes": 0,
     "rating": 4
@@ -101,6 +112,7 @@
     "info": "GA\"s WDI prework, focused on programming fundamentals, source control, and command line interaction",
     "url":  "http://fundamentals.generalassemb.ly/",
     "tags": ["GA", "WDI", "Fundamentals", "HTML", "CSS", "JavaScript"],
+    "org": "External",
     "upvotes": 0,
     "downvotes": 0,
     "rating": 4

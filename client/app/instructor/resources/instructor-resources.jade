@@ -1,14 +1,14 @@
 .container-fluid
   .row
-    .col-md-10
+    .col-md-9
       h3.text-warning Resources
         button.btn.btn-xs.btn-success(ng-click='$ctrl.addResource()' style='margin-left: 20px') Add
-    .col-md-2
+    .col-md-3
       button.btn.btn-xs.btn-info(popover-placement='bottom-right'
                                  popover-class='resource-help'
                                  uib-popover-template='"app/instructor/resources/resource-help.html"'
                                  popover-title='Help'
-                                 style="margin-left: 10px;") Help...
+                                 style='margin-left: 10px;') Help...
   .row
     .col-md-9
       h4 Displaying matches {{ $ctrl.getBeginIndex() + 1 }} to {{ $ctrl.getEndIndex() + 1 }} out of {{ $ctrl.filteredResources.length || 0 }} matches.
@@ -23,39 +23,48 @@
       hr
 
       ul.list-group
-        //- dl.dl-horizontal(ng-repeat='resource in $ctrl.resources' ng-show='([resource] | tagfilter : $ctrl.Tag.allTags : $ctrl.selectionMode).length > 0')
-        //- dl.dl-horizontal(ng-repeat='resource in $ctrl.filteredResources | tagfilter : $ctrl.Tag.allTags : $ctrl.selectionMode')
         li.list-group-item(ng-repeat='resource in $ctrl.paginatedFilteredResources track by resource._id')
           h3.text-warning {{ resource.title || 'empty' }}
           br
-          //- span.text-muted(ng-show='user.email') EMail: {{user.email}}
-          //- span.text-muted(ng-show='user.github') GitHub:{{user.github.login}}
           dl.dl-horizontal.text-left
+            div(ng-switch='resource.org')
+              div(ng-switch-when='External')
+                dt Info:
+                dd
+                  a(href='#',
+                  editable-text='resource.info',
+                  ng-model='resource.info',
+                  onbeforesave='$ctrl.updateResource(resource, $data)')
+                    | {{ resource.info || 'empty' }}
+                dt URL
+                dd
+                  a(href='#',
+                  editable-text='resource.url',
+                  ng-model='resource.url',
+                  onbeforesave='$ctrl.updateResource(resource, $data)')
+                    | {{ resource.url || 'empty' }}
+                  a(ng-href='{{resource.url}}', target='_blank', style='margin-left: 10px;')
+                    | (Visit)
+                dt Organization:
+                dd
+                  a(href='#',
+                  editable-text='resource.org',
+                  ng-model='resource.org',
+                  onbeforesave="$ctrl.updateResource(resource, $data)")
+                        | {{ resource.org || 'empty' }}
+              div(ng-switch-default)
+                dt Info:
+                dd {{ resource.info || 'empty' }}
+                dt URL
+                dd
+                  a(ng-href='{{resource.url}}', target='_blank')
+                    | {{ resource.url || 'empty' }}
+                dt Organization:
+                dd {{ resource.org || 'empty' }}
+
             //- dt ID:
             //- dd {{ resource._id }}
-            dt Info:
-            dd
-              a(href='#',
-              editable-text='resource.info',
-              ng-model='resource.info',
-              onbeforesave="$ctrl.updateResource(resource, $data)")
-                | {{ resource.info || 'empty' }}
-            dt URL
-            dd
-              a(href='#',
-              editable-text='resource.url',
-              ng-model='resource.url',
-              onbeforesave="$ctrl.updateResource(resource, $data)")
-                | {{ resource.url || 'empty' }}
-              a(ng-href="{{resource.url}}", target="_blank", style="margin-left: 10px;")
-                | (Visit)
-            dt Organization:
-            dd
-              a(href='#',
-              editable-text='resource.org',
-              ng-model='resource.org',
-              onbeforesave="$ctrl.updateResource(resource, $data)")
-                    | {{ resource.org || 'empty' }}
+
             dt Tags
             dd {{ resource.tags.join(', ') || 'empty' }}
             dt Rating
@@ -86,10 +95,8 @@
 
     .col-md-3
       div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
-        label Text Search:
-          input(ng-model="$ctrl.resourceTextFilter")
-      div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
-        label Match:
+        label Filtering:
+        br
         .btn-group(role='group' style="margin-left: 20px")
           label.btn.btn-xs(ng-class='$ctrl.selectionMode === "union" ? "btn-success" : "btn-primary"'
                            ng-model='$ctrl.selectionMode'
@@ -98,12 +105,33 @@
                            ng-model='$ctrl.selectionMode'
                            uib-btn-radio='"intersection"') Intersection
           label.btn.btn-xs.btn-primary(ng-click='$ctrl.resetFiltering()') Reset
-      .btn-group-vertical(role='group' style="margin-top: 10px;")
-        button.btn.btn-sm(ng-repeat='tag in $ctrl.getTags() | orderBy: "name"'
-                          ng-class='$ctrl.getClassForTag(tag)'
-                          ng-click='$ctrl.toggleTag(tag)')
-          | {{tag.name}}
-          //- span.badge(ng-show='$ctrl.countTagInFilteredResults(tag)' style='margin-left: 10px')
-          //-   | {{ $ctrl.countTagInFilteredResults(tag) }}
-          span.label.label-warning.label-as-badge(ng-show='$ctrl.countTagInFilteredResults(tag)' style='margin-left: 10px')
-            | {{ $ctrl.countTagInFilteredResults(tag) }}
+
+      div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
+        label Text Search:
+          input(ng-model="$ctrl.resourceTextFilter" style='margin-top: 10px;')
+
+      div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
+        label Organizations
+        br
+        .btn-group-vertical(role='org' style="margin-top: 10px;")
+          button.btn.btn-sm(ng-repeat='org in $ctrl.getOrgs() | orderBy: "name"'
+                            ng-class='$ctrl.getClassForMode(org.mode)'
+                            ng-click='$ctrl.toggleMode(org)')
+            | {{org.name}}
+            //- span.badge(ng-show='$ctrl.countTagInFilteredResults(tag)' style='margin-left: 10px')
+            //-   | {{ $ctrl.countTagInFilteredResults(tag) }}
+            span.label.label-warning.label-as-badge(style='margin-left: 10px')
+              | {{ org.count }}
+
+      div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
+        label Tags
+        br
+        .btn-group-vertical(role='group' style="margin-top: 10px;")
+          button.btn.btn-sm(ng-repeat='tag in $ctrl.getTags() | orderBy: "name"'
+                            ng-class='$ctrl.getClassForMode(tag.mode)'
+                            ng-click='$ctrl.toggleMode(tag)')
+            | {{tag.name}}
+            //- span.badge(ng-show='$ctrl.countTagInFilteredResults(tag)' style='margin-left: 10px')
+            //-   | {{ $ctrl.countTagInFilteredResults(tag) }}
+            span.label.label-warning.label-as-badge(ng-show='$ctrl.countTagInFilteredResults(tag)' style='margin-left: 10px')
+              | {{ $ctrl.countTagInFilteredResults(tag) }}

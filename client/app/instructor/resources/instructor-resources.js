@@ -24,19 +24,54 @@
                    );
 
       // TODO: handle newly created resources
+      this.filteredResources = [];
+      this.orgs = [];
       this.loadResources();
     }
 
     resetFiltering() {
       this.resourceTextFilter = '';
       this.selectionMode = 'union';
+      this.orgs.forEach( org => org.mode = 'neutral' );
       this.Tag.allTags.forEach( tag => tag.mode = 'neutral' );
+      this.filterResources();
+    }
+
+    getOrgs() {
+      return this.selectionMode === 'union' ?
+             this.orgs :
+             this.orgs.filter( org => org.mode !== 'neutral' || org.count > 0);
     }
 
     getTags() {
       return this.selectionMode === 'union' ?
              this.Tag.allTags :
              this.Tag.allTags.filter( tag => tag.mode !== 'neutral' || this.countTagInFilteredResults(tag) > 0);
+    }
+
+    lookupOrgObjectByName(name) {
+      let found = this.orgs.filter( o => o.name === name );
+      return found.length > 0 ? found[0] : null;
+    }
+
+    updateOrgs(resources) {
+      this.orgs = [];
+      resources.forEach( resource => {
+        if (resource.org) {
+          let found = this.lookupOrgObjectByName(resource.org);
+          if (!found) {
+            this.orgs.push({ name: resource.org, mode: 'neutral', count: 0 });
+          }
+        }
+      });
+    }
+
+    updateOrgCounts() {
+      this.orgs.forEach( org => { org.count = 0; } );
+      this.filteredResources.forEach( resource => {
+        let found = this.lookupOrgObjectByName(resource.org);
+        found.count += 1;
+      });
     }
 
     loadResources() {
@@ -46,6 +81,7 @@
         console.time('adding tags');
         resources.forEach( resource => this.Tag.addTags(resource.tags) );
         console.timeEnd('adding tags');
+        this.updateOrgs(resources);
         this.pageSize = 10;
         this.currentPage = 1;
         this.beginIndex = 0;
@@ -53,18 +89,18 @@
       });
     }
 
-    toggleTag(tag) {
-      switch(tag.mode) {
-        case 'neutral':  tag.mode = 'include'; break;
-        case 'include':  tag.mode = 'exclude'; break;
-        case 'exclude':  tag.mode = 'neutral'; break;
-        default:         tag.mode = 'neutral'; break;
+    toggleMode(obj) {
+      switch(obj.mode) {
+        case 'neutral':  obj.mode = 'include'; break;
+        case 'include':  obj.mode = 'exclude'; break;
+        case 'exclude':  obj.mode = 'neutral'; break;
+        default:         obj.mode = 'neutral'; break;
       }
       this.filterResources();
     }
 
-    getClassForTag(tag) {
-      switch (tag.mode) {
+    getClassForMode(mode) {
+      switch (mode) {
         case 'include': return 'btn-success'; break;
         case 'neutral': return 'btn-primary'; break;
         case 'exclude': return 'btn-danger'; break;
@@ -75,14 +111,16 @@
     filterResources() {
       console.time('filtering resources');
       this.filteredResources = this.$filter('tagfilter')(this.resources,
+                                                         this.orgs,
                                                          this.Tag.allTags,
                                                          this.selectionMode);
       if (this.resourceTextFilter) {
         this.filteredResources = this.$filter('filter')(this.filteredResources,
                                                         this.resourceTextFilter,
-                                                        false // comparator
+                                                        false // comparator, false means case insensitive.
                                                       /* , anyPropertyKey */ )
       }
+      this.updateOrgCounts();
       this.updatePage();
       console.timeEnd('filtering resources');
     }

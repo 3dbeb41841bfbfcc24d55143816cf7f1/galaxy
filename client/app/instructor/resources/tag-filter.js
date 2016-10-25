@@ -4,28 +4,45 @@
 
   angular.module('galaxyApp')
   .filter('tagfilter', (Tag) => {
-    return function(resources, allTags, mode) {
+    return function(resources, orgs, tags, mode) {
       console.log('tagFilter started:', new Date());
-      let includedTags = allTags.filter( tag => tag.mode === 'include' );
-      let excludedTags = allTags.filter( tag => tag.mode === 'exclude' );
 
-      // if no filtering, return all of the resources
-      if (includedTags.length === 0 && excludedTags.length === 0) {
-        console.log(`tagFilter returning: ${resources.length} resources at ${new Date()}`);
-        return resources;
+      let filteredResources = resources;
+
+      // apply the org filtering
+      let includedOrgs = orgs.filter( org => org.mode === 'include' );
+      let excludedOrgs = orgs.filter( org => org.mode === 'exclude' );
+
+      if (includedOrgs.length !== 0) {
+        // apply the included orgs filtering using either "union" or "intersecton" filtering.
+        let union       = resource => includedOrgs.reduce((acc, org) => acc || (resource.org === org.name), false );
+        let intersecton = resource => includedOrgs.reduce((acc, org) => acc && (resource.org === org.name), true  );
+        let f = mode === 'union' ? union : intersecton;
+        filteredResources = filteredResources.filter(f);
+      }
+      if (excludedOrgs.length !== 0) {
+        let exclude = resource => excludedOrgs.reduce((acc, org) => acc && (resource.org !== org.name), true );
+        filteredResources = filteredResources.filter(exclude);
       }
 
-      // apply the included tags filtering using either "union" or "intersecton" filtering.
-      let union       = resource => resource.tags.reduce((acc, tag) => acc || Tag.contains(includedTags , tag), false);
-      let intersecton = resource => includedTags. reduce((acc, tag) => acc && Tag.contains(resource.tags, tag), true );
-      let f = mode === 'union' ? union : intersecton;
-      let result = includedTags.length === 0 ? resources : resources.filter(f);
+      // apply the tag filtering
+      let includedTags = tags.filter( tag => tag.mode === 'include' );
+      let excludedTags = tags.filter( tag => tag.mode === 'exclude' );
 
-      // filter out the resources that contain an excluded tag
-      let exclude = resource => excludedTags.reduce((acc, tag) => acc && !Tag.contains(resource.tags, tag), true );
-      let finalResult = result.filter(exclude);
-      console.log(`tagFilter returning: ${finalResult.length} resources at ${new Date()}`);
-      return finalResult;
+      if (includedTags.length !== 0) {
+        // apply the included tags filtering using either "union" or "intersecton" filtering.
+        let union       = resource => resource.tags.reduce((acc, tag) => acc || Tag.contains(includedTags , tag), false);
+        let intersecton = resource => includedTags. reduce((acc, tag) => acc && Tag.contains(resource.tags, tag), true );
+        let f = mode === 'union' ? union : intersecton;
+        filteredResources = filteredResources.filter(f);
+      }
+      if (excludedTags.length !== 0) {
+        let exclude = resource => excludedTags.reduce((acc, tag) => acc && !Tag.contains(resource.tags, tag), true );
+        filteredResources = filteredResources.filter(exclude);
+      }
+
+      console.log(`tagFilter returning: ${filteredResources.length} resources at ${new Date()}`);
+      return filteredResources;
     };
   });
 
