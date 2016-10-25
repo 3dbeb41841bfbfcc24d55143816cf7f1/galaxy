@@ -42,13 +42,12 @@ function repoToResourceObject(repo, org) {
     }
   }
 
-  tags = tags.concat(['ga', 'wdi', org]);
-
   return {
     title: repo.name,
     info: repo.description,
     url:  repo.html_url,
     tags: tags,
+    org: org,
     github: {
       id: repo.id,
       created_at: repo.created_at,

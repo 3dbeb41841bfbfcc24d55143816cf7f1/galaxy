@@ -6,11 +6,9 @@
     "tags": [
       "javascript",
       "ruby",
-      "control-flow",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "control-flow"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 47575808,
       "created_at": "2015-12-07T19:58:20Z",
@@ -23,11 +21,8 @@
     "title": "active-record-instructors-students",
     "info": "Simple Example of using Active Record to create an Instructor / Student database.",
     "url": "https://github.com/ATL-WDI-Exercises/active-record-instructors-students",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 68859210,
       "created_at": "2016-09-21T21:32:03Z",
@@ -40,11 +35,8 @@
     "title": "angular-camping-store-code-along",
     "info": "GA Camping Store using the Yeoman Gulp-Angular Generator (no server code)",
     "url": "https://github.com/ATL-WDI-Exercises/angular-camping-store-code-along",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 51602106,
       "created_at": "2016-02-12T16:48:36Z",
@@ -57,11 +49,8 @@
     "title": "angular-clickboxes",
     "info": null,
     "url": "https://github.com/ATL-WDI-Exercises/angular-clickboxes",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 66652974,
       "created_at": "2016-08-26T14:13:32Z",
@@ -74,11 +63,8 @@
     "title": "angular-http-lab",
     "info": "Angular Lab for $http",
     "url": "https://github.com/ATL-WDI-Exercises/angular-http-lab",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 52374233,
       "created_at": "2016-02-23T16:37:03Z",
@@ -91,11 +77,8 @@
     "title": "angular-music-browser",
     "info": "A simple AngularJS app using angular-ui-router with nested routes that are data driven.",
     "url": "https://github.com/ATL-WDI-Exercises/angular-music-browser",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 52116413,
       "created_at": "2016-02-19T21:06:49Z",
@@ -109,11 +92,9 @@
     "info": "[angular]",
     "url": "https://github.com/ATL-WDI-Exercises/angular-ui-router-lab",
     "tags": [
-      "angular",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "angular"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 51602032,
       "created_at": "2016-02-12T16:47:19Z",
@@ -129,11 +110,9 @@
     "tags": [
       "node",
       "express",
-      "mongoose",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "mongoose"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 50792623,
       "created_at": "2016-01-31T20:05:47Z",
@@ -146,11 +125,8 @@
     "title": "bowling",
     "info": "Write a function to calculate the final score in bowling.",
     "url": "https://github.com/ATL-WDI-Exercises/bowling",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 67647363,
       "created_at": "2016-09-07T22:12:28Z",
@@ -166,11 +142,9 @@
     "tags": [
       "html",
       "css",
-      "dom",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "dom"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 54063018,
       "created_at": "2016-03-16T20:09:45Z",
@@ -183,11 +157,8 @@
     "title": "channel-chat-code-along",
     "info": "A Group Chat App written in the MEAN Stack with the angular-fullstack generator",
     "url": "https://github.com/ATL-WDI-Exercises/channel-chat-code-along",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 52375882,
       "created_at": "2016-02-23T16:59:08Z",
@@ -202,11 +173,9 @@
     "url": "https://github.com/ATL-WDI-Exercises/club_ruby",
     "tags": [
       "ruby",
-      "loops",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "loops"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 68619070,
       "created_at": "2016-09-19T15:28:23Z",
@@ -223,11 +192,9 @@
       "javascript",
       "code-style",
       "linting",
-      "static-code-analysis",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "static-code-analysis"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 54912378,
       "created_at": "2016-03-28T18:03:12Z",
@@ -240,11 +207,8 @@
     "title": "coffee-grinder",
     "info": null,
     "url": "https://github.com/ATL-WDI-Exercises/coffee-grinder",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 54901827,
       "created_at": "2016-03-28T15:24:25Z",
@@ -261,11 +225,9 @@
       "js",
       "basics",
       "DOM",
-      "events",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "events"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 63348532,
       "created_at": "2016-07-14T15:33:56Z",
@@ -278,11 +240,8 @@
     "title": "css_boxmodel_lab_wdi6",
     "info": "css box model lab wdi6",
     "url": "https://github.com/ATL-WDI-Exercises/css_boxmodel_lab_wdi6",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 54458883,
       "created_at": "2016-03-22T08:40:56Z",
@@ -297,11 +256,9 @@
     "url": "https://github.com/ATL-WDI-Exercises/css-ghost",
     "tags": [
       "css",
-      "animations",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "animations"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 54064374,
       "created_at": "2016-03-16T20:31:39Z",
@@ -317,11 +274,9 @@
     "tags": [
       "exercise",
       "html",
-      "css",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "css"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 46509283,
       "created_at": "2015-11-19T17:37:19Z",
@@ -335,11 +290,9 @@
     "info": "[css]",
     "url": "https://github.com/ATL-WDI-Exercises/css-review",
     "tags": [
-      "css",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "css"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 54064071,
       "created_at": "2016-03-16T20:26:59Z",
@@ -354,11 +307,9 @@
     "url": "https://github.com/ATL-WDI-Exercises/css-selectors",
     "tags": [
       "css",
-      "html",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "html"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 46509561,
       "created_at": "2015-11-19T17:43:01Z",
@@ -374,11 +325,9 @@
     "tags": [
       "css",
       "html",
-      "exercise",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "exercise"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 54065539,
       "created_at": "2016-03-16T20:50:28Z",
@@ -391,11 +340,8 @@
     "title": "curriculum",
     "info": "Curriculum Resources for GA's Web Development Immersive",
     "url": "https://github.com/ATL-WDI-Exercises/curriculum",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 56721840,
       "created_at": "2016-04-20T21:21:37Z",
@@ -410,11 +356,9 @@
     "url": "https://github.com/ATL-WDI-Exercises/elves-wrapping-presents",
     "tags": [
       "javascript",
-      "control-flow",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "control-flow"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 47411513,
       "created_at": "2015-12-04T15:18:44Z",
@@ -427,11 +371,8 @@
     "title": "emergency_compliment",
     "info": "emergency compliment",
     "url": "https://github.com/ATL-WDI-Exercises/emergency_compliment",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 49232979,
       "created_at": "2016-01-07T21:53:12Z",
@@ -448,11 +389,9 @@
       "express",
       "mongo",
       "nosql",
-      "node",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "node"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 50512396,
       "created_at": "2016-01-27T14:20:58Z",
@@ -465,11 +404,8 @@
     "title": "express-cars",
     "info": "A Simple Express / Node Web App for Cars",
     "url": "https://github.com/ATL-WDI-Exercises/express-cars",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 65044789,
       "created_at": "2016-08-05T19:46:10Z",
@@ -482,11 +418,8 @@
     "title": "express-debugging",
     "info": "Students must reproduce and fix the bugs in a simple TODO app written in Express and Mongoose.",
     "url": "https://github.com/ATL-WDI-Exercises/express-debugging",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 58591516,
       "created_at": "2016-05-12T00:01:29Z",
@@ -499,11 +432,8 @@
     "title": "express-hacker-cola",
     "info": "A simple vending machine using Express and Node",
     "url": "https://github.com/ATL-WDI-Exercises/express-hacker-cola",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 65306104,
       "created_at": "2016-08-09T15:25:14Z",
@@ -516,11 +446,8 @@
     "title": "express-movies",
     "info": "A simple Movies App with Express - Coded in Class as a Review",
     "url": "https://github.com/ATL-WDI-Exercises/express-movies",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 65934487,
       "created_at": "2016-08-17T19:04:53Z",
@@ -537,11 +464,9 @@
       "express",
       "node",
       "mongoose",
-      "javascript",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "javascript"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 50611635,
       "created_at": "2016-01-28T20:32:05Z",
@@ -554,11 +479,8 @@
     "title": "express-search-page",
     "info": "A simple Express Movies App illustrating how to do a Search page",
     "url": "https://github.com/ATL-WDI-Exercises/express-search-page",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 66495274,
       "created_at": "2016-08-24T19:56:21Z",
@@ -571,11 +493,8 @@
     "title": "express-security-with-passport",
     "info": "Starter and Solution code for the Express Security With Passport Lesson",
     "url": "https://github.com/ATL-WDI-Exercises/express-security-with-passport",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 58463979,
       "created_at": "2016-05-10T13:34:02Z",
@@ -591,11 +510,9 @@
     "tags": [
       "css",
       "html",
-      "exercise",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "exercise"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 54065698,
       "created_at": "2016-03-16T20:53:14Z",
@@ -611,11 +528,9 @@
     "tags": [
       "javascript",
       "dom",
-      "objects",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "objects"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 47722286,
       "created_at": "2015-12-09T22:11:56Z",
@@ -632,11 +547,9 @@
       "javascript",
       "fizzbuzz",
       "control-flow",
-      "loops",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "loops"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 64228625,
       "created_at": "2016-07-26T14:37:03Z",
@@ -649,11 +562,8 @@
     "title": "fizzBuzz_redux",
     "info": null,
     "url": "https://github.com/ATL-WDI-Exercises/fizzBuzz_redux",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 54793123,
       "created_at": "2016-03-26T18:23:51Z",
@@ -666,11 +576,8 @@
     "title": "ga-camping-store-fullstack",
     "info": "The GA Camping Store built with the MEAN stack via the Yeoman angular-fullstack generator.",
     "url": "https://github.com/ATL-WDI-Exercises/ga-camping-store-fullstack",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 60199558,
       "created_at": "2016-06-01T18:01:58Z",
@@ -685,11 +592,9 @@
     "url": "https://github.com/ATL-WDI-Exercises/html-dom",
     "tags": [
       "lab",
-      "html",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "html"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 46508985,
       "created_at": "2015-11-19T17:31:44Z",
@@ -704,11 +609,9 @@
     "url": "https://github.com/ATL-WDI-Exercises/hyrule_potion_shop",
     "tags": [
       "css",
-      "flexbox",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "flexbox"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 63726372,
       "created_at": "2016-07-19T20:36:49Z",
@@ -723,11 +626,9 @@
     "url": "https://github.com/ATL-WDI-Exercises/instagram",
     "tags": [
       "html",
-      "css",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "css"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 63192078,
       "created_at": "2016-07-12T21:01:09Z",
@@ -742,11 +643,9 @@
     "url": "https://github.com/ATL-WDI-Exercises/intro-to-command-line",
     "tags": [
       "lab",
-      "command line",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "command line"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 46508463,
       "created_at": "2015-11-19T17:21:59Z",
@@ -762,11 +661,9 @@
     "tags": [
       "javascript",
       "functions",
-      "programming",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "programming"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 47640212,
       "created_at": "2015-12-08T18:11:55Z",
@@ -779,11 +676,8 @@
     "title": "Javascript_whiteboard_questions",
     "info": "Questions to be worked out on the board in javascript",
     "url": "https://github.com/ATL-WDI-Exercises/Javascript_whiteboard_questions",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 52553455,
       "created_at": "2016-02-25T20:09:35Z",
@@ -796,11 +690,8 @@
     "title": "jedi-javascript-jquery",
     "info": null,
     "url": "https://github.com/ATL-WDI-Exercises/jedi-javascript-jquery",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 55099026,
       "created_at": "2016-03-30T21:26:51Z",
@@ -813,11 +704,8 @@
     "title": "jquery",
     "info": null,
     "url": "https://github.com/ATL-WDI-Exercises/jquery",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 47715364,
       "created_at": "2015-12-09T19:57:06Z",
@@ -830,11 +718,8 @@
     "title": "js-advanced-review",
     "info": "A set of JavaScript coding challenges to aid in reviewing the JavaScript language",
     "url": "https://github.com/ATL-WDI-Exercises/js-advanced-review",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 50371860,
       "created_at": "2016-01-25T18:35:29Z",
@@ -850,11 +735,9 @@
     "tags": [
       "js",
       "ajax",
-      "jquery",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "jquery"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 58464946,
       "created_at": "2016-05-10T13:46:54Z",
@@ -868,11 +751,9 @@
     "info": "[js] Practice JS objects and functions.",
     "url": "https://github.com/ATL-WDI-Exercises/js-calculator",
     "tags": [
-      "js",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "js"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 54900196,
       "created_at": "2016-03-28T15:00:08Z",
@@ -888,11 +769,9 @@
     "tags": [
       "javascript",
       "control-flow",
-      "exercise",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "exercise"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 46509838,
       "created_at": "2015-11-19T17:47:55Z",
@@ -905,11 +784,8 @@
     "title": "js-dom-quotes",
     "info": null,
     "url": "https://github.com/ATL-WDI-Exercises/js-dom-quotes",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 47711231,
       "created_at": "2015-12-09T18:40:30Z",
@@ -922,11 +798,8 @@
     "title": "JS-Scope",
     "info": "Javascript scope lesson",
     "url": "https://github.com/ATL-WDI-Exercises/JS-Scope",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 47669179,
       "created_at": "2015-12-09T04:49:00Z",
@@ -942,11 +815,9 @@
     "tags": [
       "javascript",
       "ruby",
-      "control-flow",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "control-flow"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 47496439,
       "created_at": "2015-12-06T12:48:13Z",
@@ -959,11 +830,8 @@
     "title": "mean_todo_app",
     "info": "A Simple TODO app using the MEAN Stack and the Express Generator",
     "url": "https://github.com/ATL-WDI-Exercises/mean_todo_app",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 58348936,
       "created_at": "2016-05-09T04:44:14Z",
@@ -976,11 +844,8 @@
     "title": "mean-movies-simple-with-ui-router",
     "info": "Simple Review of MEAN Stack with express generator and manually adding angular and angular-ui-router",
     "url": "https://github.com/ATL-WDI-Exercises/mean-movies-simple-with-ui-router",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 60297102,
       "created_at": "2016-06-02T21:02:05Z",
@@ -993,11 +858,8 @@
     "title": "mean-stack-starter-app",
     "info": "A Starter App for the MEAN Stack. Includes Passport security.",
     "url": "https://github.com/ATL-WDI-Exercises/mean-stack-starter-app",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 66998772,
       "created_at": "2016-08-31T03:16:36Z",
@@ -1012,11 +874,9 @@
     "url": "https://github.com/ATL-WDI-Exercises/mongo-pokemon",
     "tags": [
       "mongo",
-      "nosql",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "nosql"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 50374859,
       "created_at": "2016-01-25T19:24:11Z",
@@ -1029,11 +889,8 @@
     "title": "mongo-reminders",
     "info": "Demonstrates a one-to-many association in Mongoose and MongoDB (using an embedded document).",
     "url": "https://github.com/ATL-WDI-Exercises/mongo-reminders",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 58955319,
       "created_at": "2016-05-16T18:07:20Z",
@@ -1046,11 +903,8 @@
     "title": "mongoose-pets-and-owners",
     "info": "A Simple Mongoose and NodeJS exercise for working with 2 related (referenced) models.",
     "url": "https://github.com/ATL-WDI-Exercises/mongoose-pets-and-owners",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 65494946,
       "created_at": "2016-08-11T19:12:23Z",
@@ -1063,11 +917,8 @@
     "title": "movieappcontest",
     "info": "repo for the movie db app contest",
     "url": "https://github.com/ATL-WDI-Exercises/movieappcontest",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 49604647,
       "created_at": "2016-01-13T21:55:42Z",
@@ -1082,11 +933,9 @@
     "url": "https://github.com/ATL-WDI-Exercises/my-blawg",
     "tags": [
       "jquery",
-      "js",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "js"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 54792514,
       "created_at": "2016-03-26T18:09:47Z",
@@ -1099,11 +948,8 @@
     "title": "node-express-routing-lab",
     "info": null,
     "url": "https://github.com/ATL-WDI-Exercises/node-express-routing-lab",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 58027449,
       "created_at": "2016-05-04T06:13:21Z",
@@ -1121,11 +967,9 @@
       "testing",
       "mocha",
       "chai",
-      "express",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "express"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 51526291,
       "created_at": "2016-02-11T16:00:10Z",
@@ -1138,11 +982,8 @@
     "title": "password-checker",
     "info": "Write a program to verify that a password meets a set of criteria.",
     "url": "https://github.com/ATL-WDI-Exercises/password-checker",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 48552431,
       "created_at": "2015-12-24T17:54:23Z",
@@ -1159,11 +1000,9 @@
       "lab",
       "js",
       "html",
-      "css",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "css"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 46447916,
       "created_at": "2015-11-18T21:14:42Z",
@@ -1180,11 +1019,9 @@
       "javascript",
       "control-flow",
       "exercise",
-      "homework",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "homework"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 50377433,
       "created_at": "2016-01-25T20:06:19Z",
@@ -1197,11 +1034,8 @@
     "title": "project-four-requirements",
     "info": null,
     "url": "https://github.com/ATL-WDI-Exercises/project-four-requirements",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 51856686,
       "created_at": "2016-02-16T18:03:37Z",
@@ -1214,11 +1048,8 @@
     "title": "project-one-requirements",
     "info": null,
     "url": "https://github.com/ATL-WDI-Exercises/project-one-requirements",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 47789164,
       "created_at": "2015-12-10T21:43:11Z",
@@ -1231,11 +1062,8 @@
     "title": "project-three-requirements",
     "info": "GA WDI Project 3 Requirements",
     "url": "https://github.com/ATL-WDI-Exercises/project-three-requirements",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 50668182,
       "created_at": "2016-01-29T14:41:36Z",
@@ -1248,11 +1076,8 @@
     "title": "project-two-requirements",
     "info": "project 2 requirements",
     "url": "https://github.com/ATL-WDI-Exercises/project-two-requirements",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 49299817,
       "created_at": "2016-01-08T22:21:14Z",
@@ -1269,11 +1094,9 @@
       "rails",
       "httparty",
       "ruby",
-      "api",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "api"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 50695001,
       "created_at": "2016-01-29T22:15:06Z",
@@ -1286,11 +1109,8 @@
     "title": "rails_todo_app",
     "info": "A Simple Rails TODO app with Homegrown User Authentication",
     "url": "https://github.com/ATL-WDI-Exercises/rails_todo_app",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 56701859,
       "created_at": "2016-04-20T16:09:12Z",
@@ -1308,11 +1128,9 @@
       "active record",
       "migrations",
       "ruby",
-      "sql",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "sql"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 56520714,
       "created_at": "2016-04-18T15:43:28Z",
@@ -1325,11 +1143,8 @@
     "title": "rails-pets",
     "info": "A Simple Pets CRUD app in RoR (used for introducing RAILS).",
     "url": "https://github.com/ATL-WDI-Exercises/rails-pets",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 56515084,
       "created_at": "2016-04-18T14:33:05Z",
@@ -1342,11 +1157,8 @@
     "title": "rails-views-and-controller",
     "info": "rails views and controllers",
     "url": "https://github.com/ATL-WDI-Exercises/rails-views-and-controller",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 56598116,
       "created_at": "2016-04-19T13:16:00Z",
@@ -1359,11 +1171,8 @@
     "title": "reindeer-olympics",
     "info": "Help Santa determine which reindeer is the fastest.",
     "url": "https://github.com/ATL-WDI-Exercises/reindeer-olympics",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 48960275,
       "created_at": "2016-01-03T20:50:14Z",
@@ -1378,11 +1187,9 @@
     "url": "https://github.com/ATL-WDI-Exercises/ruby_air_conditioner",
     "tags": [
       "ruby",
-      "conditionals",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "conditionals"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 48177400,
       "created_at": "2015-12-17T13:59:29Z",
@@ -1397,11 +1204,9 @@
     "url": "https://github.com/ATL-WDI-Exercises/ruby_search_for_obi_wan",
     "tags": [
       "ruby",
-      "conditionals",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "conditionals"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 48177234,
       "created_at": "2015-12-17T13:56:07Z",
@@ -1416,11 +1221,9 @@
     "url": "https://github.com/ATL-WDI-Exercises/ruby_smoothies",
     "tags": [
       "ruby",
-      "oop",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "oop"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 56237331,
       "created_at": "2016-04-14T12:56:26Z",
@@ -1435,11 +1238,9 @@
     "url": "https://github.com/ATL-WDI-Exercises/ruby_utopia_self",
     "tags": [
       "ruby",
-      "oop",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "oop"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 56237543,
       "created_at": "2016-04-14T12:59:28Z",
@@ -1453,11 +1254,9 @@
     "info": "[ruby]",
     "url": "https://github.com/ATL-WDI-Exercises/ruby-basics-exercises",
     "tags": [
-      "ruby",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "ruby"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 55598623,
       "created_at": "2016-04-06T10:59:37Z",
@@ -1470,11 +1269,8 @@
     "title": "ruby-enumerations",
     "info": null,
     "url": "https://github.com/ATL-WDI-Exercises/ruby-enumerations",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 48135825,
       "created_at": "2015-12-16T21:20:24Z",
@@ -1487,11 +1283,8 @@
     "title": "ruby-problems",
     "info": "Solving algorithms with Ruby!",
     "url": "https://github.com/ATL-WDI-Exercises/ruby-problems",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 55803618,
       "created_at": "2016-04-08T19:14:04Z",
@@ -1507,11 +1300,9 @@
     "tags": [
       "ruby",
       "oop",
-      "quick",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "quick"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 49214451,
       "created_at": "2016-01-07T15:59:10Z",
@@ -1527,11 +1318,9 @@
     "tags": [
       "sinatra",
       "route",
-      "server",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "server"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 49155840,
       "created_at": "2016-01-06T19:11:51Z",
@@ -1544,11 +1333,8 @@
     "title": "sinatra-layouts-and-templates-lab",
     "info": null,
     "url": "https://github.com/ATL-WDI-Exercises/sinatra-layouts-and-templates-lab",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 49280798,
       "created_at": "2016-01-08T15:48:35Z",
@@ -1561,11 +1347,8 @@
     "title": "smoothie-recipes",
     "info": "A simple HTML and CSS static web page containing fun Smoothie Recipes!",
     "url": "https://github.com/ATL-WDI-Exercises/smoothie-recipes",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 65306239,
       "created_at": "2016-08-09T15:27:00Z",
@@ -1581,11 +1364,9 @@
     "tags": [
       "jquery",
       "express",
-      "ajax",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "ajax"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 50741342,
       "created_at": "2016-01-30T19:36:40Z",
@@ -1598,11 +1379,8 @@
     "title": "temperature_converter",
     "info": null,
     "url": "https://github.com/ATL-WDI-Exercises/temperature_converter",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 47334883,
       "created_at": "2015-12-03T13:49:38Z",
@@ -1621,11 +1399,9 @@
       "arrays",
       "loops",
       "exercise",
-      "homework",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "homework"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 50370776,
       "created_at": "2016-01-25T18:17:29Z",
@@ -1642,11 +1418,9 @@
       "lab",
       "html",
       "css",
-      "js",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "js"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 46447997,
       "created_at": "2015-11-18T21:16:28Z",
@@ -1660,11 +1434,9 @@
     "info": "[tunr]",
     "url": "https://github.com/ATL-WDI-Exercises/tunr_rails_routes_resources",
     "tags": [
-      "tunr",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "tunr"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 56078050,
       "created_at": "2016-04-12T16:04:01Z",
@@ -1677,11 +1449,8 @@
     "title": "tunr_sinatra",
     "info": "The Classic TUNR app written with Sinatra and Active Record",
     "url": "https://github.com/ATL-WDI-Exercises/tunr_sinatra",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 68954907,
       "created_at": "2016-09-22T19:26:15Z",
@@ -1696,11 +1465,9 @@
     "url": "https://github.com/ATL-WDI-Exercises/tunr-active-record",
     "tags": [
       "ruby",
-      "activerecord",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "activerecord"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 55908638,
       "created_at": "2016-04-10T16:01:56Z",
@@ -1713,11 +1480,8 @@
     "title": "wearwolfgame",
     "info": "rules for creating the werewolf game",
     "url": "https://github.com/ATL-WDI-Exercises/wearwolfgame",
-    "tags": [
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
-    ],
+    "tags": [],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 51164036,
       "created_at": "2016-02-05T17:56:35Z",
@@ -1733,11 +1497,9 @@
     "tags": [
       "node",
       "express",
-      "socket",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "socket"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 51086197,
       "created_at": "2016-02-04T15:49:23Z",
@@ -1752,11 +1514,9 @@
     "url": "https://github.com/ATL-WDI-Exercises/wendy_bite",
     "tags": [
       "css",
-      "html",
-      "ga",
-      "wdi",
-      "ATL-WDI-Exercises"
+      "html"
     ],
+    "org": "ATL-WDI-Exercises",
     "github": {
       "id": 54064330,
       "created_at": "2016-03-16T20:30:49Z",

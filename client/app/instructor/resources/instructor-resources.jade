@@ -49,6 +49,13 @@
                 | {{ resource.url || 'empty' }}
               a(ng-href="{{resource.url}}", target="_blank", style="margin-left: 10px;")
                 | (Visit)
+            dt Organization:
+            dd
+              a(href='#',
+              editable-text='resource.org',
+              ng-model='resource.org',
+              onbeforesave="$ctrl.updateResource(resource, $data)")
+                    | {{ resource.org || 'empty' }}
             dt Tags
             dd {{ resource.tags.join(', ') || 'empty' }}
             dt Rating

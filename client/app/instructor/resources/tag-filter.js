@@ -15,10 +15,10 @@
         return resources;
       }
 
-      // apply the included tags filtering using either "any" or "all" filtering.
-      let any = resource => resource.tags.reduce((acc, tag) => acc || Tag.contains(includedTags , tag), false);
-      let all = resource => includedTags. reduce((acc, tag) => acc && Tag.contains(resource.tags, tag), true );
-      let f = mode === 'any' ? any : all;
+      // apply the included tags filtering using either "union" or "intersecton" filtering.
+      let union       = resource => resource.tags.reduce((acc, tag) => acc || Tag.contains(includedTags , tag), false);
+      let intersecton = resource => includedTags. reduce((acc, tag) => acc && Tag.contains(resource.tags, tag), true );
+      let f = mode === 'union' ? union : intersecton;
       let result = includedTags.length === 0 ? resources : resources.filter(f);
 
       // filter out the resources that contain an excluded tag
