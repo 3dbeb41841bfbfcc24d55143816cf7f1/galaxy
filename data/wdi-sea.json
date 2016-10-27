@@ -1,0 +1,1755 @@
+[
+  {
+    "title": "ajax-local-storage-example",
+    "info": "An example of using AJAX w/JSON and Local Storage",
+    "url": "https://github.com/WDI-SEA/ajax-local-storage-example",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 60556459,
+      "created_at": "2016-06-06T19:54:36Z",
+      "updated_at": "2016-06-06T20:46:32Z",
+      "open_issues_count": 0,
+      "forks_count": 4
+    }
+  },
+  {
+    "title": "ajax-reddit-search",
+    "info": "use AJAX to search reddit and display results",
+    "url": "https://github.com/WDI-SEA/ajax-reddit-search",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 55090847,
+      "created_at": "2016-03-30T19:20:20Z",
+      "updated_at": "2016-07-28T18:32:00Z",
+      "open_issues_count": 0,
+      "forks_count": 29
+    }
+  },
+  {
+    "title": "ajax-reddit-slideshow",
+    "info": "[jquery, ajax]",
+    "url": "https://github.com/WDI-SEA/ajax-reddit-slideshow",
+    "tags": [
+      "jquery",
+      "ajax"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 49672569,
+      "created_at": "2016-01-14T20:16:46Z",
+      "updated_at": "2016-05-03T02:42:00Z",
+      "open_issues_count": 23,
+      "forks_count": 69
+    }
+  },
+  {
+    "title": "angular-calculator",
+    "info": "Create a calculator using Angular [angular]",
+    "url": "https://github.com/WDI-SEA/angular-calculator",
+    "tags": [
+      "angular"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52824016,
+      "created_at": "2016-02-29T20:54:46Z",
+      "updated_at": "2016-03-18T04:44:56Z",
+      "open_issues_count": 0,
+      "forks_count": 55
+    }
+  },
+  {
+    "title": "angular-directives",
+    "info": "[angular]",
+    "url": "https://github.com/WDI-SEA/angular-directives",
+    "tags": [
+      "angular"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 54176026,
+      "created_at": "2016-03-18T05:23:12Z",
+      "updated_at": "2016-03-18T05:46:20Z",
+      "open_issues_count": 0,
+      "forks_count": 5
+    }
+  },
+  {
+    "title": "angular-filters",
+    "info": "[angular]",
+    "url": "https://github.com/WDI-SEA/angular-filters",
+    "tags": [
+      "angular"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 54175324,
+      "created_at": "2016-03-18T05:09:43Z",
+      "updated_at": "2016-03-18T05:20:17Z",
+      "open_issues_count": 0,
+      "forks_count": 9
+    }
+  },
+  {
+    "title": "angular-giphy",
+    "info": "[angular]",
+    "url": "https://github.com/WDI-SEA/angular-giphy",
+    "tags": [
+      "angular"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 53703652,
+      "created_at": "2016-03-11T23:47:15Z",
+      "updated_at": "2016-03-18T04:36:04Z",
+      "open_issues_count": 0,
+      "forks_count": 37
+    }
+  },
+  {
+    "title": "angular-recipes",
+    "info": "An Angular app to keep track of recipes, with authentication [angular, jwt, auth]",
+    "url": "https://github.com/WDI-SEA/angular-recipes",
+    "tags": [
+      "angular",
+      "jwt",
+      "auth"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 54067258,
+      "created_at": "2016-03-16T21:20:23Z",
+      "updated_at": "2016-03-18T04:33:32Z",
+      "open_issues_count": 1,
+      "forks_count": 48
+    }
+  },
+  {
+    "title": "angular-reddit-dashboard",
+    "info": "[angular]",
+    "url": "https://github.com/WDI-SEA/angular-reddit-dashboard",
+    "tags": [
+      "angular"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52825565,
+      "created_at": "2016-02-29T21:20:08Z",
+      "updated_at": "2016-03-18T04:50:36Z",
+      "open_issues_count": 13,
+      "forks_count": 13
+    }
+  },
+  {
+    "title": "angular-route-those-views",
+    "info": "Practice using UI Router with this open-ended assignment [angular]",
+    "url": "https://github.com/WDI-SEA/angular-route-those-views",
+    "tags": [
+      "angular"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 53964951,
+      "created_at": "2016-03-15T17:31:34Z",
+      "updated_at": "2016-07-14T20:00:20Z",
+      "open_issues_count": 10,
+      "forks_count": 39
+    }
+  },
+  {
+    "title": "apartment-database",
+    "info": "Create an apartment and make some SQL queries [sql, databases]",
+    "url": "https://github.com/WDI-SEA/apartment-database",
+    "tags": [
+      "sql",
+      "databases"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 51113407,
+      "created_at": "2016-02-04T23:30:43Z",
+      "updated_at": "2016-03-18T04:47:29Z",
+      "open_issues_count": 1,
+      "forks_count": 23
+    }
+  },
+  {
+    "title": "auth-simple-twitter",
+    "info": null,
+    "url": "https://github.com/WDI-SEA/auth-simple-twitter",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 57074971,
+      "created_at": "2016-04-25T20:41:56Z",
+      "updated_at": "2016-04-25T20:43:32Z",
+      "open_issues_count": 0,
+      "forks_count": 5
+    }
+  },
+  {
+    "title": "booktown",
+    "info": "Queries upon queries in Booktown, USA [sql, databases]",
+    "url": "https://github.com/WDI-SEA/booktown",
+    "tags": [
+      "sql",
+      "databases"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 51113589,
+      "created_at": "2016-02-04T23:34:33Z",
+      "updated_at": "2016-03-18T04:48:08Z",
+      "open_issues_count": 9,
+      "forks_count": 63
+    }
+  },
+  {
+    "title": "bootstrap-mockups",
+    "info": "[css, bootstrap]",
+    "url": "https://github.com/WDI-SEA/bootstrap-mockups",
+    "tags": [
+      "css",
+      "bootstrap"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 49672658,
+      "created_at": "2016-01-14T20:18:13Z",
+      "updated_at": "2016-05-20T17:49:21Z",
+      "open_issues_count": 23,
+      "forks_count": 70
+    }
+  },
+  {
+    "title": "cards-against-assembly",
+    "info": "[angular]",
+    "url": "https://github.com/WDI-SEA/cards-against-assembly",
+    "tags": [
+      "angular"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 54333072,
+      "created_at": "2016-03-20T18:20:02Z",
+      "updated_at": "2016-03-20T18:22:19Z",
+      "open_issues_count": 0,
+      "forks_count": 29
+    }
+  },
+  {
+    "title": "code-review",
+    "info": "Instructions and submission repos for project code reviews",
+    "url": "https://github.com/WDI-SEA/code-review",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 59251290,
+      "created_at": "2016-05-20T00:00:01Z",
+      "updated_at": "2016-05-20T00:00:01Z",
+      "open_issues_count": 17,
+      "forks_count": 21
+    }
+  },
+  {
+    "title": "command-line-murder-mystery",
+    "info": "[cli]",
+    "url": "https://github.com/WDI-SEA/command-line-murder-mystery",
+    "tags": [
+      "cli"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 49667733,
+      "created_at": "2016-01-14T18:51:52Z",
+      "updated_at": "2016-03-18T04:42:20Z",
+      "open_issues_count": 24,
+      "forks_count": 97
+    }
+  },
+  {
+    "title": "css-airbnb",
+    "info": "Creating Airbnb's card layout in CSS [css]",
+    "url": "https://github.com/WDI-SEA/css-airbnb",
+    "tags": [
+      "css"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 56813461,
+      "created_at": "2016-04-22T00:14:59Z",
+      "updated_at": "2016-05-01T05:33:34Z",
+      "open_issues_count": 22,
+      "forks_count": 88
+    }
+  },
+  {
+    "title": "css-positioning",
+    "info": "[css]",
+    "url": "https://github.com/WDI-SEA/css-positioning",
+    "tags": [
+      "css"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 50203887,
+      "created_at": "2016-01-22T19:47:38Z",
+      "updated_at": "2016-03-18T04:48:50Z",
+      "open_issues_count": 0,
+      "forks_count": 81
+    }
+  },
+  {
+    "title": "css-selectors-animal-style",
+    "info": "[css]",
+    "url": "https://github.com/WDI-SEA/css-selectors-animal-style",
+    "tags": [
+      "css"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 50203794,
+      "created_at": "2016-01-22T19:45:52Z",
+      "updated_at": "2016-03-18T04:41:12Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "dont-build-a-skyscraper",
+    "info": "[meta]",
+    "url": "https://github.com/WDI-SEA/dont-build-a-skyscraper",
+    "tags": [
+      "meta"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 57450578,
+      "created_at": "2016-04-30T16:06:00Z",
+      "updated_at": "2016-05-01T19:50:40Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "express-apis-omdb",
+    "info": "Create an Express application that incorporates a third party API, OMDB. [express, api]",
+    "url": "https://github.com/WDI-SEA/express-apis-omdb",
+    "tags": [
+      "express",
+      "api"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 50877589,
+      "created_at": "2016-02-01T22:56:10Z",
+      "updated_at": "2016-06-07T17:50:12Z",
+      "open_issues_count": 7,
+      "forks_count": 65
+    }
+  },
+  {
+    "title": "express-auth",
+    "info": "DEPRECATED, instead use: https://github.com/WDI-SEA/express-authentication",
+    "url": "https://github.com/WDI-SEA/express-auth",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 51899352,
+      "created_at": "2016-02-17T06:10:46Z",
+      "updated_at": "2016-07-13T21:43:16Z",
+      "open_issues_count": 0,
+      "forks_count": 29
+    }
+  },
+  {
+    "title": "express-authentication",
+    "info": "Express authentication template using Passport + flash messages + custom middleware",
+    "url": "https://github.com/WDI-SEA/express-authentication",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 60738289,
+      "created_at": "2016-06-08T23:46:30Z",
+      "updated_at": "2016-07-21T21:47:05Z",
+      "open_issues_count": 0,
+      "forks_count": 34
+    }
+  },
+  {
+    "title": "express-blogpulse",
+    "info": "Welcome to BlogPulse, a media company filled with user-generated content [express, sql, node]",
+    "url": "https://github.com/WDI-SEA/express-blogpulse",
+    "tags": [
+      "express",
+      "sql",
+      "node"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 60821928,
+      "created_at": "2016-06-10T03:28:11Z",
+      "updated_at": "2016-06-12T22:37:15Z",
+      "open_issues_count": 2,
+      "forks_count": 35
+    }
+  },
+  {
+    "title": "express-cloudinary",
+    "info": "[express, mini-lesson]",
+    "url": "https://github.com/WDI-SEA/express-cloudinary",
+    "tags": [
+      "express",
+      "mini-lesson"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52502687,
+      "created_at": "2016-02-25T06:35:35Z",
+      "updated_at": "2016-07-13T21:43:15Z",
+      "open_issues_count": 0,
+      "forks_count": 25
+    }
+  },
+  {
+    "title": "express-daily-planet",
+    "info": "Create a basic news app with no database [express]",
+    "url": "https://github.com/WDI-SEA/express-daily-planet",
+    "tags": [
+      "express"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 50877241,
+      "created_at": "2016-02-01T22:48:58Z",
+      "updated_at": "2016-03-18T04:48:44Z",
+      "open_issues_count": 9,
+      "forks_count": 68
+    }
+  },
+  {
+    "title": "express-daily-planet-ajax",
+    "info": "[express, ajax]",
+    "url": "https://github.com/WDI-SEA/express-daily-planet-ajax",
+    "tags": [
+      "express",
+      "ajax"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 51113804,
+      "created_at": "2016-02-04T23:39:31Z",
+      "updated_at": "2016-07-13T21:43:15Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "express-geocode-maps-example",
+    "info": "Starter code for geocoding with Sequelize and the Google Maps API [express, mini-lesson]",
+    "url": "https://github.com/WDI-SEA/express-geocode-maps-example",
+    "tags": [
+      "express",
+      "mini-lesson"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52394036,
+      "created_at": "2016-02-23T21:48:24Z",
+      "updated_at": "2016-03-18T04:46:19Z",
+      "open_issues_count": 0,
+      "forks_count": 35
+    }
+  },
+  {
+    "title": "express-jwt-users",
+    "info": "A demo app for implementing JSON web tokens [angular, jwt, api]",
+    "url": "https://github.com/WDI-SEA/express-jwt-users",
+    "tags": [
+      "angular",
+      "jwt",
+      "api"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 53970329,
+      "created_at": "2016-03-15T18:52:57Z",
+      "updated_at": "2016-07-27T21:03:59Z",
+      "open_issues_count": 0,
+      "forks_count": 28
+    }
+  },
+  {
+    "title": "express-pokedex",
+    "info": "Create a Pokedex using the PokeAPI + Express [express, node, sql]",
+    "url": "https://github.com/WDI-SEA/express-pokedex",
+    "tags": [
+      "express",
+      "node",
+      "sql"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 60707858,
+      "created_at": "2016-06-08T15:18:53Z",
+      "updated_at": "2016-06-09T04:35:25Z",
+      "open_issues_count": 17,
+      "forks_count": 37
+    }
+  },
+  {
+    "title": "express-project-organizer",
+    "info": "[express, node, sql]",
+    "url": "https://github.com/WDI-SEA/express-project-organizer",
+    "tags": [
+      "express",
+      "node",
+      "sql"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 61132877,
+      "created_at": "2016-06-14T15:10:10Z",
+      "updated_at": "2016-06-27T16:54:02Z",
+      "open_issues_count": 18,
+      "forks_count": 34
+    }
+  },
+  {
+    "title": "fly-on-angular",
+    "info": "An Express API with an Airplane model and basic Angular app [angular]",
+    "url": "https://github.com/WDI-SEA/fly-on-angular",
+    "tags": [
+      "angular"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 53984688,
+      "created_at": "2016-03-15T23:00:59Z",
+      "updated_at": "2016-03-18T04:34:26Z",
+      "open_issues_count": 3,
+      "forks_count": 48
+    }
+  },
+  {
+    "title": "fork_practice",
+    "info": "Practice for forking homework assignments [git]",
+    "url": "https://github.com/WDI-SEA/fork_practice",
+    "tags": [
+      "git"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 49969063,
+      "created_at": "2016-01-19T17:14:12Z",
+      "updated_at": "2016-03-18T04:37:35Z",
+      "open_issues_count": 0,
+      "forks_count": 15
+    }
+  },
+  {
+    "title": "front-end-hackathon",
+    "info": "[css, javascript, jquery, hackathon, weekend]",
+    "url": "https://github.com/WDI-SEA/front-end-hackathon",
+    "tags": [
+      "css",
+      "javascript",
+      "jquery",
+      "hackathon",
+      "weekend"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52821658,
+      "created_at": "2016-02-29T20:19:00Z",
+      "updated_at": "2016-10-20T18:20:09Z",
+      "open_issues_count": 10,
+      "forks_count": 40
+    }
+  },
+  {
+    "title": "fruits-and-veggies",
+    "info": "[angular]",
+    "url": "https://github.com/WDI-SEA/fruits-and-veggies",
+    "tags": [
+      "angular"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52824673,
+      "created_at": "2016-02-29T21:05:13Z",
+      "updated_at": "2016-03-18T04:36:14Z",
+      "open_issues_count": 18,
+      "forks_count": 62
+    }
+  },
+  {
+    "title": "google-shopping-conditionals-loops",
+    "info": "[javascript]",
+    "url": "https://github.com/WDI-SEA/google-shopping-conditionals-loops",
+    "tags": [
+      "javascript"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 49671195,
+      "created_at": "2016-01-14T19:51:39Z",
+      "updated_at": "2016-03-18T04:38:58Z",
+      "open_issues_count": 22,
+      "forks_count": 71
+    }
+  },
+  {
+    "title": "google-shopping-functions",
+    "info": "[javascript]",
+    "url": "https://github.com/WDI-SEA/google-shopping-functions",
+    "tags": [
+      "javascript"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 49671869,
+      "created_at": "2016-01-14T20:03:49Z",
+      "updated_at": "2016-03-18T04:43:32Z",
+      "open_issues_count": 0,
+      "forks_count": 44
+    }
+  },
+  {
+    "title": "google-shopping-ruby",
+    "info": "100% more ruby and 100% less JavaScript [ruby]",
+    "url": "https://github.com/WDI-SEA/google-shopping-ruby",
+    "tags": [
+      "ruby"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52569173,
+      "created_at": "2016-02-26T01:21:18Z",
+      "updated_at": "2016-03-18T04:50:28Z",
+      "open_issues_count": 0,
+      "forks_count": 37
+    }
+  },
+  {
+    "title": "hackathon-teams",
+    "info": "An example CRUD app missing PUT and DELETE actions [express, ajax]",
+    "url": "https://github.com/WDI-SEA/hackathon-teams",
+    "tags": [
+      "express",
+      "ajax"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 56258653,
+      "created_at": "2016-04-14T17:54:57Z",
+      "updated_at": "2016-06-08T18:40:38Z",
+      "open_issues_count": 11,
+      "forks_count": 47
+    }
+  },
+  {
+    "title": "hashmap-starter-code",
+    "info": null,
+    "url": "https://github.com/WDI-SEA/hashmap-starter-code",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 55240352,
+      "created_at": "2016-04-01T14:59:01Z",
+      "updated_at": "2016-04-01T15:07:58Z",
+      "open_issues_count": 0,
+      "forks_count": 18
+    }
+  },
+  {
+    "title": "html_top_ten_movies_table",
+    "info": null,
+    "url": "https://github.com/WDI-SEA/html_top_ten_movies_table",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 54488464,
+      "created_at": "2016-03-22T15:53:45Z",
+      "updated_at": "2016-03-22T15:55:47Z",
+      "open_issues_count": 15,
+      "forks_count": 55
+    }
+  },
+  {
+    "title": "html_user_inputs",
+    "info": null,
+    "url": "https://github.com/WDI-SEA/html_user_inputs",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 54488727,
+      "created_at": "2016-03-22T15:57:22Z",
+      "updated_at": "2016-03-22T15:57:43Z",
+      "open_issues_count": 8,
+      "forks_count": 62
+    }
+  },
+  {
+    "title": "html-css-review",
+    "info": "A review of HTML and CSS [review]",
+    "url": "https://github.com/WDI-SEA/html-css-review",
+    "tags": [
+      "review"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 59681580,
+      "created_at": "2016-05-25T16:57:43Z",
+      "updated_at": "2016-05-25T16:57:43Z",
+      "open_issues_count": 11,
+      "forks_count": 32
+    }
+  },
+  {
+    "title": "interview-question-solutions",
+    "info": null,
+    "url": "https://github.com/WDI-SEA/interview-question-solutions",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 59159552,
+      "created_at": "2016-05-18T23:52:52Z",
+      "updated_at": "2016-05-18T23:52:52Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "interview-questions",
+    "info": "[weekend]",
+    "url": "https://github.com/WDI-SEA/interview-questions",
+    "tags": [
+      "weekend"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 54177081,
+      "created_at": "2016-03-18T05:46:42Z",
+      "updated_at": "2016-06-02T01:45:44Z",
+      "open_issues_count": 4,
+      "forks_count": 46
+    }
+  },
+  {
+    "title": "intro-python",
+    "info": "[python, workshop]",
+    "url": "https://github.com/WDI-SEA/intro-python",
+    "tags": [
+      "python",
+      "workshop"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 56886156,
+      "created_at": "2016-04-22T21:25:33Z",
+      "updated_at": "2016-04-22T21:25:50Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "iterators-reddit",
+    "info": "[javascript, callbacks]",
+    "url": "https://github.com/WDI-SEA/iterators-reddit",
+    "tags": [
+      "javascript",
+      "callbacks"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 49672398,
+      "created_at": "2016-01-14T20:13:46Z",
+      "updated_at": "2016-03-18T04:42:11Z",
+      "open_issues_count": 10,
+      "forks_count": 43
+    }
+  },
+  {
+    "title": "jquery-ajax",
+    "info": "[jquery, ajax]",
+    "url": "https://github.com/WDI-SEA/jquery-ajax",
+    "tags": [
+      "jquery",
+      "ajax"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 50608343,
+      "created_at": "2016-01-28T19:40:15Z",
+      "updated_at": "2016-05-03T02:54:00Z",
+      "open_issues_count": 0,
+      "forks_count": 23
+    }
+  },
+  {
+    "title": "jquery-plugins",
+    "info": "[jquery]",
+    "url": "https://github.com/WDI-SEA/jquery-plugins",
+    "tags": [
+      "jquery"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 50608247,
+      "created_at": "2016-01-28T19:38:27Z",
+      "updated_at": "2016-05-20T18:27:09Z",
+      "open_issues_count": 4,
+      "forks_count": 41
+    }
+  },
+  {
+    "title": "jquery-todo-list",
+    "info": "[jquery, dom]",
+    "url": "https://github.com/WDI-SEA/jquery-todo-list",
+    "tags": [
+      "jquery",
+      "dom"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 49672485,
+      "created_at": "2016-01-14T20:15:13Z",
+      "updated_at": "2016-05-19T22:36:04Z",
+      "open_issues_count": 17,
+      "forks_count": 68
+    }
+  },
+  {
+    "title": "js-callbacks-iterators",
+    "info": "[javascript, callbacks]",
+    "url": "https://github.com/WDI-SEA/js-callbacks-iterators",
+    "tags": [
+      "javascript",
+      "callbacks"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 50454029,
+      "created_at": "2016-01-26T19:39:23Z",
+      "updated_at": "2016-03-18T04:40:05Z",
+      "open_issues_count": 0,
+      "forks_count": 33
+    }
+  },
+  {
+    "title": "js-control-flow",
+    "info": "[javascript, problem-solving]",
+    "url": "https://github.com/WDI-SEA/js-control-flow",
+    "tags": [
+      "javascript",
+      "problem-solving"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 50203686,
+      "created_at": "2016-01-22T19:44:02Z",
+      "updated_at": "2016-03-18T04:40:52Z",
+      "open_issues_count": 0,
+      "forks_count": 50
+    }
+  },
+  {
+    "title": "js-functions",
+    "info": "[javascript, problem-solving]",
+    "url": "https://github.com/WDI-SEA/js-functions",
+    "tags": [
+      "javascript",
+      "problem-solving"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 50453910,
+      "created_at": "2016-01-26T19:37:22Z",
+      "updated_at": "2016-03-18T04:40:40Z",
+      "open_issues_count": 0,
+      "forks_count": 50
+    }
+  },
+  {
+    "title": "js-jquery-review",
+    "info": "[javascript, jquery, weekend]",
+    "url": "https://github.com/WDI-SEA/js-jquery-review",
+    "tags": [
+      "javascript",
+      "jquery",
+      "weekend"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52823699,
+      "created_at": "2016-02-29T20:49:58Z",
+      "updated_at": "2016-03-18T04:45:13Z",
+      "open_issues_count": 0,
+      "forks_count": 22
+    }
+  },
+  {
+    "title": "js-practice-problems",
+    "info": null,
+    "url": "https://github.com/WDI-SEA/js-practice-problems",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 56334458,
+      "created_at": "2016-04-15T16:30:14Z",
+      "updated_at": "2016-04-15T16:30:36Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "js-primitives",
+    "info": "Exercises on JavaScript variables, data structures, and Array/String functions [javascript]",
+    "url": "https://github.com/WDI-SEA/js-primitives",
+    "tags": [
+      "javascript"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 50203557,
+      "created_at": "2016-01-22T19:41:34Z",
+      "updated_at": "2016-08-21T14:59:37Z",
+      "open_issues_count": 0,
+      "forks_count": 42
+    }
+  },
+  {
+    "title": "js-template",
+    "info": "ES6 JS template from GA Boston [staff, javascript]",
+    "url": "https://github.com/WDI-SEA/js-template",
+    "tags": [
+      "staff",
+      "javascript"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 57153242,
+      "created_at": "2016-04-26T18:43:46Z",
+      "updated_at": "2016-04-26T18:44:22Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "junior-developer-interview-prep",
+    "info": "Repository of things to assist Jr. developers with Interview Prep",
+    "url": "https://github.com/WDI-SEA/junior-developer-interview-prep",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 61589274,
+      "created_at": "2016-06-21T00:16:38Z",
+      "updated_at": "2016-05-19T07:06:15Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "lab_hw_solutions",
+    "info": "Solutions repo for the GA labs and HW.",
+    "url": "https://github.com/WDI-SEA/lab_hw_solutions",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 54994328,
+      "created_at": "2016-03-29T17:02:06Z",
+      "updated_at": "2016-05-04T16:33:14Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "learn-git-newsroom-style",
+    "info": null,
+    "url": "https://github.com/WDI-SEA/learn-git-newsroom-style",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 62161964,
+      "created_at": "2016-06-28T17:43:36Z",
+      "updated_at": "2016-06-27T22:30:29Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "link-board",
+    "info": "Hacker News clone [rails, auth]",
+    "url": "https://github.com/WDI-SEA/link-board",
+    "tags": [
+      "rails",
+      "auth"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52822555,
+      "created_at": "2016-02-29T20:32:04Z",
+      "updated_at": "2016-03-18T04:37:18Z",
+      "open_issues_count": 0,
+      "forks_count": 53
+    }
+  },
+  {
+    "title": "link-shortener",
+    "info": "Create an Express app to shorten links [express]",
+    "url": "https://github.com/WDI-SEA/link-shortener",
+    "tags": [
+      "express"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 51114167,
+      "created_at": "2016-02-04T23:47:55Z",
+      "updated_at": "2016-06-07T21:47:34Z",
+      "open_issues_count": 19,
+      "forks_count": 79
+    }
+  },
+  {
+    "title": "meteor-tic-tac-toe",
+    "info": "Repo for Meteor TicTacToe deliverable",
+    "url": "https://github.com/WDI-SEA/meteor-tic-tac-toe",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 69298016,
+      "created_at": "2016-09-26T22:27:28Z",
+      "updated_at": "2016-09-26T22:27:28Z",
+      "open_issues_count": 7,
+      "forks_count": 8
+    }
+  },
+  {
+    "title": "mocha-chai-starter",
+    "info": "Get your favorite drinks ready with this starter code. [express, testing]",
+    "url": "https://github.com/WDI-SEA/mocha-chai-starter",
+    "tags": [
+      "express",
+      "testing"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 51115075,
+      "created_at": "2016-02-05T00:10:41Z",
+      "updated_at": "2016-08-05T10:11:33Z",
+      "open_issues_count": 0,
+      "forks_count": 27
+    }
+  },
+  {
+    "title": "node-template",
+    "info": "ES6 Node template from GA Boston [staff, node, javascript]",
+    "url": "https://github.com/WDI-SEA/node-template",
+    "tags": [
+      "staff",
+      "node",
+      "javascript"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 57153237,
+      "created_at": "2016-04-26T18:43:40Z",
+      "updated_at": "2016-04-26T18:44:11Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "nokogiri-cli-tool",
+    "info": "Create a CLI tool that gets data from other sites [cli, ruby, data-scraping]",
+    "url": "https://github.com/WDI-SEA/nokogiri-cli-tool",
+    "tags": [
+      "cli",
+      "ruby",
+      "data-scraping"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52821134,
+      "created_at": "2016-02-29T20:10:13Z",
+      "updated_at": "2016-03-18T04:49:49Z",
+      "open_issues_count": 0,
+      "forks_count": 27
+    }
+  },
+  {
+    "title": "notes",
+    "info": "Notes gitbook for WDI [ga-staff]",
+    "url": "https://github.com/WDI-SEA/notes",
+    "tags": [
+      "ga-staff"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 50865808,
+      "created_at": "2016-02-01T19:43:47Z",
+      "updated_at": "2016-09-27T18:12:13Z",
+      "open_issues_count": 9,
+      "forks_count": 25
+    }
+  },
+  {
+    "title": "oauth-facebook-example",
+    "info": "[express, mini-lesson, oauth, auth]",
+    "url": "https://github.com/WDI-SEA/oauth-facebook-example",
+    "tags": [
+      "express",
+      "mini-lesson",
+      "oauth",
+      "auth"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52303400,
+      "created_at": "2016-02-22T20:30:19Z",
+      "updated_at": "2016-03-18T04:46:48Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "oh-auth-example",
+    "info": "OAuth with Rails [rails, auth, oauth]",
+    "url": "https://github.com/WDI-SEA/oh-auth-example",
+    "tags": [
+      "rails",
+      "auth",
+      "oauth"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 53600582,
+      "created_at": "2016-03-10T16:38:46Z",
+      "updated_at": "2016-03-18T04:36:28Z",
+      "open_issues_count": 1,
+      "forks_count": 37
+    }
+  },
+  {
+    "title": "omdb-labs-walkthrough",
+    "info": null,
+    "url": "https://github.com/WDI-SEA/omdb-labs-walkthrough",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 56642205,
+      "created_at": "2016-04-20T00:31:05Z",
+      "updated_at": "2016-07-13T21:43:17Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "oop-inheritance-car",
+    "info": "[javascript, oop, testing]",
+    "url": "https://github.com/WDI-SEA/oop-inheritance-car",
+    "tags": [
+      "javascript",
+      "oop",
+      "testing"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 49744864,
+      "created_at": "2016-01-15T21:05:34Z",
+      "updated_at": "2016-05-01T16:44:38Z",
+      "open_issues_count": 10,
+      "forks_count": 64
+    }
+  },
+  {
+    "title": "oop-prototype-car",
+    "info": "Welcome to the Prototype Body Shop. Let's build a car! [javascript, oop, testing]",
+    "url": "https://github.com/WDI-SEA/oop-prototype-car",
+    "tags": [
+      "javascript",
+      "oop",
+      "testing"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 50876491,
+      "created_at": "2016-02-01T22:34:38Z",
+      "updated_at": "2016-03-18T04:49:12Z",
+      "open_issues_count": 10,
+      "forks_count": 76
+    }
+  },
+  {
+    "title": "outcomes",
+    "info": "[ga-staff]",
+    "url": "https://github.com/WDI-SEA/outcomes",
+    "tags": [
+      "ga-staff"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 54162781,
+      "created_at": "2016-03-18T01:19:57Z",
+      "updated_at": "2016-03-22T22:56:30Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "rails-national-parks",
+    "info": "Celebrate America's natural beauty in a Rails app [ruby, rails]",
+    "url": "https://github.com/WDI-SEA/rails-national-parks",
+    "tags": [
+      "ruby",
+      "rails"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 62335565,
+      "created_at": "2016-06-30T19:00:25Z",
+      "updated_at": "2016-09-02T16:49:03Z",
+      "open_issues_count": 11,
+      "forks_count": 24
+    }
+  },
+  {
+    "title": "rails-password-reset",
+    "info": "[rails, mini-lesson]",
+    "url": "https://github.com/WDI-SEA/rails-password-reset",
+    "tags": [
+      "rails",
+      "mini-lesson"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 53378792,
+      "created_at": "2016-03-08T03:18:43Z",
+      "updated_at": "2016-03-18T04:35:47Z",
+      "open_issues_count": 0,
+      "forks_count": 31
+    }
+  },
+  {
+    "title": "random-quote-jquery",
+    "info": "Create a random quote generator using jQuery [jquery, dom]",
+    "url": "https://github.com/WDI-SEA/random-quote-jquery",
+    "tags": [
+      "jquery",
+      "dom"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 50450598,
+      "created_at": "2016-01-26T18:43:59Z",
+      "updated_at": "2016-09-08T19:58:37Z",
+      "open_issues_count": 4,
+      "forks_count": 66
+    }
+  },
+  {
+    "title": "react-business-dashboard",
+    "info": "[react]",
+    "url": "https://github.com/WDI-SEA/react-business-dashboard",
+    "tags": [
+      "react"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 67637534,
+      "created_at": "2016-09-07T19:35:50Z",
+      "updated_at": "2016-09-13T00:28:45Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "react-itunes-search",
+    "info": "[react]",
+    "url": "https://github.com/WDI-SEA/react-itunes-search",
+    "tags": [
+      "react"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 54429641,
+      "created_at": "2016-03-21T23:13:50Z",
+      "updated_at": "2016-03-22T20:00:55Z",
+      "open_issues_count": 0,
+      "forks_count": 13
+    }
+  },
+  {
+    "title": "react-omdb",
+    "info": "[react]",
+    "url": "https://github.com/WDI-SEA/react-omdb",
+    "tags": [
+      "react"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 54444243,
+      "created_at": "2016-03-22T04:07:17Z",
+      "updated_at": "2016-03-22T04:07:43Z",
+      "open_issues_count": 0,
+      "forks_count": 29
+    }
+  },
+  {
+    "title": "react-starter-basic",
+    "info": "A simple React starter kit with Gulp and Browserify [react]",
+    "url": "https://github.com/WDI-SEA/react-starter-basic",
+    "tags": [
+      "react"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 54358998,
+      "created_at": "2016-03-21T04:06:19Z",
+      "updated_at": "2016-03-21T22:38:28Z",
+      "open_issues_count": 0,
+      "forks_count": 3
+    }
+  },
+  {
+    "title": "react-stopwatch",
+    "info": "[react]",
+    "url": "https://github.com/WDI-SEA/react-stopwatch",
+    "tags": [
+      "react"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 54354859,
+      "created_at": "2016-03-21T02:46:35Z",
+      "updated_at": "2016-03-21T02:46:35Z",
+      "open_issues_count": 0,
+      "forks_count": 9
+    }
+  },
+  {
+    "title": "react-yearbook",
+    "info": "Routing thumbnails using React Router [react]",
+    "url": "https://github.com/WDI-SEA/react-yearbook",
+    "tags": [
+      "react"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 54442759,
+      "created_at": "2016-03-22T03:37:48Z",
+      "updated_at": "2016-03-22T03:38:51Z",
+      "open_issues_count": 0,
+      "forks_count": 15
+    }
+  },
+  {
+    "title": "repotagger.github.io",
+    "info": "A way of \"tagging\" Github repos. Enter the name of a Github organization or user in the white box to the top-left and click \"Reload\" to see all their repos. To add tags, put comma-separated terms in square brackets in a repo's description.",
+    "url": "https://github.com/WDI-SEA/repotagger.github.io",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52581769,
+      "created_at": "2016-02-26T05:48:26Z",
+      "updated_at": "2016-02-26T05:48:26Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "restful-api",
+    "info": "Create a RESTful API with JWT authentication [angular, jwt, api]",
+    "url": "https://github.com/WDI-SEA/restful-api",
+    "tags": [
+      "angular",
+      "jwt",
+      "api"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 53971543,
+      "created_at": "2016-03-15T19:12:51Z",
+      "updated_at": "2016-07-19T19:33:45Z",
+      "open_issues_count": 0,
+      "forks_count": 20
+    }
+  },
+  {
+    "title": "rspec-testing",
+    "info": "[ruby, testing]",
+    "url": "https://github.com/WDI-SEA/rspec-testing",
+    "tags": [
+      "ruby",
+      "testing"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52568641,
+      "created_at": "2016-02-26T01:09:29Z",
+      "updated_at": "2016-03-18T04:45:28Z",
+      "open_issues_count": 2,
+      "forks_count": 37
+    }
+  },
+  {
+    "title": "ruby-challenges",
+    "info": "[ruby, problem-solving]",
+    "url": "https://github.com/WDI-SEA/ruby-challenges",
+    "tags": [
+      "ruby",
+      "problem-solving"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52567461,
+      "created_at": "2016-02-26T00:40:26Z",
+      "updated_at": "2016-06-28T23:43:43Z",
+      "open_issues_count": 9,
+      "forks_count": 66
+    }
+  },
+  {
+    "title": "ruby-classes",
+    "info": "Create some useful Ruby classes [ruby, oop]",
+    "url": "https://github.com/WDI-SEA/ruby-classes",
+    "tags": [
+      "ruby",
+      "oop"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52566771,
+      "created_at": "2016-02-26T00:24:05Z",
+      "updated_at": "2016-03-18T04:45:36Z",
+      "open_issues_count": 0,
+      "forks_count": 26
+    }
+  },
+  {
+    "title": "ruby-exercises",
+    "info": "New language, same concepts [ruby]",
+    "url": "https://github.com/WDI-SEA/ruby-exercises",
+    "tags": [
+      "ruby"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52565873,
+      "created_at": "2016-02-26T00:03:49Z",
+      "updated_at": "2016-03-18T04:45:47Z",
+      "open_issues_count": 2,
+      "forks_count": 68
+    }
+  },
+  {
+    "title": "ruby-rio-grande",
+    "info": "Oh Rio, Rio dance across the Rio Grande... of Ruby inheritance [oop, ruby, testing]",
+    "url": "https://github.com/WDI-SEA/ruby-rio-grande",
+    "tags": [
+      "oop",
+      "ruby",
+      "testing"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52569460,
+      "created_at": "2016-02-26T01:27:06Z",
+      "updated_at": "2016-03-18T04:50:02Z",
+      "open_issues_count": 10,
+      "forks_count": 52
+    }
+  },
+  {
+    "title": "ruby-spa",
+    "info": "Build a Ruby Single Page App",
+    "url": "https://github.com/WDI-SEA/ruby-spa",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 58498986,
+      "created_at": "2016-05-10T23:10:47Z",
+      "updated_at": "2016-05-10T23:10:47Z",
+      "open_issues_count": 10,
+      "forks_count": 11
+    }
+  },
+  {
+    "title": "selecting-reddit",
+    "info": "[javascript, dom]",
+    "url": "https://github.com/WDI-SEA/selecting-reddit",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 50453791,
+      "created_at": "2016-01-26T19:35:30Z",
+      "updated_at": "2016-03-18T04:40:19Z",
+      "open_issues_count": 12,
+      "forks_count": 20
+    }
+  },
+  {
+    "title": "simple-session-exploration",
+    "info": "a simple server that attaches random data to session information. view it from different tabs, browsers, and from incognito to see how sessions persist.",
+    "url": "https://github.com/WDI-SEA/simple-session-exploration",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 56632785,
+      "created_at": "2016-04-19T21:18:39Z",
+      "updated_at": "2016-04-19T21:18:47Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "simple-twitter",
+    "info": null,
+    "url": "https://github.com/WDI-SEA/simple-twitter",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 56720605,
+      "created_at": "2016-04-20T21:00:23Z",
+      "updated_at": "2016-07-13T21:43:16Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "simple-twitter-solution",
+    "info": null,
+    "url": "https://github.com/WDI-SEA/simple-twitter-solution",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 56726198,
+      "created_at": "2016-04-20T22:55:43Z",
+      "updated_at": "2016-04-20T22:56:00Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "slu-bog",
+    "info": "Before the Amazonians rose to power, South Lake Union was home to many other creatures [rails]",
+    "url": "https://github.com/WDI-SEA/slu-bog",
+    "tags": [
+      "rails"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52569770,
+      "created_at": "2016-02-26T01:33:52Z",
+      "updated_at": "2016-03-18T04:49:39Z",
+      "open_issues_count": 0,
+      "forks_count": 29
+    }
+  },
+  {
+    "title": "socket-io-starter",
+    "info": "Starter code for Websockets with Socket.io [express, mini-lesson, sockets]",
+    "url": "https://github.com/WDI-SEA/socket-io-starter",
+    "tags": [
+      "express",
+      "mini-lesson",
+      "sockets"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 52320452,
+      "created_at": "2016-02-23T01:41:45Z",
+      "updated_at": "2016-10-18T23:04:16Z",
+      "open_issues_count": 0,
+      "forks_count": 30
+    }
+  },
+  {
+    "title": "socket-left-right-vote-chat-example",
+    "info": null,
+    "url": "https://github.com/WDI-SEA/socket-left-right-vote-chat-example",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 71297915,
+      "created_at": "2016-10-18T22:50:23Z",
+      "updated_at": "2016-10-18T23:20:48Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "tacoapp",
+    "info": "A basic CRUD app for tacos in Node/Express. Good for deployment practice. [express]",
+    "url": "https://github.com/WDI-SEA/tacoapp",
+    "tags": [
+      "express"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 51604381,
+      "created_at": "2016-02-12T17:27:34Z",
+      "updated_at": "2016-06-24T18:05:31Z",
+      "open_issues_count": 1,
+      "forks_count": 66
+    }
+  },
+  {
+    "title": "temperature-converter-dom",
+    "info": "[javascript, dom]",
+    "url": "https://github.com/WDI-SEA/temperature-converter-dom",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 50195826,
+      "created_at": "2016-01-22T17:16:57Z",
+      "updated_at": "2016-05-03T02:50:50Z",
+      "open_issues_count": 3,
+      "forks_count": 82
+    }
+  },
+  {
+    "title": "TEMPLATE-angular",
+    "info": "A front-end-only Angular template utilizing Webpack [angular]",
+    "url": "https://github.com/WDI-SEA/TEMPLATE-angular",
+    "tags": [
+      "angular"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 62247930,
+      "created_at": "2016-06-29T18:18:52Z",
+      "updated_at": "2016-07-13T23:14:57Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "TEMPLATE-express",
+    "info": "A template for Node projects",
+    "url": "https://github.com/WDI-SEA/TEMPLATE-express",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 59773900,
+      "created_at": "2016-05-26T18:33:32Z",
+      "updated_at": "2016-06-06T23:02:54Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "TEMPLATE-js",
+    "info": "A front-end template including BrowserSync, ESLint, CSSLint",
+    "url": "https://github.com/WDI-SEA/TEMPLATE-js",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 57530738,
+      "created_at": "2016-05-01T05:44:12Z",
+      "updated_at": "2016-07-21T21:46:19Z",
+      "open_issues_count": 0,
+      "forks_count": 5
+    }
+  },
+  {
+    "title": "TEMPLATE-ruby",
+    "info": "A template for Ruby projects, including Rubocop, Editorconfig, and appropriate config files [ruby]",
+    "url": "https://github.com/WDI-SEA/TEMPLATE-ruby",
+    "tags": [
+      "ruby"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 62180804,
+      "created_at": "2016-06-28T23:30:50Z",
+      "updated_at": "2016-07-13T23:15:03Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "test-deliverable",
+    "info": "This is a sample deliverable.",
+    "url": "https://github.com/WDI-SEA/test-deliverable",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 59524130,
+      "created_at": "2016-05-23T23:01:43Z",
+      "updated_at": "2016-05-23T23:01:43Z",
+      "open_issues_count": 13,
+      "forks_count": 15
+    }
+  },
+  {
+    "title": "tic-tac-toe",
+    "info": "[javascript, weekend]",
+    "url": "https://github.com/WDI-SEA/tic-tac-toe",
+    "tags": [
+      "javascript",
+      "weekend"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 49671982,
+      "created_at": "2016-01-14T20:05:42Z",
+      "updated_at": "2016-05-02T23:47:59Z",
+      "open_issues_count": 16,
+      "forks_count": 84
+    }
+  },
+  {
+    "title": "vanilla-js-challenge",
+    "info": "A challenge to build an app using vanilla javascript",
+    "url": "https://github.com/WDI-SEA/vanilla-js-challenge",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 69585511,
+      "created_at": "2016-09-29T16:20:02Z",
+      "updated_at": "2016-09-29T16:23:08Z",
+      "open_issues_count": 0,
+      "forks_count": 9
+    }
+  },
+  {
+    "title": "wdi-mantras",
+    "info": "[meta]",
+    "url": "https://github.com/WDI-SEA/wdi-mantras",
+    "tags": [
+      "meta"
+    ],
+    "org": "wdi-sea",
+    "github": {
+      "id": 57605815,
+      "created_at": "2016-05-01T15:14:27Z",
+      "updated_at": "2016-02-23T18:15:25Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "wdi-sea.github.io",
+    "info": "Landing Page for WDI Seattle",
+    "url": "https://github.com/WDI-SEA/wdi-sea.github.io",
+    "tags": [],
+    "org": "wdi-sea",
+    "github": {
+      "id": 60621350,
+      "created_at": "2016-06-07T14:46:21Z",
+      "updated_at": "2016-06-07T14:56:44Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  }
+]

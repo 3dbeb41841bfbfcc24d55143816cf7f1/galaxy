@@ -40,6 +40,10 @@ function createTestData() {
   .then( () => createResources('./data/ga-wdi-lessons.json') )
   .then( () => createResources('./data/ga-wdi-exercises.json') )
   .then( () => createResources('./data/ga-wdi-boston.json') )
+  .then( () => createResources('./data/den-wdi-1.json') )
+  .then( () => createResources('./data/den-wdi-2.json') )
+  .then( () => createResources('./data/generalassembly-atx.json') )
+  .then( () => createResources('./data/wdi-sea.json') )
   .then( () => createTestHomework() )
   .then( () => counts() );
 }

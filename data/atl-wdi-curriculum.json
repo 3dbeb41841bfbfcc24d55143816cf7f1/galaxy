@@ -60,19 +60,19 @@
   },
   {
     "title": "ajax-and-express",
-    "info": "[ajax, express, jquery, node]",
+    "info": "[ajax, express, jquery, nodejs]",
     "url": "https://github.com/ATL-WDI-Curriculum/ajax-and-express",
     "tags": [
       "ajax",
       "express",
       "jquery",
-      "node"
+      "nodejs"
     ],
     "org": "ATL-WDI-Curriculum",
     "github": {
       "id": 50668670,
       "created_at": "2016-01-29T14:49:46Z",
-      "updated_at": "2016-01-31T15:18:44Z",
+      "updated_at": "2016-10-26T15:36:27Z",
       "open_issues_count": 0,
       "forks_count": 5
     }
@@ -506,14 +506,17 @@
   },
   {
     "title": "es6",
-    "info": "Introduction to ECMAScript 6",
+    "info": "Introduction to ECMAScript 6. [javascript, es6]",
     "url": "https://github.com/ATL-WDI-Curriculum/es6",
-    "tags": [],
+    "tags": [
+      "javascript",
+      "es6"
+    ],
     "org": "ATL-WDI-Curriculum",
     "github": {
       "id": 65570534,
       "created_at": "2016-08-12T17:14:19Z",
-      "updated_at": "2016-08-12T17:14:19Z",
+      "updated_at": "2016-10-25T21:17:09Z",
       "open_issues_count": 0,
       "forks_count": 1
     }
@@ -548,32 +551,42 @@
   },
   {
     "title": "express-mongoose-modelling",
-    "info": "[node, express, mongoose]",
+    "info": "[javascript, nodejs, express, nosql, mongodb, databases, mongoose]",
     "url": "https://github.com/ATL-WDI-Curriculum/express-mongoose-modelling",
     "tags": [
-      "node",
+      "javascript",
+      "nodejs",
       "express",
+      "nosql",
+      "mongodb",
+      "databases",
       "mongoose"
     ],
     "org": "ATL-WDI-Curriculum",
     "github": {
       "id": 50792170,
       "created_at": "2016-01-31T19:54:50Z",
-      "updated_at": "2016-01-31T19:58:33Z",
+      "updated_at": "2016-10-25T17:22:36Z",
       "open_issues_count": 2,
       "forks_count": 4
     }
   },
   {
     "title": "express-security-with-passport",
-    "info": "Adding Passport to a Simple TODOs Express App.",
+    "info": "Adding Passport to a Simple TODOs Express App. [security, auth, passport, express, men-stack]",
     "url": "https://github.com/ATL-WDI-Curriculum/express-security-with-passport",
-    "tags": [],
+    "tags": [
+      "security",
+      "auth",
+      "passport",
+      "express",
+      "men-stack"
+    ],
     "org": "ATL-WDI-Curriculum",
     "github": {
       "id": 50930429,
       "created_at": "2016-02-02T15:32:14Z",
-      "updated_at": "2016-05-10T13:58:38Z",
+      "updated_at": "2016-10-25T23:12:33Z",
       "open_issues_count": 0,
       "forks_count": 5
     }
@@ -1016,32 +1029,39 @@
   },
   {
     "title": "mongo-nosql-intro-lesson",
-    "info": "[nosql, mongo, databases]",
+    "info": "[nosql, mongodb, databases]",
     "url": "https://github.com/ATL-WDI-Curriculum/mongo-nosql-intro-lesson",
     "tags": [
       "nosql",
-      "mongo",
+      "mongodb",
       "databases"
     ],
     "org": "ATL-WDI-Curriculum",
     "github": {
       "id": 50374683,
       "created_at": "2016-01-25T19:21:45Z",
-      "updated_at": "2016-01-25T19:21:45Z",
+      "updated_at": "2016-10-25T17:17:49Z",
       "open_issues_count": 0,
       "forks_count": 4
     }
   },
   {
     "title": "mongoose",
-    "info": "Introduction to the Mongoose library for connecting NodeJS apps to a MongoDB database.",
+    "info": "[javascript, nodejs, nosql, mongodb, databases, mongoose]",
     "url": "https://github.com/ATL-WDI-Curriculum/mongoose",
-    "tags": [],
+    "tags": [
+      "javascript",
+      "nodejs",
+      "nosql",
+      "mongodb",
+      "databases",
+      "mongoose"
+    ],
     "org": "ATL-WDI-Curriculum",
     "github": {
       "id": 50611122,
       "created_at": "2016-01-28T20:23:31Z",
-      "updated_at": "2016-03-15T15:28:46Z",
+      "updated_at": "2016-10-25T17:22:05Z",
       "open_issues_count": 0,
       "forks_count": 4
     }
@@ -1547,14 +1567,17 @@
   },
   {
     "title": "security-and-auth",
-    "info": "Introduction to Security, Authentication, and Authorization",
+    "info": "[security, auth]",
     "url": "https://github.com/ATL-WDI-Curriculum/security-and-auth",
-    "tags": [],
+    "tags": [
+      "security",
+      "auth"
+    ],
     "org": "ATL-WDI-Curriculum",
     "github": {
       "id": 56772470,
       "created_at": "2016-04-21T12:38:27Z",
-      "updated_at": "2016-04-21T12:38:27Z",
+      "updated_at": "2016-10-25T23:11:50Z",
       "open_issues_count": 0,
       "forks_count": 2
     }

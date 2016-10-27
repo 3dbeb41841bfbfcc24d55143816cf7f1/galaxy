@@ -105,18 +105,22 @@
   },
   {
     "title": "animal-shelter-express-mongoose",
-    "info": "[node, express, mongoose]",
+    "info": "[javascript, nodejs, express, nosql, mongodb, databases, mongoose]",
     "url": "https://github.com/ATL-WDI-Exercises/animal-shelter-express-mongoose",
     "tags": [
-      "node",
+      "javascript",
+      "nodejs",
       "express",
+      "nosql",
+      "mongodb",
+      "databases",
       "mongoose"
     ],
     "org": "ATL-WDI-Exercises",
     "github": {
       "id": 50792623,
       "created_at": "2016-01-31T20:05:47Z",
-      "updated_at": "2016-01-31T20:07:06Z",
+      "updated_at": "2016-10-25T17:23:50Z",
       "open_issues_count": 0,
       "forks_count": 1
     }
@@ -458,19 +462,22 @@
   },
   {
     "title": "express-node-mongoose-lab",
-    "info": "[express, node, mongoose, javascript]",
+    "info": "[javascript, nodejs, express, nosql, mongodb, databases, mongoose]",
     "url": "https://github.com/ATL-WDI-Exercises/express-node-mongoose-lab",
     "tags": [
+      "javascript",
+      "nodejs",
       "express",
-      "node",
-      "mongoose",
-      "javascript"
+      "nosql",
+      "mongodb",
+      "databases",
+      "mongoose"
     ],
     "org": "ATL-WDI-Exercises",
     "github": {
       "id": 50611635,
       "created_at": "2016-01-28T20:32:05Z",
-      "updated_at": "2016-01-28T20:32:05Z",
+      "updated_at": "2016-10-25T17:23:18Z",
       "open_issues_count": 0,
       "forks_count": 3
     }
@@ -828,14 +835,21 @@
   },
   {
     "title": "mean_todo_app",
-    "info": "A Simple TODO app using the MEAN Stack and the Express Generator",
+    "info": "[javascript, nodejs, todo-app, men-stack, express, mongodb]",
     "url": "https://github.com/ATL-WDI-Exercises/mean_todo_app",
-    "tags": [],
+    "tags": [
+      "javascript",
+      "nodejs",
+      "todo-app",
+      "men-stack",
+      "express",
+      "mongodb"
+    ],
     "org": "ATL-WDI-Exercises",
     "github": {
       "id": 58348936,
       "created_at": "2016-05-09T04:44:14Z",
-      "updated_at": "2016-05-10T13:52:14Z",
+      "updated_at": "2016-10-25T20:30:32Z",
       "open_issues_count": 2,
       "forks_count": 3
     }
@@ -870,17 +884,19 @@
   },
   {
     "title": "mongo-pokemon",
-    "info": "[mongo, nosql]",
+    "info": "[nosql, mongodb, databases, exercise]",
     "url": "https://github.com/ATL-WDI-Exercises/mongo-pokemon",
     "tags": [
-      "mongo",
-      "nosql"
+      "nosql",
+      "mongodb",
+      "databases",
+      "exercise"
     ],
     "org": "ATL-WDI-Exercises",
     "github": {
       "id": 50374859,
       "created_at": "2016-01-25T19:24:11Z",
-      "updated_at": "2016-01-25T19:24:11Z",
+      "updated_at": "2016-10-25T17:19:25Z",
       "open_issues_count": 1,
       "forks_count": 3
     }

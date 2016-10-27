@@ -1,0 +1,2535 @@
+[
+  {
+    "title": "active-record-models",
+    "info": "[active record, models, migrations, databases, ruby]",
+    "url": "https://github.com/den-wdi-1/active-record-models",
+    "tags": [
+      "active record",
+      "models",
+      "migrations",
+      "databases",
+      "ruby"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63276088,
+      "created_at": "2016-07-13T20:09:22Z",
+      "updated_at": "2016-07-13T20:09:23Z",
+      "open_issues_count": 0,
+      "forks_count": 9
+    }
+  },
+  {
+    "title": "active-record-pizza-lab",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/active-record-pizza-lab",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63341095,
+      "created_at": "2016-07-14T13:57:29Z",
+      "updated_at": "2016-07-14T13:57:31Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "agile-lab",
+    "info": "[agile, workflow, user-stories, wireframes]",
+    "url": "https://github.com/den-wdi-1/agile-lab",
+    "tags": [
+      "agile",
+      "workflow",
+      "user-stories",
+      "wireframes"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62067386,
+      "created_at": "2016-06-27T15:38:56Z",
+      "updated_at": "2016-06-27T16:38:02Z",
+      "open_issues_count": 2,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "ajax-oop-refactor-lab",
+    "info": "[javascript, oop, ajax, tdd, mocha, chai]",
+    "url": "https://github.com/den-wdi-1/ajax-oop-refactor-lab",
+    "tags": [
+      "javascript",
+      "oop",
+      "ajax",
+      "tdd",
+      "mocha",
+      "chai"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62836213,
+      "created_at": "2016-07-07T20:29:12Z",
+      "updated_at": "2016-07-12T17:08:58Z",
+      "open_issues_count": 0,
+      "forks_count": 5
+    }
+  },
+  {
+    "title": "ajax-with-jquery",
+    "info": "[ajax, jquery]",
+    "url": "https://github.com/den-wdi-1/ajax-with-jquery",
+    "tags": [
+      "ajax",
+      "jquery"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 61718057,
+      "created_at": "2016-06-22T12:40:55Z",
+      "updated_at": "2016-06-24T20:59:39Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "angular_routing_lab",
+    "info": "routing in angular",
+    "url": "https://github.com/den-wdi-1/angular_routing_lab",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64794357,
+      "created_at": "2016-08-02T21:40:31Z",
+      "updated_at": "2016-08-02T21:40:32Z",
+      "open_issues_count": 0,
+      "forks_count": 13
+    }
+  },
+  {
+    "title": "angular-animations",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/angular-animations",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 65684556,
+      "created_at": "2016-08-14T20:14:51Z",
+      "updated_at": "2016-08-15T03:30:38Z",
+      "open_issues_count": 0,
+      "forks_count": 10
+    }
+  },
+  {
+    "title": "angular-animations-intro",
+    "info": "[angular, js, animations, css]",
+    "url": "https://github.com/den-wdi-1/angular-animations-intro",
+    "tags": [
+      "angular",
+      "js",
+      "animations",
+      "css"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 65684495,
+      "created_at": "2016-08-14T20:13:11Z",
+      "updated_at": "2016-07-11T15:17:41Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "angular-directives-lab",
+    "info": "[angular, js, directives]",
+    "url": "https://github.com/den-wdi-1/angular-directives-lab",
+    "tags": [
+      "angular",
+      "js",
+      "directives"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64793354,
+      "created_at": "2016-08-02T21:20:39Z",
+      "updated_at": "2016-08-02T21:20:40Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "angular-directives-lesson",
+    "info": "[angular, js]",
+    "url": "https://github.com/den-wdi-1/angular-directives-lesson",
+    "tags": [
+      "angular",
+      "js"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64793171,
+      "created_at": "2016-08-02T21:17:24Z",
+      "updated_at": "2016-08-13T20:58:30Z",
+      "open_issues_count": 0,
+      "forks_count": 3
+    }
+  },
+  {
+    "title": "angular-intro",
+    "info": "[angular, bower]",
+    "url": "https://github.com/den-wdi-1/angular-intro",
+    "tags": [
+      "angular",
+      "bower"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64791487,
+      "created_at": "2016-08-02T20:47:10Z",
+      "updated_at": "2016-08-13T18:37:13Z",
+      "open_issues_count": 0,
+      "forks_count": 5
+    }
+  },
+  {
+    "title": "angular-resource",
+    "info": "[angular, $resource, factories]",
+    "url": "https://github.com/den-wdi-1/angular-resource",
+    "tags": [
+      "angular",
+      "$resource",
+      "factories"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 65679375,
+      "created_at": "2016-08-14T17:59:26Z",
+      "updated_at": "2016-07-07T19:05:15Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "Angular-review-topics",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/Angular-review-topics",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 66104556,
+      "created_at": "2016-08-19T18:40:48Z",
+      "updated_at": "2016-08-19T20:55:42Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "angular-style-guide",
+    "info": "[angular, styleguides]",
+    "url": "https://github.com/den-wdi-1/angular-style-guide",
+    "tags": [
+      "angular",
+      "styleguides"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 65630122,
+      "created_at": "2016-08-13T18:01:42Z",
+      "updated_at": "2016-07-04T21:48:10Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "angular-ui-practice",
+    "info": "[Angular, ngClass, CSS animations, UI-Bootstrap]",
+    "url": "https://github.com/den-wdi-1/angular-ui-practice",
+    "tags": [
+      "Angular",
+      "ngClass",
+      "CSS animations",
+      "UI-Bootstrap"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 65684547,
+      "created_at": "2016-08-14T20:14:34Z",
+      "updated_at": "2016-08-14T20:14:35Z",
+      "open_issues_count": 0,
+      "forks_count": 11
+    }
+  },
+  {
+    "title": "api-intro-with-ajax",
+    "info": "[api, js, jQuery]",
+    "url": "https://github.com/den-wdi-1/api-intro-with-ajax",
+    "tags": [
+      "api",
+      "js",
+      "jQuery"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62073788,
+      "created_at": "2016-06-27T17:13:05Z",
+      "updated_at": "2016-06-14T14:53:15Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "asset-pipeline-poem",
+    "info": "[rails, ruby, asset pipeline, sprockets]",
+    "url": "https://github.com/den-wdi-1/asset-pipeline-poem",
+    "tags": [
+      "rails",
+      "ruby",
+      "asset pipeline",
+      "sprockets"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64246655,
+      "created_at": "2016-07-26T18:58:46Z",
+      "updated_at": "2016-07-26T18:58:47Z",
+      "open_issues_count": 0,
+      "forks_count": 7
+    }
+  },
+  {
+    "title": "authentication-and-math",
+    "info": "[cs, cs concepts]",
+    "url": "https://github.com/den-wdi-1/authentication-and-math",
+    "tags": [
+      "cs",
+      "cs concepts"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64886564,
+      "created_at": "2016-08-03T23:37:12Z",
+      "updated_at": "2016-08-10T15:40:21Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "binary-search",
+    "info": "[javascript, js, search algorithms, cs concepts]",
+    "url": "https://github.com/den-wdi-1/binary-search",
+    "tags": [
+      "javascript",
+      "js",
+      "search algorithms",
+      "cs concepts"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60865785,
+      "created_at": "2016-06-10T17:36:07Z",
+      "updated_at": "2016-07-12T17:14:52Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "bootstrap",
+    "info": "[bootstrap, css]",
+    "url": "https://github.com/den-wdi-1/bootstrap",
+    "tags": [
+      "bootstrap",
+      "css"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60721000,
+      "created_at": "2016-06-08T18:32:46Z",
+      "updated_at": "2016-07-12T17:16:55Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "bubble-sort",
+    "info": "[cs, algorithms, sort]",
+    "url": "https://github.com/den-wdi-1/bubble-sort",
+    "tags": [
+      "cs",
+      "algorithms",
+      "sort"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62132778,
+      "created_at": "2016-06-28T10:38:10Z",
+      "updated_at": "2016-06-28T10:38:12Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "build-a-website",
+    "info": "[html, css]",
+    "url": "https://github.com/den-wdi-1/build-a-website",
+    "tags": [
+      "html",
+      "css"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60785867,
+      "created_at": "2016-06-09T15:32:59Z",
+      "updated_at": "2016-06-09T15:33:00Z",
+      "open_issues_count": 0,
+      "forks_count": 16
+    }
+  },
+  {
+    "title": "car-racing-lab",
+    "info": "Use TDD & OOP to make Cars race!",
+    "url": "https://github.com/den-wdi-1/car-racing-lab",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63699767,
+      "created_at": "2016-07-19T14:15:46Z",
+      "updated_at": "2016-07-19T14:15:47Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "cards-against-rails",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/cards-against-rails",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 66282725,
+      "created_at": "2016-08-22T15:06:25Z",
+      "updated_at": "2016-08-22T15:08:53Z",
+      "open_issues_count": 0,
+      "forks_count": 8
+    }
+  },
+  {
+    "title": "chrome-dev-tools",
+    "info": "[dev-tools, chrome, browser, console]",
+    "url": "https://github.com/den-wdi-1/chrome-dev-tools",
+    "tags": [
+      "dev-tools",
+      "chrome",
+      "browser",
+      "console"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60562692,
+      "created_at": "2016-06-06T21:40:02Z",
+      "updated_at": "2016-05-02T02:53:43Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "command-line-lab",
+    "info": "[bash, command, line, terminal, lab]",
+    "url": "https://github.com/den-wdi-1/command-line-lab",
+    "tags": [
+      "bash",
+      "command",
+      "line",
+      "terminal",
+      "lab"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60558523,
+      "created_at": "2016-06-06T20:26:55Z",
+      "updated_at": "2016-07-12T17:21:54Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "control-flow",
+    "info": "[javascript, loops, conditionals, switch, control flow]",
+    "url": "https://github.com/den-wdi-1/control-flow",
+    "tags": [
+      "javascript",
+      "loops",
+      "conditionals",
+      "switch",
+      "control flow"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60786253,
+      "created_at": "2016-06-09T15:39:01Z",
+      "updated_at": "2016-06-24T21:02:01Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "create-an-issue",
+    "info": "[github, git, issues]",
+    "url": "https://github.com/den-wdi-1/create-an-issue",
+    "tags": [
+      "github",
+      "git",
+      "issues"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60811227,
+      "created_at": "2016-06-09T22:30:41Z",
+      "updated_at": "2016-07-12T17:16:11Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "create-an-issue-project1",
+    "info": "[github, git, issues]",
+    "url": "https://github.com/den-wdi-1/create-an-issue-project1",
+    "tags": [
+      "github",
+      "git",
+      "issues"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60878333,
+      "created_at": "2016-06-10T21:39:36Z",
+      "updated_at": "2016-06-24T21:03:55Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "create-an-issue-project2",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/create-an-issue-project2",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63637018,
+      "created_at": "2016-07-18T21:07:24Z",
+      "updated_at": "2016-07-18T21:07:24Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "css-box-model-and-positioning",
+    "info": "[css, html, fundamentals]",
+    "url": "https://github.com/den-wdi-1/css-box-model-and-positioning",
+    "tags": [
+      "css",
+      "html",
+      "fundamentals"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60565859,
+      "created_at": "2016-06-06T22:48:50Z",
+      "updated_at": "2016-06-06T22:48:52Z",
+      "open_issues_count": 0,
+      "forks_count": 17
+    }
+  },
+  {
+    "title": "css-responsive-design-and-flexbox",
+    "info": "[css, media queries, flexbox]",
+    "url": "https://github.com/den-wdi-1/css-responsive-design-and-flexbox",
+    "tags": [
+      "css",
+      "media queries",
+      "flexbox"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 61066241,
+      "created_at": "2016-06-13T20:08:27Z",
+      "updated_at": "2016-06-24T21:00:16Z",
+      "open_issues_count": 0,
+      "forks_count": 3
+    }
+  },
+  {
+    "title": "css-selector-basics",
+    "info": "[css,html,fundamentals]",
+    "url": "https://github.com/den-wdi-1/css-selector-basics",
+    "tags": [
+      "css",
+      "html",
+      "fundamentals"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60556706,
+      "created_at": "2016-06-06T19:58:00Z",
+      "updated_at": "2016-07-12T17:22:14Z",
+      "open_issues_count": 0,
+      "forks_count": 4
+    }
+  },
+  {
+    "title": "cylon-js",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/cylon-js",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 66150940,
+      "created_at": "2016-08-20T14:28:26Z",
+      "updated_at": "2016-08-20T14:28:26Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "data-modeling",
+    "info": "[data, modeling, erd, relational, databases]",
+    "url": "https://github.com/den-wdi-1/data-modeling",
+    "tags": [
+      "data",
+      "modeling",
+      "erd",
+      "relational",
+      "databases"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63254174,
+      "created_at": "2016-07-13T14:42:22Z",
+      "updated_at": "2016-07-13T14:42:58Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "deaf-grandma",
+    "info": "[ruby, control flow, command line]",
+    "url": "https://github.com/den-wdi-1/deaf-grandma",
+    "tags": [
+      "ruby",
+      "control flow",
+      "command line"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62998581,
+      "created_at": "2016-07-10T12:55:28Z",
+      "updated_at": "2016-07-10T12:55:30Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "debugging-javascript",
+    "info": "[javascript, debugging, dev tools]",
+    "url": "https://github.com/den-wdi-1/debugging-javascript",
+    "tags": [
+      "javascript",
+      "debugging",
+      "dev tools"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60639164,
+      "created_at": "2016-06-07T19:07:23Z",
+      "updated_at": "2016-07-12T17:14:12Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "developer-resources",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/developer-resources",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 61320040,
+      "created_at": "2016-06-16T19:25:02Z",
+      "updated_at": "2016-06-16T19:25:02Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "dom-manipulation-and-events",
+    "info": "[dom, javascript, console, browser, events]",
+    "url": "https://github.com/den-wdi-1/dom-manipulation-and-events",
+    "tags": [
+      "dom",
+      "javascript",
+      "console",
+      "browser",
+      "events"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60796389,
+      "created_at": "2016-06-09T18:11:12Z",
+      "updated_at": "2016-06-24T21:02:14Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "dom-manipulation-lotr-lab",
+    "info": "[dom, javascript, lab]",
+    "url": "https://github.com/den-wdi-1/dom-manipulation-lotr-lab",
+    "tags": [
+      "dom",
+      "javascript",
+      "lab"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60639586,
+      "created_at": "2016-06-07T19:14:28Z",
+      "updated_at": "2016-06-24T21:00:28Z",
+      "open_issues_count": 0,
+      "forks_count": 17
+    }
+  },
+  {
+    "title": "expres-resource-reteach",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/expres-resource-reteach",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62732529,
+      "created_at": "2016-07-06T15:34:46Z",
+      "updated_at": "2016-07-06T15:36:52Z",
+      "open_issues_count": 0,
+      "forks_count": 13
+    }
+  },
+  {
+    "title": "express",
+    "info": "[js, node, express, servers]",
+    "url": "https://github.com/den-wdi-1/express",
+    "tags": [
+      "js",
+      "node",
+      "express",
+      "servers"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62580256,
+      "created_at": "2016-07-04T18:07:47Z",
+      "updated_at": "2016-07-12T17:11:22Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "express-personal-api",
+    "info": "Build an API about YOU",
+    "url": "https://github.com/den-wdi-1/express-personal-api",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62903531,
+      "created_at": "2016-07-08T16:49:17Z",
+      "updated_at": "2016-07-12T17:06:08Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "express-routing-lab",
+    "info": "[js, node, express, routing, router]",
+    "url": "https://github.com/den-wdi-1/express-routing-lab",
+    "tags": [
+      "js",
+      "node",
+      "express",
+      "routing",
+      "router"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62591509,
+      "created_at": "2016-07-04T22:47:06Z",
+      "updated_at": "2016-07-05T16:52:50Z",
+      "open_issues_count": 0,
+      "forks_count": 13
+    }
+  },
+  {
+    "title": "express-routing-lesson",
+    "info": "[js, node, express, router, routes]",
+    "url": "https://github.com/den-wdi-1/express-routing-lesson",
+    "tags": [
+      "js",
+      "node",
+      "express",
+      "router",
+      "routes"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62323209,
+      "created_at": "2016-06-30T15:43:39Z",
+      "updated_at": "2016-07-05T18:55:16Z",
+      "open_issues_count": 1,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "express-views-lab",
+    "info": "[js, express, ejs]",
+    "url": "https://github.com/den-wdi-1/express-views-lab",
+    "tags": [
+      "js",
+      "express",
+      "ejs"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62779632,
+      "created_at": "2016-07-07T06:09:43Z",
+      "updated_at": "2016-07-07T06:09:44Z",
+      "open_issues_count": 0,
+      "forks_count": 13
+    }
+  },
+  {
+    "title": "express-views-lesson",
+    "info": "[js, express, ejs]",
+    "url": "https://github.com/den-wdi-1/express-views-lesson",
+    "tags": [
+      "js",
+      "express",
+      "ejs"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62758090,
+      "created_at": "2016-07-06T22:43:39Z",
+      "updated_at": "2016-07-08T23:24:34Z",
+      "open_issues_count": 0,
+      "forks_count": 10
+    }
+  },
+  {
+    "title": "fullStack-JS-App",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/fullStack-JS-App",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 65960741,
+      "created_at": "2016-08-18T03:06:10Z",
+      "updated_at": "2016-08-18T03:06:10Z",
+      "open_issues_count": 0,
+      "forks_count": 11
+    }
+  },
+  {
+    "title": "fullStack-JS-review",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/fullStack-JS-review",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62901637,
+      "created_at": "2016-07-08T16:18:03Z",
+      "updated_at": "2016-07-12T17:06:37Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "geoquakes",
+    "info": "[jquery, ajax, handlebars, templating, maps]",
+    "url": "https://github.com/den-wdi-1/geoquakes",
+    "tags": [
+      "jquery",
+      "ajax",
+      "handlebars",
+      "templating",
+      "maps"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60786891,
+      "created_at": "2016-06-09T15:48:38Z",
+      "updated_at": "2016-07-12T17:16:34Z",
+      "open_issues_count": 0,
+      "forks_count": 16
+    }
+  },
+  {
+    "title": "gh-lab",
+    "info": "[git, github]",
+    "url": "https://github.com/den-wdi-1/gh-lab",
+    "tags": [
+      "git",
+      "github"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60705516,
+      "created_at": "2016-06-08T14:46:40Z",
+      "updated_at": "2016-06-20T17:31:48Z",
+      "open_issues_count": 1,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "git-and-github",
+    "info": "[git, github]",
+    "url": "https://github.com/den-wdi-1/git-and-github",
+    "tags": [
+      "git",
+      "github"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60861303,
+      "created_at": "2016-06-10T16:17:27Z",
+      "updated_at": "2016-06-20T17:39:41Z",
+      "open_issues_count": 2,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "go-fish-card-game",
+    "info": "Follow the tests to build Go Fish in Ruby",
+    "url": "https://github.com/den-wdi-1/go-fish-card-game",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63548815,
+      "created_at": "2016-07-17T19:30:22Z",
+      "updated_at": "2016-10-12T20:51:34Z",
+      "open_issues_count": 0,
+      "forks_count": 6
+    }
+  },
+  {
+    "title": "gulp",
+    "info": "[gulp, tools, js]",
+    "url": "https://github.com/den-wdi-1/gulp",
+    "tags": [
+      "gulp",
+      "tools",
+      "js"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 66201699,
+      "created_at": "2016-08-21T14:02:38Z",
+      "updated_at": "2016-08-21T14:02:39Z",
+      "open_issues_count": 0,
+      "forks_count": 10
+    }
+  },
+  {
+    "title": "handlebars",
+    "info": "[handlebars, templating]",
+    "url": "https://github.com/den-wdi-1/handlebars",
+    "tags": [
+      "handlebars",
+      "templating"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 61723412,
+      "created_at": "2016-06-22T13:58:47Z",
+      "updated_at": "2016-06-24T20:58:54Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "high_card",
+    "info": "[basics, ruby]",
+    "url": "https://github.com/den-wdi-1/high_card",
+    "tags": [
+      "basics",
+      "ruby"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64969442,
+      "created_at": "2016-08-04T21:47:28Z",
+      "updated_at": "2016-08-04T21:47:29Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "how-the-internet-works",
+    "info": "[www, http, internet]",
+    "url": "https://github.com/den-wdi-1/how-the-internet-works",
+    "tags": [
+      "www",
+      "http",
+      "internet"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60380129,
+      "created_at": "2016-06-03T21:58:24Z",
+      "updated_at": "2016-07-12T17:23:14Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "html-forms",
+    "info": "[html, forms]",
+    "url": "https://github.com/den-wdi-1/html-forms",
+    "tags": [
+      "html",
+      "forms"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 61627599,
+      "created_at": "2016-06-21T11:10:25Z",
+      "updated_at": "2016-06-24T20:59:55Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "http-lab",
+    "info": "[angular, javascript, $http, http]",
+    "url": "https://github.com/den-wdi-1/http-lab",
+    "tags": [
+      "angular",
+      "javascript",
+      "$http",
+      "http"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64794336,
+      "created_at": "2016-08-02T21:40:01Z",
+      "updated_at": "2016-08-02T21:40:02Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "http-workshop",
+    "info": "[angular, javascript, $http, http]",
+    "url": "https://github.com/den-wdi-1/http-workshop",
+    "tags": [
+      "angular",
+      "javascript",
+      "$http",
+      "http"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64794292,
+      "created_at": "2016-08-02T21:39:05Z",
+      "updated_at": "2016-08-02T21:39:07Z",
+      "open_issues_count": 0,
+      "forks_count": 11
+    }
+  },
+  {
+    "title": "installFest",
+    "info": "[tools]",
+    "url": "https://github.com/den-wdi-1/installFest",
+    "tags": [
+      "tools"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60376392,
+      "created_at": "2016-06-03T20:40:08Z",
+      "updated_at": "2016-06-04T17:53:00Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "intro_angular_challenges",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/intro_angular_challenges",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 65244999,
+      "created_at": "2016-08-08T22:48:22Z",
+      "updated_at": "2016-08-08T22:48:23Z",
+      "open_issues_count": 0,
+      "forks_count": 11
+    }
+  },
+  {
+    "title": "intro-mongoose",
+    "info": "[mongoose, js, databases, drm]",
+    "url": "https://github.com/den-wdi-1/intro-mongoose",
+    "tags": [
+      "mongoose",
+      "js",
+      "databases",
+      "drm"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62583890,
+      "created_at": "2016-07-04T19:30:30Z",
+      "updated_at": "2016-07-04T19:30:31Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "intro-ruby",
+    "info": "[ruby]",
+    "url": "https://github.com/den-wdi-1/intro-ruby",
+    "tags": [
+      "ruby"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63020341,
+      "created_at": "2016-07-10T22:06:06Z",
+      "updated_at": "2016-07-12T17:04:54Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "intro-to-ops",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/intro-to-ops",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 66565003,
+      "created_at": "2016-08-25T14:27:32Z",
+      "updated_at": "2016-08-25T14:27:32Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "intro-to-rails",
+    "info": "[rails, ruby, intro]",
+    "url": "https://github.com/den-wdi-1/intro-to-rails",
+    "tags": [
+      "rails",
+      "ruby",
+      "intro"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63720090,
+      "created_at": "2016-07-19T18:56:22Z",
+      "updated_at": "2016-06-13T23:20:33Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "Intro-to-WDI-and-team",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/Intro-to-WDI-and-team",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60621683,
+      "created_at": "2016-06-07T14:50:57Z",
+      "updated_at": "2016-06-13T16:10:09Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "IoT-Hobby-Projects",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/IoT-Hobby-Projects",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 66146053,
+      "created_at": "2016-08-20T12:39:52Z",
+      "updated_at": "2016-08-20T12:39:52Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "jquery-and-browser-storage",
+    "info": "[jquery, localStorage, sessionStorage]",
+    "url": "https://github.com/den-wdi-1/jquery-and-browser-storage",
+    "tags": [
+      "jquery",
+      "localStorage",
+      "sessionStorage"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60714190,
+      "created_at": "2016-06-08T16:49:21Z",
+      "updated_at": "2016-07-12T17:17:19Z",
+      "open_issues_count": 0,
+      "forks_count": 15
+    }
+  },
+  {
+    "title": "jquery-datepicker-lab",
+    "info": "[jquery, jquery-ui]",
+    "url": "https://github.com/den-wdi-1/jquery-datepicker-lab",
+    "tags": [
+      "jquery",
+      "jquery-ui"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60782420,
+      "created_at": "2016-06-09T14:47:34Z",
+      "updated_at": "2016-07-12T17:13:54Z",
+      "open_issues_count": 0,
+      "forks_count": 17
+    }
+  },
+  {
+    "title": "jquery-dom-lab",
+    "info": "A lab for practicing DOM manipulation with jQuery",
+    "url": "https://github.com/den-wdi-1/jquery-dom-lab",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60794074,
+      "created_at": "2016-06-09T17:36:27Z",
+      "updated_at": "2016-06-24T21:05:36Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "js-building-iterators-lab",
+    "info": "[javascript, callbacks, iterators]",
+    "url": "https://github.com/den-wdi-1/js-building-iterators-lab",
+    "tags": [
+      "javascript",
+      "callbacks",
+      "iterators"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60710323,
+      "created_at": "2016-06-08T15:53:02Z",
+      "updated_at": "2016-07-12T17:17:40Z",
+      "open_issues_count": 0,
+      "forks_count": 16
+    }
+  },
+  {
+    "title": "js-callbacks-iterators",
+    "info": "[javascript, callbacks, iterators, functions]",
+    "url": "https://github.com/den-wdi-1/js-callbacks-iterators",
+    "tags": [
+      "javascript",
+      "callbacks",
+      "iterators",
+      "functions"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60866601,
+      "created_at": "2016-06-10T17:50:03Z",
+      "updated_at": "2016-06-24T21:01:07Z",
+      "open_issues_count": 0,
+      "forks_count": 3
+    }
+  },
+  {
+    "title": "js-data-types",
+    "info": "[js, arrays, fundamentals]",
+    "url": "https://github.com/den-wdi-1/js-data-types",
+    "tags": [
+      "js",
+      "arrays",
+      "fundamentals"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60627652,
+      "created_at": "2016-06-07T16:08:23Z",
+      "updated_at": "2016-07-12T17:20:50Z",
+      "open_issues_count": 0,
+      "forks_count": 12
+    }
+  },
+  {
+    "title": "js-dom-jquery-first",
+    "info": "[jquery, js]",
+    "url": "https://github.com/den-wdi-1/js-dom-jquery-first",
+    "tags": [
+      "jquery",
+      "js"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62073702,
+      "created_at": "2016-06-27T17:11:45Z",
+      "updated_at": "2016-06-01T01:58:07Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "js-functions-and-scope",
+    "info": "[javascript, functions, scope]",
+    "url": "https://github.com/den-wdi-1/js-functions-and-scope",
+    "tags": [
+      "javascript",
+      "functions",
+      "scope"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60633114,
+      "created_at": "2016-06-07T17:32:10Z",
+      "updated_at": "2016-07-12T17:20:27Z",
+      "open_issues_count": 0,
+      "forks_count": 9
+    }
+  },
+  {
+    "title": "js-functions-lab",
+    "info": "[lab, javascript, functions, scope]",
+    "url": "https://github.com/den-wdi-1/js-functions-lab",
+    "tags": [
+      "lab",
+      "javascript",
+      "functions",
+      "scope"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60785970,
+      "created_at": "2016-06-09T15:34:36Z",
+      "updated_at": "2016-06-24T21:02:25Z",
+      "open_issues_count": 0,
+      "forks_count": 17
+    }
+  },
+  {
+    "title": "js-objects",
+    "info": "[javascript, js, objects, fundamentals]",
+    "url": "https://github.com/den-wdi-1/js-objects",
+    "tags": [
+      "javascript",
+      "js",
+      "objects",
+      "fundamentals"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60645880,
+      "created_at": "2016-06-07T20:56:34Z",
+      "updated_at": "2016-06-24T21:02:41Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "js-oop-flower-power",
+    "info": "[js, oop]",
+    "url": "https://github.com/den-wdi-1/js-oop-flower-power",
+    "tags": [
+      "js",
+      "oop"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60859200,
+      "created_at": "2016-06-10T15:46:31Z",
+      "updated_at": "2016-09-15T03:12:45Z",
+      "open_issues_count": 0,
+      "forks_count": 9
+    }
+  },
+  {
+    "title": "js-prototypes-constructors",
+    "info": "[js,oop]",
+    "url": "https://github.com/den-wdi-1/js-prototypes-constructors",
+    "tags": [
+      "js",
+      "oop"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 61913841,
+      "created_at": "2016-06-24T21:40:07Z",
+      "updated_at": "2016-06-24T21:40:08Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "kyrel",
+    "info": "Learn Control Flow with Kyrel",
+    "url": "https://github.com/den-wdi-1/kyrel",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60651778,
+      "created_at": "2016-06-07T22:49:29Z",
+      "updated_at": "2016-07-12T17:19:15Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "library-app",
+    "info": "[rails, ruby, CRUD, auth]",
+    "url": "https://github.com/den-wdi-1/library-app",
+    "tags": [
+      "rails",
+      "ruby",
+      "CRUD",
+      "auth"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64487178,
+      "created_at": "2016-07-29T14:32:50Z",
+      "updated_at": "2016-06-17T18:56:00Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "lighting-talks",
+    "info": "[research, lighting-talks]",
+    "url": "https://github.com/den-wdi-1/lighting-talks",
+    "tags": [
+      "research",
+      "lighting-talks"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 66084109,
+      "created_at": "2016-08-19T13:25:53Z",
+      "updated_at": "2016-07-08T20:09:58Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "linked-lists",
+    "info": "[cs, cs concepts, js]",
+    "url": "https://github.com/den-wdi-1/linked-lists",
+    "tags": [
+      "cs",
+      "cs concepts",
+      "js"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64628377,
+      "created_at": "2016-08-01T02:16:20Z",
+      "updated_at": "2016-08-01T02:16:22Z",
+      "open_issues_count": 0,
+      "forks_count": 13
+    }
+  },
+  {
+    "title": "m4-css-lab",
+    "info": "[CSS]",
+    "url": "https://github.com/den-wdi-1/m4-css-lab",
+    "tags": [
+      "CSS"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60621462,
+      "created_at": "2016-06-07T14:47:57Z",
+      "updated_at": "2016-07-12T17:21:16Z",
+      "open_issues_count": 0,
+      "forks_count": 15
+    }
+  },
+  {
+    "title": "merge-sort",
+    "info": "[sorting, merge, js, algorithms, cs]",
+    "url": "https://github.com/den-wdi-1/merge-sort",
+    "tags": [
+      "sorting",
+      "merge",
+      "js",
+      "algorithms",
+      "cs"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60878290,
+      "created_at": "2016-06-10T21:38:42Z",
+      "updated_at": "2016-07-12T17:14:32Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "message-in-a-bottle",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/message-in-a-bottle",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63017604,
+      "created_at": "2016-07-10T20:40:39Z",
+      "updated_at": "2016-07-10T20:41:14Z",
+      "open_issues_count": 0,
+      "forks_count": 13
+    }
+  },
+  {
+    "title": "modeling-tunr",
+    "info": "[models, migrations, active record, ruby, databases]",
+    "url": "https://github.com/den-wdi-1/modeling-tunr",
+    "tags": [
+      "models",
+      "migrations",
+      "active record",
+      "ruby",
+      "databases"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63333952,
+      "created_at": "2016-07-14T12:16:04Z",
+      "updated_at": "2016-07-14T12:16:05Z",
+      "open_issues_count": 0,
+      "forks_count": 9
+    }
+  },
+  {
+    "title": "mongo-intro",
+    "info": "[mongo, js]",
+    "url": "https://github.com/den-wdi-1/mongo-intro",
+    "tags": [
+      "mongo",
+      "js"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62583808,
+      "created_at": "2016-07-04T19:28:21Z",
+      "updated_at": "2016-07-12T17:10:59Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "mongo-structured-data",
+    "info": "[js, mongo, mongoose, relationships, databases]",
+    "url": "https://github.com/den-wdi-1/mongo-structured-data",
+    "tags": [
+      "js",
+      "mongo",
+      "mongoose",
+      "relationships",
+      "databases"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62733361,
+      "created_at": "2016-07-06T15:44:58Z",
+      "updated_at": "2016-07-06T15:44:59Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "mongoose-books-app",
+    "info": "[js, lab, mongo, mongoose, handlebars, ajax]",
+    "url": "https://github.com/den-wdi-1/mongoose-books-app",
+    "tags": [
+      "js",
+      "lab",
+      "mongo",
+      "mongoose",
+      "handlebars",
+      "ajax"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62677085,
+      "created_at": "2016-07-05T23:51:50Z",
+      "updated_at": "2016-07-06T21:29:41Z",
+      "open_issues_count": 2,
+      "forks_count": 9
+    }
+  },
+  {
+    "title": "monkey-oop",
+    "info": "[ruby, oop, lab, rspec, tdd]",
+    "url": "https://github.com/den-wdi-1/monkey-oop",
+    "tags": [
+      "ruby",
+      "oop",
+      "lab",
+      "rspec",
+      "tdd"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63245464,
+      "created_at": "2016-07-13T12:50:25Z",
+      "updated_at": "2016-07-13T12:50:26Z",
+      "open_issues_count": 0,
+      "forks_count": 11
+    }
+  },
+  {
+    "title": "more-express-routes",
+    "info": "[js, node, express, routes]",
+    "url": "https://github.com/den-wdi-1/more-express-routes",
+    "tags": [
+      "js",
+      "node",
+      "express",
+      "routes"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62654273,
+      "created_at": "2016-07-05T16:58:36Z",
+      "updated_at": "2016-07-05T18:19:02Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "ng-firebase",
+    "info": "[angular, firebase]",
+    "url": "https://github.com/den-wdi-1/ng-firebase",
+    "tags": [
+      "angular",
+      "firebase"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64794404,
+      "created_at": "2016-08-02T21:41:32Z",
+      "updated_at": "2016-08-18T13:11:37Z",
+      "open_issues_count": 0,
+      "forks_count": 5
+    }
+  },
+  {
+    "title": "ng-hangman",
+    "info": "[angular, labs]",
+    "url": "https://github.com/den-wdi-1/ng-hangman",
+    "tags": [
+      "angular",
+      "labs"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64794000,
+      "created_at": "2016-08-02T21:33:09Z",
+      "updated_at": "2016-08-02T21:33:10Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "nodejs",
+    "info": "[js, node. npm]",
+    "url": "https://github.com/den-wdi-1/nodejs",
+    "tags": [
+      "js",
+      "node. npm"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62577190,
+      "created_at": "2016-07-04T17:04:14Z",
+      "updated_at": "2016-07-12T17:11:52Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "number-to-words",
+    "info": "[ruby, exercises, algorithms]",
+    "url": "https://github.com/den-wdi-1/number-to-words",
+    "tags": [
+      "ruby",
+      "exercises",
+      "algorithms"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63644673,
+      "created_at": "2016-07-18T23:46:38Z",
+      "updated_at": "2016-07-18T23:46:40Z",
+      "open_issues_count": 0,
+      "forks_count": 13
+    }
+  },
+  {
+    "title": "oop-concepts",
+    "info": "[oop, javascript]",
+    "url": "https://github.com/den-wdi-1/oop-concepts",
+    "tags": [
+      "oop",
+      "javascript"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 61746746,
+      "created_at": "2016-06-22T19:42:47Z",
+      "updated_at": "2016-06-24T20:57:25Z",
+      "open_issues_count": 0,
+      "forks_count": 3
+    }
+  },
+  {
+    "title": "orientation",
+    "info": "[tools]",
+    "url": "https://github.com/den-wdi-1/orientation",
+    "tags": [
+      "tools"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60307647,
+      "created_at": "2016-06-03T01:03:01Z",
+      "updated_at": "2016-06-03T20:42:19Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "pig_latin",
+    "info": "[ruby, quick]",
+    "url": "https://github.com/den-wdi-1/pig_latin",
+    "tags": [
+      "ruby",
+      "quick"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63969585,
+      "created_at": "2016-07-22T16:58:24Z",
+      "updated_at": "2016-07-22T16:58:25Z",
+      "open_issues_count": 0,
+      "forks_count": 13
+    }
+  },
+  {
+    "title": "project-03",
+    "info": "Ruby On Rails Group Project",
+    "url": "https://github.com/den-wdi-1/project-03",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64854442,
+      "created_at": "2016-08-03T14:53:37Z",
+      "updated_at": "2016-06-26T05:04:38Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "project-1",
+    "info": "[projects]",
+    "url": "https://github.com/den-wdi-1/project-1",
+    "tags": [
+      "projects"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 61946440,
+      "created_at": "2016-06-25T14:19:54Z",
+      "updated_at": "2016-06-27T16:37:34Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "project-2",
+    "info": "[sinatra, ruby, active record, projects]",
+    "url": "https://github.com/den-wdi-1/project-2",
+    "tags": [
+      "sinatra",
+      "ruby",
+      "active record",
+      "projects"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63365192,
+      "created_at": "2016-07-14T19:49:54Z",
+      "updated_at": "2016-06-02T22:36:04Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "project-3-issues",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/project-3-issues",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 65745535,
+      "created_at": "2016-08-15T16:03:44Z",
+      "updated_at": "2016-08-15T16:03:44Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "project-4",
+    "info": "[projects]",
+    "url": "https://github.com/den-wdi-1/project-4",
+    "tags": [
+      "projects"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 66400468,
+      "created_at": "2016-08-23T20:23:29Z",
+      "updated_at": "2016-07-11T22:19:55Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "project-vagabond",
+    "info": "[rails, ruby, group, project]",
+    "url": "https://github.com/den-wdi-1/project-vagabond",
+    "tags": [
+      "rails",
+      "ruby",
+      "group",
+      "project"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64512607,
+      "created_at": "2016-07-29T21:54:40Z",
+      "updated_at": "2016-06-17T18:51:21Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "questions-in-a-hat",
+    "info": "[review, questions, recall]",
+    "url": "https://github.com/den-wdi-1/questions-in-a-hat",
+    "tags": [
+      "review",
+      "questions",
+      "recall"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 61319180,
+      "created_at": "2016-06-16T19:10:58Z",
+      "updated_at": "2016-06-03T17:49:38Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "rails-api-lesson",
+    "info": "[rails, api, cors, json]",
+    "url": "https://github.com/den-wdi-1/rails-api-lesson",
+    "tags": [
+      "rails",
+      "api",
+      "cors",
+      "json"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 66200003,
+      "created_at": "2016-08-21T13:23:52Z",
+      "updated_at": "2016-08-21T13:23:53Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "rails-asset-pipeline",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/rails-asset-pipeline",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64248536,
+      "created_at": "2016-07-26T19:28:20Z",
+      "updated_at": "2016-07-26T19:28:20Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "rails-auth",
+    "info": "[rails, auth, bcrypt]",
+    "url": "https://github.com/den-wdi-1/rails-auth",
+    "tags": [
+      "rails",
+      "auth",
+      "bcrypt"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64357627,
+      "created_at": "2016-07-28T02:28:06Z",
+      "updated_at": "2016-07-28T02:28:07Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "rails-bog-app",
+    "info": "[rails, ruby, REST, routes, CRUD]",
+    "url": "https://github.com/den-wdi-1/rails-bog-app",
+    "tags": [
+      "rails",
+      "ruby",
+      "REST",
+      "routes",
+      "CRUD"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64249116,
+      "created_at": "2016-07-26T19:38:34Z",
+      "updated_at": "2016-06-17T18:28:56Z",
+      "open_issues_count": 0,
+      "forks_count": 12
+    }
+  },
+  {
+    "title": "rails-controllers-and-routes",
+    "info": "[rails, ruby, controllers, routes]",
+    "url": "https://github.com/den-wdi-1/rails-controllers-and-routes",
+    "tags": [
+      "rails",
+      "ruby",
+      "controllers",
+      "routes"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63883480,
+      "created_at": "2016-07-21T16:02:26Z",
+      "updated_at": "2016-07-15T05:43:28Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "rails-layouts-and-partials",
+    "info": "[rails, ruby, views, layouts, partials]",
+    "url": "https://github.com/den-wdi-1/rails-layouts-and-partials",
+    "tags": [
+      "rails",
+      "ruby",
+      "views",
+      "layouts",
+      "partials"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63956597,
+      "created_at": "2016-07-22T13:44:40Z",
+      "updated_at": "2016-07-24T21:12:30Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "rails-many-to-many",
+    "info": "[rails, associations, relationships]",
+    "url": "https://github.com/den-wdi-1/rails-many-to-many",
+    "tags": [
+      "rails",
+      "associations",
+      "relationships"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64391360,
+      "created_at": "2016-07-28T11:50:57Z",
+      "updated_at": "2016-07-28T16:55:02Z",
+      "open_issues_count": 0,
+      "forks_count": 9
+    }
+  },
+  {
+    "title": "rails-many-to-many-lab",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/rails-many-to-many-lab",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64426890,
+      "created_at": "2016-07-28T20:42:05Z",
+      "updated_at": "2016-07-28T20:42:05Z",
+      "open_issues_count": 0,
+      "forks_count": 12
+    }
+  },
+  {
+    "title": "rails-review",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/rails-review",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64503490,
+      "created_at": "2016-07-29T18:50:35Z",
+      "updated_at": "2016-07-29T17:39:07Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "rails-validations-errors",
+    "info": "[rails, validations, errors]",
+    "url": "https://github.com/den-wdi-1/rails-validations-errors",
+    "tags": [
+      "rails",
+      "validations",
+      "errors"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64150852,
+      "created_at": "2016-07-25T16:33:15Z",
+      "updated_at": "2016-07-25T16:33:16Z",
+      "open_issues_count": 0,
+      "forks_count": 13
+    }
+  },
+  {
+    "title": "rails-validations-errors-lab",
+    "info": "[rails, errors, validations]",
+    "url": "https://github.com/den-wdi-1/rails-validations-errors-lab",
+    "tags": [
+      "rails",
+      "errors",
+      "validations"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64150860,
+      "created_at": "2016-07-25T16:33:26Z",
+      "updated_at": "2016-07-25T16:33:27Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "rapid-prototype",
+    "info": "[angular, firebase, lab]",
+    "url": "https://github.com/den-wdi-1/rapid-prototype",
+    "tags": [
+      "angular",
+      "firebase",
+      "lab"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 66084090,
+      "created_at": "2016-08-19T13:25:32Z",
+      "updated_at": "2016-07-08T19:31:11Z",
+      "open_issues_count": 0,
+      "forks_count": 3
+    }
+  },
+  {
+    "title": "react",
+    "info": "[react, js]",
+    "url": "https://github.com/den-wdi-1/react",
+    "tags": [
+      "react",
+      "js"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 66176566,
+      "created_at": "2016-08-21T01:58:28Z",
+      "updated_at": "2016-08-21T01:58:29Z",
+      "open_issues_count": 0,
+      "forks_count": 9
+    }
+  },
+  {
+    "title": "redux",
+    "info": "[redux, js]",
+    "url": "https://github.com/den-wdi-1/redux",
+    "tags": [
+      "redux",
+      "js"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 66301040,
+      "created_at": "2016-08-22T19:15:18Z",
+      "updated_at": "2016-08-22T19:15:19Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "rock-n-rails",
+    "info": "[rails, ruby, routes, intro]",
+    "url": "https://github.com/den-wdi-1/rock-n-rails",
+    "tags": [
+      "rails",
+      "ruby",
+      "routes",
+      "intro"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64067872,
+      "created_at": "2016-07-24T13:58:33Z",
+      "updated_at": "2016-06-17T18:34:24Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "roman_js",
+    "info": "[javascript, tdd, jasmine]",
+    "url": "https://github.com/den-wdi-1/roman_js",
+    "tags": [
+      "javascript",
+      "tdd",
+      "jasmine"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63971902,
+      "created_at": "2016-07-22T17:39:33Z",
+      "updated_at": "2016-07-22T22:04:58Z",
+      "open_issues_count": 0,
+      "forks_count": 13
+    }
+  },
+  {
+    "title": "rspec",
+    "info": "[ruby, tdd, rspec]",
+    "url": "https://github.com/den-wdi-1/rspec",
+    "tags": [
+      "ruby",
+      "tdd",
+      "rspec"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63698350,
+      "created_at": "2016-07-19T13:57:10Z",
+      "updated_at": "2016-07-19T13:57:11Z",
+      "open_issues_count": 0,
+      "forks_count": 13
+    }
+  },
+  {
+    "title": "rspec_testing_inventory",
+    "info": "Write Rails unit tests using RSpec",
+    "url": "https://github.com/den-wdi-1/rspec_testing_inventory",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 65201361,
+      "created_at": "2016-08-08T12:10:52Z",
+      "updated_at": "2016-08-08T12:10:53Z",
+      "open_issues_count": 0,
+      "forks_count": 7
+    }
+  },
+  {
+    "title": "rspec-rails-testing",
+    "info": "[rspec-rails, unit tests, rails, testing, shoulda-matchers]",
+    "url": "https://github.com/den-wdi-1/rspec-rails-testing",
+    "tags": [
+      "rspec-rails",
+      "unit tests",
+      "rails",
+      "testing",
+      "shoulda-matchers"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 65201266,
+      "created_at": "2016-08-08T12:09:08Z",
+      "updated_at": "2016-06-27T21:15:29Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "ruby-drills",
+    "info": "[ruby, exercises]",
+    "url": "https://github.com/den-wdi-1/ruby-drills",
+    "tags": [
+      "ruby",
+      "exercises"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63971848,
+      "created_at": "2016-07-22T17:38:55Z",
+      "updated_at": "2016-06-13T02:58:59Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "ruby-koans",
+    "info": "[ruby, exercises]",
+    "url": "https://github.com/den-wdi-1/ruby-koans",
+    "tags": [
+      "ruby",
+      "exercises"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63020549,
+      "created_at": "2016-07-10T22:12:49Z",
+      "updated_at": "2016-05-31T15:03:07Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "ruby-oop",
+    "info": "[ruby, oop]",
+    "url": "https://github.com/den-wdi-1/ruby-oop",
+    "tags": [
+      "ruby",
+      "oop"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63245435,
+      "created_at": "2016-07-13T12:50:09Z",
+      "updated_at": "2016-05-31T22:33:06Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "sass-intro",
+    "info": "[html, css, sass, bootstrap, foundation, frontend]",
+    "url": "https://github.com/den-wdi-1/sass-intro",
+    "tags": [
+      "html",
+      "css",
+      "sass",
+      "bootstrap",
+      "foundation",
+      "frontend"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64659617,
+      "created_at": "2016-08-01T10:52:44Z",
+      "updated_at": "2016-08-01T18:28:55Z",
+      "open_issues_count": 0,
+      "forks_count": 10
+    }
+  },
+  {
+    "title": "schedule",
+    "info": "[tools]",
+    "url": "https://github.com/den-wdi-1/schedule",
+    "tags": [
+      "tools"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60288537,
+      "created_at": "2016-06-02T18:40:05Z",
+      "updated_at": "2016-06-20T18:56:31Z",
+      "open_issues_count": 0,
+      "forks_count": 5
+    }
+  },
+  {
+    "title": "sinatra-intro-lesson",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/sinatra-intro-lesson",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63175570,
+      "created_at": "2016-07-12T16:44:54Z",
+      "updated_at": "2016-07-12T16:45:01Z",
+      "open_issues_count": 0,
+      "forks_count": 9
+    }
+  },
+  {
+    "title": "software-development-best-practices",
+    "info": "[agile, workflow, user-stories, wireframes, tdd]",
+    "url": "https://github.com/den-wdi-1/software-development-best-practices",
+    "tags": [
+      "agile",
+      "workflow",
+      "user-stories",
+      "wireframes",
+      "tdd"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60863393,
+      "created_at": "2016-06-10T16:53:49Z",
+      "updated_at": "2016-07-12T17:15:29Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "sql",
+    "info": "[sql]",
+    "url": "https://github.com/den-wdi-1/sql",
+    "tags": [
+      "sql"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63259735,
+      "created_at": "2016-07-13T15:52:36Z",
+      "updated_at": "2016-07-13T15:53:18Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "sql-carmen-sandiego",
+    "info": "[sql, lab]",
+    "url": "https://github.com/den-wdi-1/sql-carmen-sandiego",
+    "tags": [
+      "sql",
+      "lab"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63259934,
+      "created_at": "2016-07-13T15:56:01Z",
+      "updated_at": "2016-07-13T15:56:02Z",
+      "open_issues_count": 0,
+      "forks_count": 12
+    }
+  },
+  {
+    "title": "stacks-and-queues",
+    "info": "[stack, queue, cs, data structure, cs concepts, javascript]",
+    "url": "https://github.com/den-wdi-1/stacks-and-queues",
+    "tags": [
+      "stack",
+      "queue",
+      "cs",
+      "data structure",
+      "cs concepts",
+      "javascript"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64628470,
+      "created_at": "2016-08-01T02:17:58Z",
+      "updated_at": "2016-08-01T03:29:33Z",
+      "open_issues_count": 0,
+      "forks_count": 13
+    }
+  },
+  {
+    "title": "string-matching",
+    "info": "[ruby, algorithms, big o]",
+    "url": "https://github.com/den-wdi-1/string-matching",
+    "tags": [
+      "ruby",
+      "algorithms",
+      "big o"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64792354,
+      "created_at": "2016-08-02T21:02:03Z",
+      "updated_at": "2016-08-08T14:41:03Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "terminal-basics-navigating-the-filesystem",
+    "info": "[terminal, filesystem, command, line, bash, unix]",
+    "url": "https://github.com/den-wdi-1/terminal-basics-navigating-the-filesystem",
+    "tags": [
+      "terminal",
+      "filesystem",
+      "command",
+      "line",
+      "bash",
+      "unix"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60307555,
+      "created_at": "2016-06-03T01:00:45Z",
+      "updated_at": "2016-05-02T00:43:06Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "test-driven-todo-api",
+    "info": "To Do list API with Node/Express",
+    "url": "https://github.com/den-wdi-1/test-driven-todo-api",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62590643,
+      "created_at": "2016-07-04T22:18:40Z",
+      "updated_at": "2016-07-12T17:09:38Z",
+      "open_issues_count": 0,
+      "forks_count": 15
+    }
+  },
+  {
+    "title": "tic-tac-toe",
+    "info": "[javascript]",
+    "url": "https://github.com/den-wdi-1/tic-tac-toe",
+    "tags": [
+      "javascript"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 60859973,
+      "created_at": "2016-06-10T15:57:06Z",
+      "updated_at": "2016-06-10T15:57:07Z",
+      "open_issues_count": 1,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "trees",
+    "info": "[tree, trie, binary search tree, graph, cs, cs concepts, javascript, ruby]",
+    "url": "https://github.com/den-wdi-1/trees",
+    "tags": [
+      "tree",
+      "trie",
+      "binary search tree",
+      "graph",
+      "cs",
+      "cs concepts",
+      "javascript",
+      "ruby"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 64628395,
+      "created_at": "2016-08-01T02:16:37Z",
+      "updated_at": "2016-08-01T16:41:00Z",
+      "open_issues_count": 0,
+      "forks_count": 10
+    }
+  },
+  {
+    "title": "tunely",
+    "info": "[js, lab, crud, express, ajax, rest]",
+    "url": "https://github.com/den-wdi-1/tunely",
+    "tags": [
+      "js",
+      "lab",
+      "crud",
+      "express",
+      "ajax",
+      "rest"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 62845169,
+      "created_at": "2016-07-07T23:50:57Z",
+      "updated_at": "2016-07-07T23:50:58Z",
+      "open_issues_count": 0,
+      "forks_count": 15
+    }
+  },
+  {
+    "title": "tunr-heroku",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/tunr-heroku",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63629087,
+      "created_at": "2016-07-18T18:58:55Z",
+      "updated_at": "2016-07-18T19:09:13Z",
+      "open_issues_count": 0,
+      "forks_count": 4
+    }
+  },
+  {
+    "title": "tunr-relationships",
+    "info": null,
+    "url": "https://github.com/den-wdi-1/tunr-relationships",
+    "tags": [],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63427062,
+      "created_at": "2016-07-15T14:16:32Z",
+      "updated_at": "2016-07-15T14:17:26Z",
+      "open_issues_count": 0,
+      "forks_count": 8
+    }
+  },
+  {
+    "title": "username-generator",
+    "info": "[rspec, ruby, labs]",
+    "url": "https://github.com/den-wdi-1/username-generator",
+    "tags": [
+      "rspec",
+      "ruby",
+      "labs"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63567353,
+      "created_at": "2016-07-18T03:27:53Z",
+      "updated_at": "2016-07-18T03:27:54Z",
+      "open_issues_count": 0,
+      "forks_count": 5
+    }
+  },
+  {
+    "title": "wheel_of_fortune",
+    "info": "[ruby, tdd, rspec, labs]",
+    "url": "https://github.com/den-wdi-1/wheel_of_fortune",
+    "tags": [
+      "ruby",
+      "tdd",
+      "rspec",
+      "labs"
+    ],
+    "org": "den-wdi-1",
+    "github": {
+      "id": 63986133,
+      "created_at": "2016-07-22T22:06:05Z",
+      "updated_at": "2016-07-22T22:06:06Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  }
+]

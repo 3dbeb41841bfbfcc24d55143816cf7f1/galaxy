@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 let github = require('./github-wrapper').github;
 let authenticate = require('./github-wrapper').authenticate;
 
@@ -8,7 +10,11 @@ const orgs = [
   'ATL-WDI-Exercises',
   'GA-WDI-Lessons',
   'GA-WDI-Exercises',
-  'ga-wdi-boston'
+  'ga-wdi-boston',
+  'generalassembly-atx',
+  'wdi-sea',
+  'den-wdi-1',
+  'den-wdi-2'
 ];
 
 function printRepoVerbose(repo) {
@@ -87,6 +93,9 @@ function exportReposForOrg(org) {
 
     // sort repos by title so that repeated results can be diffed:
     reposAsResources.sort( (a,b) => a.title.localeCompare(b.title) );
+
+    let reposWithNoTagsCnt = reposAsResources.reduce( (acc, r) => acc + (r.tags.length > 0 ? 0 : 1), 0 );
+    console.log(`  ${reposWithNoTagsCnt} repos have no tags.`);
 
     // console.log('reposAsResources:', reposAsResources);
     writeToFile('../../data/' + org.toLowerCase() + '.json', reposAsResources);
