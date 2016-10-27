@@ -3,6 +3,7 @@ div(ng-init='$ctrl.project.requirementsIsCollapsed = true; $ctrl.project.keyIsCo
     span.text-warning
       | Requirements and Instructor Feedback
     i.text-warning.glyphicon(ng-class="{'glyphicon-chevron-down': !$ctrl.project.requirementsIsCollapsed, 'glyphicon-chevron-right': $ctrl.project.requirementsIsCollapsed}")
+
   div(uib-collapse='$ctrl.project.requirementsIsCollapsed')
     project-requirements-key
 

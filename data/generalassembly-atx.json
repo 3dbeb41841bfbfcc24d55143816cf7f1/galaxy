@@ -1,0 +1,630 @@
+[
+  {
+    "title": "activerecord-associations",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/activerecord-associations",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 64787207,
+      "created_at": "2016-08-02T19:41:54Z",
+      "updated_at": "2016-08-02T19:42:55Z",
+      "open_issues_count": 0,
+      "forks_count": 10
+    }
+  },
+  {
+    "title": "atm_application",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/atm_application",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 60729615,
+      "created_at": "2016-06-08T20:46:03Z",
+      "updated_at": "2016-06-08T20:48:20Z",
+      "open_issues_count": 0,
+      "forks_count": 32
+    }
+  },
+  {
+    "title": "auth0_template_webpack",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/auth0_template_webpack",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 65594288,
+      "created_at": "2016-08-13T02:07:05Z",
+      "updated_at": "2016-08-13T02:07:13Z",
+      "open_issues_count": 0,
+      "forks_count": 4
+    }
+  },
+  {
+    "title": "band-list-api",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/band-list-api",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 66031845,
+      "created_at": "2016-08-18T21:27:23Z",
+      "updated_at": "2016-08-18T21:29:10Z",
+      "open_issues_count": 13,
+      "forks_count": 21
+    }
+  },
+  {
+    "title": "band-list-frontend-auth0",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/band-list-frontend-auth0",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 66309208,
+      "created_at": "2016-08-22T21:22:35Z",
+      "updated_at": "2016-08-22T21:22:59Z",
+      "open_issues_count": 0,
+      "forks_count": 20
+    }
+  },
+  {
+    "title": "bank_testing_js",
+    "info": "[javascript,testing,jasmine]",
+    "url": "https://github.com/generalassembly-atx/bank_testing_js",
+    "tags": [
+      "javascript",
+      "testing",
+      "jasmine"
+    ],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 61326320,
+      "created_at": "2016-06-16T21:15:03Z",
+      "updated_at": "2016-06-16T22:02:55Z",
+      "open_issues_count": 0,
+      "forks_count": 10
+    }
+  },
+  {
+    "title": "cli_golf",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/cli_golf",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 64253794,
+      "created_at": "2016-07-26T20:51:46Z",
+      "updated_at": "2016-07-26T20:51:46Z",
+      "open_issues_count": 0,
+      "forks_count": 24
+    }
+  },
+  {
+    "title": "code-brews",
+    "info": "GA is taking an Oktoberfest tour and coming to a city near you!",
+    "url": "https://github.com/generalassembly-atx/code-brews",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 71073851,
+      "created_at": "2016-10-16T20:00:07Z",
+      "updated_at": "2016-10-16T20:19:23Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "deck_of_cards",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/deck_of_cards",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 60628551,
+      "created_at": "2016-06-07T16:21:12Z",
+      "updated_at": "2016-06-07T16:47:42Z",
+      "open_issues_count": 0,
+      "forks_count": 33
+    }
+  },
+  {
+    "title": "emergency_compliment",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/emergency_compliment",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 61581882,
+      "created_at": "2016-06-20T21:34:23Z",
+      "updated_at": "2016-06-20T21:34:23Z",
+      "open_issues_count": 5,
+      "forks_count": 17
+    }
+  },
+  {
+    "title": "express_passport_template",
+    "info": "Template repository for starting express apps with passport and mongoose",
+    "url": "https://github.com/generalassembly-atx/express_passport_template",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 62406415,
+      "created_at": "2016-07-01T16:35:04Z",
+      "updated_at": "2016-07-01T16:35:13Z",
+      "open_issues_count": 1,
+      "forks_count": 3
+    }
+  },
+  {
+    "title": "express_todos",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/express_todos",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 61669875,
+      "created_at": "2016-06-21T21:56:54Z",
+      "updated_at": "2016-06-21T21:56:54Z",
+      "open_issues_count": 0,
+      "forks_count": 9
+    }
+  },
+  {
+    "title": "ga-cards",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/ga-cards",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 68071734,
+      "created_at": "2016-09-13T03:42:48Z",
+      "updated_at": "2016-09-13T03:42:49Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "ga-observation-scheduler",
+    "info": "An app to assist in scheduling instructor observations and mid-course feedback",
+    "url": "https://github.com/generalassembly-atx/ga-observation-scheduler",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 68304995,
+      "created_at": "2016-09-15T15:12:16Z",
+      "updated_at": "2016-09-15T15:12:55Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "giphy_api",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/giphy_api",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 61155630,
+      "created_at": "2016-06-14T21:03:45Z",
+      "updated_at": "2016-06-14T21:03:54Z",
+      "open_issues_count": 0,
+      "forks_count": 30
+    }
+  },
+  {
+    "title": "hello-world-passport-strategies",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/hello-world-passport-strategies",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 63278241,
+      "created_at": "2016-07-13T20:45:01Z",
+      "updated_at": "2016-07-13T20:45:25Z",
+      "open_issues_count": 0,
+      "forks_count": 11
+    }
+  },
+  {
+    "title": "jobbed_out",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/jobbed_out",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 63374111,
+      "created_at": "2016-07-14T22:31:55Z",
+      "updated_at": "2016-07-14T22:32:04Z",
+      "open_issues_count": 8,
+      "forks_count": 10
+    }
+  },
+  {
+    "title": "jobbed_out_rails",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/jobbed_out_rails",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 43150533,
+      "created_at": "2015-09-25T14:41:19Z",
+      "updated_at": "2016-07-27T18:00:54Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "js_adventure",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/js_adventure",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 60556308,
+      "created_at": "2016-06-06T19:51:30Z",
+      "updated_at": "2016-06-06T19:51:30Z",
+      "open_issues_count": 0,
+      "forks_count": 18
+    }
+  },
+  {
+    "title": "moma_js",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/moma_js",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 62177548,
+      "created_at": "2016-06-28T22:10:16Z",
+      "updated_at": "2016-06-28T22:10:38Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "mongoose_compliment",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/mongoose_compliment",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 62260418,
+      "created_at": "2016-06-29T21:54:03Z",
+      "updated_at": "2016-06-29T21:54:13Z",
+      "open_issues_count": 4,
+      "forks_count": 17
+    }
+  },
+  {
+    "title": "movies_lab",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/movies_lab",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 63905384,
+      "created_at": "2016-07-21T22:06:31Z",
+      "updated_at": "2016-07-21T22:06:39Z",
+      "open_issues_count": 0,
+      "forks_count": 9
+    }
+  },
+  {
+    "title": "music_artist_oop_relationships",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/music_artist_oop_relationships",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 61242103,
+      "created_at": "2016-06-15T21:27:29Z",
+      "updated_at": "2016-06-15T22:15:23Z",
+      "open_issues_count": 14,
+      "forks_count": 30
+    }
+  },
+  {
+    "title": "pig-latinize",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/pig-latinize",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 64699820,
+      "created_at": "2016-08-01T20:37:23Z",
+      "updated_at": "2016-08-01T20:38:44Z",
+      "open_issues_count": 0,
+      "forks_count": 9
+    }
+  },
+  {
+    "title": "presentations",
+    "info": "Outline for project presentations in WDI",
+    "url": "https://github.com/generalassembly-atx/presentations",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 69034372,
+      "created_at": "2016-09-23T14:52:17Z",
+      "updated_at": "2016-09-23T14:52:17Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "rails_pokemon",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/rails_pokemon",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 64876072,
+      "created_at": "2016-08-03T20:11:50Z",
+      "updated_at": "2016-08-03T20:11:50Z",
+      "open_issues_count": 0,
+      "forks_count": 9
+    }
+  },
+  {
+    "title": "random-compliment-ajax",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/random-compliment-ajax",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 70711440,
+      "created_at": "2016-10-12T15:03:08Z",
+      "updated_at": "2016-10-12T15:03:20Z",
+      "open_issues_count": 0,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "react_calculator",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/react_calculator",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 63727273,
+      "created_at": "2016-07-19T20:52:49Z",
+      "updated_at": "2016-07-19T20:55:13Z",
+      "open_issues_count": 9,
+      "forks_count": 10
+    }
+  },
+  {
+    "title": "react_jokes_webpack",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/react_jokes_webpack",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 63812000,
+      "created_at": "2016-07-20T20:24:06Z",
+      "updated_at": "2016-07-20T20:24:15Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "react-calculator",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/react-calculator",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 67738136,
+      "created_at": "2016-09-08T20:32:39Z",
+      "updated_at": "2016-09-08T20:42:16Z",
+      "open_issues_count": 5,
+      "forks_count": 6
+    }
+  },
+  {
+    "title": "react-review",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/react-review",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 63809251,
+      "created_at": "2016-07-20T19:40:37Z",
+      "updated_at": "2016-07-20T19:40:45Z",
+      "open_issues_count": 0,
+      "forks_count": 9
+    }
+  },
+  {
+    "title": "relaxr_css",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/relaxr_css",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 60284468,
+      "created_at": "2016-06-02T17:39:25Z",
+      "updated_at": "2016-06-02T17:39:58Z",
+      "open_issues_count": 0,
+      "forks_count": 37
+    }
+  },
+  {
+    "title": "relaxr_html",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/relaxr_html",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 60210144,
+      "created_at": "2016-06-01T20:55:16Z",
+      "updated_at": "2016-06-01T20:55:16Z",
+      "open_issues_count": 0,
+      "forks_count": 35
+    }
+  },
+  {
+    "title": "shiptendance",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/shiptendance",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 62340111,
+      "created_at": "2016-06-30T20:25:21Z",
+      "updated_at": "2016-06-30T20:25:21Z",
+      "open_issues_count": 0,
+      "forks_count": 10
+    }
+  },
+  {
+    "title": "shopping_for_cookies",
+    "info": "[sessions,cookies,express]",
+    "url": "https://github.com/generalassembly-atx/shopping_for_cookies",
+    "tags": [
+      "sessions",
+      "cookies",
+      "express"
+    ],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 61751944,
+      "created_at": "2016-06-22T21:14:38Z",
+      "updated_at": "2016-06-22T21:14:56Z",
+      "open_issues_count": 0,
+      "forks_count": 10
+    }
+  },
+  {
+    "title": "sql_nba_db",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/sql_nba_db",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 62087522,
+      "created_at": "2016-06-27T20:54:29Z",
+      "updated_at": "2016-06-27T20:54:29Z",
+      "open_issues_count": 0,
+      "forks_count": 10
+    }
+  },
+  {
+    "title": "stargazer",
+    "info": "[ajax, javascript, api]",
+    "url": "https://github.com/generalassembly-atx/stargazer",
+    "tags": [
+      "ajax",
+      "javascript",
+      "api"
+    ],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 63103682,
+      "created_at": "2016-07-11T21:31:02Z",
+      "updated_at": "2016-08-22T17:51:12Z",
+      "open_issues_count": 0,
+      "forks_count": 17
+    }
+  },
+  {
+    "title": "student-directory-api-auth0",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/student-directory-api-auth0",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 66406939,
+      "created_at": "2016-08-23T22:05:42Z",
+      "updated_at": "2016-08-23T22:12:53Z",
+      "open_issues_count": 10,
+      "forks_count": 15
+    }
+  },
+  {
+    "title": "tic-tac-toe",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/tic-tac-toe",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 64852741,
+      "created_at": "2016-08-03T14:30:59Z",
+      "updated_at": "2016-08-03T14:34:19Z",
+      "open_issues_count": 14,
+      "forks_count": 22
+    }
+  },
+  {
+    "title": "wdi",
+    "info": "Curriculum, Philosophy, and Global Process for Web Development Immersive",
+    "url": "https://github.com/generalassembly-atx/wdi",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 33715136,
+      "created_at": "2015-04-10T07:35:29Z",
+      "updated_at": "2016-07-06T23:22:23Z",
+      "open_issues_count": 1,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "webpack_express_auth_template",
+    "info": "A template for building Express apps with Passport authentication and Webpack built in",
+    "url": "https://github.com/generalassembly-atx/webpack_express_auth_template",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 64143625,
+      "created_at": "2016-07-25T14:56:29Z",
+      "updated_at": "2016-07-25T14:56:38Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "webpack_express_template",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/webpack_express_template",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 63876881,
+      "created_at": "2016-07-21T14:35:32Z",
+      "updated_at": "2016-07-21T14:35:41Z",
+      "open_issues_count": 2,
+      "forks_count": 5
+    }
+  },
+  {
+    "title": "wordpress-theme",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/wordpress-theme",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 70096367,
+      "created_at": "2016-10-05T20:23:22Z",
+      "updated_at": "2016-10-05T20:23:38Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "world",
+    "info": null,
+    "url": "https://github.com/generalassembly-atx/world",
+    "tags": [],
+    "org": "generalassembly-atx",
+    "github": {
+      "id": 69297678,
+      "created_at": "2016-09-26T22:21:39Z",
+      "updated_at": "2016-09-26T22:26:42Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  }
+]

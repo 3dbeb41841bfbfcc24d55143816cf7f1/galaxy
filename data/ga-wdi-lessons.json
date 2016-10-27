@@ -1,0 +1,3000 @@
+[
+  {
+    "title": "activerecord-intro",
+    "info": "Test description. [ruby,activerecord]",
+    "url": "https://github.com/ga-wdi-lessons/activerecord-intro",
+    "tags": [
+      "ruby",
+      "activerecord"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50121087,
+      "created_at": "2016-01-21T16:38:16Z",
+      "updated_at": "2016-02-01T20:46:32Z",
+      "open_issues_count": 0,
+      "forks_count": 8
+    }
+  },
+  {
+    "title": "activerecord-self-referential",
+    "info": "[rails,activerecord]",
+    "url": "https://github.com/ga-wdi-lessons/activerecord-self-referential",
+    "tags": [
+      "rails",
+      "activerecord"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125581,
+      "created_at": "2016-01-21T17:50:53Z",
+      "updated_at": "2016-01-23T08:27:42Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "agile",
+    "info": "[workflow,agile]",
+    "url": "https://github.com/ga-wdi-lessons/agile",
+    "tags": [
+      "workflow",
+      "agile"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50120995,
+      "created_at": "2016-01-21T16:36:46Z",
+      "updated_at": "2016-01-21T16:36:46Z",
+      "open_issues_count": 2,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "angular_spa_intro",
+    "info": "[angular, spa]",
+    "url": "https://github.com/ga-wdi-lessons/angular_spa_intro",
+    "tags": [
+      "angular",
+      "spa"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 54600457,
+      "created_at": "2016-03-23T23:38:39Z",
+      "updated_at": "2016-03-23T23:38:39Z",
+      "open_issues_count": 0,
+      "forks_count": 12
+    }
+  },
+  {
+    "title": "angular-auth",
+    "info": "[angular,auth]",
+    "url": "https://github.com/ga-wdi-lessons/angular-auth",
+    "tags": [
+      "angular",
+      "auth"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126148,
+      "created_at": "2016-01-21T18:00:40Z",
+      "updated_at": "2016-01-21T18:00:40Z",
+      "open_issues_count": 1,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "angular-custom-directives-abridged",
+    "info": null,
+    "url": "https://github.com/ga-wdi-lessons/angular-custom-directives-abridged",
+    "tags": [],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 66388348,
+      "created_at": "2016-08-23T17:27:46Z",
+      "updated_at": "2016-08-23T17:54:15Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "angular-directives",
+    "info": "[angular]",
+    "url": "https://github.com/ga-wdi-lessons/angular-directives",
+    "tags": [
+      "angular"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126165,
+      "created_at": "2016-01-21T18:00:56Z",
+      "updated_at": "2016-01-21T18:01:00Z",
+      "open_issues_count": 1,
+      "forks_count": 5
+    }
+  },
+  {
+    "title": "angular-examples",
+    "info": "[angular]",
+    "url": "https://github.com/ga-wdi-lessons/angular-examples",
+    "tags": [
+      "angular"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126182,
+      "created_at": "2016-01-21T18:01:22Z",
+      "updated_at": "2016-01-21T18:01:26Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "angular-firebase",
+    "info": "[angular]",
+    "url": "https://github.com/ga-wdi-lessons/angular-firebase",
+    "tags": [
+      "angular"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127712,
+      "created_at": "2016-01-21T18:25:38Z",
+      "updated_at": "2016-07-13T18:49:08Z",
+      "open_issues_count": 1,
+      "forks_count": 7
+    }
+  },
+  {
+    "title": "angular-intro",
+    "info": "[angular]",
+    "url": "https://github.com/ga-wdi-lessons/angular-intro",
+    "tags": [
+      "angular"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126200,
+      "created_at": "2016-01-21T18:01:36Z",
+      "updated_at": "2016-01-21T18:01:36Z",
+      "open_issues_count": 2,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "angular-on-rails",
+    "info": "[angular,rails]",
+    "url": "https://github.com/ga-wdi-lessons/angular-on-rails",
+    "tags": [
+      "angular",
+      "rails"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 54893090,
+      "created_at": "2016-03-28T13:12:09Z",
+      "updated_at": "2016-09-06T03:52:11Z",
+      "open_issues_count": 1,
+      "forks_count": 7
+    }
+  },
+  {
+    "title": "angular-resources",
+    "info": "[angular]",
+    "url": "https://github.com/ga-wdi-lessons/angular-resources",
+    "tags": [
+      "angular"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126217,
+      "created_at": "2016-01-21T18:01:49Z",
+      "updated_at": "2016-01-21T18:01:49Z",
+      "open_issues_count": 6,
+      "forks_count": 7
+    }
+  },
+  {
+    "title": "angular-review",
+    "info": "[angular]",
+    "url": "https://github.com/ga-wdi-lessons/angular-review",
+    "tags": [
+      "angular"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127019,
+      "created_at": "2016-01-21T18:14:43Z",
+      "updated_at": "2016-01-21T18:14:43Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "angular-routing",
+    "info": "[angular]",
+    "url": "https://github.com/ga-wdi-lessons/angular-routing",
+    "tags": [
+      "angular"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126232,
+      "created_at": "2016-01-21T18:02:02Z",
+      "updated_at": "2016-01-21T18:02:02Z",
+      "open_issues_count": 5,
+      "forks_count": 5
+    }
+  },
+  {
+    "title": "angular-troubleshooting",
+    "info": "[angular]",
+    "url": "https://github.com/ga-wdi-lessons/angular-troubleshooting",
+    "tags": [
+      "angular"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126115,
+      "created_at": "2016-01-21T17:59:56Z",
+      "updated_at": "2016-01-21T18:00:26Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "api-intro-rails",
+    "info": "[rails,api]",
+    "url": "https://github.com/ga-wdi-lessons/api-intro-rails",
+    "tags": [
+      "rails",
+      "api"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50517537,
+      "created_at": "2016-01-27T15:38:17Z",
+      "updated_at": "2016-01-27T15:38:17Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "api-intro-with-ajax",
+    "info": "[api, js, jQuery]",
+    "url": "https://github.com/ga-wdi-lessons/api-intro-with-ajax",
+    "tags": [
+      "api",
+      "js",
+      "jQuery"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 54608099,
+      "created_at": "2016-03-24T02:21:01Z",
+      "updated_at": "2016-06-14T14:53:15Z",
+      "open_issues_count": 0,
+      "forks_count": 4
+    }
+  },
+  {
+    "title": "atom-intro",
+    "info": "[workflow]",
+    "url": "https://github.com/ga-wdi-lessons/atom-intro",
+    "tags": [
+      "workflow"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127279,
+      "created_at": "2016-01-21T18:19:15Z",
+      "updated_at": "2016-01-21T18:19:15Z",
+      "open_issues_count": 0,
+      "forks_count": 4
+    }
+  },
+  {
+    "title": "backbone-models-collections",
+    "info": "[backbone]",
+    "url": "https://github.com/ga-wdi-lessons/backbone-models-collections",
+    "tags": [
+      "backbone"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126294,
+      "created_at": "2016-01-21T18:02:50Z",
+      "updated_at": "2016-01-21T18:02:50Z",
+      "open_issues_count": 1,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "backbone-routing",
+    "info": "[backbone]",
+    "url": "https://github.com/ga-wdi-lessons/backbone-routing",
+    "tags": [
+      "backbone"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126323,
+      "created_at": "2016-01-21T18:03:06Z",
+      "updated_at": "2016-01-21T18:03:06Z",
+      "open_issues_count": 1,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "backbone-views-1",
+    "info": "[backbone]",
+    "url": "https://github.com/ga-wdi-lessons/backbone-views-1",
+    "tags": [
+      "backbone"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50458201,
+      "created_at": "2016-01-26T20:49:24Z",
+      "updated_at": "2016-01-26T20:49:24Z",
+      "open_issues_count": 2,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "backbone-views-2",
+    "info": "[backbone]",
+    "url": "https://github.com/ga-wdi-lessons/backbone-views-2",
+    "tags": [
+      "backbone"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126354,
+      "created_at": "2016-01-21T18:03:34Z",
+      "updated_at": "2016-01-21T18:03:34Z",
+      "open_issues_count": 1,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "bootstrap-intro",
+    "info": "[css,bootstrap]",
+    "url": "https://github.com/ga-wdi-lessons/bootstrap-intro",
+    "tags": [
+      "css",
+      "bootstrap"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126377,
+      "created_at": "2016-01-21T18:03:56Z",
+      "updated_at": "2016-01-21T18:03:56Z",
+      "open_issues_count": 1,
+      "forks_count": 3
+    }
+  },
+  {
+    "title": "bootstrap-mini-lesson",
+    "info": null,
+    "url": "https://github.com/ga-wdi-lessons/bootstrap-mini-lesson",
+    "tags": [],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 63858651,
+      "created_at": "2016-07-21T10:04:58Z",
+      "updated_at": "2016-07-21T19:04:23Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "bronze-silver-gold",
+    "info": "[workflow]",
+    "url": "https://github.com/ga-wdi-lessons/bronze-silver-gold",
+    "tags": [
+      "workflow"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 52251266,
+      "created_at": "2016-02-22T06:14:10Z",
+      "updated_at": "2016-02-22T06:14:17Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "build-tools",
+    "info": "Overview of workflow automation [build-tool, gulp, webpack, grunt, js, node]",
+    "url": "https://github.com/ga-wdi-lessons/build-tools",
+    "tags": [
+      "build-tool",
+      "gulp",
+      "webpack",
+      "grunt",
+      "js",
+      "node"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 56247141,
+      "created_at": "2016-04-14T15:05:29Z",
+      "updated_at": "2016-05-27T13:33:23Z",
+      "open_issues_count": 1,
+      "forks_count": 5
+    }
+  },
+  {
+    "title": "building_a_portfolio_page",
+    "info": "[git, html, css]",
+    "url": "https://github.com/ga-wdi-lessons/building_a_portfolio_page",
+    "tags": [
+      "git",
+      "html",
+      "css"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 59591874,
+      "created_at": "2016-05-24T16:56:16Z",
+      "updated_at": "2016-05-24T17:01:21Z",
+      "open_issues_count": 0,
+      "forks_count": 3
+    }
+  },
+  {
+    "title": "building-a-mean-app",
+    "info": "[MEAN, Mongo, Express, Angular]",
+    "url": "https://github.com/ga-wdi-lessons/building-a-mean-app",
+    "tags": [
+      "MEAN",
+      "Mongo",
+      "Express",
+      "Angular"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 56070929,
+      "created_at": "2016-04-12T14:36:07Z",
+      "updated_at": "2016-08-15T15:44:42Z",
+      "open_issues_count": 0,
+      "forks_count": 8
+    }
+  },
+  {
+    "title": "cancancan",
+    "info": "[rails,auth]",
+    "url": "https://github.com/ga-wdi-lessons/cancancan",
+    "tags": [
+      "rails",
+      "auth"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125457,
+      "created_at": "2016-01-21T17:48:52Z",
+      "updated_at": "2016-01-21T17:48:52Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "cli-intro",
+    "info": "[cli]",
+    "url": "https://github.com/ga-wdi-lessons/cli-intro",
+    "tags": [
+      "cli"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50456990,
+      "created_at": "2016-01-26T20:27:08Z",
+      "updated_at": "2016-01-26T20:27:22Z",
+      "open_issues_count": 4,
+      "forks_count": 4
+    }
+  },
+  {
+    "title": "code-design",
+    "info": "[workflow]",
+    "url": "https://github.com/ga-wdi-lessons/code-design",
+    "tags": [
+      "workflow"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127316,
+      "created_at": "2016-01-21T18:19:40Z",
+      "updated_at": "2016-01-21T18:19:40Z",
+      "open_issues_count": 1,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "coding_for_beginners_workshop",
+    "info": null,
+    "url": "https://github.com/ga-wdi-lessons/coding_for_beginners_workshop",
+    "tags": [],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 61899302,
+      "created_at": "2016-06-24T16:58:00Z",
+      "updated_at": "2016-06-24T16:58:16Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "cs-algorithms",
+    "info": null,
+    "url": "https://github.com/ga-wdi-lessons/cs-algorithms",
+    "tags": [],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 64837934,
+      "created_at": "2016-08-03T10:40:19Z",
+      "updated_at": "2016-09-07T14:00:10Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "cs-data-structures",
+    "info": null,
+    "url": "https://github.com/ga-wdi-lessons/cs-data-structures",
+    "tags": [],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 64854138,
+      "created_at": "2016-08-03T14:49:48Z",
+      "updated_at": "2016-03-17T16:51:14Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "css-animations",
+    "info": "[css]",
+    "url": "https://github.com/ga-wdi-lessons/css-animations",
+    "tags": [
+      "css"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127576,
+      "created_at": "2016-01-21T18:23:35Z",
+      "updated_at": "2016-01-21T18:23:35Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "css-colors",
+    "info": "[css]",
+    "url": "https://github.com/ga-wdi-lessons/css-colors",
+    "tags": [
+      "css"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 51412423,
+      "created_at": "2016-02-10T00:45:35Z",
+      "updated_at": "2016-02-10T00:45:35Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "css-flexbox",
+    "info": "[css]",
+    "url": "https://github.com/ga-wdi-lessons/css-flexbox",
+    "tags": [
+      "css"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126396,
+      "created_at": "2016-01-21T18:04:12Z",
+      "updated_at": "2016-01-21T18:04:12Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "css-foundation",
+    "info": "[css,foundation]",
+    "url": "https://github.com/ga-wdi-lessons/css-foundation",
+    "tags": [
+      "css",
+      "foundation"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126410,
+      "created_at": "2016-01-21T18:04:29Z",
+      "updated_at": "2016-01-21T18:04:29Z",
+      "open_issues_count": 1,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "css-grids",
+    "info": "[css]",
+    "url": "https://github.com/ga-wdi-lessons/css-grids",
+    "tags": [
+      "css"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126417,
+      "created_at": "2016-01-21T18:04:39Z",
+      "updated_at": "2016-01-21T18:04:39Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "css-intermediate",
+    "info": "[css,positioning,pseudo]",
+    "url": "https://github.com/ga-wdi-lessons/css-intermediate",
+    "tags": [
+      "css",
+      "positioning",
+      "pseudo"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50007449,
+      "created_at": "2016-01-20T05:40:23Z",
+      "updated_at": "2016-01-20T05:40:23Z",
+      "open_issues_count": 2,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "css-intro",
+    "info": "[css]",
+    "url": "https://github.com/ga-wdi-lessons/css-intro",
+    "tags": [
+      "css"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50006934,
+      "created_at": "2016-01-20T05:28:46Z",
+      "updated_at": "2016-01-29T21:00:34Z",
+      "open_issues_count": 2,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "css-layout",
+    "info": "[css, layout]",
+    "url": "https://github.com/ga-wdi-lessons/css-layout",
+    "tags": [
+      "css",
+      "layout"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 62237142,
+      "created_at": "2016-06-29T15:31:06Z",
+      "updated_at": "2016-06-29T15:31:06Z",
+      "open_issues_count": 1,
+      "forks_count": 3
+    }
+  },
+  {
+    "title": "css-pseudoselectors",
+    "info": "[css]",
+    "url": "https://github.com/ga-wdi-lessons/css-pseudoselectors",
+    "tags": [
+      "css"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126971,
+      "created_at": "2016-01-21T18:13:42Z",
+      "updated_at": "2016-01-21T18:13:42Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "css-responsive",
+    "info": "[css, rwd, responsive]",
+    "url": "https://github.com/ga-wdi-lessons/css-responsive",
+    "tags": [
+      "css",
+      "rwd",
+      "responsive"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125987,
+      "created_at": "2016-01-21T17:58:06Z",
+      "updated_at": "2016-01-26T21:07:21Z",
+      "open_issues_count": 1,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "css-review",
+    "info": "[css]",
+    "url": "https://github.com/ga-wdi-lessons/css-review",
+    "tags": [
+      "css"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50874729,
+      "created_at": "2016-02-01T22:04:28Z",
+      "updated_at": "2016-05-25T13:45:57Z",
+      "open_issues_count": 2,
+      "forks_count": 7
+    }
+  },
+  {
+    "title": "d3-intro",
+    "info": "[js,d3]",
+    "url": "https://github.com/ga-wdi-lessons/d3-intro",
+    "tags": [
+      "js",
+      "d3"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127334,
+      "created_at": "2016-01-21T18:19:55Z",
+      "updated_at": "2016-03-25T02:50:24Z",
+      "open_issues_count": 1,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "deploy-MEAN-app",
+    "info": "[express, angular, mongo, mongoose, deploy, digitalocean, ssh, heroku, node]",
+    "url": "https://github.com/ga-wdi-lessons/deploy-MEAN-app",
+    "tags": [
+      "express",
+      "angular",
+      "mongo",
+      "mongoose",
+      "deploy",
+      "digitalocean",
+      "ssh",
+      "heroku",
+      "node"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 55607536,
+      "created_at": "2016-04-06T13:18:16Z",
+      "updated_at": "2016-06-14T15:41:40Z",
+      "open_issues_count": 1,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "dev-ops",
+    "info": null,
+    "url": "https://github.com/ga-wdi-lessons/dev-ops",
+    "tags": [],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 56142356,
+      "created_at": "2016-04-13T10:23:48Z",
+      "updated_at": "2016-04-13T10:23:48Z",
+      "open_issues_count": 1,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "devise",
+    "info": "[rails]",
+    "url": "https://github.com/ga-wdi-lessons/devise",
+    "tags": [
+      "rails"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 54505235,
+      "created_at": "2016-03-22T20:05:41Z",
+      "updated_at": "2016-03-22T20:05:41Z",
+      "open_issues_count": 0,
+      "forks_count": 4
+    }
+  },
+  {
+    "title": "dns-domains",
+    "info": "[web]",
+    "url": "https://github.com/ga-wdi-lessons/dns-domains",
+    "tags": [
+      "web"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127130,
+      "created_at": "2016-01-21T18:16:51Z",
+      "updated_at": "2016-01-21T18:16:51Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "dont-build-a-skyscraper",
+    "info": "[meta]",
+    "url": "https://github.com/ga-wdi-lessons/dont-build-a-skyscraper",
+    "tags": [
+      "meta"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 51448062,
+      "created_at": "2016-02-10T15:02:14Z",
+      "updated_at": "2016-02-10T15:02:14Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "elm-intro",
+    "info": "[js,elm]",
+    "url": "https://github.com/ga-wdi-lessons/elm-intro",
+    "tags": [
+      "js",
+      "elm"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127345,
+      "created_at": "2016-01-21T18:20:07Z",
+      "updated_at": "2016-02-19T04:41:41Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "es2015",
+    "info": "[es6, es2015]",
+    "url": "https://github.com/ga-wdi-lessons/es2015",
+    "tags": [
+      "es6",
+      "es2015"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 60130435,
+      "created_at": "2016-05-31T23:27:25Z",
+      "updated_at": "2016-05-31T23:27:25Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "es6",
+    "info": "[js, javascript, es6]",
+    "url": "https://github.com/ga-wdi-lessons/es6",
+    "tags": [
+      "js",
+      "javascript",
+      "es6"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 64610077,
+      "created_at": "2016-07-31T18:58:16Z",
+      "updated_at": "2016-07-31T18:58:16Z",
+      "open_issues_count": 0,
+      "forks_count": 4
+    }
+  },
+  {
+    "title": "es6-teach-yourself",
+    "info": "ES6, Javascript",
+    "url": "https://github.com/ga-wdi-lessons/es6-teach-yourself",
+    "tags": [],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 67135866,
+      "created_at": "2016-09-01T13:56:50Z",
+      "updated_at": "2016-09-02T12:46:42Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "express-deploy",
+    "info": "[express,deploy,heroku]",
+    "url": "https://github.com/ga-wdi-lessons/express-deploy",
+    "tags": [
+      "express",
+      "deploy",
+      "heroku"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126056,
+      "created_at": "2016-01-21T17:59:11Z",
+      "updated_at": "2016-01-21T17:59:11Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "express-deploy-mongo",
+    "info": "[express,nginx,deploy,mongo]",
+    "url": "https://github.com/ga-wdi-lessons/express-deploy-mongo",
+    "tags": [
+      "express",
+      "nginx",
+      "deploy",
+      "mongo"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127070,
+      "created_at": "2016-01-21T18:15:38Z",
+      "updated_at": "2016-01-21T18:16:20Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "express-deploy-postgres",
+    "info": "[express,nginx,deploy,postgresql]",
+    "url": "https://github.com/ga-wdi-lessons/express-deploy-postgres",
+    "tags": [
+      "express",
+      "nginx",
+      "deploy",
+      "postgresql"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127094,
+      "created_at": "2016-01-21T18:16:05Z",
+      "updated_at": "2016-01-21T18:16:24Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "express-intro",
+    "info": "[node,express]",
+    "url": "https://github.com/ga-wdi-lessons/express-intro",
+    "tags": [
+      "node",
+      "express"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125642,
+      "created_at": "2016-01-21T17:51:52Z",
+      "updated_at": "2016-07-22T23:26:25Z",
+      "open_issues_count": 1,
+      "forks_count": 3
+    }
+  },
+  {
+    "title": "express-mongoose",
+    "info": "[express, js, mongoose, mongo, orm, nosql]",
+    "url": "https://github.com/ga-wdi-lessons/express-mongoose",
+    "tags": [
+      "express",
+      "js",
+      "mongoose",
+      "mongo",
+      "orm",
+      "nosql"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 55510655,
+      "created_at": "2016-04-05T13:36:32Z",
+      "updated_at": "2016-07-22T23:37:13Z",
+      "open_issues_count": 4,
+      "forks_count": 3
+    }
+  },
+  {
+    "title": "express-oauth",
+    "info": "[express,auth,passport,oauth]",
+    "url": "https://github.com/ga-wdi-lessons/express-oauth",
+    "tags": [
+      "express",
+      "auth",
+      "passport",
+      "oauth"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125904,
+      "created_at": "2016-01-21T17:56:33Z",
+      "updated_at": "2016-10-14T23:26:53Z",
+      "open_issues_count": 2,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "express-oauth-handrolled",
+    "info": "[express, oauth, api, twitter]",
+    "url": "https://github.com/ga-wdi-lessons/express-oauth-handrolled",
+    "tags": [
+      "express",
+      "oauth",
+      "api",
+      "twitter"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 55914388,
+      "created_at": "2016-04-10T18:04:08Z",
+      "updated_at": "2016-04-10T18:04:08Z",
+      "open_issues_count": 2,
+      "forks_count": 6
+    }
+  },
+  {
+    "title": "express-passport",
+    "info": "[express,auth,passport]",
+    "url": "https://github.com/ga-wdi-lessons/express-passport",
+    "tags": [
+      "express",
+      "auth",
+      "passport"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125887,
+      "created_at": "2016-01-21T17:56:09Z",
+      "updated_at": "2016-01-21T17:56:09Z",
+      "open_issues_count": 2,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "express-passport-sequelize",
+    "info": "[express,auth,passport]",
+    "url": "https://github.com/ga-wdi-lessons/express-passport-sequelize",
+    "tags": [
+      "express",
+      "auth",
+      "passport"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127755,
+      "created_at": "2016-01-21T18:26:13Z",
+      "updated_at": "2016-01-21T18:26:13Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "express-routing",
+    "info": "[node,express]",
+    "url": "https://github.com/ga-wdi-lessons/express-routing",
+    "tags": [
+      "node",
+      "express"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125713,
+      "created_at": "2016-01-21T17:53:26Z",
+      "updated_at": "2016-02-20T22:10:38Z",
+      "open_issues_count": 1,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "express-sequelize",
+    "info": "[express,sql]",
+    "url": "https://github.com/ga-wdi-lessons/express-sequelize",
+    "tags": [
+      "express",
+      "sql"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127827,
+      "created_at": "2016-01-21T18:27:38Z",
+      "updated_at": "2016-01-21T18:27:38Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "forms-and-helpers",
+    "info": "[rails, forms, helpers]",
+    "url": "https://github.com/ga-wdi-lessons/forms-and-helpers",
+    "tags": [
+      "rails",
+      "forms",
+      "helpers"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 53669961,
+      "created_at": "2016-03-11T13:46:20Z",
+      "updated_at": "2016-03-11T13:46:20Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "function-fundamentals",
+    "info": null,
+    "url": "https://github.com/ga-wdi-lessons/function-fundamentals",
+    "tags": [],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 52529701,
+      "created_at": "2016-02-25T14:12:40Z",
+      "updated_at": "2016-02-25T14:12:40Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "functional-programming",
+    "info": "[js]",
+    "url": "https://github.com/ga-wdi-lessons/functional-programming",
+    "tags": [
+      "js"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 68607237,
+      "created_at": "2016-09-19T13:13:29Z",
+      "updated_at": "2016-09-23T17:16:47Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "ga-wdi-curriculum.github.io",
+    "info": "Test 123",
+    "url": "https://github.com/ga-wdi-lessons/ga-wdi-curriculum.github.io",
+    "tags": [],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50133471,
+      "created_at": "2016-01-21T20:07:46Z",
+      "updated_at": "2016-01-23T13:41:01Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "git-branching",
+    "info": "[git,cli]",
+    "url": "https://github.com/ga-wdi-lessons/git-branching",
+    "tags": [
+      "git",
+      "cli"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50120928,
+      "created_at": "2016-01-21T16:35:32Z",
+      "updated_at": "2016-01-21T16:35:32Z",
+      "open_issues_count": 6,
+      "forks_count": 10
+    }
+  },
+  {
+    "title": "git-branching-mini-lesson",
+    "info": "[git, deploy, gh-pages, mini]",
+    "url": "https://github.com/ga-wdi-lessons/git-branching-mini-lesson",
+    "tags": [
+      "git",
+      "deploy",
+      "gh-pages",
+      "mini"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 62169210,
+      "created_at": "2016-06-28T19:41:21Z",
+      "updated_at": "2016-06-30T12:44:57Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "git-intro",
+    "info": "[git,cli]",
+    "url": "https://github.com/ga-wdi-lessons/git-intro",
+    "tags": [
+      "git",
+      "cli"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50006991,
+      "created_at": "2016-01-20T05:30:12Z",
+      "updated_at": "2016-01-20T05:30:12Z",
+      "open_issues_count": 0,
+      "forks_count": 5
+    }
+  },
+  {
+    "title": "git-review",
+    "info": "[git]",
+    "url": "https://github.com/ga-wdi-lessons/git-review",
+    "tags": [
+      "git"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 51102415,
+      "created_at": "2016-02-04T20:14:08Z",
+      "updated_at": "2016-05-31T13:52:26Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "git-ssh",
+    "info": "[git,cli]",
+    "url": "https://github.com/ga-wdi-lessons/git-ssh",
+    "tags": [
+      "git",
+      "cli"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50007092,
+      "created_at": "2016-01-20T05:32:30Z",
+      "updated_at": "2016-01-20T05:32:30Z",
+      "open_issues_count": 2,
+      "forks_count": 3
+    }
+  },
+  {
+    "title": "git-teams",
+    "info": "[workflow,git]",
+    "url": "https://github.com/ga-wdi-lessons/git-teams",
+    "tags": [
+      "workflow",
+      "git"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125727,
+      "created_at": "2016-01-21T17:53:41Z",
+      "updated_at": "2016-01-21T17:53:41Z",
+      "open_issues_count": 1,
+      "forks_count": 3
+    }
+  },
+  {
+    "title": "handlebars",
+    "info": "[hbs, handlebars, js]",
+    "url": "https://github.com/ga-wdi-lessons/handlebars",
+    "tags": [
+      "hbs",
+      "handlebars",
+      "js"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 54984914,
+      "created_at": "2016-03-29T14:56:02Z",
+      "updated_at": "2016-06-14T14:54:29Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "haskell",
+    "info": "[haskell]",
+    "url": "https://github.com/ga-wdi-lessons/haskell",
+    "tags": [
+      "haskell"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50621002,
+      "created_at": "2016-01-28T23:17:01Z",
+      "updated_at": "2016-01-28T23:17:13Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "html-forms",
+    "info": "[html,forms,http]",
+    "url": "https://github.com/ga-wdi-lessons/html-forms",
+    "tags": [
+      "html",
+      "forms",
+      "http"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 60795749,
+      "created_at": "2016-06-09T18:01:01Z",
+      "updated_at": "2016-06-09T18:01:01Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "html-intro",
+    "info": "[web,html]",
+    "url": "https://github.com/ga-wdi-lessons/html-intro",
+    "tags": [
+      "web",
+      "html"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50007161,
+      "created_at": "2016-01-20T05:34:04Z",
+      "updated_at": "2016-01-20T05:34:04Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "html-review",
+    "info": "[html]",
+    "url": "https://github.com/ga-wdi-lessons/html-review",
+    "tags": [
+      "html"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 51369160,
+      "created_at": "2016-02-09T13:41:20Z",
+      "updated_at": "2016-02-10T14:44:15Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "http-mvc-intro-rails",
+    "info": "Assumes no Sinatra knowledge [rails, mvc, http]",
+    "url": "https://github.com/ga-wdi-lessons/http-mvc-intro-rails",
+    "tags": [
+      "rails",
+      "mvc",
+      "http"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 53442424,
+      "created_at": "2016-03-08T20:20:50Z",
+      "updated_at": "2016-06-14T14:55:01Z",
+      "open_issues_count": 0,
+      "forks_count": 6
+    }
+  },
+  {
+    "title": "intro_backend_via_php",
+    "info": "[php, http]",
+    "url": "https://github.com/ga-wdi-lessons/intro_backend_via_php",
+    "tags": [
+      "php",
+      "http"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 60984497,
+      "created_at": "2016-06-12T19:07:09Z",
+      "updated_at": "2016-06-12T19:07:09Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "jquery-dom",
+    "info": null,
+    "url": "https://github.com/ga-wdi-lessons/jquery-dom",
+    "tags": [],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 62560678,
+      "created_at": "2016-07-04T12:32:06Z",
+      "updated_at": "2016-07-04T14:38:10Z",
+      "open_issues_count": 0,
+      "forks_count": 6
+    }
+  },
+  {
+    "title": "jquery-from-scratch",
+    "info": "[javascript, jquery]",
+    "url": "https://github.com/ga-wdi-lessons/jquery-from-scratch",
+    "tags": [
+      "javascript",
+      "jquery"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 58650211,
+      "created_at": "2016-05-12T14:45:18Z",
+      "updated_at": "2016-06-09T21:06:01Z",
+      "open_issues_count": 0,
+      "forks_count": 3
+    }
+  },
+  {
+    "title": "jquery-mapping",
+    "info": "[leaflet,jquery]",
+    "url": "https://github.com/ga-wdi-lessons/jquery-mapping",
+    "tags": [
+      "leaflet",
+      "jquery"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126478,
+      "created_at": "2016-01-21T18:05:37Z",
+      "updated_at": "2016-01-21T18:05:37Z",
+      "open_issues_count": 1,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "jquery-plugins",
+    "info": "[jquery]",
+    "url": "https://github.com/ga-wdi-lessons/jquery-plugins",
+    "tags": [
+      "jquery"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126444,
+      "created_at": "2016-01-21T18:04:59Z",
+      "updated_at": "2016-10-14T18:57:54Z",
+      "open_issues_count": 1,
+      "forks_count": 6
+    }
+  },
+  {
+    "title": "jquery-practice",
+    "info": "[js, javascript, jquery, dom]",
+    "url": "https://github.com/ga-wdi-lessons/jquery-practice",
+    "tags": [
+      "js",
+      "javascript",
+      "jquery",
+      "dom"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 52742878,
+      "created_at": "2016-02-28T20:40:35Z",
+      "updated_at": "2016-02-28T20:40:35Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "jquery-review",
+    "info": "[jquery]",
+    "url": "https://github.com/ga-wdi-lessons/jquery-review",
+    "tags": [
+      "jquery"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126458,
+      "created_at": "2016-01-21T18:05:17Z",
+      "updated_at": "2016-01-21T18:05:17Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "jquery-selectors-events",
+    "info": "[jquery]",
+    "url": "https://github.com/ga-wdi-lessons/jquery-selectors-events",
+    "tags": [
+      "jquery"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 59714753,
+      "created_at": "2016-05-26T02:54:17Z",
+      "updated_at": "2016-05-27T03:32:51Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "js-ajax",
+    "info": "[js,ajax]",
+    "url": "https://github.com/ga-wdi-lessons/js-ajax",
+    "tags": [
+      "js",
+      "ajax"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125599,
+      "created_at": "2016-01-21T17:51:12Z",
+      "updated_at": "2016-10-23T21:42:29Z",
+      "open_issues_count": 2,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "js-components",
+    "info": "[oop, components, js]",
+    "url": "https://github.com/ga-wdi-lessons/js-components",
+    "tags": [
+      "oop",
+      "components",
+      "js"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 55383355,
+      "created_at": "2016-04-04T03:44:45Z",
+      "updated_at": "2016-04-04T03:44:45Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "js-crud-1",
+    "info": "[js,oop,crud]",
+    "url": "https://github.com/ga-wdi-lessons/js-crud-1",
+    "tags": [
+      "js",
+      "oop",
+      "crud"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125941,
+      "created_at": "2016-01-21T17:57:25Z",
+      "updated_at": "2016-01-21T17:57:25Z",
+      "open_issues_count": 1,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "js-crud-2",
+    "info": "[js,oop,crud]",
+    "url": "https://github.com/ga-wdi-lessons/js-crud-2",
+    "tags": [
+      "js",
+      "oop",
+      "crud"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125966,
+      "created_at": "2016-01-21T17:57:47Z",
+      "updated_at": "2016-01-21T17:57:52Z",
+      "open_issues_count": 3,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "js-debugging",
+    "info": "[js]",
+    "url": "https://github.com/ga-wdi-lessons/js-debugging",
+    "tags": [
+      "js"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50007357,
+      "created_at": "2016-01-20T05:38:25Z",
+      "updated_at": "2016-02-16T17:39:30Z",
+      "open_issues_count": 1,
+      "forks_count": 25
+    }
+  },
+  {
+    "title": "js-dom",
+    "info": "[js,dom]",
+    "url": "https://github.com/ga-wdi-lessons/js-dom",
+    "tags": [
+      "js",
+      "dom"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50007260,
+      "created_at": "2016-01-20T05:36:31Z",
+      "updated_at": "2016-02-19T19:36:15Z",
+      "open_issues_count": 1,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "js-dom-jquery-first",
+    "info": "[jquery, js]",
+    "url": "https://github.com/ga-wdi-lessons/js-dom-jquery-first",
+    "tags": [
+      "jquery",
+      "js"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 60119163,
+      "created_at": "2016-05-31T19:56:57Z",
+      "updated_at": "2016-06-01T01:58:07Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "js-events-callbacks",
+    "info": "[js,events,callbacks]",
+    "url": "https://github.com/ga-wdi-lessons/js-events-callbacks",
+    "tags": [
+      "js",
+      "events",
+      "callbacks"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50120863,
+      "created_at": "2016-01-21T16:34:39Z",
+      "updated_at": "2016-01-21T16:34:39Z",
+      "open_issues_count": 1,
+      "forks_count": 5
+    }
+  },
+  {
+    "title": "js-intro",
+    "info": "[js]",
+    "url": "https://github.com/ga-wdi-lessons/js-intro",
+    "tags": [
+      "js"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50457182,
+      "created_at": "2016-01-26T20:30:28Z",
+      "updated_at": "2016-01-26T20:30:28Z",
+      "open_issues_count": 2,
+      "forks_count": 5
+    }
+  },
+  {
+    "title": "js-intro-jquery-first",
+    "info": "[jquery, js]",
+    "url": "https://github.com/ga-wdi-lessons/js-intro-jquery-first",
+    "tags": [
+      "jquery",
+      "js"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 59838193,
+      "created_at": "2016-05-27T13:57:29Z",
+      "updated_at": "2016-05-27T13:58:30Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "js-jasmine",
+    "info": "[js,tdd,jasmine]",
+    "url": "https://github.com/ga-wdi-lessons/js-jasmine",
+    "tags": [
+      "js",
+      "tdd",
+      "jasmine"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126017,
+      "created_at": "2016-01-21T17:58:36Z",
+      "updated_at": "2016-09-27T18:35:50Z",
+      "open_issues_count": 2,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "js-jquery",
+    "info": "[js,jquery]",
+    "url": "https://github.com/ga-wdi-lessons/js-jquery",
+    "tags": [
+      "js",
+      "jquery"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50120937,
+      "created_at": "2016-01-21T16:35:50Z",
+      "updated_at": "2016-01-21T16:35:50Z",
+      "open_issues_count": 0,
+      "forks_count": 8
+    }
+  },
+  {
+    "title": "js-objects-functions",
+    "info": "[js,oop]",
+    "url": "https://github.com/ga-wdi-lessons/js-objects-functions",
+    "tags": [
+      "js",
+      "oop"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50007387,
+      "created_at": "2016-01-20T05:38:58Z",
+      "updated_at": "2016-01-20T05:38:58Z",
+      "open_issues_count": 3,
+      "forks_count": 10
+    }
+  },
+  {
+    "title": "js-oojs-classes",
+    "info": "[js,oop]",
+    "url": "https://github.com/ga-wdi-lessons/js-oojs-classes",
+    "tags": [
+      "js",
+      "oop"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125689,
+      "created_at": "2016-01-21T17:53:01Z",
+      "updated_at": "2016-10-19T17:27:26Z",
+      "open_issues_count": 2,
+      "forks_count": 10
+    }
+  },
+  {
+    "title": "js-review",
+    "info": "[js]",
+    "url": "https://github.com/ga-wdi-lessons/js-review",
+    "tags": [
+      "js"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126265,
+      "created_at": "2016-01-21T18:02:30Z",
+      "updated_at": "2016-01-21T18:02:30Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "JS-review-misc",
+    "info": null,
+    "url": "https://github.com/ga-wdi-lessons/JS-review-misc",
+    "tags": [],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 62678948,
+      "created_at": "2016-07-06T00:38:28Z",
+      "updated_at": "2016-07-06T00:38:28Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "js-scope",
+    "info": "[js,scope,closure]",
+    "url": "https://github.com/ga-wdi-lessons/js-scope",
+    "tags": [
+      "js",
+      "scope",
+      "closure"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50121048,
+      "created_at": "2016-01-21T16:37:36Z",
+      "updated_at": "2016-09-15T16:31:48Z",
+      "open_issues_count": 1,
+      "forks_count": 6
+    }
+  },
+  {
+    "title": "js-timing-functions",
+    "info": "[js]",
+    "url": "https://github.com/ga-wdi-lessons/js-timing-functions",
+    "tags": [
+      "js"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 52812040,
+      "created_at": "2016-02-29T18:05:06Z",
+      "updated_at": "2016-02-29T18:05:06Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "js-view-classes",
+    "info": null,
+    "url": "https://github.com/ga-wdi-lessons/js-view-classes",
+    "tags": [],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 63294533,
+      "created_at": "2016-07-14T02:17:11Z",
+      "updated_at": "2016-10-21T13:33:10Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "leveraging_your_commmunity",
+    "info": "Leveraging Your Community [problem solving, uxdi]",
+    "url": "https://github.com/ga-wdi-lessons/leveraging_your_commmunity",
+    "tags": [
+      "problem solving",
+      "uxdi"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 54503531,
+      "created_at": "2016-03-22T19:37:31Z",
+      "updated_at": "2016-03-23T01:29:58Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "mean-intro",
+    "info": "[mean,express,angular]",
+    "url": "https://github.com/ga-wdi-lessons/mean-intro",
+    "tags": [
+      "mean",
+      "express",
+      "angular"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 55534218,
+      "created_at": "2016-04-05T18:53:22Z",
+      "updated_at": "2016-04-05T18:53:22Z",
+      "open_issues_count": 0,
+      "forks_count": 4
+    }
+  },
+  {
+    "title": "metaprogramming",
+    "info": "[metaprogramming]",
+    "url": "https://github.com/ga-wdi-lessons/metaprogramming",
+    "tags": [
+      "metaprogramming"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127186,
+      "created_at": "2016-01-21T18:17:50Z",
+      "updated_at": "2016-01-28T23:17:40Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "mongo-intro",
+    "info": "[mongo,node,express]",
+    "url": "https://github.com/ga-wdi-lessons/mongo-intro",
+    "tags": [
+      "mongo",
+      "node",
+      "express"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125850,
+      "created_at": "2016-01-21T17:55:36Z",
+      "updated_at": "2016-07-22T23:26:27Z",
+      "open_issues_count": 2,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "mongo-relationships",
+    "info": "[nosql,mongo]",
+    "url": "https://github.com/ga-wdi-lessons/mongo-relationships",
+    "tags": [
+      "nosql",
+      "mongo"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127392,
+      "created_at": "2016-01-21T18:20:48Z",
+      "updated_at": "2016-01-21T18:20:48Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "mongoose-intro",
+    "info": "[mongoose, mongo, nosql]",
+    "url": "https://github.com/ga-wdi-lessons/mongoose-intro",
+    "tags": [
+      "mongoose",
+      "mongo",
+      "nosql"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 55513532,
+      "created_at": "2016-04-05T14:11:45Z",
+      "updated_at": "2016-07-22T03:01:42Z",
+      "open_issues_count": 0,
+      "forks_count": 4
+    }
+  },
+  {
+    "title": "mvc-intro",
+    "info": "[mvc]",
+    "url": "https://github.com/ga-wdi-lessons/mvc-intro",
+    "tags": [
+      "mvc"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50124952,
+      "created_at": "2016-01-21T17:40:57Z",
+      "updated_at": "2016-01-21T17:40:57Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "own-your-workstation",
+    "info": "[workflow,git,cli]",
+    "url": "https://github.com/ga-wdi-lessons/own-your-workstation",
+    "tags": [
+      "workflow",
+      "git",
+      "cli"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127213,
+      "created_at": "2016-01-21T18:18:13Z",
+      "updated_at": "2016-01-21T18:18:13Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "pair-programming",
+    "info": "[workflow]",
+    "url": "https://github.com/ga-wdi-lessons/pair-programming",
+    "tags": [
+      "workflow"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127555,
+      "created_at": "2016-01-21T18:23:16Z",
+      "updated_at": "2016-01-21T18:23:16Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "peer-code-review",
+    "info": "[project, code-review]",
+    "url": "https://github.com/ga-wdi-lessons/peer-code-review",
+    "tags": [
+      "project",
+      "code-review"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 55175864,
+      "created_at": "2016-03-31T19:05:32Z",
+      "updated_at": "2016-03-31T19:05:32Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "php-intro",
+    "info": "[php]",
+    "url": "https://github.com/ga-wdi-lessons/php-intro",
+    "tags": [
+      "php"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126960,
+      "created_at": "2016-01-21T18:13:28Z",
+      "updated_at": "2016-04-14T14:16:06Z",
+      "open_issues_count": 2,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "porting-sinatra-to-rails",
+    "info": "[mvc,rails]",
+    "url": "https://github.com/ga-wdi-lessons/porting-sinatra-to-rails",
+    "tags": [
+      "mvc",
+      "rails"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125171,
+      "created_at": "2016-01-21T17:44:48Z",
+      "updated_at": "2016-04-14T19:53:54Z",
+      "open_issues_count": 1,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "problem-modeling",
+    "info": "[workflow]",
+    "url": "https://github.com/ga-wdi-lessons/problem-modeling",
+    "tags": [
+      "workflow"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127765,
+      "created_at": "2016-01-21T18:26:26Z",
+      "updated_at": "2016-01-21T18:26:26Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "programming_for_non_programmers",
+    "info": "[html,css,js]",
+    "url": "https://github.com/ga-wdi-lessons/programming_for_non_programmers",
+    "tags": [
+      "html",
+      "css",
+      "js"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 49759032,
+      "created_at": "2016-01-16T04:25:45Z",
+      "updated_at": "2016-01-28T23:17:49Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "pseudocode",
+    "info": "Introduction to Pseudocode [pseudocode]",
+    "url": "https://github.com/ga-wdi-lessons/pseudocode",
+    "tags": [
+      "pseudocode"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 51404433,
+      "created_at": "2016-02-09T22:16:57Z",
+      "updated_at": "2016-02-09T22:16:57Z",
+      "open_issues_count": 3,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "rails_features_CRD",
+    "info": "[rails]",
+    "url": "https://github.com/ga-wdi-lessons/rails_features_CRD",
+    "tags": [
+      "rails"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 56463759,
+      "created_at": "2016-04-17T23:31:44Z",
+      "updated_at": "2016-06-14T15:41:55Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "rails-activerecord",
+    "info": "[rails,activerecord]",
+    "url": "https://github.com/ga-wdi-lessons/rails-activerecord",
+    "tags": [
+      "rails",
+      "activerecord"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125320,
+      "created_at": "2016-01-21T17:46:59Z",
+      "updated_at": "2016-01-21T17:46:59Z",
+      "open_issues_count": 0,
+      "forks_count": 3
+    }
+  },
+  {
+    "title": "rails-api",
+    "info": "[js,rest,api,ajax]",
+    "url": "https://github.com/ga-wdi-lessons/rails-api",
+    "tags": [
+      "js",
+      "rest",
+      "api",
+      "ajax"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125619,
+      "created_at": "2016-01-21T17:51:33Z",
+      "updated_at": "2016-10-25T20:23:07Z",
+      "open_issues_count": 2,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "rails-auth",
+    "info": "[rails,devise,auth,bcrypt]",
+    "url": "https://github.com/ga-wdi-lessons/rails-auth",
+    "tags": [
+      "rails",
+      "devise",
+      "auth",
+      "bcrypt"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125377,
+      "created_at": "2016-01-21T17:47:46Z",
+      "updated_at": "2016-01-21T17:47:46Z",
+      "open_issues_count": 2,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "rails-deployment",
+    "info": "[rails,heroku,deploy]",
+    "url": "https://github.com/ga-wdi-lessons/rails-deployment",
+    "tags": [
+      "rails",
+      "heroku",
+      "deploy"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125185,
+      "created_at": "2016-01-21T17:45:09Z",
+      "updated_at": "2016-02-03T15:01:13Z",
+      "open_issues_count": 1,
+      "forks_count": 5
+    }
+  },
+  {
+    "title": "rails-features-U-partials",
+    "info": "[rails]",
+    "url": "https://github.com/ga-wdi-lessons/rails-features-U-partials",
+    "tags": [
+      "rails"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 56545047,
+      "created_at": "2016-04-18T21:57:30Z",
+      "updated_at": "2016-06-14T15:39:37Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "rails-file-uploads",
+    "info": "[rails]",
+    "url": "https://github.com/ga-wdi-lessons/rails-file-uploads",
+    "tags": [
+      "rails"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127373,
+      "created_at": "2016-01-21T18:20:29Z",
+      "updated_at": "2016-01-21T18:20:29Z",
+      "open_issues_count": 1,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "rails-helpers",
+    "info": "[rails]",
+    "url": "https://github.com/ga-wdi-lessons/rails-helpers",
+    "tags": [
+      "rails"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125235,
+      "created_at": "2016-01-21T17:46:01Z",
+      "updated_at": "2016-01-21T17:46:01Z",
+      "open_issues_count": 3,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "rails-many-to-many",
+    "info": null,
+    "url": "https://github.com/ga-wdi-lessons/rails-many-to-many",
+    "tags": [],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 62141619,
+      "created_at": "2016-06-28T13:10:16Z",
+      "updated_at": "2016-06-29T14:06:19Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "rails-many-to-many-mini-lesson",
+    "info": "[rails,activerecord]",
+    "url": "https://github.com/ga-wdi-lessons/rails-many-to-many-mini-lesson",
+    "tags": [
+      "rails",
+      "activerecord"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125296,
+      "created_at": "2016-01-21T17:46:35Z",
+      "updated_at": "2016-06-28T13:09:41Z",
+      "open_issues_count": 3,
+      "forks_count": 3
+    }
+  },
+  {
+    "title": "rails-model-methods-validations",
+    "info": "[rails, validations, model-methods, callbacks]",
+    "url": "https://github.com/ga-wdi-lessons/rails-model-methods-validations",
+    "tags": [
+      "rails",
+      "validations",
+      "model-methods",
+      "callbacks"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 54116604,
+      "created_at": "2016-03-17T12:37:48Z",
+      "updated_at": "2016-06-27T20:34:04Z",
+      "open_issues_count": 0,
+      "forks_count": 4
+    }
+  },
+  {
+    "title": "rails-review",
+    "info": "[rails]",
+    "url": "https://github.com/ga-wdi-lessons/rails-review",
+    "tags": [
+      "rails"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126977,
+      "created_at": "2016-01-21T18:13:53Z",
+      "updated_at": "2016-01-21T18:13:53Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "rails-routing",
+    "info": "[rails]",
+    "url": "https://github.com/ga-wdi-lessons/rails-routing",
+    "tags": [
+      "rails"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125341,
+      "created_at": "2016-01-21T17:47:19Z",
+      "updated_at": "2016-01-21T17:47:19Z",
+      "open_issues_count": 3,
+      "forks_count": 9
+    }
+  },
+  {
+    "title": "rails-self-referentials",
+    "info": "[activerecord,rails]",
+    "url": "https://github.com/ga-wdi-lessons/rails-self-referentials",
+    "tags": [
+      "activerecord",
+      "rails"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127145,
+      "created_at": "2016-01-21T18:17:16Z",
+      "updated_at": "2016-01-21T18:17:16Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "rails-sessions-flash-validations-errors",
+    "info": "[rails,ruby]",
+    "url": "https://github.com/ga-wdi-lessons/rails-sessions-flash-validations-errors",
+    "tags": [
+      "rails",
+      "ruby"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125201,
+      "created_at": "2016-01-21T17:45:27Z",
+      "updated_at": "2016-07-31T23:24:35Z",
+      "open_issues_count": 3,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "rails-troubleshooting",
+    "info": "[rails]",
+    "url": "https://github.com/ga-wdi-lessons/rails-troubleshooting",
+    "tags": [
+      "rails"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127247,
+      "created_at": "2016-01-21T18:18:41Z",
+      "updated_at": "2016-01-21T18:18:41Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "rails-users-sessions-flash-cookies",
+    "info": "[rails]",
+    "url": "https://github.com/ga-wdi-lessons/rails-users-sessions-flash-cookies",
+    "tags": [
+      "rails"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 53915528,
+      "created_at": "2016-03-15T04:49:08Z",
+      "updated_at": "2016-06-28T18:34:05Z",
+      "open_issues_count": 1,
+      "forks_count": 14
+    }
+  },
+  {
+    "title": "rails-validations",
+    "info": "[activerecord,rails]",
+    "url": "https://github.com/ga-wdi-lessons/rails-validations",
+    "tags": [
+      "activerecord",
+      "rails"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127805,
+      "created_at": "2016-01-21T18:27:05Z",
+      "updated_at": "2016-01-21T18:27:05Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "rails-views",
+    "info": "[rails]",
+    "url": "https://github.com/ga-wdi-lessons/rails-views",
+    "tags": [
+      "rails"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125399,
+      "created_at": "2016-01-21T17:48:00Z",
+      "updated_at": "2016-01-21T17:48:00Z",
+      "open_issues_count": 3,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "react_todo_walkthrough",
+    "info": null,
+    "url": "https://github.com/ga-wdi-lessons/react_todo_walkthrough",
+    "tags": [],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 67460002,
+      "created_at": "2016-09-06T00:44:05Z",
+      "updated_at": "2016-09-06T00:44:05Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "react-continued",
+    "info": "[react]",
+    "url": "https://github.com/ga-wdi-lessons/react-continued",
+    "tags": [
+      "react"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 56723216,
+      "created_at": "2016-04-20T21:48:10Z",
+      "updated_at": "2016-07-12T16:20:27Z",
+      "open_issues_count": 0,
+      "forks_count": 8
+    }
+  },
+  {
+    "title": "react-intro",
+    "info": "[js, react]",
+    "url": "https://github.com/ga-wdi-lessons/react-intro",
+    "tags": [
+      "js",
+      "react"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127814,
+      "created_at": "2016-01-21T18:27:18Z",
+      "updated_at": "2016-07-28T23:05:26Z",
+      "open_issues_count": 0,
+      "forks_count": 8
+    }
+  },
+  {
+    "title": "refactoring",
+    "info": "[workflow]",
+    "url": "https://github.com/ga-wdi-lessons/refactoring",
+    "tags": [
+      "workflow"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 52912351,
+      "created_at": "2016-03-01T21:45:10Z",
+      "updated_at": "2016-03-01T21:45:10Z",
+      "open_issues_count": 1,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "regex-intro",
+    "info": "[js]",
+    "url": "https://github.com/ga-wdi-lessons/regex-intro",
+    "tags": [
+      "js"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127413,
+      "created_at": "2016-01-21T18:21:05Z",
+      "updated_at": "2016-01-21T18:21:10Z",
+      "open_issues_count": 1,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "rspec",
+    "info": "[ruby,tdd,rspec]",
+    "url": "https://github.com/ga-wdi-lessons/rspec",
+    "tags": [
+      "ruby",
+      "tdd",
+      "rspec"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125421,
+      "created_at": "2016-01-21T17:48:26Z",
+      "updated_at": "2016-08-04T16:55:52Z",
+      "open_issues_count": 1,
+      "forks_count": 35
+    }
+  },
+  {
+    "title": "ruby-enumerables",
+    "info": "[ruby,enumerables]",
+    "url": "https://github.com/ga-wdi-lessons/ruby-enumerables",
+    "tags": [
+      "ruby",
+      "enumerables"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125028,
+      "created_at": "2016-01-21T17:42:08Z",
+      "updated_at": "2016-01-21T17:42:08Z",
+      "open_issues_count": 1,
+      "forks_count": 7
+    }
+  },
+  {
+    "title": "ruby-immutability",
+    "info": "[ruby, mini]",
+    "url": "https://github.com/ga-wdi-lessons/ruby-immutability",
+    "tags": [
+      "ruby",
+      "mini"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 53341370,
+      "created_at": "2016-03-07T16:41:29Z",
+      "updated_at": "2016-06-14T15:42:05Z",
+      "open_issues_count": 1,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "ruby-intro",
+    "info": "[ruby]",
+    "url": "https://github.com/ga-wdi-lessons/ruby-intro",
+    "tags": [
+      "ruby"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125010,
+      "created_at": "2016-01-21T17:41:46Z",
+      "updated_at": "2016-01-21T17:41:53Z",
+      "open_issues_count": 3,
+      "forks_count": 8
+    }
+  },
+  {
+    "title": "ruby-oop",
+    "info": "[ruby,oop]",
+    "url": "https://github.com/ga-wdi-lessons/ruby-oop",
+    "tags": [
+      "ruby",
+      "oop"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50124985,
+      "created_at": "2016-01-21T17:41:23Z",
+      "updated_at": "2016-01-21T17:41:28Z",
+      "open_issues_count": 6,
+      "forks_count": 4
+    }
+  },
+  {
+    "title": "ruby-oop-inheritance",
+    "info": "[ruby, oop]",
+    "url": "https://github.com/ga-wdi-lessons/ruby-oop-inheritance",
+    "tags": [
+      "ruby",
+      "oop"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 53070014,
+      "created_at": "2016-03-03T17:35:31Z",
+      "updated_at": "2016-03-03T17:35:31Z",
+      "open_issues_count": 1,
+      "forks_count": 6
+    }
+  },
+  {
+    "title": "sass-directives",
+    "info": "[sass]",
+    "url": "https://github.com/ga-wdi-lessons/sass-directives",
+    "tags": [
+      "sass"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127000,
+      "created_at": "2016-01-21T18:14:23Z",
+      "updated_at": "2016-01-21T18:14:23Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "sass-intro",
+    "info": "Intro to Sass, Basic Reuse [css,sass]",
+    "url": "https://github.com/ga-wdi-lessons/sass-intro",
+    "tags": [
+      "css",
+      "sass"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50126987,
+      "created_at": "2016-01-21T18:14:08Z",
+      "updated_at": "2016-04-14T22:14:11Z",
+      "open_issues_count": 1,
+      "forks_count": 4
+    }
+  },
+  {
+    "title": "server-from-scratch",
+    "info": "[web]",
+    "url": "https://github.com/ga-wdi-lessons/server-from-scratch",
+    "tags": [
+      "web"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127867,
+      "created_at": "2016-01-21T18:28:18Z",
+      "updated_at": "2016-01-21T18:28:18Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "sinatra-and-activerecord",
+    "info": "[ruby,sinatra,activerecord]",
+    "url": "https://github.com/ga-wdi-lessons/sinatra-and-activerecord",
+    "tags": [
+      "ruby",
+      "sinatra",
+      "activerecord"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125050,
+      "created_at": "2016-01-21T17:42:38Z",
+      "updated_at": "2016-01-21T17:43:01Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "sinatra-rest",
+    "info": "[sinatra,ruby,rest]",
+    "url": "https://github.com/ga-wdi-lessons/sinatra-rest",
+    "tags": [
+      "sinatra",
+      "ruby",
+      "rest"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125080,
+      "created_at": "2016-01-21T17:43:14Z",
+      "updated_at": "2016-01-21T17:43:14Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "sinatra-troubleshooting",
+    "info": "[ruby,sinatra]",
+    "url": "https://github.com/ga-wdi-lessons/sinatra-troubleshooting",
+    "tags": [
+      "ruby",
+      "sinatra"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50125140,
+      "created_at": "2016-01-21T17:44:14Z",
+      "updated_at": "2016-01-21T17:44:14Z",
+      "open_issues_count": 1,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "sinatra-walkthrough",
+    "info": "[sinatra]",
+    "url": "https://github.com/ga-wdi-lessons/sinatra-walkthrough",
+    "tags": [
+      "sinatra"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 54519867,
+      "created_at": "2016-03-23T01:02:34Z",
+      "updated_at": "2016-03-23T01:03:06Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "slack-intro",
+    "info": "[workflow]",
+    "url": "https://github.com/ga-wdi-lessons/slack-intro",
+    "tags": [
+      "workflow"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127500,
+      "created_at": "2016-01-21T18:22:26Z",
+      "updated_at": "2016-01-21T18:22:40Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "slackbot",
+    "info": "[slackbot, node, api]",
+    "url": "https://github.com/ga-wdi-lessons/slackbot",
+    "tags": [
+      "slackbot",
+      "node",
+      "api"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 55649126,
+      "created_at": "2016-04-06T23:46:13Z",
+      "updated_at": "2016-10-25T18:51:52Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "spa-intro",
+    "info": "[workflow]",
+    "url": "https://github.com/ga-wdi-lessons/spa-intro",
+    "tags": [
+      "workflow"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127850,
+      "created_at": "2016-01-21T18:28:03Z",
+      "updated_at": "2016-01-21T18:28:03Z",
+      "open_issues_count": 1,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "sql-alchemy",
+    "info": "[sql, python]",
+    "url": "https://github.com/ga-wdi-lessons/sql-alchemy",
+    "tags": [
+      "sql",
+      "python"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 66799820,
+      "created_at": "2016-08-29T01:05:51Z",
+      "updated_at": "2016-08-29T01:06:11Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "sql-erd",
+    "info": "[sql,erd]",
+    "url": "https://github.com/ga-wdi-lessons/sql-erd",
+    "tags": [
+      "sql",
+      "erd"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50124883,
+      "created_at": "2016-01-21T17:39:42Z",
+      "updated_at": "2016-01-21T17:39:42Z",
+      "open_issues_count": 2,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "sql-intro",
+    "info": "[sql]",
+    "url": "https://github.com/ga-wdi-lessons/sql-intro",
+    "tags": [
+      "sql"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50121121,
+      "created_at": "2016-01-21T16:38:56Z",
+      "updated_at": "2016-03-05T15:44:52Z",
+      "open_issues_count": 3,
+      "forks_count": 7
+    }
+  },
+  {
+    "title": "teaching-es6",
+    "info": "[meta]",
+    "url": "https://github.com/ga-wdi-lessons/teaching-es6",
+    "tags": [
+      "meta"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 69024305,
+      "created_at": "2016-09-23T12:49:47Z",
+      "updated_at": "2016-09-23T12:49:47Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "terminal-clinic",
+    "info": "[cli,workflow]",
+    "url": "https://github.com/ga-wdi-lessons/terminal-clinic",
+    "tags": [
+      "cli",
+      "workflow"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127531,
+      "created_at": "2016-01-21T18:22:55Z",
+      "updated_at": "2016-01-21T18:22:55Z",
+      "open_issues_count": 1,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "underscore-intro",
+    "info": "[js, underscore, lodash, mini]",
+    "url": "https://github.com/ga-wdi-lessons/underscore-intro",
+    "tags": [
+      "js",
+      "underscore",
+      "lodash",
+      "mini"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 53083719,
+      "created_at": "2016-03-03T21:04:19Z",
+      "updated_at": "2016-06-14T15:40:32Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "user-stories-and-problem-modeling",
+    "info": "[workflow]",
+    "url": "https://github.com/ga-wdi-lessons/user-stories-and-problem-modeling",
+    "tags": [
+      "workflow"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 52757286,
+      "created_at": "2016-02-29T02:15:57Z",
+      "updated_at": "2016-02-29T02:16:47Z",
+      "open_issues_count": 1,
+      "forks_count": 4
+    }
+  },
+  {
+    "title": "uxdi-flip",
+    "info": "[ux]",
+    "url": "https://github.com/ga-wdi-lessons/uxdi-flip",
+    "tags": [
+      "ux"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50621474,
+      "created_at": "2016-01-28T23:26:49Z",
+      "updated_at": "2016-06-14T15:42:32Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "wdi-intro",
+    "info": "[meta]",
+    "url": "https://github.com/ga-wdi-lessons/wdi-intro",
+    "tags": [
+      "meta"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50007104,
+      "created_at": "2016-01-20T05:32:52Z",
+      "updated_at": "2016-05-29T00:47:23Z",
+      "open_issues_count": 3,
+      "forks_count": 6
+    }
+  },
+  {
+    "title": "wdi-mantras",
+    "info": "[meta]",
+    "url": "https://github.com/ga-wdi-lessons/wdi-mantras",
+    "tags": [
+      "meta"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 52252064,
+      "created_at": "2016-02-22T06:30:15Z",
+      "updated_at": "2016-02-23T18:15:25Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "wdi-outtro",
+    "info": "[meta]",
+    "url": "https://github.com/ga-wdi-lessons/wdi-outtro",
+    "tags": [
+      "meta"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127161,
+      "created_at": "2016-01-21T18:17:31Z",
+      "updated_at": "2016-01-21T18:17:31Z",
+      "open_issues_count": 0,
+      "forks_count": 0
+    }
+  },
+  {
+    "title": "web-intro",
+    "info": "[web]",
+    "url": "https://github.com/ga-wdi-lessons/web-intro",
+    "tags": [
+      "web"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 50127730,
+      "created_at": "2016-01-21T18:25:51Z",
+      "updated_at": "2016-01-21T18:25:51Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "web-scraping",
+    "info": "[python, beautifulsoup]",
+    "url": "https://github.com/ga-wdi-lessons/web-scraping",
+    "tags": [
+      "python",
+      "beautifulsoup"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 67039126,
+      "created_at": "2016-08-31T13:18:58Z",
+      "updated_at": "2016-08-31T13:22:41Z",
+      "open_issues_count": 0,
+      "forks_count": 2
+    }
+  },
+  {
+    "title": "websockets-node",
+    "info": "[websockets, node, socket.io]",
+    "url": "https://github.com/ga-wdi-lessons/websockets-node",
+    "tags": [
+      "websockets",
+      "node",
+      "socket.io"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 64234269,
+      "created_at": "2016-07-26T15:49:52Z",
+      "updated_at": "2016-07-26T15:49:52Z",
+      "open_issues_count": 0,
+      "forks_count": 1
+    }
+  },
+  {
+    "title": "wordpress-intro",
+    "info": "[wordpress,php]",
+    "url": "https://github.com/ga-wdi-lessons/wordpress-intro",
+    "tags": [
+      "wordpress",
+      "php"
+    ],
+    "org": "GA-WDI-Lessons",
+    "github": {
+      "id": 56242869,
+      "created_at": "2016-04-14T14:11:36Z",
+      "updated_at": "2016-04-14T14:11:36Z",
+      "open_issues_count": 1,
+      "forks_count": 3
+    }
+  }
+]

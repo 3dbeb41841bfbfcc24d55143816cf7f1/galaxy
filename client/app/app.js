@@ -15,7 +15,8 @@ angular.module('galaxyApp', [
   'xeditable',
   'ngBusy',
   'dndLists',
-  'hljs'
+  'hljs',
+  'ngTagsInput'
 ])
 .config(function($urlRouterProvider, $locationProvider) {
   $urlRouterProvider

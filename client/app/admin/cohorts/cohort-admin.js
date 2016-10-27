@@ -20,8 +20,6 @@
     }
 
     addCohort() {
-      console.log('addCohort:');
-
       this.inserted = {
         name: '',
         info: null,

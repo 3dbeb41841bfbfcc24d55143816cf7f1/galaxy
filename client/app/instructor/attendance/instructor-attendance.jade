@@ -4,7 +4,8 @@
   div(ng-hide='$ctrl.Cohort.getCurrentCohort()')
     p Please select a Cohort in the NavBar above to see attendance for that Cohort.
   div(ng-show='$ctrl.Cohort.getCurrentCohort()')
-    a(ng-repeat='n in [1,2,3,4,5,6,7,8,9,10,11,12]' ng-href='#week{{n}}' style='margin-left: 5px;') {{n}}
+    .btn-group(role='group')
+      a.btn.btn-sm.btn-success(ng-repeat='w in $ctrl.weeks' ng-href='#week{{w.num}}') {{w.num}}
     .attendance-table-wrapper
       div(ng-repeat='week in $ctrl.weeks' ng-init='weekIndex = $index')
         h3.text-warning(id='week{{week.num}}') Week {{ week.num }}

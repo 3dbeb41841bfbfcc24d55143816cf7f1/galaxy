@@ -1,0 +1,137 @@
+.container-fluid
+  .row
+    .col-md-9
+      h3.text-warning Resources
+        button.btn.btn-xs.btn-success(ng-click='$ctrl.addResource()' style='margin-left: 20px') Add
+    .col-md-3
+      button.btn.btn-xs.btn-info(popover-placement='bottom-right'
+                                 popover-class='resource-help'
+                                 uib-popover-template='"app/instructor/resources/resource-help.html"'
+                                 popover-title='Help'
+                                 style='margin-left: 10px;') Help...
+  .row
+    .col-md-9
+      h4 Displaying matches {{ $ctrl.getBeginIndex() + 1 }} to {{ $ctrl.getEndIndex() + 1 }} out of {{ $ctrl.filteredResources.length || 0 }} matches.
+      //- pre {{ $ctrl.currentPage }} - {{ $ctrl.pageSize }} - {{ ($ctrl.currentPage-1) * $ctrl.pageSize }}
+      ul.pagination-sm(uib-pagination='',
+                       total-items='$ctrl.filteredResources.length',
+                       ng-model='$ctrl.currentPage',
+                       ng-change='$ctrl.updatePage()',
+                       max-size='$ctrl.pageSize',
+                       boundary-links='true',
+                       force-ellipses='true')
+      hr
+
+      ul.list-group
+        li.list-group-item(ng-repeat='resource in $ctrl.paginatedFilteredResources track by resource._id')
+          h3.text-warning {{ resource.title || 'empty' }}
+          br
+          dl.dl-horizontal.text-left
+            div(ng-switch='resource.org')
+              div(ng-switch-when='External')
+                dt Info:
+                dd
+                  a(href='#',
+                  editable-text='resource.info',
+                  ng-model='resource.info',
+                  onbeforesave='$ctrl.updateResource(resource, $data)')
+                    | {{ resource.info || 'empty' }}
+                dt URL
+                dd
+                  a(href='#',
+                  editable-text='resource.url',
+                  ng-model='resource.url',
+                  onbeforesave='$ctrl.updateResource(resource, $data)')
+                    | {{ resource.url || 'empty' }}
+                  a(ng-href='{{resource.url}}', target='_blank', style='margin-left: 10px;')
+                    | (Visit)
+                dt Organization:
+                dd
+                  a(href='#',
+                  editable-text='resource.org',
+                  ng-model='resource.org',
+                  onbeforesave="$ctrl.updateResource(resource, $data)")
+                        | {{ resource.org || 'empty' }}
+              div(ng-switch-default)
+                dt Info:
+                dd {{ resource.info || 'empty' }}
+                dt URL
+                dd
+                  a(ng-href='{{resource.url}}', target='_blank')
+                    | {{ resource.url || 'empty' }}
+                dt Organization:
+                dd {{ resource.org || 'empty' }}
+
+            //- dt ID:
+            //- dd {{ resource._id }}
+
+            dt Tags
+            dd {{ resource.tags.join(', ') || 'empty' }}
+            dt Rating
+            dd
+              a(href='#',
+              editable-range='resource.rating',
+              e-step="1",
+              e-max="5",
+              ng-model='resource.rating',
+              onbeforesave="$ctrl.updateResource(resource, $data)")
+                | {{ resource.rating || (resource.rating === 0 ? 0 : 'empty') }}
+            dt Up Votes
+            dd {{ resource.upvotes }}
+            dt Down Votes
+            dd {{ resource.downvotes }}
+
+            div(ng-show='resource.github')
+              h4.text-info.text-center GitHub Meta
+              dd
+                dt Created At
+                dd {{ resource.github.created_at | date : 'medium' }}
+                dt Updated At
+                dd {{ resource.github.updated_at | date : 'medium' }}
+                dt Open Issues
+                dd {{ resource.github.open_issues_count }}
+                dt Forks
+                dd {{ resource.github.forks_count }}
+
+    .col-md-3
+      div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
+        label Filtering:
+        br
+        .btn-group(role='group' style="margin-left: 20px")
+          label.btn.btn-xs(ng-class='$ctrl.selectionMode === "union" ? "btn-success" : "btn-primary"'
+                           ng-model='$ctrl.selectionMode'
+                           uib-btn-radio='"union"') Union
+          label.btn.btn-xs(ng-class='$ctrl.selectionMode === "intersection" ? "btn-success" : "btn-primary"'
+                           ng-model='$ctrl.selectionMode'
+                           uib-btn-radio='"intersection"') Intersection
+          label.btn.btn-xs.btn-primary(ng-click='$ctrl.resetFiltering()') Reset
+
+      div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
+        label Text Search:
+          input(ng-model="$ctrl.resourceTextFilter" style='margin-top: 10px;')
+
+      div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
+        label Organizations
+        br
+        .btn-group-vertical(role='org' style="margin-top: 10px;")
+          button.btn.btn-sm(ng-repeat='org in $ctrl.getOrgs() | orderBy: "name"'
+                            ng-class='$ctrl.getClassForMode(org.mode)'
+                            ng-click='$ctrl.toggleMode(org)')
+            | {{org.name}}
+            //- span.badge(ng-show='$ctrl.countTagInFilteredResults(tag)' style='margin-left: 10px')
+            //-   | {{ $ctrl.countTagInFilteredResults(tag) }}
+            span.label.label-warning.label-as-badge(style='margin-left: 10px')
+              | {{ org.count }}
+
+      div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
+        label Tags
+        br
+        .btn-group-vertical(role='group' style="margin-top: 10px;")
+          button.btn.btn-sm(ng-repeat='tag in $ctrl.getTags() | orderBy: "name"'
+                            ng-class='$ctrl.getClassForMode(tag.mode)'
+                            ng-click='$ctrl.toggleMode(tag)')
+            | {{tag.name}}
+            //- span.badge(ng-show='$ctrl.countTagInFilteredResults(tag)' style='margin-left: 10px')
+            //-   | {{ $ctrl.countTagInFilteredResults(tag) }}
+            span.label.label-warning.label-as-badge(ng-show='$ctrl.countTagInFilteredResults(tag)' style='margin-left: 10px')
+              | {{ $ctrl.countTagInFilteredResults(tag) }}
