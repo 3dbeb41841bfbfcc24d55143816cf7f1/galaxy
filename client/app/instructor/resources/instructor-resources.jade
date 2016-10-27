@@ -1,16 +1,16 @@
 .container-fluid
   .row
-    .col-md-9
+    .col-md-8
       h3.text-warning Resources
         button.btn.btn-xs.btn-success(ng-click='$ctrl.addResource()' style='margin-left: 20px') Add
-    .col-md-3
+    .col-md-4
       button.btn.btn-xs.btn-info(popover-placement='bottom-right'
                                  popover-class='resource-help'
                                  uib-popover-template='"app/instructor/resources/resource-help.html"'
                                  popover-title='Help'
                                  style='margin-left: 10px;') Help...
   .row
-    .col-md-9
+    .col-md-8
       h4 Displaying matches {{ $ctrl.getBeginIndex() + 1 }} to {{ $ctrl.getEndIndex() + 1 }} out of {{ $ctrl.filteredResources.length || 0 }} matches.
       //- pre {{ $ctrl.currentPage }} - {{ $ctrl.pageSize }} - {{ ($ctrl.currentPage-1) * $ctrl.pageSize }}
       ul.pagination-sm(uib-pagination='',
@@ -93,7 +93,7 @@
                 dt Forks
                 dd {{ resource.github.forks_count }}
 
-    .col-md-3
+    .col-md-4
       div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
         label Filtering:
         br
@@ -108,18 +108,19 @@
 
       div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
         label Text Search:
+          br
           input(ng-model="$ctrl.resourceTextFilter" style='margin-top: 10px;')
 
       div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
         label Organizations
         br
-        .btn-group-vertical(role='org' style="margin-top: 10px;")
-          button.btn.btn-sm(ng-repeat='org in $ctrl.getOrgs() | orderBy: "name"'
-                            ng-class='$ctrl.getClassForMode(org.mode)'
+        div(ng-repeat='org in $ctrl.getOrgs() | orderBy: "name"')
+          button.btn.btn-xs.btn-warning(ng-click='$ctrl.refreshOrgRepos(org)')
+            span.glyphicon.glyphicon-refresh
+          button.btn.btn-xs(ng-class='$ctrl.getClassForMode(org.mode)'
+                            style='width: 190px;'
                             ng-click='$ctrl.toggleMode(org)')
             | {{org.name}}
-            //- span.badge(ng-show='$ctrl.countTagInFilteredResults(tag)' style='margin-left: 10px')
-            //-   | {{ $ctrl.countTagInFilteredResults(tag) }}
             span.label.label-warning.label-as-badge(style='margin-left: 10px')
               | {{ org.count }}
 
@@ -127,7 +128,7 @@
         label Tags
         br
         .btn-group-vertical(role='group' style="margin-top: 10px;")
-          button.btn.btn-sm(ng-repeat='tag in $ctrl.getTags() | orderBy: "name"'
+          button.btn.btn-xs(ng-repeat='tag in $ctrl.getTags() | orderBy: "name"'
                             ng-class='$ctrl.getClassForMode(tag.mode)'
                             ng-click='$ctrl.toggleMode(tag)')
             | {{tag.name}}

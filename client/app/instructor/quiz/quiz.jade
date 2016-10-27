@@ -39,7 +39,7 @@ hr
               li(ng-repeat='option in $ctrl.question.options')
                 label
                   input(type='radio', ng-model='$ctrl.answer', value='{{option}}')
-                  {{option}}
+                  | {{option}}
       // NUMERIC
       div(ng-switch-when='number')
         input.numeric-input(type='number', ng-model='$ctrl.answer')

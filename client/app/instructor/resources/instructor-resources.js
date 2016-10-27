@@ -43,6 +43,10 @@
              this.orgs.filter( org => org.mode !== 'neutral' || org.count > 0);
     }
 
+    refreshOrgRepos(org) {
+      // TODO:
+    }
+
     getTags() {
       return this.selectionMode === 'union' ?
              this.Tag.allTags :
