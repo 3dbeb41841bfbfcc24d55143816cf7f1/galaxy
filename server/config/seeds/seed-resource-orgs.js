@@ -5,6 +5,7 @@ mongoose.Promise = Promise;
 import ResourceOrg from '../../api/resource-org/resource-org.model';
 
 export function removeResourceOrgs() {
+  console.log('Removing ResourceOrgs');
   return ResourceOrg.find({}).remove();
 }
 
@@ -27,6 +28,8 @@ export function createResourceOrgs() {
   });
 
   resourceOrgs.push( { name: 'External', url: '' } );
+
+  console.log('Creating ResourceOrgs');
 
   return ResourceOrg.create(resourceOrgs)
   .then((saved) => {

@@ -29,31 +29,42 @@ import {removeResourceOrgs, createResourceOrgs} from './seeds/seed-resource-orgs
 import {removeResources, createResources} from './seeds/seed-resources';
 import {counts} from './seeds/counts';
 
+function createProductionData() {
+  console.log('\n=== Creating Production Data ===');
+  return removeResourceOrgs()
+  .then( () => createResourceOrgs() )
+  .then( () => removeResources() )
+  .then( () => {
+    let promises = [
+      createResources('./data/external-resources.json'),
+      createResources('./data/atl-wdi-curriculum.json'),
+      createResources('./data/atl-wdi-exercises.json'),
+      createResources('./data/ga-wdi-lessons.json'),
+      createResources('./data/ga-wdi-exercises.json'),
+      createResources('./data/ga-wdi-boston.json'),
+      createResources('./data/den-wdi-1.json'),
+      createResources('./data/den-wdi-2.json'),
+      createResources('./data/generalassembly-atx.json'),
+      createResources('./data/wdi-sea.json')
+    ];
+    return Promise.all(promises);
+  });
+}
+
 function createTestData() {
-  createTestCohorts()
+  console.log('\n=== Creating Test Data ===');
+  return createTestCohorts()
   .then( () => createTestSquads() )
   .then( () => createTestUsers() )
   .then( () => createTestGroupProjects() )
-  .then( () => removeResourceOrgs() )
-  .then( () => createResourceOrgs() )
-  .then( () => removeResources() )
-  .then( () => createResources('./data/external-resources.json') )
-  .then( () => createResources('./data/atl-wdi-curriculum.json') )
-  .then( () => createResources('./data/atl-wdi-exercises.json') )
-  .then( () => createResources('./data/ga-wdi-lessons.json') )
-  .then( () => createResources('./data/ga-wdi-exercises.json') )
-  .then( () => createResources('./data/ga-wdi-boston.json') )
-  .then( () => createResources('./data/den-wdi-1.json') )
-  .then( () => createResources('./data/den-wdi-2.json') )
-  .then( () => createResources('./data/generalassembly-atx.json') )
-  .then( () => createResources('./data/wdi-sea.json') )
   .then( () => createTestHomework() )
   .then( () => counts() );
 }
 
 if (config.env === 'development') {
-  createTestData();
+  createProductionData()
+  .then( () => createTestData() );
 }
 else {
-  createTestData();
+  createProductionData();
 }

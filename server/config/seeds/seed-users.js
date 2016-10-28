@@ -19,6 +19,7 @@ export function createTestUsers() {
   return Promise.all(promises)
   .spread((testCohort1, atlWDI6Cohort, testSquad1, testSquad2, testSquad3) => {
     let testSquads = [testSquad1, testSquad2, testSquad3];
+    console.log('Removing users');
     return User.find({}).remove()
     .then(() => {
       let users = [
@@ -43,6 +44,7 @@ export function createTestUsers() {
           attendance: []
         });
       }
+      console.log('Creating users');
       return User.create(users);
     });
   })

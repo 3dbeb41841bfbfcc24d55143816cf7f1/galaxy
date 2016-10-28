@@ -5,8 +5,10 @@ mongoose.Promise = Promise;
 import Cohort from '../../api/cohort/cohort.model';
 
 export function createTestCohorts() {
+  console.log('removing cohorts');
   return Cohort.find({}).remove()
   .then(() => {
+    console.log('creating cohorts');
     return Cohort.create({
       name: 'Test Cohort #1',
       info: 'Just a test cohort from the seed file.',
@@ -26,9 +28,9 @@ export function createTestCohorts() {
   })
   .then(() => {
     return Cohort.find({})
-    .then((cohorts) => {
-      console.log('finished populating %d cohorts', cohorts.length);
-      return null;
-    });
+  })
+  .then((cohorts) => {
+    console.log('finished populating %d cohorts', cohorts.length);
+    return null;
   });
 }

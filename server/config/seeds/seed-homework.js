@@ -8,8 +8,10 @@ import Homework from '../../api/homework/homework.model';
 export function createTestHomework() {
   return Cohort.findOne({name: 'Test Cohort #1'})
   .then((testCohort1) => {
+    console.log('Removing Homeworks');
     return Homework.find({}).remove()
     .then(() => {
+      console.log('Creating a Homework');
       return Homework.create({
         title: 'Busy Hands',
         info: 'Just a test homework from the seed file.',

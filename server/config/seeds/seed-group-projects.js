@@ -8,6 +8,7 @@ import User from '../../api/user/user.model';
 import Cohort from '../../api/cohort/cohort.model';
 
 export function createTestGroupProjects() {
+  console.log('removing GroupProjects');
   return GroupProject.find({}).remove()
   .then(() => {
     User.find( { name: { $in: ['Student1', 'Student4', 'Student7'] } } )
@@ -24,6 +25,7 @@ export function createTestGroupProjects() {
       });
       return Cohort.findOne({name: 'Test Cohort #1'})
       .then((testCohort1) => {
+        console.log('Creating a GroupProject');
         return GroupProject.create( {
           name: 'Sample Team Project',
           cohort: testCohort1,

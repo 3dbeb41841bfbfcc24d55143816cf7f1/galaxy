@@ -8,8 +8,10 @@ import Squad from '../../api/squad/squad.model';
 export function createTestSquads() {
   return Cohort.findOne({name: 'Test Cohort #1'})
   .then((testCohort1) => {
+    console.log('Removing Squads');
     return Squad.find({}).remove()
     .then(() => {
+      console.log('Creating Squads');
       return Squad.create({
         name: 'Test Squad #1',
         info: 'Just a test squad from the seed file.',
