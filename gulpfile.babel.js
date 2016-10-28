@@ -463,6 +463,7 @@ gulp.task('build', cb => {
             'copy:assets',
             'copy:server',
             'transpile:server',
+            'copy:data',
             'build:client'
         ],
         cb);
@@ -582,6 +583,12 @@ gulp.task('copy:server', () => {
         '.bowerrc'
     ], {cwdbase: true})
         .pipe(gulp.dest(paths.dist));
+});
+
+gulp.task('copy:data', () => {
+  return gulp
+  .src('data/**/*', { base: '.' })
+  .pipe(gulp.dest('dist'));
 });
 
 gulp.task('coverage:pre', () => {
