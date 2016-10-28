@@ -108,13 +108,13 @@
 
       div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
         label Text Search:
-          br
-          input(ng-model="$ctrl.resourceTextFilter" style='margin-top: 10px;')
+        br
+        input(ng-model="$ctrl.resourceTextFilter" style='margin-top: 10px;')
 
       div(style="border: 1px solid #464545; margin: 4px; padding: 6px;")
         label Organizations
         br
-        div(ng-repeat='org in $ctrl.getOrgs() | orderBy: "name"')
+        div(ng-repeat='org in $ctrl.getFilteredOrgs() | orderBy: "name"')
           button.btn.btn-xs.btn-warning(ng-click='$ctrl.refreshOrgRepos(org)')
             span.glyphicon.glyphicon-refresh
           button.btn.btn-xs(ng-class='$ctrl.getClassForMode(org.mode)'

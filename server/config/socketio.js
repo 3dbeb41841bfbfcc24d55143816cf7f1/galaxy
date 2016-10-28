@@ -17,6 +17,7 @@ function onConnect(socket) {
   });
 
   // Insert sockets below
+  require('../api/resource-org/resource-org.socket').register(socket);
   require('../api/resource/resource.socket').register(socket);
   require('../api/project/project.socket').register(socket);
   require('../api/homework/homework.socket').register(socket);

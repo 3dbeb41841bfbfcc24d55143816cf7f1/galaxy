@@ -3,9 +3,10 @@
 (function() {
 
   class InstructorResourcesController {
-    constructor(Resource, Tag, $uibModal, $log, $filter, $scope) {
+    constructor(ResourceOrg, Resource, Tag, $uibModal, $log, $filter, $scope) {
       $log.info('InstructorResourcesController is alive!');
 
+      this.ResourceOrg = ResourceOrg;
       this.Resource = Resource;
       this.Tag = Tag;
       this.$uibModal = $uibModal;
@@ -26,7 +27,9 @@
       // TODO: handle newly created resources
       this.filteredResources = [];
       this.orgs = [];
-      this.loadResources();
+      this.loadOrgs()
+      .then( () => this.loadResources() )
+      .then( () => this.filterResources() );
     }
 
     resetFiltering() {
@@ -37,7 +40,7 @@
       this.filterResources();
     }
 
-    getOrgs() {
+    getFilteredOrgs() {
       return this.selectionMode === 'union' ?
              this.orgs :
              this.orgs.filter( org => org.mode !== 'neutral' || org.count > 0);
@@ -53,29 +56,34 @@
              this.Tag.allTags.filter( tag => tag.mode !== 'neutral' || this.countTagInFilteredResults(tag) > 0);
     }
 
-    lookupOrgObjectByName(name) {
-      let found = this.orgs.filter( o => o.name === name );
+    lookupOrgById(id) {
+      let found = this.orgs.filter( o => o._id === id );
       return found.length > 0 ? found[0] : null;
-    }
-
-    updateOrgs(resources) {
-      this.orgs = [];
-      resources.forEach( resource => {
-        if (resource.org) {
-          let found = this.lookupOrgObjectByName(resource.org);
-          if (!found) {
-            this.orgs.push({ name: resource.org, mode: 'neutral', count: 0 });
-          }
-        }
-      });
     }
 
     updateOrgCounts() {
       this.orgs.forEach( org => { org.count = 0; } );
       this.filteredResources.forEach( resource => {
-        let found = this.lookupOrgObjectByName(resource.org);
-        found.count += 1;
+        let found = this.lookupOrgById(resource.org);
+        if (found) {
+          found.count += 1;
+        }
+        else {
+          console.error(`Could not find org for resource: ${resource.title} with org ${resource.org}`);
+        }
       });
+    }
+
+    loadOrgs() {
+      console.time('loading ResourceOrgs');
+      this.orgs = this.ResourceOrg.query( (orgs) => {
+        console.log(`loaded ${orgs.length} resource orgs.`);
+        orgs.forEach( org => {
+          org.mode = 'neutral';
+          org.count = 0;
+        });
+      });
+      return this.orgs.$promise;
     }
 
     loadResources() {
@@ -85,12 +93,11 @@
         console.time('adding tags');
         resources.forEach( resource => this.Tag.addTags(resource.tags) );
         console.timeEnd('adding tags');
-        this.updateOrgs(resources);
         this.pageSize = 10;
         this.currentPage = 1;
         this.beginIndex = 0;
-        this.filterResources();
       });
+      return this.resources.$promise;
     }
 
     toggleMode(obj) {
@@ -113,20 +120,23 @@
     }
 
     filterResources() {
-      console.time('filtering resources');
-      this.filteredResources = this.$filter('tagfilter')(this.resources,
-                                                         this.orgs,
-                                                         this.Tag.allTags,
-                                                         this.selectionMode);
-      if (this.resourceTextFilter) {
-        this.filteredResources = this.$filter('filter')(this.filteredResources,
-                                                        this.resourceTextFilter,
-                                                        false // comparator, false means case insensitive.
-                                                      /* , anyPropertyKey */ )
+      if (this.resources) {
+        console.time('filtering resources');
+        this.filteredResources = this.$filter('tagfilter')(this.resources,
+                                                           this.orgs,
+                                                           this.Tag.allTags,
+                                                           this.selectionMode);
+        if (this.resourceTextFilter) {
+          this.filteredResources = this.$filter('filter')(this.filteredResources,
+                                                          this.resourceTextFilter,
+                                                          false // comparator, false means case insensitive.
+                                                        /* , anyPropertyKey */ )
+        }
+        console.log('after filtering we have ', this.filteredResources.length, ' filtered resources');
+        this.updateOrgCounts();
+        this.updatePage();
+        console.timeEnd('filtering resources');
       }
-      this.updateOrgCounts();
-      this.updatePage();
-      console.timeEnd('filtering resources');
     }
 
     updatePage() {
@@ -176,7 +186,8 @@
         let newResource = new this.Resource(newResourceData);
         newResource.$save( (savedResource) => {
           this.$log.info('savedResource', savedResource);
-          this.loadResources();
+          this.loadResources()
+          .then( () => this.filterResources() );
         });
       }, () => {
         this.$log.info('Modal dismissed at: ' + new Date());

@@ -25,6 +25,7 @@ import {createTestSquads} from './seeds/seed-squads';
 import {createTestUsers} from './seeds/seed-users';
 import {createTestGroupProjects} from './seeds/seed-group-projects';
 import {createTestHomework} from './seeds/seed-homework';
+import {removeResourceOrgs, createResourceOrgs} from './seeds/seed-resource-orgs';
 import {removeResources, createResources} from './seeds/seed-resources';
 import {counts} from './seeds/counts';
 
@@ -33,6 +34,8 @@ function createTestData() {
   .then( () => createTestSquads() )
   .then( () => createTestUsers() )
   .then( () => createTestGroupProjects() )
+  .then( () => removeResourceOrgs() )
+  .then( () => createResourceOrgs() )
   .then( () => removeResources() )
   .then( () => createResources('./data/external-resources.json') )
   .then( () => createResources('./data/atl-wdi-curriculum.json') )

@@ -6,7 +6,7 @@ let ResourceSchema = new mongoose.Schema({
     title:     { type: String, required: true },
     info:      String,
     url:       { type: String, required: true },
-    org:       String,
+    org:       { type: mongoose.Schema.Types.ObjectId, ref: 'ResourceOrg' },
     tags:      [String],
     rating:    { type: Number, min: 0, max: 5 },
     upvotes:   { type: Number, default: 0 },
