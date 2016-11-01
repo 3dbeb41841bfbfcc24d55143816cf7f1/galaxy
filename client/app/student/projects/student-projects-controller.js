@@ -24,7 +24,7 @@
         update: groupProject => {
           console.log('=== you reached the delegated update of a groupProject ===');
           this.$http.put('/api/group-projects/' + groupProject._id, groupProject)
-          .then(response => {
+          .then( () => {
             this.$http.get(this.getBaseProjectUrl())
             .then( res => {
               console.log('res.data:', res.data);

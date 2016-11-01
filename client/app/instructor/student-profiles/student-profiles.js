@@ -31,7 +31,7 @@
         update: (user, project, requirement) => {
           var url = '/api/users/' + user._id + '/projects/' + project._id + '/requirements/' + requirement._id;
           this.$http.put(url, requirement)
-          .then(response => {
+          .then( () => {
             // TODO???
             // project.requirements.findById(requirement._id) = response.data;
           });
@@ -137,7 +137,7 @@
     updateProject(user, project) {
       var url = '/api/users/' + user._id + '/projects/' + project._id;
       this.$http.put(url, project)
-      .then(response => {
+      .then( () => {
         // TODO???
         // user.projects.findById(project._id) = response.data;
       });

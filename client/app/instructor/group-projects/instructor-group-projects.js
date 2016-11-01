@@ -30,7 +30,7 @@
         update: groupProject => {
           console.log('=== you reached the delegated update of a groupProject ===');
           this.$http.put('/api/group-projects/' + groupProject._id, groupProject)
-          .then(response => {
+          .then( () => {
             this.loadGroupProjects();
           });
         }
@@ -185,7 +185,7 @@
     deleteProject(groupProject) {
       if (confirm('Are you sure?')) {
         this.$http.delete('/api/group-projects/' + groupProject._id)
-        .then(response => {
+        .then( () => {
           this.loadGroupProjects();
         });
       }

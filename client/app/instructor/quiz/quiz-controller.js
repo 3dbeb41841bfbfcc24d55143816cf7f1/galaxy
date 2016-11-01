@@ -42,7 +42,7 @@
       return 50;
     }
     submit() {
-      let answer = undefined;
+      let answer;
       if (this.answer) {
         answer = this.answer;
         console.log('answer:', answer);

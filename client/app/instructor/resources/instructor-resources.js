@@ -47,6 +47,7 @@
     }
 
     refreshOrgRepos(org) {
+      console.log(org);
       // TODO:
     }
 
@@ -112,9 +113,9 @@
 
     getClassForMode(mode) {
       switch (mode) {
-        case 'include': return 'btn-success'; break;
-        case 'neutral': return 'btn-primary'; break;
-        case 'exclude': return 'btn-danger'; break;
+        case 'include': return 'btn-success';
+        case 'neutral': return 'btn-primary';
+        case 'exclude': return 'btn-danger';
         default:        return 'btn-info';
       }
     }
@@ -130,7 +131,7 @@
           this.filteredResources = this.$filter('filter')(this.filteredResources,
                                                           this.resourceTextFilter,
                                                           false // comparator, false means case insensitive.
-                                                        /* , anyPropertyKey */ )
+                                                        /* , anyPropertyKey */ );
         }
         console.log('after filtering we have ', this.filteredResources.length, ' filtered resources');
         this.updateOrgCounts();
